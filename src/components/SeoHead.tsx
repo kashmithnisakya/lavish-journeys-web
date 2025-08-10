@@ -45,6 +45,7 @@ const SeoHead: React.FC<SeoHeadProps> = ({ title, description }) => {
       "@type": "TravelAgency",
       name: "Lavish Travels & Tours",
       url: window.location.origin,
+      areaServed: "Sri Lanka",
       description,
     };
     ld.text = JSON.stringify(jsonLd);

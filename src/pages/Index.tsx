@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/SeoHead";
 import heroImage from "@/assets/hero-lavish.jpg";
-import santorini from "@/assets/destination-santorini.jpg";
-import bali from "@/assets/destination-bali.jpg";
-import swiss from "@/assets/destination-swiss.jpg";
+import ella from "@/assets/destination-ella.jpg";
+import galle from "@/assets/destination-galle.jpg";
+import sigiriya from "@/assets/destination-sigiriya.jpg";
 import { toast } from "sonner";
 
 const Index = () => {
@@ -14,8 +14,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SeoHead
-        title="Lavish Travels & Tours — Bespoke Luxury Journeys"
-        description="Crafting elegant, tailor‑made getaways, honeymoons, and tours to the world's most exquisite destinations."
+        title="Lavish Travels & Tours — Luxury Travel Sri Lanka"
+        description="Bespoke journeys across tea country, heritage forts, and golden coasts in Sri Lanka."
       />
 
       <header className="sticky top-0 z-30 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
@@ -42,16 +42,16 @@ const Index = () => {
           <div className="absolute inset-0">
             <img
               src={heroImage}
-              alt="Lavish luxury travel hero — Santorini cliffside at sunset"
+              alt="Lavish Sri Lanka luxury travel hero — tea country at sunrise"
               className="h-[60vh] md:h-[72vh] w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-hero opacity-60" />
           </div>
           <div className="container relative z-10 flex h-[60vh] md:h-[72vh] items-center">
             <div className="max-w-2xl animate-enter">
-              <h1 className="font-display text-4xl md:text-6xl leading-tight">Elegance in Every Journey</h1>
+              <h1 className="font-display text-4xl md:text-6xl leading-tight">Elegance Across Sri Lanka</h1>
               <p className="mt-4 text-muted-foreground text-base md:text-lg">
-                Bespoke itineraries, refined stays, and seamless travel crafted by experts.
+                Bespoke journeys across tea country, heritage forts, and golden coasts — crafted by experts.
               </p>
               <div className="mt-6 flex gap-3">
                 <Button variant="hero" size="lg" onClick={handleCTA} className="hover-scale">Start Planning</Button>
@@ -66,11 +66,11 @@ const Index = () => {
         {/* Destinations */}
         <section id="destinations" className="container py-16 md:py-24">
           <header className="mb-8 md:mb-12">
-            <h2 className="font-display text-3xl md:text-4xl">Featured Destinations</h2>
-            <p className="text-muted-foreground mt-2">Handpicked escapes for unforgettable moments.</p>
+            <h2 className="font-display text-3xl md:text-4xl">Sri Lanka Highlights</h2>
+            <p className="text-muted-foreground mt-2">Handpicked regions for unforgettable island adventures.</p>
           </header>
           <div className="grid gap-6 md:grid-cols-3">
-            {[{img:santorini, title:'Santorini, Greece', desc:'Sunsets, blue domes, cliffside suites.'}, {img:bali, title:'Bali, Indonesia', desc:'Jungle retreats, serene beaches, culture.'}, {img:swiss, title:'Swiss Alps, Switzerland', desc:'Luxury chalets, alpine vistas, wellness.'}].map((d) => (
+            {[{img:ella, title:'Ella & Tea Country', desc:'Mist‑kissed hills, tea estates, scenic trains.'}, {img:galle, title:'Galle Fort & Southern Coast', desc:'Colonial charm, boutique stays, golden beaches.'}, {img:sigiriya, title:'Cultural Triangle', desc:'Sigiriya, Dambulla & ancient capitals.'}].map((d) => (
               <article key={d.title} className="rounded-lg border bg-card shadow-elegant overflow-hidden hover-scale">
                 <img src={d.img} alt={`${d.title} luxury travel`} loading="lazy" className="h-48 w-full object-cover" />
                 <div className="p-5">
@@ -110,7 +110,7 @@ const Index = () => {
             <div>
               <h2 className="font-display text-3xl md:text-4xl">Your Journey, Perfected</h2>
               <p className="text-muted-foreground mt-4">
-                For over a decade, Lavish Travels & Tours has curated refined escapes across the globe. Our specialists combine insider access with meticulous planning to deliver effortless, elegant travel.
+                For over a decade, Lavish Travels & Tours has curated refined escapes across Sri Lanka. Our specialists combine insider access with meticulous planning to deliver effortless, elegant travel.
               </p>
               <div className="mt-6">
                 <Button variant="premium" onClick={handleCTA}>Speak to a Specialist</Button>
@@ -132,8 +132,8 @@ const Index = () => {
         {/* Contact */}
         <section id="contact" className="bg-secondary/40 py-16 md:py-24">
           <div className="container text-center">
-            <h2 className="font-display text-3xl md:text-4xl">Ready for your next escape?</h2>
-            <p className="text-muted-foreground mt-2">Tell us your dream — we’ll handle the rest.</p>
+            <h2 className="font-display text-3xl md:text-4xl">Ready for your Sri Lanka escape?</h2>
+            <p className="text-muted-foreground mt-2">Tell us your Sri Lanka dream — we’ll handle the rest.</p>
             <div className="mt-6">
               <Button variant="hero" size="lg" onClick={handleCTA}>Plan Your Trip</Button>
             </div>
