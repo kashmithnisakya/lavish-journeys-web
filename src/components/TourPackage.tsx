@@ -16,7 +16,7 @@ interface TourPackageProps {
 
 export function TourPackage({ title, duration, description, highlights, price, image, onInquire, onViewDetails }: TourPackageProps) {
   return (
-    <article className="bg-card rounded-lg border shadow-elegant overflow-hidden hover-scale">
+    <article className="bg-card rounded-lg border shadow-elegant overflow-hidden hover-scale h-full flex flex-col">
       <div className="relative h-48 overflow-hidden">
         <img
           src={image}
@@ -28,11 +28,11 @@ export function TourPackage({ title, duration, description, highlights, price, i
         </div>
       </div>
 
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <h3 className="font-display text-xl mb-3">{title}</h3>
         <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{description}</p>
 
-        <div className="mb-4">
+        <div className="mb-4 flex-1">
           <h4 className="font-medium text-sm mb-2">Key Highlights:</h4>
           <ul className="text-xs text-muted-foreground space-y-1">
             {highlights.slice(0, 4).map((highlight, index) => (
@@ -44,7 +44,7 @@ export function TourPackage({ title, duration, description, highlights, price, i
           </ul>
         </div>
 
-        <div className="space-y-3">
+        <div className="space-y-3 mt-auto">
           <div className="flex items-center justify-between">
             <div>
               <div className="text-sm text-muted-foreground">From</div>
