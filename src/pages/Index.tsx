@@ -131,10 +131,62 @@ const Index = () => {
 
         {/* Contact */}
         <section id="contact" className="bg-secondary/40 py-16 md:py-24">
-          <div className="container text-center">
-            <h2 className="font-display text-3xl md:text-4xl">Ready for your Sri Lanka escape?</h2>
-            <p className="text-muted-foreground mt-2">Tell us your Sri Lanka dream — we’ll handle the rest.</p>
-            <div className="mt-6">
+          <div className="container">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-3xl md:text-4xl">Ready for your Sri Lanka escape?</h2>
+              <p className="text-muted-foreground mt-2">Tell us your Sri Lanka dream — we'll handle the rest.</p>
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+              <div className="bg-card rounded-lg p-6 shadow-elegant">
+                <h3 className="font-display text-xl mb-4">Contact Information</h3>
+                <div className="space-y-3 text-sm">
+                  <div>
+                    <p className="font-medium">Address</p>
+                    <p className="text-muted-foreground">520/41B, Randunuwatta, North Road<br/>Weerawila, Sri Lanka</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Phone</p>
+                    <p className="text-muted-foreground">+94 70 172 8922 | +94 77 041 8967</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Email</p>
+                    <a href="mailto:lavishtravelstours@gmail.com" className="text-primary hover:underline">lavishtravelstours@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-card rounded-lg p-6 shadow-elegant">
+                <h3 className="font-display text-xl mb-4">Connect With Us</h3>
+                <div className="space-y-4">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61579323908693&locale=eu_ES"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 border rounded-lg hover:bg-secondary transition-colors"
+                  >
+                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                      f
+                    </div>
+                    <span>Follow us on Facebook</span>
+                  </a>
+
+                  <a
+                    href="https://wa.me/94701728922"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 border rounded-lg hover:bg-secondary transition-colors"
+                  >
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                      W
+                    </div>
+                    <span>Chat on WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-8">
               <Button variant="hero" size="lg" onClick={handleCTA}>Plan Your Trip</Button>
             </div>
           </div>
@@ -142,13 +194,54 @@ const Index = () => {
       </main>
 
       <footer className="border-t">
-        <div className="container py-8 text-sm text-muted-foreground flex flex-col md:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} Lavish Travels & Tours. All rights reserved.</p>
-          <nav className="flex gap-6">
-            <a href="#about" className="hover:underline">About</a>
-            <a href="#services" className="hover:underline">Services</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-          </nav>
+        <div className="container py-8">
+          <div className="grid gap-6 md:grid-cols-3 text-sm">
+            <div>
+              <h4 className="font-semibold mb-3">Lavish Travels & Tours</h4>
+              <p className="text-muted-foreground">Bespoke luxury journeys across Sri Lanka</p>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-3">Contact Info</h4>
+              <div className="text-muted-foreground space-y-1">
+                <p>520/41B, Randunuwatta, North Road</p>
+                <p>Weerawila, Sri Lanka</p>
+                <p>+94 70 172 8922 | +94 77 041 8967</p>
+                <a href="mailto:lavishtravelstours@gmail.com" className="hover:text-primary">lavishtravelstours@gmail.com</a>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-3">Follow Us</h4>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61579323908693&locale=eu_ES"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary"
+                >
+                  Facebook
+                </a>
+                <a
+                  href="https://wa.me/94701728922"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary"
+                >
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6 pt-6 border-t flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+            <p>© {new Date().getFullYear()} Lavish Travels & Tours. All rights reserved.</p>
+            <nav className="flex gap-6">
+              <a href="#about" className="hover:underline">About</a>
+              <a href="#services" className="hover:underline">Services</a>
+              <a href="#contact" className="hover:underline">Contact</a>
+            </nav>
+          </div>
         </div>
       </footer>
     </div>
