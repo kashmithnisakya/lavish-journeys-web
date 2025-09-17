@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 import SeoHead from "@/components/SeoHead";
 import heroImage from "@/assets/hero-lavish.jpg";
 import ella from "@/assets/destination-ella.jpg";
@@ -30,8 +31,11 @@ const Index = () => {
             <a href="#about" className="story-link">About</a>
             <a href="#contact" className="story-link">Contact</a>
           </div>
-          <div className="hidden md:block">
-            <Button variant="hero" onClick={handleCTA}>Plan Your Trip</Button>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <div className="hidden md:block">
+              <Button variant="hero" onClick={handleCTA}>Plan Your Trip</Button>
+            </div>
           </div>
         </nav>
       </header>
@@ -43,9 +47,10 @@ const Index = () => {
             <img
               src={heroImage}
               alt="Lavish Sri Lanka luxury travel hero — tea country at sunrise"
-              className="h-[60vh] md:h-[72vh] w-full object-cover"
+              className="h-[60vh] md:h-[72vh] w-full object-cover brightness-105 contrast-105 saturate-110 dark:brightness-90 dark:contrast-150 dark:saturate-125 dark:hue-rotate-15"
             />
-            <div className="absolute inset-0 bg-gradient-hero opacity-60" />
+            <div className="absolute inset-0 bg-gradient-hero opacity-50 dark:opacity-65" />
+            <div className="absolute inset-0 bg-black/5 dark:bg-black/25" />
           </div>
           <div className="container relative z-10 flex h-[60vh] md:h-[72vh] items-center">
             <div className="max-w-2xl animate-enter">
