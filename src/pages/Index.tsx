@@ -1,5 +1,8 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { TourPackage } from "@/components/TourPackage";
+import { TourPackageModal } from "@/components/TourPackageModal";
 import SeoHead from "@/components/SeoHead";
 import heroImage from "@/assets/hero-lavish.jpg";
 import ella from "@/assets/destination-ella.jpg";
@@ -7,10 +10,100 @@ import galle from "@/assets/destination-galle.jpg";
 import sigiriya from "@/assets/destination-sigiriya.jpg";
 import { toast } from "sonner";
 
+interface TourPackageData {
+  title: string;
+  duration: string;
+  description: string;
+  highlights: string[];
+  price: {
+    from: number;
+    category: string;
+  };
+  image?: string;
+  itinerary: Array<{
+    day: number;
+    title: string;
+    activities: string[];
+    accommodation?: string;
+  }>;
+  pricing: Array<{
+    category: string;
+    pax3: number;
+    pax8: number;
+    pax16: number;
+    pax32: number;
+  }>;
+  inclusions: string[];
+  exclusions: string[];
+  hotels: Array<{
+    destination: string;
+    hotel: string;
+    supplement?: string;
+  }>;
+  entranceFees: Array<{
+    attraction: string;
+    fee: number;
+  }>;
+}
+
+interface TourPackagesDataType {
+  [key: string]: TourPackageData;
+}
+
 const Index = () => {
+  const [selectedTour, setSelectedTour] = useState<string | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [tourPackagesData, setTourPackagesData] = useState<TourPackagesDataType>({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadTourPackages = async () => {
+      try {
+        const response = await fetch('/tour-packages.json');
+        const data = await response.json();
+        setTourPackagesData(data);
+      } catch (error) {
+        console.error('Failed to load tour packages:', error);
+        toast.error('Failed to load tour packages');
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadTourPackages();
+  }, []);
+
   const handleCTA = () => {
     toast("Thanks! A travel specialist will reach out shortly.");
   };
+
+  const handleViewDetails = (tourKey: string) => {
+    setSelectedTour(tourKey);
+    setIsModalOpen(true);
+  };
+
+  // Convert JSON data to array format for rendering
+  const tourPackages = Object.entries(tourPackagesData).map(([key, data]: [string, TourPackageData]) => ({
+    key,
+    title: data.title,
+    duration: data.duration,
+    description: data.description,
+    highlights: data.highlights,
+    price: data.price,
+    image: key === 'classical-journey' ? sigiriya :
+           key === 'classical-explorer' ? ella :
+           key === 'southern-highlight' ? galle : heroImage
+  }));
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+          <p className="mt-4 text-muted-foreground">Loading tour packages...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -27,6 +120,7 @@ const Index = () => {
           </a>
           <div className="hidden md:flex items-center gap-6 text-sm">
             <a href="#destinations" className="story-link">Destinations</a>
+            <a href="#packages" className="story-link">Packages</a>
             <a href="#services" className="story-link">Services</a>
             <a href="#about" className="story-link">About</a>
             <a href="#contact" className="story-link">Contact</a>
@@ -83,6 +177,31 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground mt-1">{d.desc}</p>
                 </div>
               </article>
+            ))}
+          </div>
+        </section>
+
+        {/* Tour Packages */}
+        <section id="packages" className="container py-16 md:py-24">
+          <header className="mb-8 md:mb-12 text-center">
+            <h2 className="font-display text-3xl md:text-4xl">Curated Tour Packages</h2>
+            <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+              Expertly crafted journeys that showcase Sri Lanka's finest destinations, cultural heritage, and natural wonders.
+            </p>
+          </header>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
+            {tourPackages.map((pkg, index) => (
+              <TourPackage
+                key={index}
+                title={pkg.title}
+                duration={pkg.duration}
+                description={pkg.description}
+                highlights={pkg.highlights}
+                price={pkg.price}
+                image={pkg.image}
+                onInquire={handleCTA}
+                onViewDetails={() => handleViewDetails(pkg.key)}
+              />
             ))}
           </div>
         </section>
@@ -242,6 +361,7 @@ const Index = () => {
           <div className="mt-6 pt-6 border-t flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} Lavish Travels & Tours. All rights reserved.</p>
             <nav className="flex gap-6">
+              <a href="#packages" className="hover:underline">Packages</a>
               <a href="#about" className="hover:underline">About</a>
               <a href="#services" className="hover:underline">Services</a>
               <a href="#contact" className="hover:underline">Contact</a>
@@ -249,6 +369,19 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {/* Tour Package Modal */}
+      {selectedTour && (
+        <TourPackageModal
+          open={isModalOpen}
+          onOpenChange={setIsModalOpen}
+          tourData={tourPackagesData[selectedTour as keyof typeof tourPackagesData]}
+          onInquire={() => {
+            setIsModalOpen(false);
+            handleCTA();
+          }}
+        />
+      )}
     </div>
   );
 };
