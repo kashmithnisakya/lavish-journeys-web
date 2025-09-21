@@ -3,11 +3,11 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18
+      nodejs: 23.9.0
   pre_build:
     commands:
       - echo Installing dependencies...
-      - npm ci
+      - npm i
   build:
     commands:
       - echo Build started on `date`
