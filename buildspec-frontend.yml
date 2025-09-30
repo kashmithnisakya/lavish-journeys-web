@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 23.9.0
+      nodejs: 20
     commands:
       - echo Installing frontend dependencies...
       - echo "Current directory: $(pwd)"
