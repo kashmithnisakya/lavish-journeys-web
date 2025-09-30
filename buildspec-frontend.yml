@@ -13,32 +13,24 @@ phases:
   pre_build:
     commands:
       - echo Pre-build phase started on `date`
-      - echo "Navigating to frontend directory"
-      - cd frontend
-      - echo "Frontend directory contents"
-      - ls -la
       - echo "Installing npm dependencies..."
-      - npm install
+      - cd frontend && npm install
       - echo "Dependencies installed successfully"
 
   build:
     commands:
       - echo Build started on `date`
       - echo "Building the frontend application..."
-      - cd frontend
-      - echo "Running npm build..."
-      - npm run build
+      - cd frontend && npm run build
       - echo "Build completed successfully"
-      - echo "Dist directory contents"
-      - ls -la dist/
+      - ls -la frontend/dist/
       - echo Build completed on `date`
 
   post_build:
     commands:
       - echo Post-build phase started on `date`
-      - cd frontend
       - echo "Final build verification"
-      - ls -la dist/
+      - ls -la frontend/dist/
       - echo "Frontend build artifacts ready for deployment"
       - echo Post-build phase completed on `date`
 
