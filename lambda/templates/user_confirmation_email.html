@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Sri Lanka Travel Inquiry!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f9ff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 650px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .tagline {
+            font-size: 16px;
+            opacity: 0.95;
+            margin: 0;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .greeting {
+            font-size: 24px;
+            color: #1e40af;
+            margin: 0 0 20px 0;
+            font-weight: 600;
+        }
+        .thank-you-message {
+            color: #374151;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        .inquiry-summary {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 4px solid #0ea5e9;
+            position: relative;
+        }
+        .inquiry-summary::before {
+            content: '📋';
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            font-size: 24px;
+        }
+        .inquiry-summary h3 {
+            margin: 0 0 15px 0;
+            color: #0c4a6e;
+            font-size: 18px;
+        }
+        .summary-item {
+            display: flex;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .summary-label {
+            font-weight: 600;
+            color: #0c4a6e;
+            min-width: 120px;
+            margin-right: 15px;
+        }
+        .summary-value {
+            color: #164e63;
+            flex: 1;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 4px solid #10b981;
+            position: relative;
+        }
+        .highlight-box::before {
+            content: '⚡';
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            font-size: 24px;
+        }
+        .highlight-box h3 {
+            margin: 0 0 15px 0;
+            color: #047857;
+            font-size: 18px;
+        }
+        .steps-list {
+            color: #065f46;
+            margin: 0;
+            padding-left: 20px;
+        }
+        .steps-list li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .contact-section {
+            background-color: #f8fafc;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .contact-section h3 {
+            margin: 0 0 20px 0;
+            color: #1e40af;
+            font-size: 18px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .contact-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .contact-item strong {
+            color: #1e40af;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-item a {
+            color: #0ea5e9;
+            text-decoration: none;
+        }
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        .social-section {
+            background: linear-gradient(135deg, #fef3c7, #fed7aa);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .social-section h3 {
+            margin: 0 0 15px 0;
+            color: #92400e;
+            font-size: 18px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .social-link {
+            display: inline-block;
+            padding: 10px 15px;
+            background: white;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #92400e;
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .social-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .footer {
+            background-color: #1e293b;
+            color: #cbd5e1;
+            padding: 30px;
+            text-align: center;
+        }
+        .footer-logo {
+            color: #0ea5e9;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #0ea5e9;
+            text-decoration: none;
+        }
+        .unsubscribe {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #475569;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                border-radius: 12px;
+            }
+            .header,
+            .content {
+                padding: 25px 20px;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .summary-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .summary-label {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <div class="logo">&#9992; Lavish Travels & Tours</div>
+                <p class="tagline">Your Gateway to Sri Lankan Adventures</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="greeting">Ayubowan {{USER_NAME}}!</h2>
+
+            <div class="thank-you-message">
+Thank you for reaching out to <strong>Lavish Travels & Tours</strong>! We're absolutely thrilled that you're considering Sri Lanka for your next adventure. Your inquiry is incredibly important to us, and we're excited to help you create unforgettable memories in the pearl of the Indian Ocean!
+            </div>
+
+            <div class="inquiry-summary">
+                <h3>&#128196; Your Inquiry Summary</h3>
+                <div class="summary-item">
+                    <span class="summary-label">Inquiry Type:</span>
+                    <span class="summary-value"><strong>{{INQUIRY_TYPE}}</strong></span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Submitted:</span>
+                    <span class="summary-value">{{TIMESTAMP}}</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Reference ID:</span>
+                    <span class="summary-value">INQ-{{INQUIRY_ID}}</span>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>&#9658; What Happens Next?</h3>
+                <ul class="steps-list">
+                    <li><strong>Within 24 hours:</strong> Our expert travel consultants will review your inquiry and respond with personalized recommendations</li>
+                    <li><strong>Consultation:</strong> We'll discuss your preferences, budget, and dream destinations to craft the perfect itinerary</li>
+                    <li><strong>Custom Proposal:</strong> Receive a detailed travel proposal tailored specifically to your needs</li>
+                    <li><strong>Planning & Booking:</strong> Once approved, we'll handle all the details to make your trip seamless</li>
+                </ul>
+            </div>
+
+            <div class="contact-section">
+                <h3>&#9742; Need Immediate Assistance?</h3>
+                <p>Our team is here to help! Feel free to reach out through any of these channels:</p>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <strong>&#9993; Email</strong>
+                        <a href="mailto:support@lavishtravelsandtours.online">support@lavishtravelsandtours.online</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>&#9742; Phone</strong>
+                        <a href="tel:+94701728922">+94 70 172 8922 | +94 77 041 8967</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>&#128172; WhatsApp</strong>
+                        <a href="https://wa.me/94701728922">Chat with us</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <p style="text-align: center; color: #6b7280; font-style: italic; margin-top: 30px;">
+                "Adventure awaits those who dare to explore. Let us be your guide to the extraordinary."
+            </p>
+        </div>
+
+        <div class="footer">
+            <div class="footer-logo">Lavish Travels & Tours</div>
+            <p><strong>Creating Memorable Journeys Since 2020</strong></p>
+            <p>&#128205; Office: +94 70 172 8922 | +94 77 041 8967</p>
+            <p>&#9993; <a href="mailto:support@lavishtravelsandtours.online">support@lavishtravelsandtours.online</a></p>
+            <p>&#127760; <a href="https://lavishtravelsandtours.online">www.lavishtravelsandtours.online</a></p>
+
+            <div class="unsubscribe">
+                <p>You received this email because you submitted an inquiry through our website.</p>
+                <p>This is a confirmation email. You will not receive marketing emails unless you opt-in.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

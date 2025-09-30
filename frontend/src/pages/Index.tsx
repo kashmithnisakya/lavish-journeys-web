@@ -275,7 +275,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:lavishtravelstours@gmail.com" className="text-primary hover:underline">lavishtravelstours@gmail.com</a>
+                    <a href="mailto:support@lavishtravelsandtours.online" className="text-primary hover:underline">support@lavishtravelsandtours.online</a>
                   </div>
                 </div>
               </div>
@@ -331,7 +331,7 @@ const Index = () => {
                 <p>520/41B, Randunuwatta, North Road</p>
                 <p>Weerawila, Sri Lanka</p>
                 <p>+94 70 172 8922 | +94 77 041 8967</p>
-                <a href="mailto:lavishtravelstours@gmail.com" className="hover:text-primary">lavishtravelstours@gmail.com</a>
+                <a href="mailto:support@lavishtravelsandtours.online" className="hover:text-primary">support@lavishtravelsandtours.online</a>
               </div>
             </div>
 

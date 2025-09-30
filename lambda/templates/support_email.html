@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Customer Inquiry - Lavish Travels</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 30px;
+        }
+        .alert-badge {
+            display: inline-block;
+            background-color: #ef4444;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .customer-info {
+            background-color: #f1f5f9;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #3b82f6;
+        }
+        .info-row {
+            display: flex;
+            margin-bottom: 12px;
+            align-items: center;
+        }
+        .info-row:last-child {
+            margin-bottom: 0;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #374151;
+            min-width: 100px;
+            margin-right: 15px;
+        }
+        .info-value {
+            color: #1f2937;
+            flex: 1;
+        }
+        .email-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        .question-section {
+            background-color: #fefce8;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 4px solid #facc15;
+        }
+        .question-section h3 {
+            margin: 0 0 15px 0;
+            color: #92400e;
+            font-size: 18px;
+        }
+        .question-text {
+            color: #451a03;
+            font-style: italic;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #fde047;
+            white-space: pre-wrap;
+        }
+        .action-section {
+            background-color: #ecfdf5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 4px solid #10b981;
+        }
+        .action-section h3 {
+            margin: 0 0 15px 0;
+            color: #047857;
+            font-size: 18px;
+        }
+        .action-list {
+            color: #064e3b;
+            margin: 0;
+            padding-left: 20px;
+        }
+        .action-list li {
+            margin-bottom: 8px;
+        }
+        .priority-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 15px 0;
+            text-align: center;
+        }
+        .timestamp {
+            color: #6b7280;
+            font-size: 14px;
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9fafb;
+            border-radius: 8px;
+        }
+        .footer {
+            background-color: #1f2937;
+            color: #d1d5db;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px;
+            }
+            .info-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .info-label {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>&#9888; URGENT: New Customer Inquiry</h1>
+            <p>Lavish Travels & Tours Support Team Alert</p>
+        </div>
+
+        <div class="content">
+            <div class="alert-badge">Requires Response Within 24 Hours</div>
+
+            <p>A new inquiry has been submitted through the Lavish Travels & Tours website. Please review the customer details below and respond promptly to maintain our excellent service standards.</p>
+
+            <div class="customer-info">
+                <h3 style="margin-top: 0; color: #1f2937;">&#128100; Customer Information</h3>
+                <div class="info-row">
+                    <span class="info-label">Name:</span>
+                    <span class="info-value"><strong>{{USER_NAME}}</strong></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Email:</span>
+                    <span class="info-value">
+                        <a href="mailto:{{USER_EMAIL}}" class="email-link">{{USER_EMAIL}}</a>
+                    </span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Phone:</span>
+                    <span class="info-value">{{USER_PHONE}}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Inquiry Type:</span>
+                    <span class="info-value"><strong>{{INQUIRY_TYPE}}</strong></span>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <h3>&#128172; Customer Question/Message</h3>
+                <div class="question-text">{{USER_QUESTION}}</div>
+            </div>
+
+            <div class="action-section">
+                <h3>&#9658; Next Steps & Action Items</h3>
+                <ul class="action-list">
+                    <li><strong>Respond within 24 hours</strong> to maintain excellent customer service</li>
+                    <li>Review the customer's specific requirements and preferences</li>
+                    <li>Prepare personalized travel recommendations if applicable</li>
+                    <li>Schedule a follow-up call if the inquiry is complex</li>
+                    <li>Update the CRM system with this new lead</li>
+                    <li>Tag this inquiry for performance tracking</li>
+                </ul>
+
+                <a href="mailto:{{USER_EMAIL}}?subject=Re: Your Sri Lanka Travel Inquiry - {{INQUIRY_TYPE}}&body=Dear {{USER_NAME}},%0D%0A%0D%0AThank you for your interest in Lavish Travels & Tours! We're excited to help you plan your perfect Sri Lankan adventure.%0D%0A%0D%0ABest regards,%0D%0ALavish Travels & Tours Team" class="priority-button">
+                    &#9993; Reply to Customer Now
+                </a>
+            </div>
+
+            <div class="timestamp">
+                <strong>Inquiry received:</strong> {{TIMESTAMP}}<br>
+                <strong>Customer ID:</strong> {{USER_EMAIL}} | <strong>Reference:</strong> INQ-{{INQUIRY_ID}}<br>
+                <strong>Source:</strong> Lavish Travels & Tours Website Contact Form
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Lavish Travels & Tours</strong> - Internal Support System</p>
+            <p>&#9742; Office: +94 70 172 8922 | +94 77 041 8967</p>
+            <p>&#9993; Support: support@lavishtravelsandtours.online</p>
+            <p>&#128172; WhatsApp: +94 70 172 8922</p>
+            <p>This email was automatically generated from the inquiry form.</p>
+            <p>For technical issues, contact: <a href="mailto:support@lavishtravelsandtours.online">support@lavishtravelsandtours.online</a></p>
+        </div>
+    </div>
+</body>
+</html>
