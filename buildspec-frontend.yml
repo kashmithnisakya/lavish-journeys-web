@@ -14,14 +14,14 @@ phases:
     commands:
       - echo Pre-build phase started on `date`
       - echo "Installing npm dependencies..."
-      - cd frontend && npm install
+      - npm install --prefix frontend
       - echo "Dependencies installed successfully"
 
   build:
     commands:
       - echo Build started on `date`
       - echo "Building the frontend application..."
-      - cd frontend && npm run build
+      - npm run build --prefix frontend
       - echo "Build completed successfully"
       - ls -la frontend/dist/
       - echo Build completed on `date`
