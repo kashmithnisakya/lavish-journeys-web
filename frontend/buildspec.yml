@@ -7,15 +7,17 @@ phases:
   pre_build:
     commands:
       - echo Installing dependencies...
+      - cd frontend
       - npm i
   build:
     commands:
       - echo Build started on `date`
       - echo Building the application...
+      - cd frontend
       - npm run build
       - echo Build completed on `date`
 
 artifacts:
   files:
     - '**/*'
-  base-directory: dist
+  base-directory: frontend/dist
