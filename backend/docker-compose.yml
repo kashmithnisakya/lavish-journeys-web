@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lavish-travels-api
+    ports:
+      - "8000:8000"
+    environment:
+      - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+      - FROM_EMAIL=${FROM_EMAIL:-noreply@lavishtravelsandtours.online}
+      - SUPPORT_EMAIL=${SUPPORT_EMAIL:-support@lavishtravelsandtours.online}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-*}
+      - DEBUG=${DEBUG:-false}
+    env_file:
+      - .env
+    volumes:
+      - ./app:/app/app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+    networks:
+      - lavish-network
+
+networks:
+  lavish-network:
+    driver: bridge
