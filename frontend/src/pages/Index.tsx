@@ -166,10 +166,14 @@ const Index = () => {
         <section id="destinations" className="container py-16 md:py-24">
           <header className="mb-8 md:mb-12">
             <h2 className="font-display text-3xl md:text-4xl">Sri Lanka Highlights</h2>
-            <p className="text-muted-foreground mt-2">Handpicked regions for unforgettable island adventures.</p>
+            <p className="text-muted-foreground mt-2">Discover ancient wonders, wildlife safaris, spiritual trails, hill country tea plantations, and pristine coastal escapes.</p>
           </header>
           <div className="grid gap-6 md:grid-cols-3">
-            {[{img:ella, title:'Ella & Tea Country', desc:'Mist‑kissed hills, tea estates, scenic trains.'}, {img:galle, title:'Galle Fort & Southern Coast', desc:'Colonial charm, boutique stays, golden beaches.'}, {img:sigiriya, title:'Cultural Triangle', desc:'Sigiriya, Dambulla & ancient capitals.'}].map((d) => (
+            {[
+              {img:sigiriya, title:'Cultural Triangle & Ancient Cities', desc:'Sigiriya Rock Fortress, Dambulla caves, Anuradhapura & Polonnaruwa UNESCO sites, Ramayana spiritual trail.'},
+              {img:ella, title:'Hill Country & Tea Plantations', desc:'Nuwara Eliya\'s colonial charm, Ella\'s scenic railways, Horton Plains World\'s End, Kandy\'s Temple of the Tooth.'},
+              {img:galle, title:'Wildlife & Southern Coast', desc:'Yala leopard safari, whale watching in Mirissa, Galle Fort heritage, Sinharaja rainforest, golden beaches.'}
+            ].map((d) => (
               <article key={d.title} className="rounded-lg border bg-card shadow-elegant overflow-hidden hover-scale">
                 <img src={d.img} alt={`${d.title} luxury travel`} loading="lazy" className="h-48 w-full object-cover" />
                 <div className="p-5">

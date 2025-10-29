@@ -693,5 +693,562 @@ export const tourPackagesData = {
       "Travel insurance",
       "Early check-in/late check-out charges"
     ]
+  },
+
+  "wonderful-journey": {
+    title: "A Wonderful Journey in the Island",
+    duration: "11 Days / 10 Nights",
+    description: "Experience the diverse beauty of Sri Lanka—from the fishing village charm of Negombo and the wildlife wonders of Wilpattu National Park to the ancient kingdoms of Anuradhapura and Polonnaruwa, the cultural heart of Kandy, the scenic highlands of Nuwara Eliya, and the vibrant capital of Colombo.",
+    highlights: [
+      "Wildlife: Wilpattu National Park safari with leopards and elephants",
+      "Ancient Cities: Anuradhapura and Polonnaruwa UNESCO sites",
+      "Cultural Wonders: Sigiriya Rock Fortress, Dambulla Cave Temple, Temple of the Tooth",
+      "Hill Country: Tea plantations, Ramboda Falls, Horton Plains World's End",
+      "Village Experience: Hiriwadunna village trek with bullock cart ride",
+      "Nature: Negombo Lagoon safari and Pidurangala Rock climb"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Negombo",
+        activities: [
+          "Private transfer from airport to Negombo",
+          "Check in at Lavinia Beach Hotel",
+          "Late afternoon Lagoon safari or brief City Tour",
+          "Visit Dutch-built canal with colorful fishing boats",
+          "Explore famous fish market 'Lellama'",
+          "Birdwatching opportunities including Kingfishers"
+        ],
+        accommodation: "Amagi Arya, Negombo"
+      },
+      {
+        day: 2,
+        title: "Negombo to Wilpattu to Anuradhapura",
+        activities: [
+          "Depart with packed breakfast to Wilpattu National Park",
+          "4x4 Jeep Safari at Wilpattu (approx. 4 hours)",
+          "Observe unique 'Willus' (natural lakes)",
+          "Wildlife viewing: Leopards, Elephants, Sloth Bears, Water Buffalo",
+          "Continue to Anuradhapura",
+          "Brief city orientation"
+        ],
+        accommodation: "Levendish Hotel, Anuradhapura"
+      },
+      {
+        day: 3,
+        title: "Anuradhapura & Mihintale to Dambulla",
+        activities: [
+          "City tour of Anuradhapura UNESCO World Heritage sites",
+          "Visit Ruvanveliseya, Jetavanarama, and Thuparama Dagobas",
+          "See the sacred Bo Tree (2,250 years old)",
+          "Climb Mihintale's 1,840 stone steps - 'Cradle of Buddhism'",
+          "Transfer to Dambulla"
+        ],
+        accommodation: "Lario Resort, Dambulla"
+      },
+      {
+        day: 4,
+        title: "Sigiriya & Village Trek",
+        activities: [
+          "Early morning climb of Sigiriya Rock Fortress",
+          "View ancient frescoes of 21 life-sized damsels",
+          "Explore Royal Palace foundations and water gardens",
+          "Afternoon Hiriwadunna Village Trek",
+          "Bullock cart ride through forests and paddy fields",
+          "Catamaran safari on scenic lake",
+          "Visit Chena cultivation and birdwatching"
+        ],
+        accommodation: "Lario Resort, Dambulla"
+      },
+      {
+        day: 5,
+        title: "Polonnaruwa & Pidurangala",
+        activities: [
+          "Explore Polonnaruwa UNESCO World Heritage Site",
+          "Visit famous Parakrama Samudraya reservoir",
+          "See Buddhist and Hindu structures from 11th-13th centuries",
+          "Challenging climb of Pidurangala Rock",
+          "Stunning panoramic views of Sigiriya Rock from summit"
+        ],
+        accommodation: "Lario Resort, Dambulla"
+      },
+      {
+        day: 6,
+        title: "Dambulla to Kandy",
+        activities: [
+          "Visit Spice Garden in Matale",
+          "Learn about Cinnamon, Cardamom, Pepper and spices",
+          "Continue to Kandy",
+          "City tour including Kandy Lake and Royal Palace"
+        ],
+        accommodation: "Senani Hotel, Kandy"
+      },
+      {
+        day: 7,
+        title: "Kandy Full Day",
+        activities: [
+          "Visit Temple of the Tooth Relic for morning Pooja ceremony",
+          "Visit Gem Museum to learn about Sri Lankan gemstones",
+          "Tour Royal Botanical Gardens (147 acres)",
+          "See 4,000+ species of plants, Spice Garden, Orchid House",
+          "Walk through five Palm Avenues",
+          "Free time for shopping"
+        ],
+        accommodation: "Senani Hotel, Kandy"
+      },
+      {
+        day: 8,
+        title: "Kandy to Nuwara Eliya",
+        activities: [
+          "Visit Tea Plantation and Tea Factory in Pussallawa",
+          "Tea plucking experience with local workers",
+          "Stop at famous Ramboda Waterfalls",
+          "Explore 'Little England' of Sri Lanka",
+          "Walk through Victoria Park",
+          "Discover colonial-era architecture"
+        ],
+        accommodation: "Blue Meadows, Nuwara Eliya"
+      },
+      {
+        day: 9,
+        title: "Horton Plains",
+        activities: [
+          "Early morning trek to World's End and Little World's End",
+          "Visit Baker's Falls",
+          "Explore unique Cloud Forest Reserve",
+          "Walk through diverse wet evergreen forest",
+          "Return to hotel for leisure time"
+        ],
+        accommodation: "Blue Meadows, Nuwara Eliya"
+      },
+      {
+        day: 10,
+        title: "Nuwara Eliya to Colombo",
+        activities: [
+          "Depart for Colombo via Kitulgala",
+          "City tour including Fort and Pettah areas",
+          "Visit Sea Street, Hindu Temple, Kayman's Gate",
+          "Dutch Church of Wolfendhaal (1749)",
+          "BMICH and Independence Square",
+          "Last-minute shopping opportunities"
+        ],
+        accommodation: "Fair Way Hotel, Colombo"
+      },
+      {
+        day: 11,
+        title: "Departure",
+        activities: [
+          "Enjoy breakfast and check out",
+          "Private transfer to Bandaranaike International Airport"
+        ]
+      }
+    ],
+    pricing: [
+      {
+        category: "Per Person Sharing (Double Room)",
+        pax3: 1042,
+        pax8: 725,
+        pax16: 731,
+        pax32: 636
+      },
+      {
+        category: "Per Person Sharing (Triple Room)",
+        pax3: 1005,
+        pax8: 688,
+        pax16: 694,
+        pax32: 598
+      },
+      {
+        category: "Single Room Supplement",
+        pax3: 287,
+        pax8: 287,
+        pax16: 287,
+        pax32: 287
+      }
+    ],
+    hotels: [
+      { destination: "Negombo", hotel: "Amagi Arya", supplement: "No Supplement" },
+      { destination: "Anuradhapura", hotel: "Levendish Hotel", supplement: "No Supplement" },
+      { destination: "Dambulla", hotel: "Lario Resort", supplement: "No Supplement" },
+      { destination: "Kandy", hotel: "Senani Hotel", supplement: "No Supplement" },
+      { destination: "Nuwara Eliya", hotel: "Blue Meadows", supplement: "No Supplement" },
+      { destination: "Colombo", hotel: "Fair Way Hotel", supplement: "Superior Balcony: $15 per night" }
+    ],
+    entranceFees: [
+      { attraction: "Negombo Lagoon Safari", fee: 30 },
+      { attraction: "Wilpattu National Park", fee: 35 },
+      { attraction: "Anuradhapura", fee: 26 },
+      { attraction: "Hiriwadunna Village Trek", fee: 25 },
+      { attraction: "Sigiriya Rock Fortress", fee: 32 },
+      { attraction: "Polonnaruwa", fee: 26 },
+      { attraction: "Pidurangala Rock", fee: 15 },
+      { attraction: "Temple of the Tooth", fee: 15 },
+      { attraction: "Cultural Dance Show (Optional)", fee: 10 },
+      { attraction: "Royal Botanical Gardens", fee: 10 },
+      { attraction: "Tea Factory Visit", fee: 5 },
+      { attraction: "Horton Plains National Park", fee: 35 }
+    ],
+    inclusions: [
+      "Meet & greet services at airport",
+      "Air-conditioned vehicle transportation throughout",
+      "Hotel accommodation on Half Board basis (Dinner & Breakfast)",
+      "English-speaking chauffeur guide (up to 6 pax) or National guide (7+ pax)",
+      "2 x 500ml mineral water bottles per guest daily",
+      "Wilpattu National Park jeep hire",
+      "Horton Plains jeep hire",
+      "All government taxes"
+    ],
+    exclusions: [
+      "Lunch throughout the tour",
+      "Camera and video permits",
+      "Entrance fees (listed separately)",
+      "Beverages (alcoholic and non-alcoholic)",
+      "International airfare and visa fees",
+      "Additional visits not mentioned",
+      "Early check-in/late check-out charges",
+      "Tips and gratuities",
+      "Travel insurance",
+      "Personal expenses"
+    ]
+  },
+
+  "classical-gateway": {
+    title: "Classical Gateway",
+    duration: "8 Days / 7 Nights",
+    description: "Discover the essence of Sri Lanka's cultural and natural heritage on this carefully crafted 8-day journey. From the coastal charm of Negombo to wildlife encounters at Millennium Elephant Foundation and Kalawewa National Park, the ancient wonders of Pidurangala, the cultural treasures of Kandy, and the scenic tea country of Nuwara Eliya.",
+    highlights: [
+      "Wildlife: Millennium Elephant Foundation experience and Kalawewa National Park safari",
+      "Cultural Wonders: Pidurangala Rock, Temple of the Tooth, Royal Botanical Gardens",
+      "Village Life: Hiriwadunna village trek with authentic Sri Lankan experience",
+      "Nature: Negombo Lagoon safari, tea plantation visit, Ramboda Waterfalls",
+      "Hill Country: Nuwara Eliya 'Little England' colonial architecture",
+      "City Tour: Colombo's historic Fort and Pettah areas"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Negombo",
+        activities: [
+          "Welcome meet & greet at airport",
+          "Transfer to Negombo",
+          "Check in at Lavinia Beach Hotel",
+          "Evening Lagoon Safari - unique cruising experience",
+          "Drift along coconut palms and mangrove forests",
+          "Observe diverse birdlife and marine life"
+        ],
+        accommodation: "Amagi Arya, Negombo"
+      },
+      {
+        day: 2,
+        title: "Negombo to Rambukkana to Dambulla",
+        activities: [
+          "Visit famous 'Lellama' fish market in Negombo",
+          "Transfer to Millennium Elephant Foundation in Rambukkana",
+          "Tour 9-hectare sanctuary for domestic elephant welfare",
+          "Experience exclusive Elephant Walk and Bath",
+          "Interactive encounter with majestic creatures",
+          "Continue to Dambulla"
+        ],
+        accommodation: "Lario Resort, Dambulla"
+      },
+      {
+        day: 3,
+        title: "Pidurangala & Kalawewa Safari",
+        activities: [
+          "Visit ancient Buddhist temple at Pidurangala Rock",
+          "Challenging climb with stunning views of Sigiriya",
+          "History dating back to 1st-2nd century BC",
+          "Exciting 4x4 Jeep Safari at Kalawewa National Park",
+          "Observe elephants including rare tuskers",
+          "Explore 6,000+ hectares around 5th century water tanks"
+        ],
+        accommodation: "Lario Resort, Dambulla"
+      },
+      {
+        day: 4,
+        title: "Village Trek & Kandy",
+        activities: [
+          "Hiriwadunna Village Trek experience",
+          "Bullock cart ride through forests and paddy fields",
+          "Catamaran safari on scenic lake",
+          "Visit Chena cultivation",
+          "Spice Garden visit in Matale",
+          "Brief city tour of Kandy"
+        ],
+        accommodation: "Senani Hotel, Kandy"
+      },
+      {
+        day: 5,
+        title: "Kandy Exploration",
+        activities: [
+          "Visit Temple of the Tooth for morning Pooja ceremony",
+          "Visit Gem Museum to learn about Sri Lankan gemstones",
+          "Tour Royal Botanical Gardens (147 acres)",
+          "View 4,000+ species of plants",
+          "Walk through Spice Garden and Orchid House",
+          "Stroll along five Palm Avenues"
+        ],
+        accommodation: "Senani Hotel, Kandy"
+      },
+      {
+        day: 6,
+        title: "Kandy to Nuwara Eliya",
+        activities: [
+          "Visit Tea Plantation and Tea Factory in Pussallawa",
+          "Learn about Sri Lanka's tea industry since 1867",
+          "Tea plucking experience with local workers",
+          "Stop at famous Ramboda Waterfalls",
+          "Walking tour of 'Little England'",
+          "Explore Victorian Park and colonial architecture"
+        ],
+        accommodation: "Blue Meadows, Nuwara Eliya"
+      },
+      {
+        day: 7,
+        title: "Nuwara Eliya to Colombo",
+        activities: [
+          "Depart for Colombo via Kitulgala",
+          "City tour including Fort and Pettah areas",
+          "Visit Sea Street (Goldsmith's quarters)",
+          "Hindu Temple with stone carvings",
+          "Dutch Church of Wolfendhaal (1749)",
+          "BMICH and Independence Square"
+        ],
+        accommodation: "Fairway Colombo"
+      },
+      {
+        day: 8,
+        title: "Departure",
+        activities: [
+          "Enjoy breakfast and check out",
+          "Private transfer to Bandaranaike International Airport"
+        ]
+      }
+    ],
+    pricing: [
+      {
+        category: "Per Person Sharing (Double Room)",
+        pax3: 781,
+        pax8: 524,
+        pax16: 567,
+        pax32: 531
+      },
+      {
+        category: "Per Person Sharing (Triple Room)",
+        pax3: 754,
+        pax8: 497,
+        pax16: 539,
+        pax32: 504
+      },
+      {
+        category: "Single Room Supplement",
+        pax3: 202.5,
+        pax8: 202.5,
+        pax16: 202.5,
+        pax32: 202.5
+      }
+    ],
+    hotels: [
+      { destination: "Negombo", hotel: "Amagi Arya", supplement: "No Supplement" },
+      { destination: "Dambulla", hotel: "Lario Resort", supplement: "No Supplement" },
+      { destination: "Kandy", hotel: "Senani Hotel", supplement: "No Supplement" },
+      { destination: "Nuwara Eliya", hotel: "Blue Meadows", supplement: "No Supplement" },
+      { destination: "Colombo", hotel: "Fairway Colombo", supplement: "Superior Balcony: $15 per night" }
+    ],
+    entranceFees: [
+      { attraction: "Negombo Lagoon Safari", fee: 30 },
+      { attraction: "Millennium Elephant Foundation", fee: 15 },
+      { attraction: "Pidurangala Rock", fee: 15 },
+      { attraction: "Kalawewa National Park", fee: 35 },
+      { attraction: "Hiriwadunna Village Trek", fee: 25 },
+      { attraction: "Temple of the Tooth", fee: 15 },
+      { attraction: "Cultural Dance Show (Optional)", fee: 10 },
+      { attraction: "Royal Botanical Gardens", fee: 10 },
+      { attraction: "Tea Factory Visit", fee: 5 },
+      { attraction: "Colombo Museum (Optional)", fee: 15 }
+    ],
+    inclusions: [
+      "Meet & greet services at airport",
+      "Air-conditioned vehicle transportation throughout",
+      "Hotel accommodation on Half Board basis (Dinner & Breakfast)",
+      "English-speaking chauffeur guide (up to 6 pax) or National guide (7+ pax)",
+      "2 x 500ml mineral water bottles per guest daily",
+      "Kalawewa National Park jeep hire",
+      "All government taxes"
+    ],
+    exclusions: [
+      "Lunch throughout the tour",
+      "Camera and video permits",
+      "Entrance fees (USD 150-175 per person)",
+      "Beverages (alcoholic and non-alcoholic)",
+      "International airfare and visa fees",
+      "Additional visits not mentioned",
+      "Early check-in/late check-out charges",
+      "Tips and gratuities",
+      "Travel insurance",
+      "Personal expenses"
+    ]
+  },
+
+  "ramayana-luxury": {
+    title: "Ramayana Highlights Luxury Tour",
+    duration: "8 Days / 7 Nights",
+    description: "Embark on a spiritual and cultural journey through the legendary Ramayana trail in Sri Lanka. Follow the footsteps of Lord Rama, Sita, and Hanuman as you visit sacred temples and mythological sites deeply connected to the great Indian epic with luxury 4-5 star accommodations.",
+    highlights: [
+      "Sacred Temples: Munneswaram, Koneshwaram, Seetha Amman, Bhakta Hanuman",
+      "Ramayana Sites: Seetha Kotuwa, Gayathri Peedam with divine connections",
+      "UNESCO Heritage: Sigiriya Rock Fortress, Dambulla Cave Temple, Temple of the Tooth",
+      "Luxury Hotels: Premium 4-5 star accommodations throughout",
+      "Natural Beauty: Madu River mangrove safari",
+      "Expert Guidance: Knowledgeable guides sharing Ramayana stories"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival to Chilaw to Dambulla",
+        activities: [
+          "Airport meet & greet by Lavish Travels representative",
+          "Transfer to Chilaw visiting Munneswaram Temple",
+          "Ancient Shiva temple where Rama sought remedy for Brahmaasthi Dosham",
+          "Continue to Dambulla through scenic countryside"
+        ],
+        accommodation: "Amaya Lake Resort, Dambulla"
+      },
+      {
+        day: 2,
+        title: "Dambulla to Trincomalee Day Trip",
+        activities: [
+          "Morning transfer to Trincomalee",
+          "Koneshwaram Temple - sacred Hindu temple with Ramayana connections",
+          "Explore ancient architectural marvel with thousand-pillar hall heritage",
+          "Return to Dambulla in evening"
+        ],
+        accommodation: "Amaya Lake Resort, Dambulla"
+      },
+      {
+        day: 3,
+        title: "Sigiriya & Dambulla to Kandy",
+        activities: [
+          "Early morning climb of Sigiriya Rock Fortress (UNESCO)",
+          "Explore Lion Rock with ancient frescoes and water gardens",
+          "Visit Dambulla Cave Temple - 1st century BC rock temple complex",
+          "Transfer to Kandy via scenic mountain roads",
+          "Evening visit to Temple of the Tooth Relic"
+        ],
+        accommodation: "Amaya Hills Resort, Kandy"
+      },
+      {
+        day: 4,
+        title: "Kandy to Hasalaka Day Trip",
+        activities: [
+          "Morning excursion to Hasalaka",
+          "Seetha Kotuwa - fort where Sita was kept by Queen Mandothari",
+          "Explore archaeological remains and mythological significance",
+          "Return to Kandy for brief city tour"
+        ],
+        accommodation: "Amaya Hills Resort, Kandy"
+      },
+      {
+        day: 5,
+        title: "Kandy to Nuwara Eliya",
+        activities: [
+          "Transfer through tea plantation landscapes",
+          "Bhakta Hanuman Temple - 16ft black granite statue",
+          "Visit Gayathri Peedam where Meghanath performed penance",
+          "Check-in to colonial-era accommodation"
+        ],
+        accommodation: "The Grand Hotel, Nuwara Eliya"
+      },
+      {
+        day: 6,
+        title: "Nuwara Eliya to Beruwela",
+        activities: [
+          "Morning visit to Seetha Amman Temple",
+          "Explore sacred stream where Sita bathed",
+          "See Hanuman's footprints by riverside",
+          "Scenic drive to south coast through mountain passes",
+          "Afternoon arrival at beach resort"
+        ],
+        accommodation: "Cinnamon Bey Beruwela"
+      },
+      {
+        day: 7,
+        title: "Madu River Safari",
+        activities: [
+          "Morning boat excursion on Madu River wetlands",
+          "Explore mangrove ecosystems and biodiversity",
+          "Visit Kothduwa Temple on isolated island",
+          "Return to resort for beach relaxation"
+        ],
+        accommodation: "Cinnamon Bey Beruwela"
+      },
+      {
+        day: 8,
+        title: "Departure",
+        activities: [
+          "Leisure breakfast at resort",
+          "Transfer to Bandaranaike International Airport",
+          "Departure assistance"
+        ]
+      }
+    ],
+    pricing: [
+      {
+        category: "Per Person Sharing (Double Room)",
+        pax3: 1182,
+        pax8: 1539,
+        pax16: 1490,
+        pax32: 1493
+      },
+      {
+        category: "Per Person Sharing (Triple Room)",
+        pax3: 1087,
+        pax8: 964,
+        pax16: 915,
+        pax32: 918
+      },
+      {
+        category: "Single Room Supplement",
+        pax3: 480,
+        pax8: 480,
+        pax16: 418,
+        pax32: 480
+      }
+    ],
+    hotels: [
+      { destination: "Dambulla", hotel: "Amaya Lake", supplement: "No Supplement" },
+      { destination: "Kandy", hotel: "Amaya Hills", supplement: "Premium Deluxe: $40 per night" },
+      { destination: "Nuwara Eliya", hotel: "The Grand Hotel", supplement: "Queen Elizabeth Room: $175 per night" },
+      { destination: "Beruwela", hotel: "Cinnamon Bay", supplement: "No Supplement" }
+    ],
+    entranceFees: [
+      { attraction: "Munneswaram Temple", fee: 3 },
+      { attraction: "Koneshwaram Temple", fee: 5 },
+      { attraction: "Sigiriya Rock Fortress", fee: 32 },
+      { attraction: "Dambulla Cave Temple", fee: 15 },
+      { attraction: "Temple of the Tooth", fee: 15 },
+      { attraction: "Seetha Kotuwa", fee: 8 },
+      { attraction: "Bhakta Hanuman Temple", fee: 3 },
+      { attraction: "Gayathri Peedam", fee: 3 },
+      { attraction: "Seetha Amman Temple", fee: 5 },
+      { attraction: "Madu River Safari", fee: 15 }
+    ],
+    inclusions: [
+      "Meet & Greet services at airport",
+      "Air-conditioned transportation throughout",
+      "Premium 4-5 star hotel accommodation on Half Board basis",
+      "Professional English-speaking chauffeur guide",
+      "Mineral Water - 2 bottles (500ml) per guest daily",
+      "All Government Taxes",
+      "Lunch throughout the tour",
+      "Entrance fees to attractions"
+    ],
+    exclusions: [
+      "Camera/video permits",
+      "Beverages and personal expenses",
+      "International airfare and visa fees",
+      "Travel insurance",
+      "Early check-in/late check-out charges"
+    ]
   }
 };
