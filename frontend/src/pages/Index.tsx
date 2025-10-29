@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { TourPackage } from "@/components/TourPackage";
@@ -9,6 +9,7 @@ import ella from "@/assets/destination-ella.jpg";
 import galle from "@/assets/destination-galle.jpg";
 import sigiriya from "@/assets/destination-sigiriya.jpg";
 import { toast } from "sonner";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface TourPackageData {
   title: string;
@@ -55,6 +56,21 @@ const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [tourPackagesData, setTourPackagesData] = useState<TourPackagesDataType>({});
   const [loading, setLoading] = useState(true);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  const destinations = [
+    {img:sigiriya, title:'Sigiriya & Dambulla', desc:'Iconic Lion Rock fortress with ancient frescoes, 1st century BC cave temples with 150+ Buddha statues.'},
+    {img:ella, title:'Kandy - Cultural Capital', desc:'Sacred Temple of the Tooth, Royal Botanical Gardens, colonial architecture, traditional Kandyan dance.'},
+    {img:galle, title:'Nuwara Eliya - Little England', desc:'Cool climate hill station, tea plantations and factories, Horton Plains World\'s End, Victorian architecture.'},
+    {img:heroImage, title:'Ancient Cities', desc:'Anuradhapura and Polonnaruwa UNESCO sites, 2,250-year-old sacred Bo tree, ancient stupas and palaces.'},
+    {img:ella, title:'Ella & Hill Country', desc:'Scenic train journeys through tea estates, Little Adam\'s Peak trek, Nine Arch Bridge, mountain views.'},
+    {img:galle, title:'Wildlife & National Parks', desc:'Yala leopard safari, Wilpattu elephants, Udawalawe wildlife, Sinharaja rainforest, whale watching.'},
+    {img:sigiriya, title:'Ramayana Trail', desc:'Sacred Hindu temples: Munneswaram, Koneshwaram, Seetha Amman, Bhakta Hanuman with spiritual significance.'},
+    {img:galle, title:'Southern Coast', desc:'Historic Galle Fort, Unawatuna and Mirissa beaches, turtle hatcheries, Madu River mangroves, water sports.'},
+    {img:heroImage, title:'Trincomalee & East Coast', desc:'Ancient Koneshwaram Temple, pristine beaches, Pigeon Island, snorkeling, diving, less-crowded coastal paradise.'}
+  ];
 
   useEffect(() => {
     const loadTourPackages = async () => {
@@ -72,6 +88,37 @@ const Index = () => {
     loadTourPackages();
   }, []);
 
+  const nextSlide = () => {
+    setCurrentSlide((prev) => {
+      const maxSlide = destinations.length - 1;
+      return prev >= maxSlide ? 0 : prev + 1;
+    });
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => {
+      const maxSlide = destinations.length - 1;
+      return prev <= 0 ? maxSlide : prev - 1;
+    });
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+
+  // Auto-play slider
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => {
+        const maxSlide = destinations.length - 1;
+        return prev >= maxSlide ? 0 : prev + 1;
+      });
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(timer);
+  }, [destinations.length]);
+
+
   const handleCTA = () => {
     toast("Thanks! A travel specialist will reach out shortly.");
   };
@@ -81,6 +128,26 @@ const Index = () => {
     setIsModalOpen(true);
   };
 
+  // Tour categories mapping
+  const tourCategories: { [key: string]: string } = {
+    'classical-journey': 'cultural',
+    'classical-explorer': 'cultural',
+    'classical-gateway': 'cultural',
+    'wonderful-journey': 'cultural',
+    'ramayana-trails': 'spiritual',
+    'ramayana-luxury': 'spiritual',
+    'ramayana-normal': 'spiritual',
+    'ramayana-premium': 'spiritual',
+    'southern-highlight': 'wildlife'
+  };
+
+  const categories = [
+    { id: 'all', name: 'All Tours' },
+    { id: 'cultural', name: 'Cultural & Heritage' },
+    { id: 'spiritual', name: 'Spiritual & Ramayana' },
+    { id: 'wildlife', name: 'Wildlife & Nature' }
+  ];
+
   // Convert JSON data to array format for rendering
   const tourPackages = Object.entries(tourPackagesData).map(([key, data]: [string, TourPackageData]) => ({
     key,
@@ -89,10 +156,22 @@ const Index = () => {
     description: data.description,
     highlights: data.highlights,
     price: data.price,
+    category: tourCategories[key] || 'cultural',
     image: key === 'classical-journey' ? sigiriya :
            key === 'classical-explorer' ? ella :
            key === 'southern-highlight' ? galle : heroImage
   }));
+
+  // Filter packages by category
+  const filteredPackages = selectedCategory === 'all'
+    ? tourPackages
+    : tourPackages.filter(pkg => pkg.category === selectedCategory);
+
+  // Get package count per category
+  const getCategoryCount = (categoryId: string) => {
+    if (categoryId === 'all') return tourPackages.length;
+    return tourPackages.filter(pkg => pkg.category === categoryId).length;
+  };
 
   if (loading) {
     return (
@@ -162,26 +241,70 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Destinations */}
+        {/* Destinations Slider */}
         <section id="destinations" className="container py-16 md:py-24">
-          <header className="mb-8 md:mb-12">
-            <h2 className="font-display text-3xl md:text-4xl">Sri Lanka Highlights</h2>
-            <p className="text-muted-foreground mt-2">Discover ancient wonders, wildlife safaris, spiritual trails, hill country tea plantations, and pristine coastal escapes.</p>
+          <header className="mb-8 md:mb-12 text-center">
+            <h2 className="font-display text-3xl md:text-4xl">Discover Sri Lanka</h2>
+            <p className="text-muted-foreground mt-2 max-w-3xl mx-auto">
+              Explore the pearl of the Indian Ocean - from ancient kingdoms and sacred temples to misty mountains, wildlife reserves, and pristine beaches.
+            </p>
           </header>
-          <div className="grid gap-6 md:grid-cols-3">
-            {[
-              {img:sigiriya, title:'Cultural Triangle & Ancient Cities', desc:'Sigiriya Rock Fortress, Dambulla caves, Anuradhapura & Polonnaruwa UNESCO sites, Ramayana spiritual trail.'},
-              {img:ella, title:'Hill Country & Tea Plantations', desc:'Nuwara Eliya\'s colonial charm, Ella\'s scenic railways, Horton Plains World\'s End, Kandy\'s Temple of the Tooth.'},
-              {img:galle, title:'Wildlife & Southern Coast', desc:'Yala leopard safari, whale watching in Mirissa, Galle Fort heritage, Sinharaja rainforest, golden beaches.'}
-            ].map((d) => (
-              <article key={d.title} className="rounded-lg border bg-card shadow-elegant overflow-hidden hover-scale">
-                <img src={d.img} alt={`${d.title} luxury travel`} loading="lazy" className="h-48 w-full object-cover" />
-                <div className="p-5">
-                  <h3 className="font-display text-xl">{d.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-1">{d.desc}</p>
-                </div>
-              </article>
-            ))}
+
+          <div className="relative">
+            {/* Slider Container */}
+            <div className="overflow-hidden" ref={sliderRef}>
+              <div
+                className="flex transition-transform duration-700 ease-in-out"
+                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              >
+                {destinations.map((d, index) => (
+                  <article
+                    key={index}
+                    className="flex-shrink-0 w-full px-3 rounded-lg"
+                  >
+                    <div className="border bg-card shadow-elegant overflow-hidden hover-scale rounded-lg h-full">
+                      <img src={d.img} alt={`${d.title} luxury travel`} loading="lazy" className="h-64 md:h-72 lg:h-80 w-full object-cover" />
+                      <div className="p-6 md:p-8">
+                        <h3 className="font-display text-2xl md:text-3xl">{d.title}</h3>
+                        <p className="text-base md:text-lg text-muted-foreground mt-2 md:mt-3">{d.desc}</p>
+                      </div>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+
+            {/* Navigation Arrows */}
+            <button
+              onClick={prevSlide}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 bg-background/90 hover:bg-background border rounded-full p-3 md:p-4 shadow-lg transition-all hover:scale-110 z-10"
+              aria-label="Previous slide"
+            >
+              <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 bg-background/90 hover:bg-background border rounded-full p-3 md:p-4 shadow-lg transition-all hover:scale-110 z-10"
+              aria-label="Next slide"
+            >
+              <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
+            </button>
+
+            {/* Dots Indicator */}
+            <div className="flex justify-center gap-2 mt-8">
+              {destinations.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === currentSlide
+                      ? 'bg-primary w-8'
+                      : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </section>
 
@@ -193,8 +316,34 @@ const Index = () => {
               Expertly crafted journeys that showcase Sri Lanka's finest destinations, cultural heritage, and natural wonders.
             </p>
           </header>
+
+          {/* Category Filter */}
+          <div className="flex flex-wrap justify-center gap-3 mb-10">
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setSelectedCategory(category.id)}
+                className={`px-6 py-3 rounded-full border-2 font-medium transition-all hover:scale-105 flex items-center gap-2 ${
+                  selectedCategory === category.id
+                    ? 'bg-primary text-primary-foreground border-primary shadow-lg'
+                    : 'bg-card border-border hover:border-primary/50'
+                }`}
+              >
+                <span>{category.name}</span>
+                <span className={`text-xs px-2 py-0.5 rounded-full ${
+                  selectedCategory === category.id
+                    ? 'bg-primary-foreground/20'
+                    : 'bg-muted'
+                }`}>
+                  {getCategoryCount(category.id)}
+                </span>
+              </button>
+            ))}
+          </div>
+
+          {/* Tour Package Grid */}
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
-            {tourPackages.map((pkg, index) => (
+            {filteredPackages.map((pkg, index) => (
               <TourPackage
                 key={index}
                 title={pkg.title}
@@ -208,6 +357,13 @@ const Index = () => {
               />
             ))}
           </div>
+
+          {/* No results message */}
+          {filteredPackages.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-muted-foreground text-lg">No packages found in this category.</p>
+            </div>
+          )}
         </section>
 
         {/* Services */}
