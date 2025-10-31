@@ -8,6 +8,7 @@ import heroImage from "@/assets/hero-lavish.jpg";
 import ella from "@/assets/destination-ella.jpg";
 import galle from "@/assets/destination-galle.jpg";
 import sigiriya from "@/assets/destination-sigiriya.jpg";
+import nuwaraEliya from "@/assets/nuwara_eliya.jpg";
 import { toast } from "sonner";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -63,7 +64,7 @@ const Index = () => {
   const destinations = [
     {img:sigiriya, title:'Sigiriya & Dambulla', desc:'Iconic Lion Rock fortress with ancient frescoes, 1st century BC cave temples with 150+ Buddha statues.'},
     {img:ella, title:'Kandy - Cultural Capital', desc:'Sacred Temple of the Tooth, Royal Botanical Gardens, colonial architecture, traditional Kandyan dance.'},
-    {img:galle, title:'Nuwara Eliya - Little England', desc:'Cool climate hill station, tea plantations and factories, Horton Plains World\'s End, Victorian architecture.'},
+    {img:nuwaraEliya, title:'Nuwara Eliya - Little England', desc:'Cool climate hill station, tea plantations and factories, Horton Plains World\'s End, Victorian architecture.'},
     {img:heroImage, title:'Ancient Cities', desc:'Anuradhapura and Polonnaruwa UNESCO sites, 2,250-year-old sacred Bo tree, ancient stupas and palaces.'},
     {img:ella, title:'Ella & Hill Country', desc:'Scenic train journeys through tea estates, Little Adam\'s Peak trek, Nine Arch Bridge, mountain views.'},
     {img:galle, title:'Wildlife & National Parks', desc:'Yala leopard safari, Wilpattu elephants, Udawalawe wildlife, Sinharaja rainforest, whale watching.'},
@@ -250,27 +251,68 @@ const Index = () => {
             </p>
           </header>
 
-          <div className="relative">
+          <div className="relative py-12">
             {/* Slider Container */}
-            <div className="overflow-hidden" ref={sliderRef}>
-              <div
-                className="flex transition-transform duration-700 ease-in-out"
-                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-              >
-                {destinations.map((d, index) => (
-                  <article
-                    key={index}
-                    className="flex-shrink-0 w-full px-3 rounded-lg"
-                  >
-                    <div className="border bg-card shadow-elegant overflow-hidden hover-scale rounded-lg h-full">
-                      <img src={d.img} alt={`${d.title} luxury travel`} loading="lazy" className="h-64 md:h-72 lg:h-80 w-full object-cover" />
-                      <div className="p-6 md:p-8">
-                        <h3 className="font-display text-2xl md:text-3xl">{d.title}</h3>
-                        <p className="text-base md:text-lg text-muted-foreground mt-2 md:mt-3">{d.desc}</p>
+            <div className="overflow-visible" ref={sliderRef} style={{ perspective: '2000px', perspectiveOrigin: 'center center' }}>
+              <div className="relative h-[650px] md:h-[700px] lg:h-[750px] flex items-center justify-center" style={{ transformStyle: 'preserve-3d' }}>
+                {/* Show previous, current, and next slides in circular arrangement */}
+                {[-1, 0, 1].map((offset) => {
+                  const index = (currentSlide + offset + destinations.length) % destinations.length;
+                  const d = destinations[index];
+                  const isCenter = offset === 0;
+
+                  // Circular carousel positioning
+                  const rotationAngle = offset * 40; // Degrees of rotation
+                  const radius = 550; // Radius of the circle - increased for wider feel
+                  const translateX = Math.sin((rotationAngle * Math.PI) / 180) * radius;
+                  const translateZ = Math.cos((rotationAngle * Math.PI) / 180) * radius - radius;
+
+                  return (
+                    <article
+                      key={`${index}-${offset}`}
+                      className={`absolute transition-all duration-1000 ease-out ${
+                        isCenter
+                          ? 'w-80 md:w-96 lg:w-[450px] opacity-100 z-20'
+                          : 'w-64 md:w-80 lg:w-96 opacity-60 hover:opacity-80'
+                      }`}
+                      style={{
+                        transform: `translateX(${translateX}px) translateZ(${translateZ}px) rotateY(${-rotationAngle}deg) scale(${isCenter ? '1' : '0.85'})`,
+                        transformStyle: 'preserve-3d',
+                        transitionProperty: 'all',
+                        transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+                        left: '50%',
+                        top: '50%',
+                        marginLeft: isCenter ? '-225px' : offset < 0 ? '-200px' : '-180px',
+                        marginTop: '-280px',
+                      }}
+                    >
+                      <div className={`bg-card overflow-hidden rounded-xl h-full transition-all duration-1000 ${
+                        isCenter
+                          ? 'shadow-2xl ring-2 ring-primary/40 shadow-primary/10'
+                          : 'shadow-lg'
+                      }`}
+                      style={{ backfaceVisibility: 'hidden' }}
+                      >
+                        <img
+                          src={d.img}
+                          alt={`${d.title} luxury travel`}
+                          loading="lazy"
+                          className="w-full object-cover aspect-[3/4] transition-transform duration-1000"
+                        />
+                        <div className={`p-4 transition-all duration-700 ${isCenter ? 'md:p-6' : 'md:p-4'}`}>
+                          <h3 className={`font-display transition-all duration-700 ${
+                            isCenter ? 'text-xl md:text-2xl' : 'text-base md:text-lg'
+                          }`}>{d.title}</h3>
+                          <div className={`overflow-hidden transition-all duration-700 ${
+                            isCenter ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0 mt-0'
+                          }`}>
+                            <p className="text-sm md:text-base text-muted-foreground">{d.desc}</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                ))}
+                    </article>
+                  );
+                })}
               </div>
             </div>
 

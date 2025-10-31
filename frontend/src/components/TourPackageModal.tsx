@@ -116,38 +116,6 @@ export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: To
             </div>
           </div>
 
-          {/* Pricing */}
-          <div className="bg-gradient-to-r from-primary/5 to-accent/5 border rounded-xl p-6">
-            <h3 className="font-semibold mb-4 text-lg flex items-center gap-2">
-              <Users className="w-5 h-5 text-primary" />
-              Pricing (Half Board Basis)
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-0 rounded-lg overflow-hidden shadow-sm">
-                <thead>
-                  <tr className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground">
-                    <th className="text-left p-4 font-semibold">Category</th>
-                    <th className="text-center p-4 font-semibold">3 PAX</th>
-                    <th className="text-center p-4 font-semibold">8 PAX</th>
-                    <th className="text-center p-4 font-semibold">16 PAX</th>
-                    <th className="text-center p-4 font-semibold">32+ PAX</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {tourData.pricing.map((price, index) => (
-                    <tr key={index} className={`${index % 2 === 0 ? 'bg-secondary/20' : 'bg-background'} hover:bg-secondary/40 transition-colors`}>
-                      <td className="p-4 font-medium text-foreground">{price.category}</td>
-                      <td className="p-4 text-center font-bold text-primary">${price.pax3}</td>
-                      <td className="p-4 text-center font-bold text-primary">${price.pax8}</td>
-                      <td className="p-4 text-center font-bold text-primary">${price.pax16}</td>
-                      <td className="p-4 text-center font-bold text-primary">${price.pax32}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
           {/* Hotels */}
           <div>
             <h3 className="font-semibold mb-4 text-lg flex items-center gap-2">
@@ -167,22 +135,6 @@ export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: To
                       <p className="text-xs text-muted-foreground ml-4 italic">{hotel.supplement}</p>
                     )}
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Entrance Fees */}
-          <div>
-            <h3 className="font-semibold mb-4 text-lg flex items-center gap-2">
-              <Star className="w-5 h-5 text-yellow-500" />
-              Entrance Fees & Activities
-            </h3>
-            <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
-              {tourData.entranceFees.map((fee, index) => (
-                <div key={index} className="flex justify-between items-center p-3 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg hover:shadow-sm transition-shadow">
-                  <span className="text-sm font-medium text-foreground">{fee.attraction}</span>
-                  <span className="font-bold text-yellow-600 dark:text-yellow-400">${fee.fee}</span>
                 </div>
               ))}
             </div>
