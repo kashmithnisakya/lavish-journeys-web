@@ -4,7 +4,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { TourPackage } from "@/components/TourPackage";
 import { TourPackageModal } from "@/components/TourPackageModal";
 import SeoHead from "@/components/SeoHead";
-import heroImage from "@/assets/hero-lavish.jpg";
+import heroImage from "@/assets/cover.jpg";
 import ella from "@/assets/ella.jpg";
 import sigiriya from "@/assets/sigiriya.jpg";
 import nuwaraEliya from "@/assets/nuwara_eliya.jpg";
