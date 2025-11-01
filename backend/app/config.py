@@ -1,20 +1,19 @@
 from pydantic_settings import BaseSettings
 from typing import List
-import os
 
 
 class Settings(BaseSettings):
     """
-    Application settings loaded from environment variables
+    Application settings
+    SendGrid settings are required from environment variables (.env file)
+    All other settings are hardcoded with default values
     """
-    # SendGrid Configuration
+    # SendGrid Configuration - REQUIRED from .env file
     SENDGRID_API_KEY: str
+    SENDGRID_FROM_EMAIL: str
+    SUPPORT_EMAIL: str
 
-    # Email Configuration
-    FROM_EMAIL: str = "noreply@lavishtravelsandtours.online"
-    SUPPORT_EMAIL: str = "support@lavishtravelsandtours.online"
-
-    # CORS Configuration
+    # CORS Configuration - Allow all origins
     ALLOWED_ORIGINS: List[str] = ["*"]
 
     # Application Configuration

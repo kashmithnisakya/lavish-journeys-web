@@ -1,10 +1,6 @@
-import os
 import logging
 from pathlib import Path
-from typing import Optional
-
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+import httpx
 
 from app.config import settings
 
@@ -16,9 +12,61 @@ class EmailService:
 
     def __init__(self):
         """Initialize the email service with SendGrid API key"""
-        self.sg = SendGridAPIClient(api_key=settings.SENDGRID_API_KEY)
-        self.from_email = settings.FROM_EMAIL
-        self.support_email = settings.SUPPORT_EMAIL
+        self.api_key = settings.SENDGRID_API_KEY
+        # Debug: Log first 20 chars of API key to verify which one is loaded
+        logger.info(f"EmailService initialized with API key: {self.api_key[:20]}...")
+        logger.info(f"Using from email: {settings.SENDGRID_FROM_EMAIL}")
+
+    async def _send_email_raw(self, to_email: str, subject: str, html_content: str) -> bool:
+        """
+        Send email using direct HTTP request to SendGrid API (like curl)
+        This bypasses the SendGrid Mail helper and uses raw API calls
+
+        Args:
+            to_email: Recipient email address
+            subject: Email subject
+            html_content: HTML content of the email
+
+        Returns:
+            bool: True if email sent successfully, False otherwise
+        """
+        try:
+            url = "https://api.sendgrid.com/v3/mail/send"
+            headers = {
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json"
+            }
+
+            # Structure matches the working curl command
+            payload = {
+                "personalizations": [
+                    {
+                        "to": [{"email": to_email}]
+                    }
+                ],
+                "from": {"email": settings.SENDGRID_FROM_EMAIL},
+                "subject": subject,
+                "content": [
+                    {
+                        "type": "text/html",
+                        "value": html_content
+                    }
+                ]
+            }
+
+            async with httpx.AsyncClient() as client:
+                response = await client.post(url, json=payload, headers=headers, timeout=10.0)
+
+                if response.status_code == 202:
+                    logger.info(f"Email sent successfully via raw API to {to_email}")
+                    return True
+                else:
+                    logger.error(f"Failed to send email via raw API. Status: {response.status_code}, Body: {response.text}")
+                    return False
+
+        except Exception as e:
+            logger.error(f"Error sending email via raw API: {str(e)}", exc_info=True)
+            return False
 
     async def send_support_email(
         self,
@@ -62,19 +110,25 @@ class EmailService:
 
             support_email_content = self._replace_placeholders(template_content, placeholders)
 
-            message = Mail(
-                from_email=self.from_email,
-                to_emails=self.support_email,
-                subject=f'🚨 New Inquiry: {inquiry_type} - {user_name}',
+            # Send email using raw API (matches curl command that works)
+            logger.info(f"Sending support email to {settings.SUPPORT_EMAIL}")
+            success = await self._send_email_raw(
+                to_email=settings.SUPPORT_EMAIL,
+                subject=f'New Inquiry: {inquiry_type} - {user_name}',
                 html_content=support_email_content
             )
 
-            response = self.sg.send(message)
-            logger.info(f"Support email sent successfully. Status code: {response.status_code}")
-            return response.status_code == 202
+            if success:
+                logger.info(f"Support email sent successfully")
+            return success
 
         except Exception as e:
+            # Log detailed error information for debugging
             logger.error(f"Error sending support email: {str(e)}", exc_info=True)
+            if hasattr(e, 'body'):
+                logger.error(f"SendGrid error body: {e.body}")
+            if hasattr(e, 'to_dict'):
+                logger.error(f"SendGrid error details: {e.to_dict}")
             return False
 
     async def send_user_confirmation_email(
@@ -113,19 +167,25 @@ class EmailService:
 
             user_email_content = self._replace_placeholders(template_content, placeholders)
 
-            message = Mail(
-                from_email=self.from_email,
-                to_emails=user_email,
-                subject=f'✈️ Thank you for your inquiry - Lavish Travels & Tours',
+            # Send email using raw API (matches curl command that works)
+            logger.info(f"Sending user confirmation email to {user_email}")
+            success = await self._send_email_raw(
+                to_email=user_email,
+                subject='Thank you for your inquiry - Lavish Travels & Tours',
                 html_content=user_email_content
             )
 
-            response = self.sg.send(message)
-            logger.info(f"User confirmation email sent successfully. Status code: {response.status_code}")
-            return response.status_code == 202
+            if success:
+                logger.info(f"User confirmation email sent successfully")
+            return success
 
         except Exception as e:
+            # Log detailed error information for debugging
             logger.error(f"Error sending user confirmation email: {str(e)}", exc_info=True)
+            if hasattr(e, 'body'):
+                logger.error(f"SendGrid error body: {e.body}")
+            if hasattr(e, 'to_dict'):
+                logger.error(f"SendGrid error details: {e.to_dict}")
             return False
 
     def _load_email_template(self, template_name: str) -> str:
