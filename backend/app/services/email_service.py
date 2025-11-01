@@ -1,6 +1,8 @@
 import logging
 from pathlib import Path
-import httpx
+import asyncio
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail, From, To, Subject, HtmlContent
 
 from app.config import settings
 
@@ -13,14 +15,14 @@ class EmailService:
     def __init__(self):
         """Initialize the email service with SendGrid API key"""
         self.api_key = settings.SENDGRID_API_KEY
+        self.sendgrid_client = SendGridAPIClient(self.api_key)
         # Debug: Log first 20 chars of API key to verify which one is loaded
         logger.info(f"EmailService initialized with API key: {self.api_key[:20]}...")
         logger.info(f"Using from email: {settings.SENDGRID_FROM_EMAIL}")
 
-    async def _send_email_raw(self, to_email: str, subject: str, html_content: str) -> bool:
+    def _send_email_sync(self, to_email: str, subject: str, html_content: str) -> bool:
         """
-        Send email using direct HTTP request to SendGrid API (like curl)
-        This bypasses the SendGrid Mail helper and uses raw API calls
+        Send email using SendGrid SDK (synchronous)
 
         Args:
             to_email: Recipient email address
@@ -31,42 +33,43 @@ class EmailService:
             bool: True if email sent successfully, False otherwise
         """
         try:
-            url = "https://api.sendgrid.com/v3/mail/send"
-            headers = {
-                "Authorization": f"Bearer {self.api_key}",
-                "Content-Type": "application/json"
-            }
+            # Create Mail object using SendGrid SDK
+            message = Mail(
+                from_email=From(settings.SENDGRID_FROM_EMAIL),
+                to_emails=To(to_email),
+                subject=Subject(subject),
+                html_content=HtmlContent(html_content)
+            )
 
-            # Structure matches the working curl command
-            payload = {
-                "personalizations": [
-                    {
-                        "to": [{"email": to_email}]
-                    }
-                ],
-                "from": {"email": settings.SENDGRID_FROM_EMAIL},
-                "subject": subject,
-                "content": [
-                    {
-                        "type": "text/html",
-                        "value": html_content
-                    }
-                ]
-            }
+            # Send the email using SendGrid client
+            response = self.sendgrid_client.send(message)
 
-            async with httpx.AsyncClient() as client:
-                response = await client.post(url, json=payload, headers=headers, timeout=10.0)
-
-                if response.status_code == 202:
-                    logger.info(f"Email sent successfully via raw API to {to_email}")
-                    return True
-                else:
-                    logger.error(f"Failed to send email via raw API. Status: {response.status_code}, Body: {response.text}")
-                    return False
+            # SendGrid returns 202 for successful queuing
+            if response.status_code == 202:
+                logger.info(f"Email sent successfully via SendGrid SDK to {to_email}")
+                return True
+            else:
+                logger.error(f"Failed to send email via SendGrid SDK. Status: {response.status_code}, Body: {response.body}")
+                return False
 
         except Exception as e:
-            logger.error(f"Error sending email via raw API: {str(e)}", exc_info=True)
+            logger.error(f"Error sending email via SendGrid SDK: {str(e)}", exc_info=True)
             return False
+
+    async def _send_email(self, to_email: str, subject: str, html_content: str) -> bool:
+        """
+        Send email using SendGrid SDK (async wrapper)
+
+        Args:
+            to_email: Recipient email address
+            subject: Email subject
+            html_content: HTML content of the email
+
+        Returns:
+            bool: True if email sent successfully, False otherwise
+        """
+        # Run the synchronous SendGrid SDK call in a thread pool
+        return await asyncio.to_thread(self._send_email_sync, to_email, subject, html_content)
 
     async def send_support_email(
         self,
@@ -110,9 +113,9 @@ class EmailService:
 
             support_email_content = self._replace_placeholders(template_content, placeholders)
 
-            # Send email using raw API (matches curl command that works)
+            # Send email using SendGrid SDK
             logger.info(f"Sending support email to {settings.SUPPORT_EMAIL}")
-            success = await self._send_email_raw(
+            success = await self._send_email(
                 to_email=settings.SUPPORT_EMAIL,
                 subject=f'New Inquiry: {inquiry_type} - {user_name}',
                 html_content=support_email_content
@@ -167,9 +170,9 @@ class EmailService:
 
             user_email_content = self._replace_placeholders(template_content, placeholders)
 
-            # Send email using raw API (matches curl command that works)
+            # Send email using SendGrid SDK
             logger.info(f"Sending user confirmation email to {user_email}")
-            success = await self._send_email_raw(
+            success = await self._send_email(
                 to_email=user_email,
                 subject='Thank you for your inquiry - Lavish Travels & Tours',
                 html_content=user_email_content
