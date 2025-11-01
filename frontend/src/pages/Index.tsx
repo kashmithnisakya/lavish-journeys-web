@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { TourPackage } from "@/components/TourPackage";
 import { TourPackageModal } from "@/components/TourPackageModal";
+import { InquiryModal } from "@/components/InquiryModal";
 import SeoHead from "@/components/SeoHead";
 import heroImage from "@/assets/cover.jpg";
 import ella from "@/assets/ella.jpg";
@@ -62,6 +63,8 @@ interface TourPackagesDataType {
 const Index = () => {
   const [selectedTour, setSelectedTour] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isInquiryModalOpen, setIsInquiryModalOpen] = useState(false);
+  const [inquiryTourInfo, setInquiryTourInfo] = useState<{ title: string; duration: string } | null>(null);
   const [tourPackagesData, setTourPackagesData] = useState<TourPackagesDataType>({});
   const [loading, setLoading] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -141,7 +144,7 @@ const Index = () => {
 
 
   const handleCTA = () => {
-    toast("Thanks! A travel specialist will reach out shortly.");
+    setIsInquiryModalOpen(true);
   };
 
   const handleViewDetails = (tourKey: string) => {
@@ -632,11 +635,29 @@ const Index = () => {
           onOpenChange={setIsModalOpen}
           tourData={tourPackagesData[selectedTour as keyof typeof tourPackagesData]}
           onInquire={() => {
+            const tourData = tourPackagesData[selectedTour as keyof typeof tourPackagesData];
+            setInquiryTourInfo({
+              title: tourData.title,
+              duration: tourData.duration
+            });
             setIsModalOpen(false);
             handleCTA();
           }}
         />
       )}
+
+      {/* Inquiry Modal */}
+      <InquiryModal
+        open={isInquiryModalOpen}
+        onOpenChange={(open) => {
+          setIsInquiryModalOpen(open);
+          if (!open) {
+            setInquiryTourInfo(null);
+          }
+        }}
+        defaultInquiryType={inquiryTourInfo ? "Tour Package" : "General Inquiry"}
+        defaultQuestion={inquiryTourInfo ? `I'm interested in the "${inquiryTourInfo.title}" tour (${inquiryTourInfo.duration}). ` : ""}
+      />
     </div>
   );
 };
