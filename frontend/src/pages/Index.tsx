@@ -492,7 +492,10 @@ const Index = () => {
             <div>
               <h2 className="font-display text-3xl md:text-4xl">Your Journey, Perfected</h2>
               <p className="text-muted-foreground mt-4">
-                For over a decade, Lavish Travels & Tours has curated refined escapes across Sri Lanka. Our specialists combine insider access with meticulous planning to deliver effortless, elegant travel.
+                Having started operation in the hospitality industry with the opening of Lavish Eco Jungle in 2018, and setting a high standard earning a certificate of excellence from Booking.com, we decided to expand our service to include inbound tours.
+              </p>
+              <p className="text-muted-foreground mt-4">
+                Lavish Travel and Tours aims to provide the same high standard of service to make your visit to Sri Lanka a truly memorable one.
               </p>
               <div className="mt-6">
                 <Button variant="premium" onClick={handleCTA}>Speak to a Specialist</Button>
