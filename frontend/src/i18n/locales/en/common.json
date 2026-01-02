@@ -1,0 +1,46 @@
+{
+  "company": {
+    "name": "Lavish",
+    "subtitle": "Travels & Tours",
+    "fullName": "Lavish Travels & Tours",
+    "tagline": "Bespoke luxury journeys across Sri Lanka"
+  },
+  "nav": {
+    "destinations": "Destinations",
+    "packages": "Packages",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "planTrip": "Plan Your Trip",
+    "startPlanning": "Start Planning",
+    "exploreDestinations": "Explore Destinations",
+    "viewDetails": "View Details",
+    "inquireNow": "Inquire Now",
+    "speakSpecialist": "Speak to a Specialist",
+    "close": "Close"
+  },
+  "labels": {
+    "from": "From",
+    "perPerson": "per person",
+    "category": "Category",
+    "loading": "Loading tour packages...",
+    "noPackages": "No packages found in this category."
+  },
+  "errors": {
+    "loadFailed": "Failed to load tour packages"
+  },
+  "categories": {
+    "all": "All Tours",
+    "cultural": "Cultural & Heritage",
+    "spiritual": "Spiritual & Ramayana",
+    "wildlife": "Wildlife & Nature"
+  },
+  "aria": {
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "goToSlide": "Go to {{title}}"
+  },
+  "copyright": "{{year}} Lavish Travels & Tours. All rights reserved."
+}

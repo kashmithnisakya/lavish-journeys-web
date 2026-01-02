@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 interface SeoHeadProps {
   title: string;
@@ -6,8 +7,11 @@ interface SeoHeadProps {
 }
 
 const SeoHead: React.FC<SeoHeadProps> = ({ title, description }) => {
+  const { i18n } = useTranslation();
+
   useEffect(() => {
     document.title = title;
+    document.documentElement.lang = i18n.language;
 
     const ensureMeta = (name: string, content: string) => {
       let el = document.querySelector(`meta[name="${name}"]`);

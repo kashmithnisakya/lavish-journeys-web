@@ -1,0 +1,46 @@
+{
+  "company": {
+    "name": "Lavish",
+    "subtitle": "Путешествия и Туры",
+    "fullName": "Lavish Путешествия и Туры",
+    "tagline": "Роскошные путешествия по Шри-Ланке"
+  },
+  "nav": {
+    "destinations": "Направления",
+    "packages": "Пакеты",
+    "services": "Услуги",
+    "about": "О нас",
+    "contact": "Контакты"
+  },
+  "buttons": {
+    "planTrip": "Планировать поездку",
+    "startPlanning": "Начать планирование",
+    "exploreDestinations": "Исследовать направления",
+    "viewDetails": "Подробнее",
+    "inquireNow": "Запросить сейчас",
+    "speakSpecialist": "Связаться со специалистом",
+    "close": "Закрыть"
+  },
+  "labels": {
+    "from": "От",
+    "perPerson": "с человека",
+    "category": "Категория",
+    "loading": "Загрузка туристических пакетов...",
+    "noPackages": "Пакеты в этой категории не найдены."
+  },
+  "errors": {
+    "loadFailed": "Не удалось загрузить туристические пакеты"
+  },
+  "categories": {
+    "all": "Все туры",
+    "cultural": "Культура и наследие",
+    "spiritual": "Духовные туры и Рамаяна",
+    "wildlife": "Дикая природа"
+  },
+  "aria": {
+    "previousSlide": "Предыдущий слайд",
+    "nextSlide": "Следующий слайд",
+    "goToSlide": "Перейти к {{title}}"
+  },
+  "copyright": "{{year}} Lavish Путешествия и Туры. Все права защищены."
+}

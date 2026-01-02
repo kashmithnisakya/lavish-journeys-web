@@ -1,0 +1,46 @@
+{
+  "company": {
+    "name": "Lavish",
+    "subtitle": "ट्रैवल्स एंड टूर्स",
+    "fullName": "Lavish ट्रैवल्स एंड टूर्स",
+    "tagline": "श्रीलंका में शानदार यात्राएं"
+  },
+  "nav": {
+    "destinations": "गंतव्य",
+    "packages": "पैकेज",
+    "services": "सेवाएं",
+    "about": "हमारे बारे में",
+    "contact": "संपर्क"
+  },
+  "buttons": {
+    "planTrip": "अपनी यात्रा की योजना बनाएं",
+    "startPlanning": "योजना शुरू करें",
+    "exploreDestinations": "गंतव्यों का अन्वेषण करें",
+    "viewDetails": "विवरण देखें",
+    "inquireNow": "अभी पूछताछ करें",
+    "speakSpecialist": "विशेषज्ञ से बात करें",
+    "close": "बंद करें"
+  },
+  "labels": {
+    "from": "से",
+    "perPerson": "प्रति व्यक्ति",
+    "category": "श्रेणी",
+    "loading": "टूर पैकेज लोड हो रहे हैं...",
+    "noPackages": "इस श्रेणी में कोई पैकेज नहीं मिला।"
+  },
+  "errors": {
+    "loadFailed": "टूर पैकेज लोड करने में विफल"
+  },
+  "categories": {
+    "all": "सभी टूर",
+    "cultural": "सांस्कृतिक और विरासत",
+    "spiritual": "आध्यात्मिक और रामायण",
+    "wildlife": "वन्यजीव और प्रकृति"
+  },
+  "aria": {
+    "previousSlide": "पिछली स्लाइड",
+    "nextSlide": "अगली स्लाइड",
+    "goToSlide": "{{title}} पर जाएं"
+  },
+  "copyright": "{{year}} Lavish ट्रैवल्स एंड टूर्स। सर्वाधिकार सुरक्षित।"
+}

@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TourPackage } from "@/components/TourPackage";
 import { TourPackageModal } from "@/components/TourPackageModal";
 import { InquiryModal } from "@/components/InquiryModal";
@@ -61,6 +63,7 @@ interface TourPackagesDataType {
 }
 
 const Index = () => {
+  const { t, i18n } = useTranslation();
   const [selectedTour, setSelectedTour] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isInquiryModalOpen, setIsInquiryModalOpen] = useState(false);
@@ -73,32 +76,35 @@ const Index = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
 
   const destinations = [
-    {img:sigiriya, title:'Sigiriya & Dambulla', desc:'Iconic Lion Rock fortress with ancient frescoes, 1st century BC cave temples with 150+ Buddha statues.'},
-    {img:ella, title:'Kandy - Cultural Capital', desc:'Sacred Temple of the Tooth, Royal Botanical Gardens, colonial architecture, traditional Kandyan dance.'},
-    {img:nuwaraEliya, title:'Nuwara Eliya - Little England', desc:'Cool climate hill station, tea plantations and factories, Horton Plains World\'s End, Victorian architecture.'},
-    {img:anuradhapura, title:'Ancient Cities', desc:'Anuradhapura and Polonnaruwa UNESCO sites, 2,250-year-old sacred Bo tree, ancient stupas and palaces.'},
-    {img:ella, title:'Ella & Hill Country', desc:'Scenic train journeys through tea estates, Little Adam\'s Peak trek, Nine Arch Bridge, mountain views.'},
-    {img:yala, title:'Wildlife & National Parks', desc:'Yala leopard safari, Wilpattu elephants, Udawalawe wildlife, Sinharaja rainforest, whale watching.'},
-    {img:ramayana1, title:'Ramayana Trail', desc:'Sacred Hindu temples: Munneswaram, Koneshwaram, Seetha Amman, Bhakta Hanuman with spiritual significance.'},
-    {img:southernBeach, title:'Southern Coast', desc:'Historic Galle Fort, Unawatuna and Mirissa beaches, turtle hatcheries, Madu River mangroves, water sports.'},
-    {img:trincomalee, title:'Trincomalee & East Coast', desc:'Ancient Koneshwaram Temple, pristine beaches, Pigeon Island, snorkeling, diving, less-crowded coastal paradise.'}
+    {img:sigiriya, title:t('home:destinations.sigiriya.title'), desc:t('home:destinations.sigiriya.description')},
+    {img:ella, title:t('home:destinations.kandy.title'), desc:t('home:destinations.kandy.description')},
+    {img:nuwaraEliya, title:t('home:destinations.nuwaraEliya.title'), desc:t('home:destinations.nuwaraEliya.description')},
+    {img:anuradhapura, title:t('home:destinations.ancientCities.title'), desc:t('home:destinations.ancientCities.description')},
+    {img:ella, title:t('home:destinations.ella.title'), desc:t('home:destinations.ella.description')},
+    {img:yala, title:t('home:destinations.wildlife.title'), desc:t('home:destinations.wildlife.description')},
+    {img:ramayana1, title:t('home:destinations.ramayana.title'), desc:t('home:destinations.ramayana.description')},
+    {img:southernBeach, title:t('home:destinations.southern.title'), desc:t('home:destinations.southern.description')},
+    {img:trincomalee, title:t('home:destinations.trincomalee.title'), desc:t('home:destinations.trincomalee.description')}
   ];
 
   useEffect(() => {
     const loadTourPackages = async () => {
       try {
-        const response = await fetch('/tour-packages.json');
+        const tourFile = i18n.language === 'en'
+          ? '/tour-packages.json'
+          : `/tour-packages-${i18n.language}.json`;
+        const response = await fetch(tourFile);
         const data = await response.json();
         setTourPackagesData(data);
       } catch (error) {
         console.error('Failed to load tour packages:', error);
-        toast.error('Failed to load tour packages');
+        toast.error(t('common:errors.loadFailed'));
       } finally {
         setLoading(false);
       }
     };
     loadTourPackages();
-  }, []);
+  }, [i18n.language, t]);
 
   // Handle responsive detection
   useEffect(() => {
@@ -166,10 +172,10 @@ const Index = () => {
   };
 
   const categories = [
-    { id: 'all', name: 'All Tours' },
-    { id: 'cultural', name: 'Cultural & Heritage' },
-    { id: 'spiritual', name: 'Spiritual & Ramayana' },
-    { id: 'wildlife', name: 'Wildlife & Nature' }
+    { id: 'all', name: t('common:categories.all') },
+    { id: 'cultural', name: t('common:categories.cultural') },
+    { id: 'spiritual', name: t('common:categories.spiritual') },
+    { id: 'wildlife', name: t('common:categories.wildlife') }
   ];
 
   // Convert JSON data to array format for rendering
@@ -210,7 +216,7 @@ const Index = () => {
       <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
-          <p className="mt-4 text-muted-foreground">Loading tour packages...</p>
+          <p className="mt-4 text-muted-foreground">{t('common:labels.loading')}</p>
         </div>
       </div>
     );
@@ -219,27 +225,28 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SeoHead
-        title="Lavish Travels & Tours — Luxury Travel Sri Lanka"
-        description="Bespoke journeys across tea country, heritage forts, and golden coasts in Sri Lanka."
+        title={t('home:seo.title')}
+        description={t('home:seo.description')}
       />
 
       <header className="sticky top-0 z-30 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <nav className="container flex h-16 items-center justify-between">
           <a href="#" className="flex items-baseline gap-2">
-            <span className="text-xl font-semibold tracking-tight font-display">Lavish</span>
-            <span className="text-sm text-muted-foreground">Travels & Tours</span>
+            <span className="text-xl font-semibold tracking-tight font-display">{t('common:company.name')}</span>
+            <span className="text-sm text-muted-foreground">{t('common:company.subtitle')}</span>
           </a>
           <div className="hidden md:flex items-center gap-6 text-sm">
-            <a href="#destinations" className="story-link">Destinations</a>
-            <a href="#packages" className="story-link">Packages</a>
-            <a href="#services" className="story-link">Services</a>
-            <a href="#about" className="story-link">About</a>
-            <a href="#contact" className="story-link">Contact</a>
+            <a href="#destinations" className="story-link">{t('common:nav.destinations')}</a>
+            <a href="#packages" className="story-link">{t('common:nav.packages')}</a>
+            <a href="#services" className="story-link">{t('common:nav.services')}</a>
+            <a href="#about" className="story-link">{t('common:nav.about')}</a>
+            <a href="#contact" className="story-link">{t('common:nav.contact')}</a>
           </div>
           <div className="flex items-center gap-3">
+            <LanguageSwitcher />
             <ThemeToggle />
             <div className="hidden md:block">
-              <Button variant="hero" onClick={handleCTA}>Plan Your Trip</Button>
+              <Button variant="hero" onClick={handleCTA}>{t('common:buttons.planTrip')}</Button>
             </div>
           </div>
         </nav>
@@ -259,14 +266,14 @@ const Index = () => {
           </div>
           <div className="container relative z-10 flex h-[500px] sm:h-[60vh] md:h-[72vh] items-center px-4 sm:px-6">
             <div className="max-w-2xl animate-enter w-full">
-              <h1 className="font-display text-3xl sm:text-4xl md:text-6xl leading-tight">Elegance Across Sri Lanka</h1>
+              <h1 className="font-display text-3xl sm:text-4xl md:text-6xl leading-tight">{t('home:hero.title')}</h1>
               <p className="mt-3 sm:mt-4 text-gray-900 dark:text-muted-foreground text-sm sm:text-base md:text-lg">
-                Bespoke journeys across tea country, heritage forts, and golden coasts — crafted by experts.
+                {t('home:hero.subtitle')}
               </p>
               <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-3">
-                <Button variant="hero" size="lg" onClick={handleCTA} className="hover-scale w-full sm:w-auto">Start Planning</Button>
+                <Button variant="hero" size="lg" onClick={handleCTA} className="hover-scale w-full sm:w-auto">{t('common:buttons.startPlanning')}</Button>
                 <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
-                  <a href="#destinations">Explore Destinations</a>
+                  <a href="#destinations">{t('common:buttons.exploreDestinations')}</a>
                 </Button>
               </div>
             </div>
@@ -276,9 +283,9 @@ const Index = () => {
         {/* Destinations Slider */}
         <section id="destinations" className="container py-12 md:py-16">
           <header className="mb-6 md:mb-8 text-center">
-            <h2 className="font-display text-3xl md:text-4xl">Discover Sri Lanka</h2>
+            <h2 className="font-display text-3xl md:text-4xl">{t('home:destinations.title')}</h2>
             <p className="text-muted-foreground mt-2 max-w-3xl mx-auto">
-              Explore the pearl of the Indian Ocean - from ancient kingdoms and sacred temples to misty mountains, wildlife reserves, and pristine beaches.
+              {t('home:destinations.description')}
             </p>
           </header>
 
@@ -409,9 +416,9 @@ const Index = () => {
         {/* Tour Packages */}
         <section id="packages" className="container py-12 md:py-16">
           <header className="mb-6 md:mb-8 text-center">
-            <h2 className="font-display text-3xl md:text-4xl">Curated Tour Packages</h2>
+            <h2 className="font-display text-3xl md:text-4xl">{t('home:packages.title')}</h2>
             <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-              Expertly crafted journeys that showcase Sri Lanka's finest destinations, cultural heritage, and natural wonders.
+              {t('home:packages.description')}
             </p>
           </header>
 
@@ -459,7 +466,7 @@ const Index = () => {
           {/* No results message */}
           {filteredPackages.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-muted-foreground text-lg">No packages found in this category.</p>
+              <p className="text-muted-foreground text-lg">{t('common:labels.noPackages')}</p>
             </div>
           )}
         </section>
@@ -468,14 +475,14 @@ const Index = () => {
         <section id="services" className="bg-secondary/40 py-12 md:py-16">
           <div className="container">
             <header className="mb-6 md:mb-8">
-              <h2 className="font-display text-3xl md:text-4xl">White‑Glove Services</h2>
-              <p className="text-muted-foreground mt-2">From inspiration to return, we handle every detail.</p>
+              <h2 className="font-display text-3xl md:text-4xl">{t('home:services.title')}</h2>
+              <p className="text-muted-foreground mt-2">{t('home:services.description')}</p>
             </header>
             <div className="grid gap-6 md:grid-cols-3">
               {[
-                {title:'Tailor‑Made Itineraries', desc:'Designed around your pace and passions.'},
-                {title:'Handpicked Stays', desc:'Luxury hotels, villas, and private retreats.'},
-                {title:'Concierge Support', desc:'VIP transfers, experiences, and on‑trip care.'},
+                {title:t('home:services.tailored.title'), desc:t('home:services.tailored.description')},
+                {title:t('home:services.stays.title'), desc:t('home:services.stays.description')},
+                {title:t('home:services.concierge.title'), desc:t('home:services.concierge.description')},
               ].map((s) => (
                 <article key={s.title} className="rounded-lg border bg-card p-6 shadow-elegant">
                   <h3 className="font-display text-xl">{s.title}</h3>
@@ -490,24 +497,24 @@ const Index = () => {
         <section id="about" className="container py-12 md:py-16">
           <div className="grid gap-10 md:grid-cols-2 items-center">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl">Your Journey, Perfected</h2>
+              <h2 className="font-display text-3xl md:text-4xl">{t('home:about.title')}</h2>
               <p className="text-muted-foreground mt-4">
-                Having started operation in the hospitality industry with the opening of Lavish Eco Jungle in 2018, and setting a high standard earning a certificate of excellence from Booking.com, we decided to expand our service to include inbound tours.
+                {t('home:about.description1')}
               </p>
               <p className="text-muted-foreground mt-4">
-                Lavish Travel and Tours aims to provide the same high standard of service to make your visit to Sri Lanka a truly memorable one.
+                {t('home:about.description2')}
               </p>
               <div className="mt-6">
-                <Button variant="premium" onClick={handleCTA}>Speak to a Specialist</Button>
+                <Button variant="premium" onClick={handleCTA}>{t('common:buttons.speakSpecialist')}</Button>
               </div>
             </div>
             <div className="rounded-xl bg-gradient-hero p-1 shadow-glow">
               <div className="rounded-lg bg-card p-6">
                 <ul className="grid gap-3 text-sm">
-                  <li>• Dedicated travel designer</li>
-                  <li>• 24/7 concierge support</li>
-                  <li>• VIP airport transfers</li>
-                  <li>• Exclusive experiences</li>
+                  <li>• {t('home:about.benefits.designer')}</li>
+                  <li>• {t('home:about.benefits.support')}</li>
+                  <li>• {t('home:about.benefits.transfers')}</li>
+                  <li>• {t('home:about.benefits.experiences')}</li>
                 </ul>
               </div>
             </div>
@@ -518,31 +525,31 @@ const Index = () => {
         <section id="contact" className="bg-secondary/40 py-12 md:py-16">
           <div className="container">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl">Ready for your Sri Lanka escape?</h2>
-              <p className="text-muted-foreground mt-2">Tell us your Sri Lanka dream — we'll handle the rest.</p>
+              <h2 className="font-display text-3xl md:text-4xl">{t('home:contact.title')}</h2>
+              <p className="text-muted-foreground mt-2">{t('home:contact.description')}</p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
               <div className="bg-card rounded-lg p-6 shadow-elegant">
-                <h3 className="font-display text-xl mb-4">Contact Information</h3>
+                <h3 className="font-display text-xl mb-4">{t('home:contact.information')}</h3>
                 <div className="space-y-3 text-sm">
                   <div>
-                    <p className="font-medium">Address</p>
-                    <p className="text-muted-foreground">520/41B, Randunuwatta, North Road<br/>Weerawila, Sri Lanka</p>
+                    <p className="font-medium">{t('home:contact.address.label')}</p>
+                    <p className="text-muted-foreground">{t('home:contact.address.line1')}<br/>{t('home:contact.address.line2')}</p>
                   </div>
                   <div>
-                    <p className="font-medium">Phone</p>
-                    <p className="text-muted-foreground">+94 70 172 8922 | +94 77 041 8967</p>
+                    <p className="font-medium">{t('home:contact.phone.label')}</p>
+                    <p className="text-muted-foreground">{t('home:contact.phone.numbers')}</p>
                   </div>
                   <div>
-                    <p className="font-medium">Email</p>
-                    <a href="mailto:support@lavishtravelsandtours.online" className="text-primary hover:underline">support@lavishtravelsandtours.online</a>
+                    <p className="font-medium">{t('home:contact.email.label')}</p>
+                    <a href={`mailto:${t('home:contact.email.address')}`} className="text-primary hover:underline">{t('home:contact.email.address')}</a>
                   </div>
                 </div>
               </div>
 
               <div className="bg-card rounded-lg p-6 shadow-elegant">
-                <h3 className="font-display text-xl mb-4">Connect With Us</h3>
+                <h3 className="font-display text-xl mb-4">{t('home:contact.connect')}</h3>
                 <div className="space-y-4">
                   <a
                     href="https://www.facebook.com/profile.php?id=61579323908693&locale=eu_ES"
@@ -553,7 +560,7 @@ const Index = () => {
                     <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm font-bold">
                       f
                     </div>
-                    <span>Follow us on Facebook</span>
+                    <span>{t('home:contact.facebook')}</span>
                   </a>
 
                   <a
@@ -565,14 +572,14 @@ const Index = () => {
                     <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
                       W
                     </div>
-                    <span>Chat on WhatsApp</span>
+                    <span>{t('home:contact.whatsapp')}</span>
                   </a>
                 </div>
               </div>
             </div>
 
             <div className="text-center mt-8">
-              <Button variant="hero" size="lg" onClick={handleCTA}>Plan Your Trip</Button>
+              <Button variant="hero" size="lg" onClick={handleCTA}>{t('common:buttons.planTrip')}</Button>
             </div>
           </div>
         </section>
@@ -582,22 +589,22 @@ const Index = () => {
         <div className="container py-8">
           <div className="grid gap-6 md:grid-cols-3 text-sm">
             <div>
-              <h4 className="font-semibold mb-3">Lavish Travels & Tours</h4>
-              <p className="text-muted-foreground">Bespoke luxury journeys across Sri Lanka</p>
+              <h4 className="font-semibold mb-3">{t('common:company.fullName')}</h4>
+              <p className="text-muted-foreground">{t('common:company.tagline')}</p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-3">Contact Info</h4>
+              <h4 className="font-semibold mb-3">{t('home:footer.contactInfo')}</h4>
               <div className="text-muted-foreground space-y-1">
-                <p>520/41B, Randunuwatta, North Road</p>
-                <p>Weerawila, Sri Lanka</p>
-                <p>+94 70 172 8922 | +94 77 041 8967</p>
-                <a href="mailto:support@lavishtravelsandtours.online" className="hover:text-primary">support@lavishtravelsandtours.online</a>
+                <p>{t('home:contact.address.line1')}</p>
+                <p>{t('home:contact.address.line2')}</p>
+                <p>{t('home:contact.phone.numbers')}</p>
+                <a href={`mailto:${t('home:contact.email.address')}`} className="hover:text-primary">{t('home:contact.email.address')}</a>
               </div>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-3">Follow Us</h4>
+              <h4 className="font-semibold mb-3">{t('home:footer.followUs')}</h4>
               <div className="flex gap-4">
                 <a
                   href="https://www.facebook.com/profile.php?id=61579323908693&locale=eu_ES"
@@ -620,12 +627,12 @@ const Index = () => {
           </div>
 
           <div className="mt-6 pt-6 border-t flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Lavish Travels & Tours. All rights reserved.</p>
+            <p>{t('common:copyright', { year: new Date().getFullYear() })}</p>
             <nav className="flex gap-6">
-              <a href="#packages" className="hover:underline">Packages</a>
-              <a href="#about" className="hover:underline">About</a>
-              <a href="#services" className="hover:underline">Services</a>
-              <a href="#contact" className="hover:underline">Contact</a>
+              <a href="#packages" className="hover:underline">{t('common:nav.packages')}</a>
+              <a href="#about" className="hover:underline">{t('common:nav.about')}</a>
+              <a href="#services" className="hover:underline">{t('common:nav.services')}</a>
+              <a href="#contact" className="hover:underline">{t('common:nav.contact')}</a>
             </nav>
           </div>
         </div>
@@ -658,8 +665,8 @@ const Index = () => {
             setInquiryTourInfo(null);
           }
         }}
-        defaultInquiryType={inquiryTourInfo ? "Tour Package" : "General Inquiry"}
-        defaultQuestion={inquiryTourInfo ? `I'm interested in the "${inquiryTourInfo.title}" tour (${inquiryTourInfo.duration}). ` : ""}
+        defaultInquiryType={inquiryTourInfo ? t('forms:inquiryTypes.tourPackage') : t('forms:inquiryTypes.general')}
+        defaultQuestion={inquiryTourInfo ? t('forms:tourInquiry', { title: inquiryTourInfo.title, duration: inquiryTourInfo.duration }) : ""}
       />
     </div>
   );

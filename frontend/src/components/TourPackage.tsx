@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
 interface TourPackageProps {
@@ -15,6 +16,7 @@ interface TourPackageProps {
 }
 
 export function TourPackage({ title, duration, description, highlights, price, image, onInquire, onViewDetails }: TourPackageProps) {
+  const { t } = useTranslation();
   return (
     <article className="bg-card rounded-lg border shadow-elegant overflow-hidden hover-scale h-full flex flex-col">
       <div className="relative h-48 overflow-hidden">
@@ -33,7 +35,7 @@ export function TourPackage({ title, duration, description, highlights, price, i
         <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{description}</p>
 
         <div className="mb-4 flex-1">
-          <h4 className="font-medium text-sm mb-2">Key Highlights:</h4>
+          <h4 className="font-medium text-sm mb-2">{t('tours:highlights')}:</h4>
           <ul className="text-xs text-muted-foreground space-y-1">
             {highlights.slice(0, 4).map((highlight, index) => (
               <li key={index} className="flex items-start gap-2">
@@ -47,7 +49,7 @@ export function TourPackage({ title, duration, description, highlights, price, i
         <div className="space-y-3 mt-auto">
           <div className="flex items-center justify-between">
             <div>
-              <div className="text-sm text-muted-foreground">From</div>
+              <div className="text-sm text-muted-foreground">{t('tours:from')}</div>
               <div className="font-bold text-lg">
                 ${price.from}
                 <span className="text-sm font-normal text-muted-foreground ml-1">
@@ -58,10 +60,10 @@ export function TourPackage({ title, duration, description, highlights, price, i
           </div>
           <div className="flex gap-2">
             <Button onClick={onViewDetails} variant="outline" size="sm" className="flex-1">
-              View Details
+              {t('tours:viewDetails')}
             </Button>
             <Button onClick={onInquire} variant="premium" size="sm" className="flex-1">
-              Inquire Now
+              {t('tours:inquireNow')}
             </Button>
           </div>
         </div>

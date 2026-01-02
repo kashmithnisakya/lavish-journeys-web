@@ -1,0 +1,22 @@
+{
+  "from": "From",
+  "perPerson": "per person",
+  "viewDetails": "View Details",
+  "inquireNow": "Inquire Now",
+  "overview": "Tour Overview",
+  "highlights": "Tour Highlights",
+  "itinerary": "Daily Itinerary",
+  "day": "Day",
+  "accommodation": "Accommodation",
+  "pricing": "Pricing (Per Person)",
+  "pax": "PAX",
+  "category": "Category",
+  "inclusions": "What's Included",
+  "exclusions": "Not Included",
+  "hotels": "Hotels & Accommodation",
+  "destination": "Destination",
+  "supplement": "Supplement",
+  "entranceFees": "Entrance Fees",
+  "requestQuote": "Request a Quote",
+  "activity": "Activity"
+}

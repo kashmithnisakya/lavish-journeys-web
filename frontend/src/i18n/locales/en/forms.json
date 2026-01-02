@@ -1,0 +1,49 @@
+{
+  "fields": {
+    "name": {
+      "label": "Full Name",
+      "placeholder": "John Doe"
+    },
+    "email": {
+      "label": "Email Address",
+      "placeholder": "john@example.com"
+    },
+    "phone": {
+      "label": "Phone Number",
+      "placeholder": "+1234567890"
+    },
+    "inquiryType": {
+      "label": "Inquiry Type"
+    },
+    "message": {
+      "label": "Your Message",
+      "placeholder": "Tell us about your travel plans, questions, or special requirements..."
+    }
+  },
+  "inquiryTypes": {
+    "general": "General Inquiry",
+    "tourPackage": "Tour Package",
+    "customTrip": "Custom Trip",
+    "hotelBooking": "Hotel Booking",
+    "transportation": "Transportation",
+    "other": "Other"
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email",
+    "phoneRequired": "Phone number is required",
+    "messageRequired": "Please tell us about your inquiry",
+    "fillAllFields": "Please fill in all required fields correctly"
+  },
+  "buttons": {
+    "submit": "Submit Inquiry",
+    "sending": "Sending..."
+  },
+  "messages": {
+    "success": "Thank you! We'll get back to you shortly.",
+    "error": "Failed to submit inquiry. Please try again or contact us directly."
+  },
+  "required": "*",
+  "tourInquiry": "I'm interested in the \"{{title}}\" tour ({{duration}})."
+}

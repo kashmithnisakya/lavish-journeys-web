@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -18,6 +19,7 @@ export function InquiryForm({
   defaultQuestion = "",
   onSuccess
 }: InquiryFormProps) {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<InquiryPayload>({
     name: "",
     email: "",
@@ -32,21 +34,21 @@ export function InquiryForm({
     const newErrors: Partial<Record<keyof InquiryPayload, string>> = {};
 
     if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
+      newErrors.name = t('forms:validation.nameRequired');
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
+      newErrors.email = t('forms:validation.emailRequired');
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email";
+      newErrors.email = t('forms:validation.emailInvalid');
     }
 
     if (!formData.phone.trim()) {
-      newErrors.phone = "Phone number is required";
+      newErrors.phone = t('forms:validation.phoneRequired');
     }
 
     if (!formData.question.trim()) {
-      newErrors.question = "Please tell us about your inquiry";
+      newErrors.question = t('forms:validation.messageRequired');
     }
 
     setErrors(newErrors);
@@ -57,7 +59,7 @@ export function InquiryForm({
     e.preventDefault();
 
     if (!validateForm()) {
-      toast.error("Please fill in all required fields correctly");
+      toast.error(t('forms:validation.fillAllFields'));
       return;
     }
 
@@ -65,7 +67,7 @@ export function InquiryForm({
 
     try {
       await submitInquiry(formData);
-      toast.success("Thank you! We'll get back to you shortly.");
+      toast.success(t('forms:messages.success'));
 
       // Reset form
       setFormData({
@@ -82,7 +84,7 @@ export function InquiryForm({
       }
     } catch (error) {
       console.error("Inquiry submission error:", error);
-      toast.error("Failed to submit inquiry. Please try again or contact us directly.");
+      toast.error(t('forms:messages.error'));
     } finally {
       setLoading(false);
     }
@@ -101,13 +103,13 @@ export function InquiryForm({
       <div className="space-y-2">
         <Label htmlFor="name" className="flex items-center gap-2">
           <User className="w-4 h-4" />
-          Full Name <span className="text-red-500">*</span>
+          {t('forms:fields.name.label')} <span className="text-red-500">{t('forms:required')}</span>
         </Label>
         <Input
           id="name"
           value={formData.name}
           onChange={(e) => handleChange("name", e.target.value)}
-          placeholder="John Doe"
+          placeholder={t('forms:fields.name.placeholder')}
           className={errors.name ? "border-red-500" : ""}
           disabled={loading}
         />
@@ -117,14 +119,14 @@ export function InquiryForm({
       <div className="space-y-2">
         <Label htmlFor="email" className="flex items-center gap-2">
           <Mail className="w-4 h-4" />
-          Email Address <span className="text-red-500">*</span>
+          {t('forms:fields.email.label')} <span className="text-red-500">{t('forms:required')}</span>
         </Label>
         <Input
           id="email"
           type="email"
           value={formData.email}
           onChange={(e) => handleChange("email", e.target.value)}
-          placeholder="john@example.com"
+          placeholder={t('forms:fields.email.placeholder')}
           className={errors.email ? "border-red-500" : ""}
           disabled={loading}
         />
@@ -134,14 +136,14 @@ export function InquiryForm({
       <div className="space-y-2">
         <Label htmlFor="phone" className="flex items-center gap-2">
           <Phone className="w-4 h-4" />
-          Phone Number <span className="text-red-500">*</span>
+          {t('forms:fields.phone.label')} <span className="text-red-500">{t('forms:required')}</span>
         </Label>
         <Input
           id="phone"
           type="tel"
           value={formData.phone}
           onChange={(e) => handleChange("phone", e.target.value)}
-          placeholder="+1234567890"
+          placeholder={t('forms:fields.phone.placeholder')}
           className={errors.phone ? "border-red-500" : ""}
           disabled={loading}
         />
@@ -149,7 +151,7 @@ export function InquiryForm({
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="inquiry_type">Inquiry Type</Label>
+        <Label htmlFor="inquiry_type">{t('forms:fields.inquiryType.label')}</Label>
         <select
           id="inquiry_type"
           value={formData.inquiry_type}
@@ -157,25 +159,25 @@ export function InquiryForm({
           className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
           disabled={loading}
         >
-          <option value="General Inquiry">General Inquiry</option>
-          <option value="Tour Package">Tour Package</option>
-          <option value="Custom Trip">Custom Trip</option>
-          <option value="Hotel Booking">Hotel Booking</option>
-          <option value="Transportation">Transportation</option>
-          <option value="Other">Other</option>
+          <option value={t('forms:inquiryTypes.general')}>{t('forms:inquiryTypes.general')}</option>
+          <option value={t('forms:inquiryTypes.tourPackage')}>{t('forms:inquiryTypes.tourPackage')}</option>
+          <option value={t('forms:inquiryTypes.customTrip')}>{t('forms:inquiryTypes.customTrip')}</option>
+          <option value={t('forms:inquiryTypes.hotelBooking')}>{t('forms:inquiryTypes.hotelBooking')}</option>
+          <option value={t('forms:inquiryTypes.transportation')}>{t('forms:inquiryTypes.transportation')}</option>
+          <option value={t('forms:inquiryTypes.other')}>{t('forms:inquiryTypes.other')}</option>
         </select>
       </div>
 
       <div className="space-y-2">
         <Label htmlFor="question" className="flex items-center gap-2">
           <MessageSquare className="w-4 h-4" />
-          Your Message <span className="text-red-500">*</span>
+          {t('forms:fields.message.label')} <span className="text-red-500">{t('forms:required')}</span>
         </Label>
         <Textarea
           id="question"
           value={formData.question}
           onChange={(e) => handleChange("question", e.target.value)}
-          placeholder="Tell us about your travel plans, questions, or special requirements..."
+          placeholder={t('forms:fields.message.placeholder')}
           className={`min-h-[120px] ${errors.question ? "border-red-500" : ""}`}
           disabled={loading}
         />
@@ -191,10 +193,10 @@ export function InquiryForm({
         {loading ? (
           <>
             <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-            Sending...
+            {t('forms:buttons.sending')}
           </>
         ) : (
-          "Submit Inquiry"
+          t('forms:buttons.submit')
         )}
       </Button>
     </form>

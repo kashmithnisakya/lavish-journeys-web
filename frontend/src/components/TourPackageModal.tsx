@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -47,6 +48,8 @@ interface TourPackageModalProps {
 }
 
 export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: TourPackageModalProps) {
+  const { t } = useTranslation();
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
@@ -63,7 +66,7 @@ export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: To
         <div className="space-y-8">
           {/* Overview */}
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 border rounded-xl p-6">
-            <h3 className="font-bold mb-4 text-lg text-primary">Tour Overview</h3>
+            <h3 className="font-bold mb-4 text-lg text-primary">{t('tours:overview')}</h3>
             <p className="text-foreground leading-relaxed text-base">{tourData.description}</p>
           </div>
 
@@ -71,7 +74,7 @@ export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: To
           <div>
             <h3 className="font-bold mb-4 text-lg flex items-center gap-2">
               <Star className="w-5 h-5 text-yellow-500" />
-              Tour Highlights
+              {t('tours:highlights')}
             </h3>
             <div className="grid gap-3 md:grid-cols-2">
               {tourData.highlights.map((highlight, index) => (
@@ -85,7 +88,7 @@ export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: To
 
           {/* Itinerary */}
           <div>
-            <h3 className="font-semibold mb-4 text-lg">Daily Itinerary</h3>
+            <h3 className="font-semibold mb-4 text-lg">{t('tours:itinerary')}</h3>
             <div className="grid gap-4 md:grid-cols-2">
               {tourData.itinerary.map((day, index) => (
                 <div key={index} className="bg-gradient-to-br from-secondary/20 to-secondary/5 border rounded-xl p-4 hover:shadow-md transition-shadow">
@@ -120,7 +123,7 @@ export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: To
           <div>
             <h3 className="font-semibold mb-4 text-lg flex items-center gap-2">
               <MapPin className="w-5 h-5 text-accent" />
-              Premium Accommodation
+              {t('tours:hotels')}
             </h3>
             <div className="grid gap-3 md:grid-cols-2">
               {tourData.hotels.map((hotel, index) => (
@@ -147,7 +150,7 @@ export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: To
                 <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
                   <span className="text-white text-xs font-bold">✓</span>
                 </div>
-                What's Included
+                {t('tours:inclusions')}
               </h3>
               <ul className="space-y-3">
                 {tourData.inclusions.map((item, index) => (
@@ -163,7 +166,7 @@ export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: To
                 <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
                   <span className="text-white text-xs font-bold">✗</span>
                 </div>
-                Not Included
+                {t('tours:exclusions')}
               </h3>
               <ul className="space-y-3">
                 {tourData.exclusions.map((item, index) => (
@@ -180,10 +183,10 @@ export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: To
           <div className="flex gap-4 pt-6 border-t border-border/50">
             <Button onClick={onInquire} size="lg" className="flex-1 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary font-semibold shadow-lg hover:shadow-xl transition-all">
               <Users className="w-5 h-5 mr-2" />
-              Request Custom Quote
+              {t('tours:requestQuote')}
             </Button>
             <Button variant="outline" size="lg" onClick={() => onOpenChange(false)} className="px-8 border-2 hover:bg-secondary">
-              Close
+              {t('common:buttons.close')}
             </Button>
           </div>
         </div>

@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "Lavish Travels & Tours — Luxury Travel Sri Lanka",
+    "description": "Bespoke journeys across tea country, heritage forts, and golden coasts in Sri Lanka."
+  },
+  "hero": {
+    "title": "Elegance Across Sri Lanka",
+    "subtitle": "Bespoke journeys across tea country, heritage forts, and golden coasts — crafted by experts.",
+    "imageAlt": "Lavish Sri Lanka luxury travel hero — tea country at sunrise"
+  },
+  "destinations": {
+    "title": "Discover Sri Lanka",
+    "description": "Explore the pearl of the Indian Ocean - from ancient kingdoms and sacred temples to misty mountains, wildlife reserves, and pristine beaches.",
+    "sigiriya": {
+      "title": "Sigiriya & Dambulla",
+      "description": "Iconic Lion Rock fortress with ancient frescoes, 1st century BC cave temples with 150+ Buddha statues.",
+      "imageAlt": "Sigiriya luxury travel"
+    },
+    "kandy": {
+      "title": "Kandy - Cultural Capital",
+      "description": "Sacred Temple of the Tooth, Royal Botanical Gardens, colonial architecture, traditional Kandyan dance.",
+      "imageAlt": "Kandy luxury travel"
+    },
+    "nuwaraEliya": {
+      "title": "Nuwara Eliya - Little England",
+      "description": "Cool climate hill station, tea plantations and factories, Horton Plains World's End, Victorian architecture.",
+      "imageAlt": "Nuwara Eliya luxury travel"
+    },
+    "ancientCities": {
+      "title": "Ancient Cities",
+      "description": "Anuradhapura and Polonnaruwa UNESCO sites, 2,250-year-old sacred Bo tree, ancient stupas and palaces.",
+      "imageAlt": "Ancient Cities luxury travel"
+    },
+    "ella": {
+      "title": "Ella & Hill Country",
+      "description": "Scenic train journeys through tea estates, Little Adam's Peak trek, Nine Arch Bridge, mountain views.",
+      "imageAlt": "Ella luxury travel"
+    },
+    "wildlife": {
+      "title": "Wildlife & National Parks",
+      "description": "Yala leopard safari, Wilpattu elephants, Udawalawe wildlife, Sinharaja rainforest, whale watching.",
+      "imageAlt": "Wildlife luxury travel"
+    },
+    "ramayana": {
+      "title": "Ramayana Trail",
+      "description": "Sacred Hindu temples: Munneswaram, Koneshwaram, Seetha Amman, Bhakta Hanuman with spiritual significance.",
+      "imageAlt": "Ramayana Trail luxury travel"
+    },
+    "southern": {
+      "title": "Southern Coast",
+      "description": "Historic Galle Fort, Unawatuna and Mirissa beaches, turtle hatcheries, Madu River mangroves, water sports.",
+      "imageAlt": "Southern Coast luxury travel"
+    },
+    "trincomalee": {
+      "title": "Trincomalee & East Coast",
+      "description": "Ancient Koneshwaram Temple, pristine beaches, Pigeon Island, snorkeling, diving, less-crowded coastal paradise.",
+      "imageAlt": "Trincomalee luxury travel"
+    }
+  },
+  "packages": {
+    "title": "Curated Tour Packages",
+    "description": "Expertly crafted journeys that showcase Sri Lanka's finest destinations, cultural heritage, and natural wonders."
+  },
+  "services": {
+    "title": "White-Glove Services",
+    "description": "From inspiration to return, we handle every detail.",
+    "tailored": {
+      "title": "Tailor-Made Itineraries",
+      "description": "Designed around your pace and passions."
+    },
+    "stays": {
+      "title": "Handpicked Stays",
+      "description": "Luxury hotels, villas, and private retreats."
+    },
+    "concierge": {
+      "title": "Concierge Support",
+      "description": "VIP transfers, experiences, and on-trip care."
+    }
+  },
+  "about": {
+    "title": "Your Journey, Perfected",
+    "description1": "Having started operation in the hospitality industry with the opening of Lavish Eco Jungle in 2018, and setting a high standard earning a certificate of excellence from Booking.com, we decided to expand our service to include inbound tours.",
+    "description2": "Lavish Travel and Tours aims to provide the same high standard of service to make your visit to Sri Lanka a truly memorable one.",
+    "benefits": {
+      "designer": "Dedicated travel designer",
+      "support": "24/7 concierge support",
+      "transfers": "VIP airport transfers",
+      "experiences": "Exclusive experiences"
+    }
+  },
+  "contact": {
+    "title": "Ready for your Sri Lanka escape?",
+    "description": "Tell us your Sri Lanka dream — we'll handle the rest.",
+    "information": "Contact Information",
+    "address": {
+      "label": "Address",
+      "line1": "520/41B, Randunuwatta, North Road",
+      "line2": "Weerawila, Sri Lanka"
+    },
+    "phone": {
+      "label": "Phone",
+      "numbers": "+94 70 172 8922 | +94 77 041 8967"
+    },
+    "email": {
+      "label": "Email",
+      "address": "support@lavishtravelsandtours.online"
+    },
+    "connect": "Connect With Us",
+    "facebook": "Follow us on Facebook",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "footer": {
+    "contactInfo": "Contact Info",
+    "followUs": "Follow Us"
+  }
+}

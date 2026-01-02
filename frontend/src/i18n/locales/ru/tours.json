@@ -1,0 +1,22 @@
+{
+  "from": "От",
+  "perPerson": "с человека",
+  "viewDetails": "Подробнее",
+  "inquireNow": "Запросить сейчас",
+  "overview": "Обзор тура",
+  "highlights": "Основные моменты тура",
+  "itinerary": "Ежедневный маршрут",
+  "day": "День",
+  "accommodation": "Размещение",
+  "pricing": "Цены (за человека)",
+  "pax": "ЧЕЛОВЕК",
+  "category": "Категория",
+  "inclusions": "Что включено",
+  "exclusions": "Не включено",
+  "hotels": "Отели и размещение",
+  "destination": "Направление",
+  "supplement": "Доплата",
+  "entranceFees": "Входные билеты",
+  "requestQuote": "Запросить предложение",
+  "activity": "Мероприятие"
+}

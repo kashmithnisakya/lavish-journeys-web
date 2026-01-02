@@ -1,0 +1,49 @@
+{
+  "fields": {
+    "name": {
+      "label": "पूरा नाम",
+      "placeholder": "राज शर्मा"
+    },
+    "email": {
+      "label": "ईमेल पता",
+      "placeholder": "raj@example.com"
+    },
+    "phone": {
+      "label": "फोन नंबर",
+      "placeholder": "+1234567890"
+    },
+    "inquiryType": {
+      "label": "पूछताछ का प्रकार"
+    },
+    "message": {
+      "label": "आपका संदेश",
+      "placeholder": "हमें अपनी यात्रा योजनाओं, प्रश्नों या विशेष आवश्यकताओं के बारे में बताएं..."
+    }
+  },
+  "inquiryTypes": {
+    "general": "सामान्य पूछताछ",
+    "tourPackage": "टूर पैकेज",
+    "customTrip": "अनुकूलित यात्रा",
+    "hotelBooking": "होटल बुकिंग",
+    "transportation": "परिवहन",
+    "other": "अन्य"
+  },
+  "validation": {
+    "nameRequired": "नाम आवश्यक है",
+    "emailRequired": "ईमेल आवश्यक है",
+    "emailInvalid": "कृपया एक वैध ईमेल दर्ज करें",
+    "phoneRequired": "फोन नंबर आवश्यक है",
+    "messageRequired": "कृपया हमें अपनी पूछताछ के बारे में बताएं",
+    "fillAllFields": "कृपया सभी आवश्यक फ़ील्ड सही ढंग से भरें"
+  },
+  "buttons": {
+    "submit": "पूछताछ सबमिट करें",
+    "sending": "भेजा जा रहा है..."
+  },
+  "messages": {
+    "success": "धन्यवाद! हम शीघ्र ही आपसे संपर्क करेंगे।",
+    "error": "पूछताछ सबमिट करने में विफल। कृपया पुनः प्रयास करें या हमसे सीधे संपर्क करें।"
+  },
+  "required": "*",
+  "tourInquiry": "मुझे \"{{title}}\" टूर ({{duration}}) में रुचि है।"
+}
