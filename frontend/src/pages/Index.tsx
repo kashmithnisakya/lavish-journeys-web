@@ -4,11 +4,14 @@ import SeoHead from "@/components/SeoHead";
 import { Header } from "@/components/sections/Header";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { DestinationsCarousel } from "@/components/sections/DestinationsCarousel";
+import { StatsSection } from "@/components/sections/StatsSection";
 import { PackagesSection } from "@/components/sections/PackagesSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { FooterSection } from "@/components/sections/FooterSection";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { useTourPackages } from "@/hooks/useTourPackages";
 
 const TourPackageModal = lazy(() =>
@@ -56,6 +59,7 @@ const Index = () => {
 
       <main>
         <HeroSection onPlanTrip={handleCTA} />
+        <StatsSection />
         <DestinationsCarousel />
         <PackagesSection
           tourPackages={tourPackages}
@@ -63,11 +67,13 @@ const Index = () => {
           onViewDetails={handleViewDetails}
         />
         <ServicesSection />
+        <TestimonialsSection />
         <AboutSection onPlanTrip={handleCTA} />
         <ContactSection onPlanTrip={handleCTA} />
       </main>
 
       <FooterSection />
+      <WhatsAppButton />
 
       <Suspense fallback={null}>
         {selectedTour && (

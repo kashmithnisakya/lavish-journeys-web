@@ -61,4 +61,5 @@ export interface ProcessedTourPackage {
   };
   category: string;
   image: string;
+  badge?: string;
 }

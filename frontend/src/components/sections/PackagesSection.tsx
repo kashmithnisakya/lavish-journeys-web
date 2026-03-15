@@ -3,6 +3,12 @@ import { useTranslation } from "react-i18next";
 import { TourPackage } from "@/components/TourPackage";
 import type { ProcessedTourPackage, TourCategory } from "@/types/tour";
 
+const badgeTranslationKeys: { [key: string]: string } = {
+  popular: 'common:badges.popular',
+  bestValue: 'common:badges.bestValue',
+  new: 'common:badges.new',
+};
+
 interface PackagesSectionProps {
   tourPackages: ProcessedTourPackage[];
   onInquire: () => void;
@@ -74,6 +80,7 @@ export function PackagesSection({ tourPackages, onInquire, onViewDetails }: Pack
             highlights={pkg.highlights}
             price={pkg.price}
             image={pkg.image}
+            badge={pkg.badge ? t(badgeTranslationKeys[pkg.badge] || '') : undefined}
             onInquire={onInquire}
             onViewDetails={() => onViewDetails(pkg.key)}
           />

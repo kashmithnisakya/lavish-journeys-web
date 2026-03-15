@@ -3,6 +3,12 @@ import { useTranslation } from "react-i18next";
 import { toast } from "sonner";
 import type { TourPackagesDataType, ProcessedTourPackage } from "@/types/tour";
 
+const tourBadges: { [key: string]: string } = {
+  'classical-journey': 'popular',
+  'ramayana-luxury': 'bestValue',
+  'southern-highlight': 'new',
+};
+
 import heroImage from "@/assets/cover.jpg";
 import ella from "@/assets/ella.jpg";
 import sigiriya from "@/assets/sigiriya.jpg";
@@ -82,6 +88,7 @@ export function useTourPackages() {
         price: data.price,
         category: tourCategories[key] || 'cultural',
         image: getTourImage(key),
+        badge: tourBadges[key],
       })),
     [tourPackagesData]
   );

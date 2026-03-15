@@ -42,5 +42,10 @@
     "nextSlide": "Следующий слайд",
     "goToSlide": "Перейти к {{title}}"
   },
+  "badges": {
+    "popular": "Популярный",
+    "bestValue": "Лучшая цена",
+    "new": "Новинка"
+  },
   "copyright": "{{year}} Lavish Путешествия и Туры. Все права защищены."
 }

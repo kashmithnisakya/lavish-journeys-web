@@ -42,5 +42,10 @@
     "nextSlide": "Next slide",
     "goToSlide": "Go to {{title}}"
   },
+  "badges": {
+    "popular": "Popular",
+    "bestValue": "Best Value",
+    "new": "New"
+  },
   "copyright": "{{year}} Lavish Travels & Tours. All rights reserved."
 }

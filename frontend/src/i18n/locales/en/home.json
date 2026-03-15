@@ -109,6 +109,38 @@
     "facebook": "Follow us on Facebook",
     "whatsapp": "Chat on WhatsApp"
   },
+  "stats": {
+    "items": {
+      "experience": { "value": "6+", "label": "Years Experience" },
+      "travelers": { "value": "500+", "label": "Happy Travelers" },
+      "destinations": { "value": "50+", "label": "Tour Packages" },
+      "support": { "value": "24/7", "label": "Customer Support" }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Travelers Say",
+    "description": "Real stories from guests who experienced the magic of Sri Lanka with us.",
+    "items": [
+      {
+        "name": "Sarah & James Mitchell",
+        "country": "United Kingdom",
+        "text": "Lavish Travels made our honeymoon absolutely unforgettable. Every detail was perfectly arranged — from the private villa in Ella to the sunrise at Sigiriya. We felt like royalty the entire trip.",
+        "trip": "Classical Journey — 10 Days"
+      },
+      {
+        "name": "Rajesh Sharma",
+        "country": "India",
+        "text": "The Ramayana Trail tour was a deeply spiritual experience. Our guide was incredibly knowledgeable about each temple's history and significance. This trip touched our hearts.",
+        "trip": "Ramayana Premium — 9 Days"
+      },
+      {
+        "name": "Anna Petrova",
+        "country": "Russia",
+        "text": "From the moment we landed, everything was seamless. The wildlife safari in Yala, the train ride through tea country, the beaches in the south — Sri Lanka exceeded all our expectations.",
+        "trip": "Southern Highlights — 7 Days"
+      }
+    ]
+  },
   "footer": {
     "contactInfo": "Contact Info",
     "followUs": "Follow Us"

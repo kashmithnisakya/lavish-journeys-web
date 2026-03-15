@@ -42,5 +42,10 @@
     "nextSlide": "अगली स्लाइड",
     "goToSlide": "{{title}} पर जाएं"
   },
+  "badges": {
+    "popular": "लोकप्रिय",
+    "bestValue": "सर्वोत्तम मूल्य",
+    "new": "नया"
+  },
   "copyright": "{{year}} Lavish ट्रैवल्स एंड टूर्स। सर्वाधिकार सुरक्षित।"
 }
