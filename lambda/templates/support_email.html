@@ -1,242 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Customer Inquiry - Lavish Travels</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8fafc;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 28px;
-            font-weight: 600;
-        }
-        .header p {
-            margin: 10px 0 0 0;
-            font-size: 16px;
-            opacity: 0.9;
-        }
-        .content {
-            padding: 30px;
-        }
-        .alert-badge {
-            display: inline-block;
-            background-color: #ef4444;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-        .customer-info {
-            background-color: #f1f5f9;
-            border-radius: 12px;
-            padding: 25px;
-            margin: 20px 0;
-            border-left: 4px solid #3b82f6;
-        }
-        .info-row {
-            display: flex;
-            margin-bottom: 12px;
-            align-items: center;
-        }
-        .info-row:last-child {
-            margin-bottom: 0;
-        }
-        .info-label {
-            font-weight: 600;
-            color: #374151;
-            min-width: 100px;
-            margin-right: 15px;
-        }
-        .info-value {
-            color: #1f2937;
-            flex: 1;
-        }
-        .email-link {
-            color: #3b82f6;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .email-link:hover {
-            text-decoration: underline;
-        }
-        .question-section {
-            background-color: #fefce8;
-            border-radius: 12px;
-            padding: 25px;
-            margin: 25px 0;
-            border-left: 4px solid #facc15;
-        }
-        .question-section h3 {
-            margin: 0 0 15px 0;
-            color: #92400e;
-            font-size: 18px;
-        }
-        .question-text {
-            color: #451a03;
-            font-style: italic;
-            background-color: white;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #fde047;
-            white-space: pre-wrap;
-        }
-        .action-section {
-            background-color: #ecfdf5;
-            border-radius: 12px;
-            padding: 25px;
-            margin: 25px 0;
-            border-left: 4px solid #10b981;
-        }
-        .action-section h3 {
-            margin: 0 0 15px 0;
-            color: #047857;
-            font-size: 18px;
-        }
-        .action-list {
-            color: #064e3b;
-            margin: 0;
-            padding-left: 20px;
-        }
-        .action-list li {
-            margin-bottom: 8px;
-        }
-        .priority-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            margin: 15px 0;
-            text-align: center;
-        }
-        .timestamp {
-            color: #6b7280;
-            font-size: 14px;
-            text-align: center;
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #f9fafb;
-            border-radius: 8px;
-        }
-        .footer {
-            background-color: #1f2937;
-            color: #d1d5db;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-        }
-        .footer a {
-            color: #60a5fa;
-            text-decoration: none;
-        }
-        @media (max-width: 600px) {
-            .content {
-                padding: 20px;
-            }
-            .info-row {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .info-label {
-                margin-bottom: 5px;
-            }
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Customer Inquiry - Lavish Travels & Tours</title>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+    <style type="text/css">
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        body { margin: 0; padding: 0; width: 100% !important; height: 100% !important; }
+        a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+        @media only screen and (max-width: 620px) {
+            .container { width: 100% !important; }
+            .content-padding { padding: 24px 20px !important; }
+            .mobile-full { width: 100% !important; display: block !important; }
+            .info-label-td { display: block !important; width: 100% !important; padding-bottom: 2px !important; }
+            .info-value-td { display: block !important; width: 100% !important; padding-bottom: 12px !important; }
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>&#9888; URGENT: New Customer Inquiry</h1>
-            <p>Lavish Travels & Tours Support Team Alert</p>
-        </div>
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 
-        <div class="content">
-            <div class="alert-badge">Requires Response Within 24 Hours</div>
+<!-- Preheader text (hidden) -->
+<div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
+    New inquiry from {{USER_NAME}} — {{INQUIRY_TYPE}}. Requires response within 24 hours.
+</div>
 
-            <p>A new inquiry has been submitted through the Lavish Travels & Tours website. Please review the customer details below and respond promptly to maintain our excellent service standards.</p>
+<!-- Full-width wrapper -->
+<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f4f4f4;">
+<tr>
+<td align="center" style="padding: 24px 16px;">
 
-            <div class="customer-info">
-                <h3 style="margin-top: 0; color: #1f2937;">&#128100; Customer Information</h3>
-                <div class="info-row">
-                    <span class="info-label">Name:</span>
-                    <span class="info-value"><strong>{{USER_NAME}}</strong></span>
-                </div>
-                <div class="info-row">
-                    <span class="info-label">Email:</span>
-                    <span class="info-value">
-                        <a href="mailto:{{USER_EMAIL}}" class="email-link">{{USER_EMAIL}}</a>
-                    </span>
-                </div>
-                <div class="info-row">
-                    <span class="info-label">Phone:</span>
-                    <span class="info-value">{{USER_PHONE}}</span>
-                </div>
-                <div class="info-row">
-                    <span class="info-label">Inquiry Type:</span>
-                    <span class="info-value"><strong>{{INQUIRY_TYPE}}</strong></span>
-                </div>
-            </div>
+<!-- Email container -->
+<table role="presentation" cellpadding="0" cellspacing="0" width="600" class="container" style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
 
-            <div class="question-section">
-                <h3>&#128172; Customer Question/Message</h3>
-                <div class="question-text">{{USER_QUESTION}}</div>
-            </div>
+    <!-- Header -->
+    <tr>
+        <td style="background-color: #1B2A4A; padding: 32px 30px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="font-family: 'Georgia', serif; font-size: 18px; font-weight: 700; color: #D4A853; letter-spacing: 1px;">
+                        LAVISH TRAVELS & TOURS
+                    </td>
+                    <td align="right" style="font-family: Arial, sans-serif; font-size: 11px; color: #8B9DC3; text-transform: uppercase; letter-spacing: 1px;">
+                        Internal Alert
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 
-            <div class="action-section">
-                <h3>&#9658; Next Steps & Action Items</h3>
-                <ul class="action-list">
-                    <li><strong>Respond within 24 hours</strong> to maintain excellent customer service</li>
-                    <li>Review the customer's specific requirements and preferences</li>
-                    <li>Prepare personalized travel recommendations if applicable</li>
-                    <li>Schedule a follow-up call if the inquiry is complex</li>
-                    <li>Update the CRM system with this new lead</li>
-                    <li>Tag this inquiry for performance tracking</li>
-                </ul>
+    <!-- Urgent badge bar -->
+    <tr>
+        <td style="background-color: #C0392B; padding: 12px 30px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="font-family: Arial, sans-serif; font-size: 13px; font-weight: 700; color: #ffffff; text-transform: uppercase; letter-spacing: 1.5px;">
+                        &#9888;&nbsp; New Customer Inquiry &mdash; Action Required
+                    </td>
+                    <td align="right" style="font-family: Arial, sans-serif; font-size: 12px; color: #F5B7B1;">
+                        Respond within 24h
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 
-                <a href="mailto:{{USER_EMAIL}}?subject=Re: Your Sri Lanka Travel Inquiry - {{INQUIRY_TYPE}}&body=Dear {{USER_NAME}},%0D%0A%0D%0AThank you for your interest in Lavish Travels & Tours! We're excited to help you plan your perfect Sri Lankan adventure.%0D%0A%0D%0ABest regards,%0D%0ALavish Travels & Tours Team" class="priority-button">
-                    &#9993; Reply to Customer Now
-                </a>
-            </div>
+    <!-- Intro text -->
+    <tr>
+        <td class="content-padding" style="padding: 32px 40px 16px 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="font-family: Arial, sans-serif; font-size: 15px; color: #555555; line-height: 1.7;">
+                        A new inquiry has been submitted through the website. Please review the details below and respond promptly.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 
-            <div class="timestamp">
-                <strong>Inquiry received:</strong> {{TIMESTAMP}}<br>
-                <strong>Customer ID:</strong> {{USER_EMAIL}} | <strong>Reference:</strong> INQ-{{INQUIRY_ID}}<br>
-                <strong>Source:</strong> Lavish Travels & Tours Website Contact Form
-            </div>
-        </div>
+    <!-- Customer Information Card -->
+    <tr>
+        <td class="content-padding" style="padding: 8px 40px 0 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F8F6F1; border-radius: 6px; border-left: 4px solid #D4A853;">
+                <tr>
+                    <td style="padding: 24px 28px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="font-family: 'Georgia', serif; font-size: 16px; color: #1B2A4A; padding-bottom: 16px; border-bottom: 1px solid #E0DACE;">
+                                    Customer Information
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 16px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td class="info-label-td" style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 12px; color: #888888; text-transform: uppercase; letter-spacing: 1px; width: 120px; vertical-align: top;">
+                                                Name
+                                            </td>
+                                            <td class="info-value-td" style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 15px; color: #1B2A4A; font-weight: 700;">
+                                                {{USER_NAME}}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-label-td" style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 12px; color: #888888; text-transform: uppercase; letter-spacing: 1px; width: 120px; vertical-align: top;">
+                                                Email
+                                            </td>
+                                            <td class="info-value-td" style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 15px;">
+                                                <a href="mailto:{{USER_EMAIL}}" style="color: #D4A853; text-decoration: none; font-weight: 500;">{{USER_EMAIL}}</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-label-td" style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 12px; color: #888888; text-transform: uppercase; letter-spacing: 1px; width: 120px; vertical-align: top;">
+                                                Phone
+                                            </td>
+                                            <td class="info-value-td" style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 15px; color: #333333;">
+                                                {{USER_PHONE}}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-label-td" style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 12px; color: #888888; text-transform: uppercase; letter-spacing: 1px; width: 120px; vertical-align: top;">
+                                                Inquiry Type
+                                            </td>
+                                            <td class="info-value-td" style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 15px; color: #1B2A4A; font-weight: 600;">
+                                                {{INQUIRY_TYPE}}
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 
-        <div class="footer">
-            <p><strong>Lavish Travels & Tours</strong> - Internal Support System</p>
-            <p>&#9742; Office: +94 70 172 8922 | +94 77 041 8967</p>
-            <p>&#9993; Support: support@lavishtravelsandtours.online</p>
-            <p>&#128172; WhatsApp: +94 70 172 8922</p>
-            <p>This email was automatically generated from the inquiry form.</p>
-            <p>For technical issues, contact: <a href="mailto:support@lavishtravelsandtours.online">support@lavishtravelsandtours.online</a></p>
-        </div>
-    </div>
+    <!-- Spacer -->
+    <tr>
+        <td style="height: 16px; font-size: 0; line-height: 0;">&nbsp;</td>
+    </tr>
+
+    <!-- Customer Message Card -->
+    <tr>
+        <td class="content-padding" style="padding: 0 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFF9F0; border-radius: 6px; border-left: 4px solid #E67E22;">
+                <tr>
+                    <td style="padding: 24px 28px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="font-family: 'Georgia', serif; font-size: 16px; color: #1B2A4A; padding-bottom: 16px; border-bottom: 1px solid #F0E0C8;">
+                                    Customer Message
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 16px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border-radius: 4px; border: 1px solid #F0E0C8;">
+                                        <tr>
+                                            <td style="padding: 16px 20px; font-family: Arial, sans-serif; font-size: 14px; color: #444444; line-height: 1.7; font-style: italic; white-space: pre-wrap;">{{USER_QUESTION}}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Spacer -->
+    <tr>
+        <td style="height: 24px; font-size: 0; line-height: 0;">&nbsp;</td>
+    </tr>
+
+    <!-- Reply CTA Button -->
+    <tr>
+        <td align="center" style="padding: 0 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" style="background-color: #1B2A4A; border-radius: 6px;">
+                        <!--[if mso]>
+                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="mailto:{{USER_EMAIL}}?subject=Re: Your Sri Lanka Travel Inquiry - {{INQUIRY_TYPE}}&amp;body=Dear {{USER_NAME}},%0D%0A%0D%0AThank you for your interest in Lavish Travels %26 Tours!%0D%0A%0D%0ABest regards,%0D%0ALavish Travels %26 Tours Team" style="height:50px;v-text-anchor:middle;width:240px;" arcsize="12%" strokecolor="#1B2A4A" fillcolor="#1B2A4A">
+                        <w:anchorlock/>
+                        <center style="color:#D4A853;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Reply to Customer</center>
+                        </v:roundrect>
+                        <![endif]-->
+                        <!--[if !mso]><!-->
+                        <a href="mailto:{{USER_EMAIL}}?subject=Re: Your Sri Lanka Travel Inquiry - {{INQUIRY_TYPE}}&amp;body=Dear {{USER_NAME}},%0D%0A%0D%0AThank you for your interest in Lavish Travels %26 Tours! We're excited to help you plan your perfect Sri Lankan adventure.%0D%0A%0D%0ABest regards,%0D%0ALavish Travels %26 Tours Team" target="_blank" style="display: inline-block; padding: 14px 36px; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #D4A853; text-decoration: none; border-radius: 6px; background-color: #1B2A4A; letter-spacing: 0.5px;">
+                            Reply to Customer
+                        </a>
+                        <!--<![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Divider -->
+    <tr>
+        <td style="padding: 28px 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="height: 1px; background-color: #E8E8E8; font-size: 0; line-height: 0;">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Action Items -->
+    <tr>
+        <td class="content-padding" style="padding: 0 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="font-family: 'Georgia', serif; font-size: 16px; color: #1B2A4A; padding-bottom: 16px;">
+                        Action Checklist
+                    </td>
+                </tr>
+            </table>
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 14px; color: #555555; line-height: 1.6;">
+                        &#9744;&nbsp;&nbsp;Respond to customer within 24 hours
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 14px; color: #555555; line-height: 1.6;">
+                        &#9744;&nbsp;&nbsp;Review specific requirements and preferences
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 14px; color: #555555; line-height: 1.6;">
+                        &#9744;&nbsp;&nbsp;Prepare personalized travel recommendations
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 14px; color: #555555; line-height: 1.6;">
+                        &#9744;&nbsp;&nbsp;Schedule follow-up call if inquiry is complex
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 6px 0; font-family: Arial, sans-serif; font-size: 14px; color: #555555; line-height: 1.6;">
+                        &#9744;&nbsp;&nbsp;Update CRM with this new lead
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Spacer -->
+    <tr>
+        <td style="height: 16px; font-size: 0; line-height: 0;">&nbsp;</td>
+    </tr>
+
+    <!-- Metadata bar -->
+    <tr>
+        <td class="content-padding" style="padding: 8px 40px 32px 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F4F4F4; border-radius: 6px;">
+                <tr>
+                    <td style="padding: 16px 20px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="font-family: Arial, sans-serif; font-size: 12px; color: #888888; line-height: 1.8;">
+                                    <strong style="color: #666666;">Received:</strong>&nbsp; {{TIMESTAMP}}<br>
+                                    <strong style="color: #666666;">Reference:</strong>&nbsp; INQ-{{INQUIRY_ID}}<br>
+                                    <strong style="color: #666666;">Source:</strong>&nbsp; Website Contact Form
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+        <td style="background-color: #1B2A4A; padding: 24px 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="font-family: Arial, sans-serif; font-size: 12px; color: #8B9DC3; line-height: 1.8;">
+                        <strong style="color: #D4A853;">Lavish Travels & Tours</strong> &mdash; Internal Support System<br>
+                        +94 70 172 8922 &nbsp;|&nbsp; +94 77 041 8967<br>
+                        <a href="mailto:support@lavishtravelsandtours.online" style="color: #D4A853; text-decoration: none;">support@lavishtravelsandtours.online</a>
+                    </td>
+                    <td align="right" valign="top" style="font-family: Arial, sans-serif; font-size: 11px; color: #5A6B8A;">
+                        Auto-generated from<br>inquiry form submission
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+</table>
+<!-- End email container -->
+
+</td>
+</tr>
+</table>
+<!-- End full-width wrapper -->
+
 </body>
 </html>

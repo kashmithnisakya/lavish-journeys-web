@@ -1,337 +1,455 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You for Your Sri Lanka Travel Inquiry!</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f9ff;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 650px;
-            margin: 20px auto;
-            background-color: #ffffff;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-            position: relative;
-        }
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-        }
-        .header-content {
-            position: relative;
-            z-index: 1;
-        }
-        .logo {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        .tagline {
-            font-size: 16px;
-            opacity: 0.95;
-            margin: 0;
-        }
-        .content {
-            padding: 40px 30px;
-        }
-        .greeting {
-            font-size: 24px;
-            color: #1e40af;
-            margin: 0 0 20px 0;
-            font-weight: 600;
-        }
-        .thank-you-message {
-            color: #374151;
-            font-size: 16px;
-            margin-bottom: 30px;
-            line-height: 1.7;
-        }
-        .inquiry-summary {
-            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-            border-radius: 12px;
-            padding: 25px;
-            margin: 25px 0;
-            border-left: 4px solid #0ea5e9;
-            position: relative;
-        }
-        .inquiry-summary::before {
-            content: '📋';
-            position: absolute;
-            top: 25px;
-            right: 25px;
-            font-size: 24px;
-        }
-        .inquiry-summary h3 {
-            margin: 0 0 15px 0;
-            color: #0c4a6e;
-            font-size: 18px;
-        }
-        .summary-item {
-            display: flex;
-            margin-bottom: 10px;
-            align-items: center;
-        }
-        .summary-label {
-            font-weight: 600;
-            color: #0c4a6e;
-            min-width: 120px;
-            margin-right: 15px;
-        }
-        .summary-value {
-            color: #164e63;
-            flex: 1;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
-            border-radius: 12px;
-            padding: 25px;
-            margin: 25px 0;
-            border-left: 4px solid #10b981;
-            position: relative;
-        }
-        .highlight-box::before {
-            content: '⚡';
-            position: absolute;
-            top: 25px;
-            right: 25px;
-            font-size: 24px;
-        }
-        .highlight-box h3 {
-            margin: 0 0 15px 0;
-            color: #047857;
-            font-size: 18px;
-        }
-        .steps-list {
-            color: #065f46;
-            margin: 0;
-            padding-left: 20px;
-        }
-        .steps-list li {
-            margin-bottom: 8px;
-            line-height: 1.5;
-        }
-        .contact-section {
-            background-color: #f8fafc;
-            border-radius: 12px;
-            padding: 25px;
-            margin: 25px 0;
-            text-align: center;
-        }
-        .contact-section h3 {
-            margin: 0 0 20px 0;
-            color: #1e40af;
-            font-size: 18px;
-        }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .contact-item {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-        }
-        .contact-item strong {
-            color: #1e40af;
-            display: block;
-            margin-bottom: 5px;
-        }
-        .contact-item a {
-            color: #0ea5e9;
-            text-decoration: none;
-        }
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-        .social-section {
-            background: linear-gradient(135deg, #fef3c7, #fed7aa);
-            border-radius: 12px;
-            padding: 25px;
-            margin: 25px 0;
-            text-align: center;
-        }
-        .social-section h3 {
-            margin: 0 0 15px 0;
-            color: #92400e;
-            font-size: 18px;
-        }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        .social-link {
-            display: inline-block;
-            padding: 10px 15px;
-            background: white;
-            border-radius: 25px;
-            text-decoration: none;
-            color: #92400e;
-            font-weight: 500;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-        .social-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        }
-        .footer {
-            background-color: #1e293b;
-            color: #cbd5e1;
-            padding: 30px;
-            text-align: center;
-        }
-        .footer-logo {
-            color: #0ea5e9;
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .footer p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-        .footer a {
-            color: #0ea5e9;
-            text-decoration: none;
-        }
-        .unsubscribe {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #475569;
-            font-size: 12px;
-            opacity: 0.8;
-        }
-        @media (max-width: 600px) {
-            .container {
-                margin: 10px;
-                border-radius: 12px;
-            }
-            .header,
-            .content {
-                padding: 25px 20px;
-            }
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-            .social-links {
-                flex-direction: column;
-                align-items: center;
-            }
-            .summary-item {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .summary-label {
-                margin-bottom: 5px;
-            }
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Thank You for Your Inquiry - Lavish Travels & Tours</title>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+    <style type="text/css">
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        body { margin: 0; padding: 0; width: 100% !important; height: 100% !important; }
+        a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+        @media only screen and (max-width: 620px) {
+            .container { width: 100% !important; }
+            .content-padding { padding: 24px 20px !important; }
+            .mobile-full { width: 100% !important; display: block !important; }
+            .mobile-center { text-align: center !important; }
+            .mobile-padding { padding-left: 16px !important; padding-right: 16px !important; }
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="header-content">
-                <div class="logo">&#9992; Lavish Travels & Tours</div>
-                <p class="tagline">Your Gateway to Sri Lankan Adventures</p>
-            </div>
-        </div>
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 
-        <div class="content">
-            <h2 class="greeting">Ayubowan {{USER_NAME}}!</h2>
+<!-- Preheader text (hidden) -->
+<div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
+    Thank you for reaching out to Lavish Travels & Tours! We've received your inquiry and our team will get back to you within 24 hours.
+</div>
 
-            <div class="thank-you-message">
-Thank you for reaching out to <strong>Lavish Travels & Tours</strong>! We're absolutely thrilled that you're considering Sri Lanka for your next adventure. Your inquiry is incredibly important to us, and we're excited to help you create unforgettable memories in the pearl of the Indian Ocean!
-            </div>
+<!-- Full-width wrapper -->
+<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f4f4f4;">
+<tr>
+<td align="center" style="padding: 24px 16px;">
 
-            <div class="inquiry-summary">
-                <h3>&#128196; Your Inquiry Summary</h3>
-                <div class="summary-item">
-                    <span class="summary-label">Inquiry Type:</span>
-                    <span class="summary-value"><strong>{{INQUIRY_TYPE}}</strong></span>
-                </div>
-                <div class="summary-item">
-                    <span class="summary-label">Submitted:</span>
-                    <span class="summary-value">{{TIMESTAMP}}</span>
-                </div>
-                <div class="summary-item">
-                    <span class="summary-label">Reference ID:</span>
-                    <span class="summary-value">INQ-{{INQUIRY_ID}}</span>
-                </div>
-            </div>
+<!-- Email container -->
+<table role="presentation" cellpadding="0" cellspacing="0" width="600" class="container" style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
 
-            <div class="highlight-box">
-                <h3>&#9658; What Happens Next?</h3>
-                <ul class="steps-list">
-                    <li><strong>Within 24 hours:</strong> Our expert travel consultants will review your inquiry and respond with personalized recommendations</li>
-                    <li><strong>Consultation:</strong> We'll discuss your preferences, budget, and dream destinations to craft the perfect itinerary</li>
-                    <li><strong>Custom Proposal:</strong> Receive a detailed travel proposal tailored specifically to your needs</li>
-                    <li><strong>Planning & Booking:</strong> Once approved, we'll handle all the details to make your trip seamless</li>
-                </ul>
-            </div>
+    <!-- Header with logo -->
+    <tr>
+        <td align="center" style="background-color: #1B2A4A; padding: 40px 30px;">
+            <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" style="font-family: 'Georgia', serif; font-size: 28px; font-weight: 700; color: #D4A853; letter-spacing: 1px;">
+                        LAVISH TRAVELS & TOURS
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding-top: 8px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width: 40px; height: 1px; background-color: #D4A853;"></td>
+                                <td style="padding: 0 12px; font-family: Arial, sans-serif; font-size: 11px; color: #8B9DC3; text-transform: uppercase; letter-spacing: 3px;">
+                                    Sri Lanka
+                                </td>
+                                <td style="width: 40px; height: 1px; background-color: #D4A853;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 
-            <div class="contact-section">
-                <h3>&#9742; Need Immediate Assistance?</h3>
-                <p>Our team is here to help! Feel free to reach out through any of these channels:</p>
+    <!-- Gold accent line -->
+    <tr>
+        <td style="height: 4px; background-color: #D4A853; font-size: 0; line-height: 0;">&nbsp;</td>
+    </tr>
 
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <strong>&#9993; Email</strong>
-                        <a href="mailto:support@lavishtravelsandtours.online">support@lavishtravelsandtours.online</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>&#9742; Phone</strong>
-                        <a href="tel:+94701728922">+94 70 172 8922 | +94 77 041 8967</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>&#128172; WhatsApp</strong>
-                        <a href="https://wa.me/94701728922">Chat with us</a>
-                    </div>
-                </div>
-            </div>
+    <!-- Greeting -->
+    <tr>
+        <td class="content-padding" style="padding: 40px 40px 0 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="font-family: 'Georgia', serif; font-size: 26px; color: #1B2A4A; line-height: 1.3;">
+                        Ayubowan, {{USER_NAME}}!
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 20px; font-family: Arial, sans-serif; font-size: 15px; color: #555555; line-height: 1.7;">
+                        Thank you for reaching out to <strong style="color: #1B2A4A;">Lavish Travels & Tours</strong>. We're excited that you're considering Sri Lanka for your next adventure. Your inquiry is important to us, and our team is already preparing to craft the perfect experience for you.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 
+    <!-- Divider -->
+    <tr>
+        <td style="padding: 30px 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="height: 1px; background-color: #E8E8E8; font-size: 0; line-height: 0;">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 
-            <p style="text-align: center; color: #6b7280; font-style: italic; margin-top: 30px;">
-                "Adventure awaits those who dare to explore. Let us be your guide to the extraordinary."
-            </p>
-        </div>
+    <!-- Inquiry Summary -->
+    <tr>
+        <td class="content-padding" style="padding: 0 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F8F6F1; border-radius: 6px;">
+                <tr>
+                    <td style="padding: 24px 28px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="font-family: 'Georgia', serif; font-size: 18px; color: #1B2A4A; padding-bottom: 16px; border-bottom: 1px solid #E0DACE;">
+                                    Your Inquiry Details
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 16px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td style="padding: 8px 0; font-family: Arial, sans-serif; font-size: 13px; color: #888888; text-transform: uppercase; letter-spacing: 1px; width: 130px; vertical-align: top;">
+                                                Inquiry Type
+                                            </td>
+                                            <td style="padding: 8px 0; font-family: Arial, sans-serif; font-size: 15px; color: #1B2A4A; font-weight: 600;">
+                                                {{INQUIRY_TYPE}}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 8px 0; font-family: Arial, sans-serif; font-size: 13px; color: #888888; text-transform: uppercase; letter-spacing: 1px; width: 130px; vertical-align: top;">
+                                                Submitted
+                                            </td>
+                                            <td style="padding: 8px 0; font-family: Arial, sans-serif; font-size: 15px; color: #333333;">
+                                                {{TIMESTAMP}}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 8px 0; font-family: Arial, sans-serif; font-size: 13px; color: #888888; text-transform: uppercase; letter-spacing: 1px; width: 130px; vertical-align: top;">
+                                                Reference
+                                            </td>
+                                            <td style="padding: 8px 0; font-family: Arial, sans-serif; font-size: 15px; color: #333333;">
+                                                INQ-{{INQUIRY_ID}}
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 
-        <div class="footer">
-            <div class="footer-logo">Lavish Travels & Tours</div>
-            <p><strong>Creating Memorable Journeys Since 2020</strong></p>
-            <p>&#128205; Office: +94 70 172 8922 | +94 77 041 8967</p>
-            <p>&#9993; <a href="mailto:support@lavishtravelsandtours.online">support@lavishtravelsandtours.online</a></p>
-            <p>&#127760; <a href="https://lavishtravelsandtours.online">www.lavishtravelsandtours.online</a></p>
+    <!-- Spacer -->
+    <tr>
+        <td style="height: 30px; font-size: 0; line-height: 0;">&nbsp;</td>
+    </tr>
 
-            <div class="unsubscribe">
-                <p>You received this email because you submitted an inquiry through our website.</p>
-                <p>This is a confirmation email. You will not receive marketing emails unless you opt-in.</p>
-            </div>
-        </div>
-    </div>
+    <!-- What Happens Next -->
+    <tr>
+        <td class="content-padding" style="padding: 0 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="font-family: 'Georgia', serif; font-size: 20px; color: #1B2A4A; padding-bottom: 20px; text-align: center;">
+                        What Happens Next?
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Steps -->
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <!-- Step 1 -->
+                <tr>
+                    <td style="padding-bottom: 20px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="width: 48px; vertical-align: top;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="center" style="width: 36px; height: 36px; background-color: #1B2A4A; border-radius: 50%; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #D4A853; line-height: 36px;">
+                                                1
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: top; padding-left: 4px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td style="font-family: Arial, sans-serif; font-size: 15px; font-weight: 600; color: #1B2A4A; padding-bottom: 4px;">
+                                                Review & Response
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Arial, sans-serif; font-size: 14px; color: #666666; line-height: 1.6;">
+                                                Our travel consultants will review your inquiry and respond with personalized recommendations within 24 hours.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Step 2 -->
+                <tr>
+                    <td style="padding-bottom: 20px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="width: 48px; vertical-align: top;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="center" style="width: 36px; height: 36px; background-color: #1B2A4A; border-radius: 50%; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #D4A853; line-height: 36px;">
+                                                2
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: top; padding-left: 4px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td style="font-family: Arial, sans-serif; font-size: 15px; font-weight: 600; color: #1B2A4A; padding-bottom: 4px;">
+                                                Consultation
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Arial, sans-serif; font-size: 14px; color: #666666; line-height: 1.6;">
+                                                We'll discuss your preferences, budget, and dream destinations to craft the perfect itinerary.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Step 3 -->
+                <tr>
+                    <td style="padding-bottom: 20px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="width: 48px; vertical-align: top;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="center" style="width: 36px; height: 36px; background-color: #1B2A4A; border-radius: 50%; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #D4A853; line-height: 36px;">
+                                                3
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: top; padding-left: 4px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td style="font-family: Arial, sans-serif; font-size: 15px; font-weight: 600; color: #1B2A4A; padding-bottom: 4px;">
+                                                Custom Proposal
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Arial, sans-serif; font-size: 14px; color: #666666; line-height: 1.6;">
+                                                Receive a detailed travel proposal tailored specifically to your needs and interests.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Step 4 -->
+                <tr>
+                    <td style="padding-bottom: 8px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="width: 48px; vertical-align: top;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="center" style="width: 36px; height: 36px; background-color: #1B2A4A; border-radius: 50%; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #D4A853; line-height: 36px;">
+                                                4
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: top; padding-left: 4px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td style="font-family: Arial, sans-serif; font-size: 15px; font-weight: 600; color: #1B2A4A; padding-bottom: 4px;">
+                                                Booking & Travel
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Arial, sans-serif; font-size: 14px; color: #666666; line-height: 1.6;">
+                                                Once approved, we handle all the details to make your Sri Lankan journey seamless and memorable.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Spacer -->
+    <tr>
+        <td style="height: 24px; font-size: 0; line-height: 0;">&nbsp;</td>
+    </tr>
+
+    <!-- CTA Button -->
+    <tr>
+        <td align="center" style="padding: 0 40px 10px 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" style="background-color: #D4A853; border-radius: 6px;">
+                        <!--[if mso]>
+                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://wa.me/94701728922" style="height:50px;v-text-anchor:middle;width:260px;" arcsize="12%" strokecolor="#D4A853" fillcolor="#D4A853">
+                        <w:anchorlock/>
+                        <center style="color:#1B2A4A;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Chat with Us on WhatsApp</center>
+                        </v:roundrect>
+                        <![endif]-->
+                        <!--[if !mso]><!-->
+                        <a href="https://wa.me/94701728922" target="_blank" style="display: inline-block; padding: 14px 36px; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #1B2A4A; text-decoration: none; border-radius: 6px; background-color: #D4A853; letter-spacing: 0.5px;">
+                            Chat with Us on WhatsApp
+                        </a>
+                        <!--<![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Divider -->
+    <tr>
+        <td style="padding: 24px 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="height: 1px; background-color: #E8E8E8; font-size: 0; line-height: 0;">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Contact Section -->
+    <tr>
+        <td class="content-padding" style="padding: 0 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center" style="font-family: 'Georgia', serif; font-size: 18px; color: #1B2A4A; padding-bottom: 20px;">
+                        Need Immediate Assistance?
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F8F8F8; border-radius: 6px;">
+                            <tr>
+                                <td style="padding: 20px 24px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td align="center" style="padding-bottom: 12px; font-family: Arial, sans-serif; font-size: 14px; color: #555555;">
+                                                <strong style="color: #1B2A4A;">Email:</strong>&nbsp;&nbsp;
+                                                <a href="mailto:support@lavishtravelsandtours.online" style="color: #D4A853; text-decoration: none;">support@lavishtravelsandtours.online</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding-bottom: 12px; font-family: Arial, sans-serif; font-size: 14px; color: #555555;">
+                                                <strong style="color: #1B2A4A;">Phone:</strong>&nbsp;&nbsp;
+                                                <a href="tel:+94701728922" style="color: #555555; text-decoration: none;">+94 70 172 8922</a> &nbsp;|&nbsp;
+                                                <a href="tel:+94770418967" style="color: #555555; text-decoration: none;">+94 77 041 8967</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="font-family: Arial, sans-serif; font-size: 14px; color: #555555;">
+                                                <strong style="color: #1B2A4A;">WhatsApp:</strong>&nbsp;&nbsp;
+                                                <a href="https://wa.me/94701728922" style="color: #D4A853; text-decoration: none;">+94 70 172 8922</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Quote -->
+    <tr>
+        <td align="center" style="padding: 32px 40px 8px 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center" style="font-family: 'Georgia', serif; font-size: 14px; color: #999999; font-style: italic; line-height: 1.6;">
+                        "Adventure awaits those who dare to explore.<br>Let us be your guide to the extraordinary."
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Spacer before footer -->
+    <tr>
+        <td style="height: 24px; font-size: 0; line-height: 0;">&nbsp;</td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+        <td style="background-color: #1B2A4A; padding: 32px 40px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center" style="font-family: 'Georgia', serif; font-size: 18px; font-weight: 700; color: #D4A853; letter-spacing: 1px; padding-bottom: 6px;">
+                        LAVISH TRAVELS & TOURS
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="font-family: Arial, sans-serif; font-size: 13px; color: #8B9DC3; padding-bottom: 16px;">
+                        Creating Memorable Journeys Since 2020
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding-bottom: 8px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width: 60px; height: 1px; background-color: #2D3F5E;">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="font-family: Arial, sans-serif; font-size: 13px; color: #8B9DC3; line-height: 1.8;">
+                        <a href="mailto:support@lavishtravelsandtours.online" style="color: #D4A853; text-decoration: none;">support@lavishtravelsandtours.online</a><br>
+                        <a href="https://lavishtravelsandtours.online" style="color: #D4A853; text-decoration: none;">www.lavishtravelsandtours.online</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding-top: 20px; font-family: Arial, sans-serif; font-size: 11px; color: #5A6B8A; line-height: 1.6;">
+                        You received this email because you submitted an inquiry through our website.<br>
+                        This is a confirmation email &mdash; you will not receive marketing emails unless you opt in.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+</table>
+<!-- End email container -->
+
+</td>
+</tr>
+</table>
+<!-- End full-width wrapper -->
+
 </body>
 </html>
