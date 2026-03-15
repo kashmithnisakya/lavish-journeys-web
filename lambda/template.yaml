@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
-Description: Lavish Travels & Tours - Inquiry API (Lambda + API Gateway)
+Description: Lavish Travels & Tours - Inquiry API (Lambda + API Gateway + SES)
 
 Globals:
   Function:
@@ -9,25 +9,20 @@ Globals:
     MemorySize: 256
     Environment:
       Variables:
-        SENDGRID_API_KEY: !Ref SendGridApiKey
-        SENDGRID_FROM_EMAIL: !Ref SendGridFromEmail
+        FROM_EMAIL: !Ref FromEmail
         SUPPORT_EMAIL: !Ref SupportEmail
         ALLOWED_ORIGINS: !Ref AllowedOrigins
 
 Parameters:
-  SendGridApiKey:
+  FromEmail:
     Type: String
-    NoEcho: true
-    Description: SendGrid API key for sending emails
-  SendGridFromEmail:
-    Type: String
-    Description: Verified sender email address for SendGrid
+    Description: Verified SES sender email address (e.g. support@lavishtravelsandtours.online)
   SupportEmail:
     Type: String
     Description: Email address to receive inquiry notifications
   AllowedOrigins:
     Type: String
-    Default: "*"
+    Default: "https://lavishtravelsandtours.online"
     Description: CORS allowed origins
 
 Resources:
@@ -36,7 +31,15 @@ Resources:
     Properties:
       Handler: index.handler
       CodeUri: .
-      Description: Handles inquiry form submissions and sends emails via SendGrid
+      Description: Handles inquiry form submissions and sends emails via AWS SES
+      Policies:
+        - Version: "2012-10-17"
+          Statement:
+            - Effect: Allow
+              Action:
+                - ses:SendEmail
+                - ses:SendRawEmail
+              Resource: "*"
       Events:
         InquiryApi:
           Type: HttpApi
@@ -57,7 +60,7 @@ Resources:
       StageName: prod
       CorsConfiguration:
         AllowOrigins:
-          - "*"
+          - "https://lavishtravelsandtours.online"
         AllowHeaders:
           - Content-Type
         AllowMethods:

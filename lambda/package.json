@@ -9,7 +9,5 @@
     "build": "sam build",
     "local": "sam local start-api"
   },
-  "dependencies": {
-    "@sendgrid/mail": "^8.1.0"
-  }
+  "dependencies": {}
 }

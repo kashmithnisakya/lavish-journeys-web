@@ -1,4 +1,4 @@
-import sgMail from "@sendgrid/mail";
+import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 import { readFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
@@ -6,10 +6,12 @@ import { randomUUID } from "crypto";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// Initialize SendGrid
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// Initialize SES client (uses Lambda's region by default, override with SES_REGION if needed)
+const ses = new SESClient({
+  region: process.env.SES_REGION || process.env.AWS_REGION,
+});
 
-const SENDGRID_FROM_EMAIL = process.env.SENDGRID_FROM_EMAIL;
+const FROM_EMAIL = process.env.FROM_EMAIL;
 const SUPPORT_EMAIL = process.env.SUPPORT_EMAIL;
 const ALLOWED_ORIGINS = process.env.ALLOWED_ORIGINS || "*";
 
@@ -69,6 +71,19 @@ function validatePayload(body) {
   return errors;
 }
 
+function sendEmail({ to, subject, html }) {
+  return ses.send(
+    new SendEmailCommand({
+      Source: FROM_EMAIL,
+      Destination: { ToAddresses: [to] },
+      Message: {
+        Subject: { Data: subject, Charset: "UTF-8" },
+        Body: { Html: { Data: html, Charset: "UTF-8" } },
+      },
+    })
+  );
+}
+
 export async function handler(event) {
   // Handle CORS preflight
   if (event.requestContext?.http?.method === "OPTIONS" || event.httpMethod === "OPTIONS") {
@@ -125,17 +140,15 @@ export async function handler(event) {
       "{{INQUIRY_ID}}": inquiryId,
     });
 
-    // Send both emails
+    // Send both emails via SES
     await Promise.all([
-      sgMail.send({
+      sendEmail({
         to: SUPPORT_EMAIL,
-        from: SENDGRID_FROM_EMAIL,
         subject: `New Inquiry: ${inquiryType} - ${body.name}`,
         html: supportHtml,
       }),
-      sgMail.send({
+      sendEmail({
         to: body.email,
-        from: SENDGRID_FROM_EMAIL,
         subject: "Thank you for your inquiry - Lavish Travels & Tours",
         html: userHtml,
       }),
