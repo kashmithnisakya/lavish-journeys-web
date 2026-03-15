@@ -1,127 +1,127 @@
 {
   "classical-journey": {
-    "title": "Classical Journey in Sri Lanka",
-    "duration": "8 Days / 7 Nights",
-    "description": "Embark on an enchanting classical journey through Sri Lanka's most treasured destinations. This carefully crafted itinerary combines ancient wonders, cultural heritage, and natural beauty in perfect harmony. Experience thrilling wildlife encounters, explore mystical cave temples, and witness legendary Ramayana sites.",
+    "title": "श्रीलंका में क्लासिकल जर्नी",
+    "duration": "8 दिन / 7 रातें",
+    "description": "श्रीलंका के सबसे अनमोल स्थलों की एक मनमोहक क्लासिकल यात्रा पर निकलें। यह सावधानीपूर्वक तैयार किया गया यात्रा-कार्यक्रम प्राचीन अजूबों, सांस्कृतिक विरासत और प्राकृतिक सौंदर्य को संपूर्ण सामंजस्य में जोड़ता है। रोमांचक वन्यजीव अनुभव लें, रहस्यमय गुफा मंदिरों की सैर करें और पौराणिक रामायण स्थलों के दर्शन करें।",
     "highlights": [
-      "UNESCO World Heritage Sites: Sigiriya, Dambulla Cave Temple, Kandy Temple of the Tooth",
-      "Ancient Cities: Polonnaruwa ruins and royal palace complex",
-      "Wildlife Encounter: Optional Minneriya National Park elephant safari",
-      "Cultural Immersion: Spice garden tour and traditional Sri Lankan cuisine",
-      "Ramayana Trail: Hanuman Temple and Sita Amman Kovil",
-      "Natural Beauty: Hill country landscapes and botanical gardens",
-      "Beach Relaxation: Coastal retreat with water sports options",
-      "City Discovery: Colonial Colombo architecture and shopping"
+      "यूनेस्को विश्व धरोहर स्थल: Sigiriya, Dambulla गुफा मंदिर, Kandy दाँत अवशेष मंदिर",
+      "प्राचीन नगर: Polonnaruwa के खंडहर और शाही महल परिसर",
+      "वन्यजीव अनुभव: वैकल्पिक Minneriya राष्ट्रीय उद्यान हाथी सफारी",
+      "सांस्कृतिक विसर्जन: मसाला बगीचे की सैर और पारंपरिक श्रीलंकाई व्यंजन",
+      "रामायण ट्रेल: हनुमान मंदिर और Sita Amman Kovil",
+      "प्राकृतिक सौंदर्य: पहाड़ी देश के परिदृश्य और वनस्पति उद्यान",
+      "समुद्र तट विश्राम: जल क्रीड़ा विकल्पों के साथ तटीय आश्रय",
+      "शहर अन्वेषण: औपनिवेशिक Colombo वास्तुकला और खरीदारी"
     ],
     "image": "/src/assets/destination-sigiriya.jpg",
     "price": {
       "from": 991,
-      "category": "per person"
+      "category": "प्रति व्यक्ति"
     },
     "itinerary": [
       {
         "day": 1,
-        "title": "Arrival & Transfer to Kandalama",
+        "title": "आगमन और Kandalama स्थानांतरण",
         "activities": [
-          "Airport meet & greet by English-speaking chauffeur guide",
-          "Transfer to Kandalama with comfort stop at Saruketha Restaurant",
-          "Check-in at Heritance Kandalama Resort",
-          "Optional afternoon Minneriya National Park safari"
+          "अंग्रेजी भाषी चालक-गाइड द्वारा हवाई अड्डे पर स्वागत",
+          "Saruketha रेस्तरां में आराम विराम के साथ Kandalama स्थानांतरण",
+          "Heritance Kandalama Resort में चेक-इन",
+          "वैकल्पिक दोपहर Minneriya राष्ट्रीय उद्यान सफारी"
         ],
         "accommodation": "Heritance Kandalama Resort"
       },
       {
         "day": 2,
-        "title": "Sigiriya Rock Fortress & Polonnaruwa",
+        "title": "Sigiriya शैलदुर्ग और Polonnaruwa",
         "activities": [
-          "Morning climb of Sigiriya Rock Fortress - UNESCO World Heritage Site",
-          "Marvel at ancient frescoes and Lion's Gate entrance",
-          "Afternoon excursion to Polonnaruwa",
-          "Explore the 2nd ancient capital with Buddhist and Hindu structures"
+          "Sigiriya शैलदुर्ग की सुबह चढ़ाई - यूनेस्को विश्व धरोहर स्थल",
+          "प्राचीन भित्तिचित्रों और सिंह द्वार के दर्शन",
+          "Polonnaruwa का दोपहर भ्रमण",
+          "बौद्ध और हिंदू संरचनाओं के साथ दूसरी प्राचीन राजधानी का अन्वेषण"
         ],
         "accommodation": "Heritance Kandalama Resort"
       },
       {
         "day": 3,
-        "title": "Dambulla Cave Temple & Transfer to Kandy",
+        "title": "Dambulla गुफा मंदिर और Kandy स्थानांतरण",
         "activities": [
-          "Visit Dambulla Rock Cave Temple - UNESCO World Heritage Site",
-          "Explore 5 caves with 150+ Buddha statues and ancient frescoes",
-          "Spice garden visit in Matale",
-          "Evening visit to Temple of the Tooth Relic"
+          "Dambulla शैल गुफा मंदिर का दौरा - यूनेस्को विश्व धरोहर स्थल",
+          "150+ बुद्ध प्रतिमाओं और प्राचीन भित्तिचित्रों के साथ 5 गुफाओं का अन्वेषण",
+          "Matale में मसाला बगीचे की सैर",
+          "दाँत अवशेष मंदिर का शाम का दौरा"
         ],
         "accommodation": "Mahaweli Reach Hotel, Kandy"
       },
       {
         "day": 4,
-        "title": "Kandy to Nuwara Eliya",
+        "title": "Kandy से Nuwara Eliya",
         "activities": [
-          "Visit Shri Bhakta Hanuman Temple in Ramboda",
-          "Arrive in 'Little England' - cool mountain retreat",
-          "Afternoon city walk exploring colonial architecture"
+          "Ramboda में श्री भक्त हनुमान मंदिर के दर्शन",
+          "'लिटिल इंग्लैंड' में आगमन - ठंडा पहाड़ी आश्रय",
+          "औपनिवेशिक वास्तुकला की खोज करते हुए दोपहर शहर भ्रमण"
         ],
         "accommodation": "The Grand Hotel, Nuwara Eliya"
       },
       {
         "day": 5,
-        "title": "Nuwara Eliya Exploration",
+        "title": "Nuwara Eliya अन्वेषण",
         "activities": [
-          "Morning visit to Hakgala Botanical Gardens",
-          "Visit Sita Amman Kovil - legendary Ramayana site",
-          "Learn about Queen Sita's captivity in the hill country",
-          "Afternoon leisure time enjoying cool climate"
+          "Hakgala वनस्पति उद्यान की सुबह सैर",
+          "Sita Amman Kovil का दौरा - पौराणिक रामायण स्थल",
+          "पहाड़ी देश में रानी सीता की कैद के बारे में जानें",
+          "ठंडी जलवायु का आनंद लेते हुए दोपहर का खाली समय"
         ],
         "accommodation": "The Grand Hotel, Nuwara Eliya"
       },
       {
         "day": 6,
-        "title": "Nuwara Eliya to Bentota",
+        "title": "Nuwara Eliya से Bentota",
         "activities": [
-          "Morning departure to Bentota on the South Coast",
-          "Optional Madu River boat safari through mangrove forests",
-          "Visit Buddhist Kothduwa Temple on isolated island",
-          "Beach relaxation and water sports"
+          "दक्षिणी तट पर Bentota के लिए सुबह प्रस्थान",
+          "मैंग्रोव वनों के बीच वैकल्पिक Madu River नाव सफारी",
+          "एकांत द्वीप पर बौद्ध Kothduwa मंदिर के दर्शन",
+          "समुद्र तट विश्राम और जल क्रीड़ा"
         ],
         "accommodation": "Cinnamon Bey, Beruwala"
       },
       {
         "day": 7,
-        "title": "Bentota to Colombo City Tour",
+        "title": "Bentota से Colombo शहर भ्रमण",
         "activities": [
-          "Comprehensive city tour including Fort area and Pettah bazaar",
-          "Visit Dutch Church of Wolfendhaal and historic buildings",
-          "Shopping opportunities at local markets",
-          "Visit Independence Square and BMICH"
+          "Fort क्षेत्र और Pettah बाज़ार सहित व्यापक शहर दर्शन",
+          "Dutch Church of Wolfendhaal और ऐतिहासिक इमारतों का दौरा",
+          "स्थानीय बाजारों में खरीदारी के अवसर",
+          "Independence Square और BMICH का दौरा"
         ],
         "accommodation": "Cinnamon Grand, Colombo"
       },
       {
         "day": 8,
-        "title": "Departure",
+        "title": "प्रस्थान",
         "activities": [
-          "Breakfast at hotel",
-          "Transfer to Bandaranaike International Airport",
-          "Departure assistance"
+          "होटल में नाश्ता",
+          "Bandaranaike अंतर्राष्ट्रीय हवाई अड्डे पर स्थानांतरण",
+          "प्रस्थान सहायता"
         ]
       }
     ],
     "pricing": [
       {
-        "category": "Per Person Sharing (Double Room)",
+        "category": "प्रति व्यक्ति साझा (डबल कमरा)",
         "pax3": 1184,
         "pax8": 1028,
         "pax16": 1047,
         "pax32": 991
       },
       {
-        "category": "Per Person Sharing (Triple Room)",
+        "category": "प्रति व्यक्ति साझा (ट्रिपल कमरा)",
         "pax3": 1123,
         "pax8": 967,
         "pax16": 986,
         "pax32": 930
       },
       {
-        "category": "Single Room Supplement",
+        "category": "एकल कमरा अतिरिक्त शुल्क",
         "pax3": 569,
         "pax8": 569,
         "pax16": 569,
@@ -132,216 +132,192 @@
       {
         "destination": "Kandalama",
         "hotel": "Heritance Hotel",
-        "supplement": "No Supplement"
+        "supplement": "कोई अतिरिक्त शुल्क नहीं"
       },
       {
         "destination": "Kandy",
         "hotel": "Mahaweli Reach Hotel",
-        "supplement": "No Supplement"
+        "supplement": "कोई अतिरिक्त शुल्क नहीं"
       },
       {
         "destination": "Nuwara Eliya",
         "hotel": "The Grand Hotel",
-        "supplement": "Queen Elizabeth Room: $175 per room"
+        "supplement": "Queen Elizabeth Room: $175 प्रति कमरा"
       },
       {
         "destination": "Bentota",
         "hotel": "Cinnamon Hotel",
-        "supplement": "Superior Ocean View: $15 per room per night"
+        "supplement": "Superior Ocean View: $15 प्रति कमरा प्रति रात"
       },
       {
         "destination": "Colombo",
         "hotel": "Cinnamon Grand Hotel",
-        "supplement": "No Supplement"
+        "supplement": "कोई अतिरिक्त शुल्क नहीं"
       }
     ],
     "entranceFees": [
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 60
-      },
-      {
-        "attraction": "Polonnaruwa Ancient City",
-        "fee": 25
-      },
-      {
-        "attraction": "Minneriya National Park Safari",
-        "fee": 55
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 10
-      },
-      {
-        "attraction": "Temple of the Tooth Relic",
-        "fee": 15
-      },
-      {
-        "attraction": "Hakgala Botanical Gardens",
-        "fee": 8
-      },
-      {
-        "attraction": "Sita Amman Kovil",
-        "fee": 2
-      },
-      {
-        "attraction": "Madu River Safari",
-        "fee": 25
-      }
+      { "attraction": "Sigiriya शैलदुर्ग", "fee": 60 },
+      { "attraction": "Polonnaruwa प्राचीन नगर", "fee": 25 },
+      { "attraction": "Minneriya राष्ट्रीय उद्यान सफारी", "fee": 55 },
+      { "attraction": "Dambulla गुफा मंदिर", "fee": 10 },
+      { "attraction": "दाँत अवशेष मंदिर", "fee": 15 },
+      { "attraction": "Hakgala वनस्पति उद्यान", "fee": 8 },
+      { "attraction": "Sita Amman Kovil", "fee": 2 },
+      { "attraction": "Madu River सफारी", "fee": 25 }
     ],
     "inclusions": [
-      "Meet & greet services at airport",
-      "Premium hotel accommodation throughout journey",
-      "Daily breakfast and dinner (Half Board basis)",
-      "Private air-conditioned transport with English-speaking chauffeur guide",
-      "2 bottles of mineral water (500ml) per person daily",
-      "All government taxes and service charges",
-      "Airport transfers on arrival and departure"
+      "हवाई अड्डे पर स्वागत सेवाएं",
+      "यात्रा के दौरान प्रीमियम होटल आवास",
+      "दैनिक नाश्ता और रात का खाना (हाफ बोर्ड आधार)",
+      "अंग्रेजी भाषी चालक-गाइड के साथ निजी वातानुकूलित परिवहन",
+      "प्रतिदिन प्रति व्यक्ति 2 बोतल मिनरल वाटर (500 मिली)",
+      "सभी सरकारी कर और सेवा शुल्क",
+      "आगमन और प्रस्थान पर हवाई अड्डा स्थानांतरण"
     ],
     "exclusions": [
-      "International airfare and visa fees",
-      "Lunch throughout the tour",
-      "Entrance fees to sites and attractions",
-      "Camera and video permits",
-      "Travel and medical insurance",
-      "Personal expenses (laundry, telephone, minibar)",
-      "Tips for guides and drivers",
-      "Alcoholic beverages and room service",
-      "Optional tours and upgrades not listed"
+      "अंतर्राष्ट्रीय हवाई किराया और वीज़ा शुल्क",
+      "यात्रा के दौरान दोपहर का भोजन",
+      "स्थलों और आकर्षणों का प्रवेश शुल्क",
+      "कैमरा और वीडियो परमिट",
+      "यात्रा और चिकित्सा बीमा",
+      "व्यक्तिगत खर्च (लॉन्ड्री, टेलीफोन, मिनीबार)",
+      "गाइड और ड्राइवर को टिप्स",
+      "मादक पेय और रूम सर्विस",
+      "सूचीबद्ध नहीं वैकल्पिक भ्रमण और अपग्रेड"
     ]
   },
   "classical-explorer": {
-    "title": "Classical Explorer Tour",
-    "duration": "10 Days / 9 Nights",
-    "description": "Discover the timeless wonders of Sri Lanka with our expertly crafted 10-day Classical Explorer tour. From bustling Negombo to serene Nuwara Eliya, experience UNESCO World Heritage Sites, wildlife encounters, and scenic train journeys.",
+    "title": "क्लासिकल एक्सप्लोरर टूर",
+    "duration": "10 दिन / 9 रातें",
+    "description": "हमारे विशेषज्ञता से तैयार 10-दिवसीय क्लासिकल एक्सप्लोरर टूर के साथ श्रीलंका के कालजयी अजूबों की खोज करें। व्यस्त Negombo से शांत Nuwara Eliya तक, यूनेस्को विश्व धरोहर स्थलों, वन्यजीव अनुभवों और सुरम्य ट्रेन यात्राओं का अनुभव करें।",
     "highlights": [
-      "UNESCO World Heritage Sites: Sigiriya, Polonnaruwa, Dambulla, Kandy Temple of the Tooth, Galle Fort",
-      "Wildlife Encounters: Yala National Park safari, Millennium Elephant Foundation",
-      "Cultural Immersions: Temple visits, spice garden tour, gem museum",
-      "Natural Wonders: Horton Plains World's End, Little Adam's Peak, Nine Arch Bridge, Ramboda Falls",
-      "Unique Experiences: Negombo Lagoon Safari, scenic train ride, tea plantation visit",
-      "Beach Relaxation: Bentota coastal experience"
+      "यूनेस्को विश्व धरोहर स्थल: Sigiriya, Polonnaruwa, Dambulla, Kandy दाँत अवशेष मंदिर, Galle Fort",
+      "वन्यजीव अनुभव: Yala राष्ट्रीय उद्यान सफारी, Millennium Elephant Foundation",
+      "सांस्कृतिक विसर्जन: मंदिर दर्शन, मसाला बगीचे की सैर, रत्न संग्रहालय",
+      "प्राकृतिक अजूबे: Horton Plains World's End, Little Adam's Peak, Nine Arch Bridge, Ramboda Falls",
+      "अनूठे अनुभव: Negombo Lagoon Safari, सुरम्य ट्रेन यात्रा, चाय बागान भ्रमण",
+      "समुद्र तट विश्राम: Bentota तटीय अनुभव"
     ],
     "image": "/src/assets/destination-ella.jpg",
     "price": {
       "from": 642,
-      "category": "per person"
+      "category": "प्रति व्यक्ति"
     },
     "itinerary": [
       {
         "day": 1,
-        "title": "Arrival & Negombo",
+        "title": "आगमन और Negombo",
         "activities": [
-          "Airport meet & greet service",
-          "Transfer to Negombo",
-          "Evening Lagoon Safari experience"
+          "हवाई अड्डे पर स्वागत सेवा",
+          "Negombo स्थानांतरण",
+          "शाम को Lagoon Safari अनुभव"
         ],
         "accommodation": "Lavinia Beach Hotel, Negombo"
       },
       {
         "day": 2,
-        "title": "Negombo to Dambulla",
+        "title": "Negombo से Dambulla",
         "activities": [
-          "Visit Negombo Fish Market 'Lellama'",
-          "Transfer to Dambulla",
-          "Afternoon climb to Pidurangala Rock"
+          "Negombo मछली बाज़ार 'Lellama' का दौरा",
+          "Dambulla स्थानांतरण",
+          "दोपहर में Pidurangala Rock की चढ़ाई"
         ],
         "accommodation": "Lario Resort, Dambulla"
       },
       {
         "day": 3,
-        "title": "Sigiriya & Polonnaruwa Day Trip",
+        "title": "Sigiriya और Polonnaruwa दिवस भ्रमण",
         "activities": [
-          "Climb the iconic Sigiriya Rock Fortress",
-          "Guided tour of Ancient City Polonnaruwa"
+          "प्रतिष्ठित Sigiriya शैलदुर्ग की चढ़ाई",
+          "Polonnaruwa प्राचीन नगर का गाइड भ्रमण"
         ],
         "accommodation": "Lario Resort, Dambulla"
       },
       {
         "day": 4,
-        "title": "Dambulla to Kandy",
+        "title": "Dambulla से Kandy",
         "activities": [
-          "Visit Dambulla Cave Temple",
-          "Spice Garden tour in Matale",
-          "Kandy city tour and Temple of the Tooth"
+          "Dambulla गुफा मंदिर के दर्शन",
+          "Matale में मसाला बगीचे की सैर",
+          "Kandy शहर भ्रमण और दाँत अवशेष मंदिर"
         ],
         "accommodation": "Oak Ray Senani Hotel, Kandy"
       },
       {
         "day": 5,
-        "title": "Kandy Exploration",
+        "title": "Kandy अन्वेषण",
         "activities": [
-          "Morning Pooja ceremony at Temple of the Tooth",
-          "Gem Museum visit",
-          "Millennium Elephant Foundation excursion"
+          "दाँत अवशेष मंदिर में सुबह पूजा समारोह",
+          "रत्न संग्रहालय भ्रमण",
+          "Millennium Elephant Foundation भ्रमण"
         ],
         "accommodation": "Oak Ray Senani Hotel, Kandy"
       },
       {
         "day": 6,
-        "title": "Kandy to Nuwara Eliya",
+        "title": "Kandy से Nuwara Eliya",
         "activities": [
-          "Tea plantation and factory visit in Pussallawa",
-          "Visit Ramboda Waterfalls",
-          "Explore 'Little England' city walk"
+          "Pussallawa में चाय बागान और कारखाने का दौरा",
+          "Ramboda झरने के दर्शन",
+          "'लिटिल इंग्लैंड' शहर भ्रमण"
         ],
         "accommodation": "Blue Meadows, Nuwara Eliya"
       },
       {
         "day": 7,
-        "title": "Horton Plains to Ella",
+        "title": "Horton Plains से Ella",
         "activities": [
-          "Early morning trek to World's End and Baker's Falls",
-          "Scenic train journey from Pattipola to Ella"
+          "World's End और Baker's Falls तक सुबह की ट्रेकिंग",
+          "Pattipola से Ella तक सुरम्य ट्रेन यात्रा"
         ],
         "accommodation": "Oak Ray Ella Gap, Ella"
       },
       {
         "day": 8,
-        "title": "Ella to Yala",
+        "title": "Ella से Yala",
         "activities": [
-          "Trek to Little Adam's Peak",
-          "Visit the famous Nine Arch Bridge",
-          "Transfer to Yala"
+          "Little Adam's Peak की ट्रेकिंग",
+          "प्रसिद्ध Nine Arch Bridge के दर्शन",
+          "Yala स्थानांतरण"
         ],
         "accommodation": "Oak Ray Wild, Yala"
       },
       {
         "day": 9,
-        "title": "Yala to Galle to Bentota",
+        "title": "Yala से Galle से Bentota",
         "activities": [
-          "Early morning 4x4 jeep safari in Yala National Park",
-          "Galle Fort city tour",
-          "Transfer to Bentota beach"
+          "Yala राष्ट्रीय उद्यान में सुबह 4x4 जीप सफारी",
+          "Galle Fort शहर भ्रमण",
+          "Bentota समुद्र तट पर स्थानांतरण"
         ],
         "accommodation": "Joes Bentota"
       },
       {
         "day": 10,
-        "title": "Departure",
+        "title": "प्रस्थान",
         "activities": [
-          "Transfer to Bandaranaike International Airport",
-          "End of program"
+          "Bandaranaike अंतर्राष्ट्रीय हवाई अड्डे पर स्थानांतरण",
+          "कार्यक्रम समाप्ति"
         ]
       }
     ],
     "pricing": [
       {
-        "category": "Per Person Sharing (Double Room)",
+        "category": "प्रति व्यक्ति साझा (डबल कमरा)",
         "pax3": 832,
         "pax8": 703,
         "pax16": 668,
         "pax32": 642
       },
       {
-        "category": "Per Person Sharing (Triple Room)",
+        "category": "प्रति व्यक्ति साझा (ट्रिपल कमरा)",
         "pax3": 773,
         "pax8": 445,
         "pax16": 609,
         "pax32": 584
       },
       {
-        "category": "Single Room Supplement",
+        "category": "एकल कमरा अतिरिक्त शुल्क",
         "pax3": 310,
         "pax8": 310,
         "pax16": 310,
@@ -349,1011 +325,185 @@
       }
     ],
     "hotels": [
-      {
-        "destination": "Negombo",
-        "hotel": "Amagi Aria",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Dambulla",
-        "hotel": "Lario Hotel",
-        "supplement": "Peak Season: $20 per room per night"
-      },
-      {
-        "destination": "Kandy",
-        "hotel": "Senani Hotel",
-        "supplement": "Peak Season: $20 per room per night"
-      },
-      {
-        "destination": "Nuwara Eliya",
-        "hotel": "Blue Meadows Hotel",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Ella",
-        "hotel": "Oak Ray Ella Gap",
-        "supplement": "Peak Season: $20 per room per night"
-      },
-      {
-        "destination": "Yala",
-        "hotel": "Wild Yala",
-        "supplement": "Peak Season: $20 per room per night"
-      },
-      {
-        "destination": "Bentota",
-        "hotel": "Joes Hotel",
-        "supplement": "New Year Eve Dinner: $30 per adult"
-      }
+      { "destination": "Negombo", "hotel": "Amagi Aria", "supplement": "कोई अतिरिक्त शुल्क नहीं" },
+      { "destination": "Dambulla", "hotel": "Lario Hotel", "supplement": "पीक सीज़न: $20 प्रति कमरा प्रति रात" },
+      { "destination": "Kandy", "hotel": "Senani Hotel", "supplement": "पीक सीज़न: $20 प्रति कमरा प्रति रात" },
+      { "destination": "Nuwara Eliya", "hotel": "Blue Meadows Hotel", "supplement": "कोई अतिरिक्त शुल्क नहीं" },
+      { "destination": "Ella", "hotel": "Oak Ray Ella Gap", "supplement": "पीक सीज़न: $20 प्रति कमरा प्रति रात" },
+      { "destination": "Yala", "hotel": "Wild Yala", "supplement": "पीक सीज़न: $20 प्रति कमरा प्रति रात" },
+      { "destination": "Bentota", "hotel": "Joes Hotel", "supplement": "नए साल की पूर्व संध्या रात्रिभोज: $30 प्रति वयस्क" }
     ],
     "entranceFees": [
-      {
-        "attraction": "Negombo Lagoon Safari",
-        "fee": 30
-      },
-      {
-        "attraction": "Pidurangala Rock",
-        "fee": 15
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 32
-      },
-      {
-        "attraction": "Polonnaruwa Ancient City",
-        "fee": 26
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 15
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 12
-      },
-      {
-        "attraction": "Royal Botanical Gardens",
-        "fee": 10
-      },
-      {
-        "attraction": "Millennium Elephant Foundation",
-        "fee": 15
-      },
-      {
-        "attraction": "Tea Factory Visit",
-        "fee": 5
-      },
-      {
-        "attraction": "Horton Plains National Park",
-        "fee": 35
-      },
-      {
-        "attraction": "Yala National Park Entrance",
-        "fee": 35
-      }
+      { "attraction": "Negombo Lagoon Safari", "fee": 30 },
+      { "attraction": "Pidurangala Rock", "fee": 15 },
+      { "attraction": "Sigiriya शैलदुर्ग", "fee": 32 },
+      { "attraction": "Polonnaruwa प्राचीन नगर", "fee": 26 },
+      { "attraction": "Dambulla गुफा मंदिर", "fee": 15 },
+      { "attraction": "दाँत अवशेष मंदिर", "fee": 12 },
+      { "attraction": "शाही वनस्पति उद्यान", "fee": 10 },
+      { "attraction": "Millennium Elephant Foundation", "fee": 15 },
+      { "attraction": "चाय कारखाना भ्रमण", "fee": 5 },
+      { "attraction": "Horton Plains राष्ट्रीय उद्यान", "fee": 35 },
+      { "attraction": "Yala राष्ट्रीय उद्यान प्रवेश", "fee": 35 }
     ],
     "inclusions": [
-      "Meet & greet services at Bandaranaike International Airport",
-      "Transportation in air-conditioned vehicle throughout",
-      "Accommodation at mentioned hotels on Half Board basis",
-      "English-speaking chauffeur-guide (up to 6 pax) or national guide (7+ pax)",
-      "2 bottles of 500ml mineral water per person daily",
-      "Yala National Park jeep safari",
-      "Horton Plains jeep hire",
-      "Scenic train journey from Pattipola to Ella",
-      "All government taxes and service charges"
+      "Bandaranaike अंतर्राष्ट्रीय हवाई अड्डे पर स्वागत सेवाएं",
+      "पूरे दौरे में वातानुकूलित वाहन में परिवहन",
+      "हाफ बोर्ड आधार पर उल्लिखित होटलों में आवास",
+      "अंग्रेजी भाषी चालक-गाइड (6 तक यात्री) या राष्ट्रीय गाइड (7+ यात्री)",
+      "प्रतिदिन प्रति व्यक्ति 500 मिली की 2 बोतल मिनरल वाटर",
+      "Yala राष्ट्रीय उद्यान जीप सफारी",
+      "Horton Plains जीप किराया",
+      "Pattipola से Ella तक सुरम्य ट्रेन यात्रा",
+      "सभी सरकारी कर और सेवा शुल्क"
     ],
     "exclusions": [
-      "International airfare and visa fees",
-      "Lunch costs throughout the tour",
-      "All entrance fees listed in activity charges section",
-      "Camera and video permits",
-      "Travel and medical insurance",
-      "Personal expenses (laundry, telephone, minibar, etc.)",
-      "Alcoholic beverages",
-      "Tips to guides and drivers",
-      "Early check-in and late check-out charges"
-    ]
-  },
-  "southern-highlight": {
-    "title": "Southern Highlight Tour",
-    "duration": "11 Days / 10 Nights",
-    "description": "Discover the enchanting southern treasures of Sri Lanka from the vibrant capital Colombo to pristine beaches of Unawatuna and Mirissa, the biodiversity haven of Sinharaja Rainforest, and the majestic elephants of Udawalawe.",
-    "highlights": [
-      "Wildlife: Udawalawe elephants, Yala safari, whale watching in Mirissa",
-      "Nature: Sinharaja UNESCO Rainforest, turtle hatchery conservation",
-      "Beaches: Unawatuna and Mirissa coastal relaxation",
-      "Culture: Galle Fort UNESCO site, Kandy Temple experiences",
-      "Adventure: Scenic train journey, Little Adam's Peak trek",
-      "Conservation: Elephant Transit Home rehabilitation center"
-    ],
-    "image": "/src/assets/destination-galle.jpg",
-    "price": {
-      "from": 760,
-      "category": "per person"
-    },
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Arrival & Colombo City Tour",
-        "activities": [
-          "Private transfer from airport to Colombo",
-          "Colombo city tour including Fort area, Gangaramaya Temple",
-          "Evening shopping and leisure time"
-        ],
-        "accommodation": "Fairway Colombo"
-      },
-      {
-        "day": 2,
-        "title": "Colombo to Turtle Hatchery & Unawatuna",
-        "activities": [
-          "Visit Kosgoda Turtle Hatchery - witness 5 endangered species",
-          "Madu River boat safari through mangrove forests",
-          "En-route visit to historic Galle Fort"
-        ],
-        "accommodation": "Unawatuna"
-      },
-      {
-        "day": 3,
-        "title": "Unawatuna to Mirissa via Rumassala",
-        "activities": [
-          "Explore Rumassala Sanctuary from Ramayana epic",
-          "Transfer to Ahangama/Mirissa",
-          "Afternoon leisure time at the beach"
-        ],
-        "accommodation": "Mirissa"
-      },
-      {
-        "day": 4,
-        "title": "Whale & Dolphin Watching",
-        "activities": [
-          "Early morning boat excursion from Mirissa",
-          "Spot Blue Whales, Sperm Whales, and dolphins",
-          "Packed breakfast on board",
-          "Afternoon beach relaxation"
-        ],
-        "accommodation": "Mirissa"
-      },
-      {
-        "day": 5,
-        "title": "Mirissa to Sinharaja Rainforest",
-        "activities": [
-          "Travel to Sinharaja Forest Reserve",
-          "Guided rainforest tour in UNESCO World Heritage Site",
-          "Discover endemic flora and fauna"
-        ],
-        "accommodation": "Sinharaja"
-      },
-      {
-        "day": 6,
-        "title": "Sinharaja to Udawalawe",
-        "activities": [
-          "Journey to Udawalawe National Park",
-          "Afternoon 4x4 jeep safari",
-          "Witness Sri Lanka's largest elephant population"
-        ],
-        "accommodation": "Udawalawe"
-      },
-      {
-        "day": 7,
-        "title": "Udawalawe to Ella via Elephant Transit Home",
-        "activities": [
-          "Visit Elephant Transit Home rehabilitation center",
-          "Scenic drive to Ella through hill country",
-          "Optional Mega Zip-line experience"
-        ],
-        "accommodation": "Ella"
-      },
-      {
-        "day": 8,
-        "title": "Ella Exploration",
-        "activities": [
-          "Trek to Little Adam's Peak",
-          "Visit the famous Nine Arch Bridge",
-          "Photography in scenic hill country"
-        ],
-        "accommodation": "Ella"
-      },
-      {
-        "day": 9,
-        "title": "Ella to Kandy",
-        "activities": [
-          "Scenic train journey from Ella to Kandy",
-          "Kandy city tour including Royal Palace complex",
-          "Visit cultural sites and local markets"
-        ],
-        "accommodation": "Kandy"
-      },
-      {
-        "day": 10,
-        "title": "Kandy to Negombo",
-        "activities": [
-          "Temple of the Tooth Relic morning ceremony",
-          "Visit gem museum",
-          "Transfer to Negombo",
-          "Evening lagoon safari"
-        ],
-        "accommodation": "Negombo"
-      },
-      {
-        "day": 11,
-        "title": "Departure",
-        "activities": [
-          "Leisure breakfast and check-out",
-          "Private transfer to airport",
-          "End of tour"
-        ]
-      }
-    ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 998,
-        "pax8": 825,
-        "pax16": 858,
-        "pax32": 760
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 924,
-        "pax8": 752,
-        "pax16": 784,
-        "pax32": 687
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 388,
-        "pax8": 388,
-        "pax16": 388,
-        "pax32": 388
-      }
-    ],
-    "hotels": [
-      {
-        "destination": "Colombo",
-        "hotel": "Fairway Colombo",
-        "supplement": "Superior Balcony: $15 per room per day"
-      },
-      {
-        "destination": "Unawatuna",
-        "hotel": "Joes Unawatuna",
-        "supplement": "Christmas & New Year: $20 per person per day"
-      },
-      {
-        "destination": "Ahangama",
-        "hotel": "Gartonscape Hotel",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Sinharaja",
-        "hotel": "The Blue Magpie",
-        "supplement": "Christmas & New Year: $20 per person per day"
-      },
-      {
-        "destination": "Ambilipitiya",
-        "hotel": "Centauria Lake Hotel",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Ella",
-        "hotel": "Oak Ray Ella Gap",
-        "supplement": "Peak Season: $20 per room per night"
-      },
-      {
-        "destination": "Kandy",
-        "hotel": "Oak Ray Senani Hotel",
-        "supplement": "Peak Season: $20 per room per night"
-      },
-      {
-        "destination": "Negombo",
-        "hotel": "Amagi Beach",
-        "supplement": "No Supplement"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Gangaramaya Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Turtle Hatchery",
-        "fee": 5
-      },
-      {
-        "attraction": "Madu River Boat Safari",
-        "fee": 15
-      },
-      {
-        "attraction": "Whale & Dolphin Watching",
-        "fee": 80
-      },
-      {
-        "attraction": "Sinharaja Rainforest Entrance",
-        "fee": 35
-      },
-      {
-        "attraction": "Udawalawe National Park",
-        "fee": 35
-      },
-      {
-        "attraction": "Elephant Transit Home",
-        "fee": 5
-      },
-      {
-        "attraction": "Flying Ravana Mega Zip-line",
-        "fee": 35
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 12
-      },
-      {
-        "attraction": "Negombo Lagoon Safari",
-        "fee": 30
-      }
-    ],
-    "inclusions": [
-      "Meet & Greet services at Airport",
-      "Air-conditioned transportation throughout",
-      "Half Board accommodation (Breakfast & Dinner)",
-      "English-speaking chauffeur guide (up to 6 pax) or National guide (7+ pax)",
-      "2 x 500ml mineral water bottles per guest daily",
-      "Udawalawe National Park jeep hire",
-      "All government taxes"
-    ],
-    "exclusions": [
-      "Lunch costs throughout the tour",
-      "Entrance fees (as listed above)",
-      "Camera & video permits",
-      "Beverages and personal expenses",
-      "International airfare",
-      "Visa fees",
-      "Early check-in/late check-out charges"
-    ]
-  },
-  "ramayana-trails": {
-    "title": "Ramayana Trails Deluxe",
-    "duration": "8 Days / 7 Nights",
-    "description": "Embark on an extraordinary spiritual and cultural journey through Sri Lanka following the legendary Ramayana trail. Experience the mystical locations where Lord Rama, Sita, and Hanuman's epic story unfolded, with luxury accommodations and expert guides.",
-    "highlights": [
-      "Sacred Sites: Rumassala, Seetha Amman Temple, Hanuman Temple visits",
-      "Spiritual Journey: Ancient Ramayana locations and epic legends",
-      "Wildlife: Yala National Park leopard safari experience",
-      "Cultural Heritage: Sigiriya, Dambulla, Kandy temples exploration",
-      "Luxury Accommodation: Premium 4-star hotels throughout",
-      "Expert Guidance: Knowledgeable guides sharing Ramayana stories"
-    ],
-    "image": "/src/assets/hero-lavish.jpg",
-    "price": {
-      "from": 891,
-      "category": "per person"
-    },
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Arrival & Hikkaduwa",
-        "activities": [
-          "Airport welcome by English-speaking driver/guide",
-          "Check into luxurious beachfront hotel",
-          "Visit Rumassala Sanctuary - Hanuman's medicinal herbs site",
-          "Evening at leisure by the beach"
-        ],
-        "accommodation": "Hikka Tranz by Cinnamon, Hikkaduwa"
-      },
-      {
-        "day": 2,
-        "title": "Hikkaduwa to Yala via Ussangoda",
-        "activities": [
-          "Explore Ussangoda - burnt by Hanuman's fiery tail",
-          "Continue to Yala National Park",
-          "Afternoon 4x4 jeep safari - world's best leopard destination"
-        ],
-        "accommodation": "Cinnamon Wild, Yala"
-      },
-      {
-        "day": 3,
-        "title": "Yala to Nuwara Eliya - Sacred Temples",
-        "activities": [
-          "Visit Divurumwela Raja Maha Viharaya - Sita's Agni Pariksha site",
-          "Explore Seetha Amman Temple with sacred stream",
-          "Discover Hanuman's footprints by riverside",
-          "Visit Gayathri Peedam - Ravana's son's power site"
-        ],
-        "accommodation": "Grand Hotel, Nuwara Eliya"
-      },
-      {
-        "day": 4,
-        "title": "Nuwara Eliya to Kandy via Hanuman Temple",
-        "activities": [
-          "Visit magnificent Bhakta Hanuman Temple (16ft statue)",
-          "Panoramic views of Kothmale Reservoir",
-          "Afternoon excursion to Seetha Kotuwa - Sita's prison",
-          "Evening cultural exploration in Kandy"
-        ],
-        "accommodation": "Amaya Hills, Kandy"
-      },
-      {
-        "day": 5,
-        "title": "Kandy to Dambulla via Sigiriya",
-        "activities": [
-          "Brief Kandy city tour",
-          "Explore UNESCO Dambulla Rock Cave Temple",
-          "Afternoon climb of spectacular Sigiriya Rock Fortress",
-          "Marvel at Lion Rock's water gardens and frescoes"
-        ],
-        "accommodation": "Amaya Lake, Dambulla"
-      },
-      {
-        "day": 6,
-        "title": "Dambulla to Trincomalee Day Trip",
-        "activities": [
-          "Early departure to eastern coast",
-          "Visit ancient Koneshwaram Temple overlooking ocean",
-          "Explore underwater temple ruins from 1950s",
-          "Learn about Ramayana connections"
-        ],
-        "accommodation": "Amaya Lake, Dambulla"
-      },
-      {
-        "day": 7,
-        "title": "Dambulla to Negombo via Munneswaram",
-        "activities": [
-          "Visit Munneswaram Temple - Rama's remedy for Brahmaasthi Dosham",
-          "Learn about four sacred lingams installed by Rama",
-          "Check into beachfront resort",
-          "Afternoon leisure by beach"
-        ],
-        "accommodation": "Suriya Resort, Waikkal"
-      },
-      {
-        "day": 8,
-        "title": "Departure",
-        "activities": [
-          "Leisurely breakfast and check-out",
-          "Final relaxation time at resort",
-          "Private transfer to airport with departure assistance"
-        ]
-      }
-    ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 1237,
-        "pax8": 1060,
-        "pax16": 940,
-        "pax32": 891
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 1168,
-        "pax8": 990,
-        "pax16": 971,
-        "pax32": 822
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 423,
-        "pax8": 423,
-        "pax16": 423,
-        "pax32": 423
-      }
-    ],
-    "hotels": [
-      {
-        "destination": "Hikkaduwa",
-        "hotel": "Hikkaduwa Cinnamon Hotel",
-        "supplement": "Superior Ocean View: $10 per room per day"
-      },
-      {
-        "destination": "Yala",
-        "hotel": "Cinnamon Wild Yala",
-        "supplement": "Beach Chalet: $40 per room per night"
-      },
-      {
-        "destination": "Nuwara Eliya",
-        "hotel": "Grand Hotel",
-        "supplement": "Queen Elizabeth: $175 per room per night"
-      },
-      {
-        "destination": "Kandy",
-        "hotel": "Amaya Hills",
-        "supplement": "Premium Deluxe: $40 per person per day"
-      },
-      {
-        "destination": "Dambulla",
-        "hotel": "Amaya Lake",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Negombo",
-        "hotel": "Amagi Aria",
-        "supplement": "No Supplement"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Rumassala Sanctuary",
-        "fee": 5
-      },
-      {
-        "attraction": "Yala National Park Safari",
-        "fee": 40
-      },
-      {
-        "attraction": "Yala Park Entrance",
-        "fee": 15
-      },
-      {
-        "attraction": "Divurumwela Raja Maha Viharaya",
-        "fee": 3
-      },
-      {
-        "attraction": "Seetha Amman Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Bhakta Hanuman Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Seetha Kotuwa",
-        "fee": 8
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 10
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 30
-      },
-      {
-        "attraction": "Koneshwaram Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Munneswaram Temple",
-        "fee": 3
-      }
-    ],
-    "inclusions": [
-      "Meet & Greet services at airport",
-      "Transportation in air-conditioned vehicle throughout",
-      "Accommodation at premium 4-star hotels on half-board basis",
-      "Professional English-speaking chauffeur guide (up to 6 pax)",
-      "Jeep Safari at Yala National Park",
-      "Mineral Water - 2 bottles (500ml) per guest daily",
-      "All Government Taxes",
-      "Lunch throughout the tour",
-      "Entrance fees to attractions"
-    ],
-    "exclusions": [
-      "Camera/video permits",
-      "Beverages and personal expenses",
-      "International airfare and visa fees",
-      "Travel insurance",
-      "Early check-in/late check-out charges"
-    ]
-  },
-  "wonderful-journey": {
-    "title": "A Wonderful Journey in the Island",
-    "duration": "11 Days / 10 Nights",
-    "description": "Experience the diverse beauty of Sri Lanka—from the fishing village charm of Negombo and the wildlife wonders of Wilpattu National Park to the ancient kingdoms of Anuradhapura and Polonnaruwa, the cultural heart of Kandy, the scenic highlands of Nuwara Eliya, and the vibrant capital of Colombo.",
-    "highlights": [
-      "Wildlife: Wilpattu National Park safari with leopards and elephants",
-      "Ancient Cities: Anuradhapura and Polonnaruwa UNESCO sites",
-      "Cultural Wonders: Sigiriya Rock Fortress, Dambulla Cave Temple, Temple of the Tooth",
-      "Hill Country: Tea plantations, Ramboda Falls, Horton Plains World's End",
-      "Village Experience: Hiriwadunna village trek with bullock cart ride",
-      "Nature: Negombo Lagoon safari and Pidurangala Rock climb"
-    ],
-    "image": "/src/assets/hero-lavish.jpg",
-    "price": {
-      "from": 636,
-      "category": "per person"
-    },
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Arrival & Negombo",
-        "activities": [
-          "Private transfer from airport to Negombo",
-          "Check in at Lavinia Beach Hotel",
-          "Late afternoon Lagoon safari or brief City Tour",
-          "Visit Dutch-built canal with colorful fishing boats",
-          "Explore famous fish market 'Lellama'",
-          "Birdwatching opportunities including Kingfishers"
-        ],
-        "accommodation": "Amagi Arya, Negombo"
-      },
-      {
-        "day": 2,
-        "title": "Negombo to Wilpattu to Anuradhapura",
-        "activities": [
-          "Depart with packed breakfast to Wilpattu National Park",
-          "4x4 Jeep Safari at Wilpattu (approx. 4 hours)",
-          "Observe unique 'Willus' (natural lakes)",
-          "Wildlife viewing: Leopards, Elephants, Sloth Bears, Water Buffalo",
-          "Continue to Anuradhapura",
-          "Brief city orientation"
-        ],
-        "accommodation": "Levendish Hotel, Anuradhapura"
-      },
-      {
-        "day": 3,
-        "title": "Anuradhapura & Mihintale to Dambulla",
-        "activities": [
-          "City tour of Anuradhapura UNESCO World Heritage sites",
-          "Visit Ruvanveliseya, Jetavanarama, and Thuparama Dagobas",
-          "See the sacred Bo Tree (2,250 years old)",
-          "Climb Mihintale's 1,840 stone steps - 'Cradle of Buddhism'",
-          "Transfer to Dambulla"
-        ],
-        "accommodation": "Lario Resort, Dambulla"
-      },
-      {
-        "day": 4,
-        "title": "Sigiriya & Village Trek",
-        "activities": [
-          "Early morning climb of Sigiriya Rock Fortress",
-          "View ancient frescoes of 21 life-sized damsels",
-          "Explore Royal Palace foundations and water gardens",
-          "Afternoon Hiriwadunna Village Trek",
-          "Bullock cart ride through forests and paddy fields",
-          "Catamaran safari on scenic lake",
-          "Visit Chena cultivation and birdwatching"
-        ],
-        "accommodation": "Lario Resort, Dambulla"
-      },
-      {
-        "day": 5,
-        "title": "Polonnaruwa & Pidurangala",
-        "activities": [
-          "Explore Polonnaruwa UNESCO World Heritage Site",
-          "Visit famous Parakrama Samudraya reservoir",
-          "See Buddhist and Hindu structures from 11th-13th centuries",
-          "Challenging climb of Pidurangala Rock",
-          "Stunning panoramic views of Sigiriya Rock from summit"
-        ],
-        "accommodation": "Lario Resort, Dambulla"
-      },
-      {
-        "day": 6,
-        "title": "Dambulla to Kandy",
-        "activities": [
-          "Visit Spice Garden in Matale",
-          "Learn about Cinnamon, Cardamom, Pepper and spices",
-          "Continue to Kandy",
-          "City tour including Kandy Lake and Royal Palace"
-        ],
-        "accommodation": "Senani Hotel, Kandy"
-      },
-      {
-        "day": 7,
-        "title": "Kandy Full Day",
-        "activities": [
-          "Visit Temple of the Tooth Relic for morning Pooja ceremony",
-          "Visit Gem Museum to learn about Sri Lankan gemstones",
-          "Tour Royal Botanical Gardens (147 acres)",
-          "See 4,000+ species of plants, Spice Garden, Orchid House",
-          "Walk through five Palm Avenues",
-          "Free time for shopping"
-        ],
-        "accommodation": "Senani Hotel, Kandy"
-      },
-      {
-        "day": 8,
-        "title": "Kandy to Nuwara Eliya",
-        "activities": [
-          "Visit Tea Plantation and Tea Factory in Pussallawa",
-          "Tea plucking experience with local workers",
-          "Stop at famous Ramboda Waterfalls",
-          "Explore 'Little England' of Sri Lanka",
-          "Walk through Victoria Park",
-          "Discover colonial-era architecture"
-        ],
-        "accommodation": "Blue Meadows, Nuwara Eliya"
-      },
-      {
-        "day": 9,
-        "title": "Horton Plains",
-        "activities": [
-          "Early morning trek to World's End and Little World's End",
-          "Visit Baker's Falls",
-          "Explore unique Cloud Forest Reserve",
-          "Walk through diverse wet evergreen forest",
-          "Return to hotel for leisure time"
-        ],
-        "accommodation": "Blue Meadows, Nuwara Eliya"
-      },
-      {
-        "day": 10,
-        "title": "Nuwara Eliya to Colombo",
-        "activities": [
-          "Depart for Colombo via Kitulgala",
-          "City tour including Fort and Pettah areas",
-          "Visit Sea Street, Hindu Temple, Kayman's Gate",
-          "Dutch Church of Wolfendhaal (1749)",
-          "BMICH and Independence Square",
-          "Last-minute shopping opportunities"
-        ],
-        "accommodation": "Fair Way Hotel, Colombo"
-      },
-      {
-        "day": 11,
-        "title": "Departure",
-        "activities": [
-          "Enjoy breakfast and check out",
-          "Private transfer to Bandaranaike International Airport"
-        ]
-      }
-    ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 1042,
-        "pax8": 725,
-        "pax16": 731,
-        "pax32": 636
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 1005,
-        "pax8": 688,
-        "pax16": 694,
-        "pax32": 598
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 287,
-        "pax8": 287,
-        "pax16": 287,
-        "pax32": 287
-      }
-    ],
-    "hotels": [
-      {
-        "destination": "Negombo",
-        "hotel": "Amagi Arya",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Anuradhapura",
-        "hotel": "Levendish Hotel",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Dambulla",
-        "hotel": "Lario Resort",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Kandy",
-        "hotel": "Senani Hotel",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Nuwara Eliya",
-        "hotel": "Blue Meadows",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Colombo",
-        "hotel": "Fair Way Hotel",
-        "supplement": "Superior Balcony: $15 per night"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Negombo Lagoon Safari",
-        "fee": 30
-      },
-      {
-        "attraction": "Wilpattu National Park",
-        "fee": 35
-      },
-      {
-        "attraction": "Anuradhapura",
-        "fee": 26
-      },
-      {
-        "attraction": "Hiriwadunna Village Trek",
-        "fee": 25
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 32
-      },
-      {
-        "attraction": "Polonnaruwa",
-        "fee": 26
-      },
-      {
-        "attraction": "Pidurangala Rock",
-        "fee": 15
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 15
-      },
-      {
-        "attraction": "Cultural Dance Show (Optional)",
-        "fee": 10
-      },
-      {
-        "attraction": "Royal Botanical Gardens",
-        "fee": 10
-      },
-      {
-        "attraction": "Tea Factory Visit",
-        "fee": 5
-      },
-      {
-        "attraction": "Horton Plains National Park",
-        "fee": 35
-      }
-    ],
-    "inclusions": [
-      "Meet & greet services at airport",
-      "Air-conditioned vehicle transportation throughout",
-      "Hotel accommodation on Half Board basis (Dinner & Breakfast)",
-      "English-speaking chauffeur guide (up to 6 pax) or National guide (7+ pax)",
-      "2 x 500ml mineral water bottles per guest daily",
-      "Wilpattu National Park jeep hire",
-      "Horton Plains jeep hire",
-      "All government taxes"
-    ],
-    "exclusions": [
-      "Lunch throughout the tour",
-      "Camera and video permits",
-      "Entrance fees (listed separately)",
-      "Beverages (alcoholic and non-alcoholic)",
-      "International airfare and visa fees",
-      "Additional visits not mentioned",
-      "Early check-in/late check-out charges",
-      "Tips and gratuities",
-      "Travel insurance",
-      "Personal expenses"
+      "अंतर्राष्ट्रीय हवाई किराया और वीज़ा शुल्क",
+      "यात्रा के दौरान दोपहर के भोजन का खर्च",
+      "गतिविधि शुल्क अनुभाग में सूचीबद्ध सभी प्रवेश शुल्क",
+      "कैमरा और वीडियो परमिट",
+      "यात्रा और चिकित्सा बीमा",
+      "व्यक्तिगत खर्च (लॉन्ड्री, टेलीफोन, मिनीबार आदि)",
+      "मादक पेय",
+      "गाइड और ड्राइवर को टिप्स",
+      "जल्दी चेक-इन और देर से चेक-आउट शुल्क"
     ]
   },
   "classical-gateway": {
-    "title": "Classical Gateway",
-    "duration": "8 Days / 7 Nights",
-    "description": "Discover the essence of Sri Lanka's cultural and natural heritage on this carefully crafted 8-day journey. From the coastal charm of Negombo to wildlife encounters at Millennium Elephant Foundation and Kalawewa National Park, the ancient wonders of Pidurangala, the cultural treasures of Kandy, and the scenic tea country of Nuwara Eliya.",
+    "title": "क्लासिकल गेटवे",
+    "duration": "8 दिन / 7 रातें",
+    "description": "इस सावधानीपूर्वक तैयार 8-दिवसीय यात्रा पर श्रीलंका की सांस्कृतिक और प्राकृतिक विरासत के सार की खोज करें। Negombo के तटीय आकर्षण से Millennium Elephant Foundation और Kalawewa राष्ट्रीय उद्यान में वन्यजीव अनुभव, Pidurangala के प्राचीन अजूबों, Kandy की सांस्कृतिक धरोहर और Nuwara Eliya के सुरम्य चाय देश तक।",
     "highlights": [
-      "Wildlife: Millennium Elephant Foundation experience and Kalawewa National Park safari",
-      "Cultural Wonders: Pidurangala Rock, Temple of the Tooth, Royal Botanical Gardens",
-      "Village Life: Hiriwadunna village trek with authentic Sri Lankan experience",
-      "Nature: Negombo Lagoon safari, tea plantation visit, Ramboda Waterfalls",
-      "Hill Country: Nuwara Eliya 'Little England' colonial architecture",
-      "City Tour: Colombo's historic Fort and Pettah areas"
+      "वन्यजीव: Millennium Elephant Foundation अनुभव और Kalawewa राष्ट्रीय उद्यान सफारी",
+      "सांस्कृतिक अजूबे: Pidurangala Rock, दाँत अवशेष मंदिर, शाही वनस्पति उद्यान",
+      "ग्राम जीवन: प्रामाणिक श्रीलंकाई अनुभव के साथ Hiriwadunna ग्राम ट्रेक",
+      "प्रकृति: Negombo Lagoon Safari, चाय बागान भ्रमण, Ramboda झरने",
+      "पहाड़ी देश: Nuwara Eliya 'लिटिल इंग्लैंड' औपनिवेशिक वास्तुकला",
+      "शहर भ्रमण: Colombo के ऐतिहासिक Fort और Pettah क्षेत्र"
     ],
     "image": "/src/assets/destination-ella.jpg",
     "price": {
       "from": 504,
-      "category": "per person"
+      "category": "प्रति व्यक्ति"
     },
     "itinerary": [
       {
         "day": 1,
-        "title": "Arrival & Negombo",
+        "title": "आगमन और Negombo",
         "activities": [
-          "Welcome meet & greet at airport",
-          "Transfer to Negombo",
-          "Check in at Lavinia Beach Hotel",
-          "Evening Lagoon Safari - unique cruising experience",
-          "Drift along coconut palms and mangrove forests",
-          "Observe diverse birdlife and marine life"
+          "हवाई अड्डे पर स्वागत",
+          "Negombo स्थानांतरण",
+          "Lavinia Beach Hotel में चेक-इन",
+          "शाम को Lagoon Safari - अनूठा नौकायन अनुभव",
+          "नारियल के पेड़ों और मैंग्रोव वनों के बीच बहाव",
+          "विविध पक्षी और समुद्री जीवन का अवलोकन"
         ],
         "accommodation": "Amagi Arya, Negombo"
       },
       {
         "day": 2,
-        "title": "Negombo to Rambukkana to Dambulla",
+        "title": "Negombo से Rambukkana से Dambulla",
         "activities": [
-          "Visit famous 'Lellama' fish market in Negombo",
-          "Transfer to Millennium Elephant Foundation in Rambukkana",
-          "Tour 9-hectare sanctuary for domestic elephant welfare",
-          "Experience exclusive Elephant Walk and Bath",
-          "Interactive encounter with majestic creatures",
-          "Continue to Dambulla"
+          "Negombo में प्रसिद्ध 'Lellama' मछली बाज़ार का दौरा",
+          "Rambukkana में Millennium Elephant Foundation स्थानांतरण",
+          "घरेलू हाथी कल्याण के लिए 9-हेक्टेयर अभयारण्य का भ्रमण",
+          "विशेष हाथी सैर और स्नान का अनुभव",
+          "भव्य प्राणियों के साथ संवादात्मक मुलाकात",
+          "Dambulla की ओर प्रस्थान"
         ],
         "accommodation": "Lario Resort, Dambulla"
       },
       {
         "day": 3,
-        "title": "Pidurangala & Kalawewa Safari",
+        "title": "Pidurangala और Kalawewa Safari",
         "activities": [
-          "Visit ancient Buddhist temple at Pidurangala Rock",
-          "Challenging climb with stunning views of Sigiriya",
-          "History dating back to 1st-2nd century BC",
-          "Exciting 4x4 Jeep Safari at Kalawewa National Park",
-          "Observe elephants including rare tuskers",
-          "Explore 6,000+ hectares around 5th century water tanks"
+          "Pidurangala Rock पर प्राचीन बौद्ध मंदिर के दर्शन",
+          "Sigiriya के अद्भुत दृश्यों के साथ चुनौतीपूर्ण चढ़ाई",
+          "पहली-दूसरी शताब्दी ईसा पूर्व का इतिहास",
+          "Kalawewa राष्ट्रीय उद्यान में रोमांचक 4x4 जीप सफारी",
+          "दुर्लभ दाँतेदार हाथियों सहित हाथियों का अवलोकन",
+          "5वीं शताब्दी के जलाशयों के आसपास 6,000+ हेक्टेयर का अन्वेषण"
         ],
         "accommodation": "Lario Resort, Dambulla"
       },
       {
         "day": 4,
-        "title": "Village Trek & Kandy",
+        "title": "ग्राम ट्रेक और Kandy",
         "activities": [
-          "Hiriwadunna Village Trek experience",
-          "Bullock cart ride through forests and paddy fields",
-          "Catamaran safari on scenic lake",
-          "Visit Chena cultivation",
-          "Spice Garden visit in Matale",
-          "Brief city tour of Kandy"
+          "Hiriwadunna ग्राम ट्रेक अनुभव",
+          "जंगलों और धान के खेतों के बीच बैलगाड़ी की सवारी",
+          "सुरम्य झील पर कटमरान सफारी",
+          "Chena खेती का दौरा",
+          "Matale में मसाला बगीचे की सैर",
+          "Kandy का संक्षिप्त शहर भ्रमण"
         ],
         "accommodation": "Senani Hotel, Kandy"
       },
       {
         "day": 5,
-        "title": "Kandy Exploration",
+        "title": "Kandy अन्वेषण",
         "activities": [
-          "Visit Temple of the Tooth for morning Pooja ceremony",
-          "Visit Gem Museum to learn about Sri Lankan gemstones",
-          "Tour Royal Botanical Gardens (147 acres)",
-          "View 4,000+ species of plants",
-          "Walk through Spice Garden and Orchid House",
-          "Stroll along five Palm Avenues"
+          "सुबह पूजा समारोह के लिए दाँत अवशेष मंदिर के दर्शन",
+          "श्रीलंकाई रत्नों के बारे में जानने के लिए रत्न संग्रहालय भ्रमण",
+          "शाही वनस्पति उद्यान का भ्रमण (147 एकड़)",
+          "4,000+ पौधों की प्रजातियों का अवलोकन",
+          "मसाला बगीचे और ऑर्किड हाउस में भ्रमण",
+          "पाँच पाम एवेन्यू के साथ टहलना"
         ],
         "accommodation": "Senani Hotel, Kandy"
       },
       {
         "day": 6,
-        "title": "Kandy to Nuwara Eliya",
+        "title": "Kandy से Nuwara Eliya",
         "activities": [
-          "Visit Tea Plantation and Tea Factory in Pussallawa",
-          "Learn about Sri Lanka's tea industry since 1867",
-          "Tea plucking experience with local workers",
-          "Stop at famous Ramboda Waterfalls",
-          "Walking tour of 'Little England'",
-          "Explore Victorian Park and colonial architecture"
+          "Pussallawa में चाय बागान और चाय कारखाने का दौरा",
+          "1867 से श्रीलंका के चाय उद्योग के बारे में जानें",
+          "स्थानीय कामगारों के साथ चाय तोड़ने का अनुभव",
+          "प्रसिद्ध Ramboda झरने पर रुकें",
+          "'लिटिल इंग्लैंड' की पैदल यात्रा",
+          "Victorian Park और औपनिवेशिक वास्तुकला का अन्वेषण"
         ],
         "accommodation": "Blue Meadows, Nuwara Eliya"
       },
       {
         "day": 7,
-        "title": "Nuwara Eliya to Colombo",
+        "title": "Nuwara Eliya से Colombo",
         "activities": [
-          "Depart for Colombo via Kitulgala",
-          "City tour including Fort and Pettah areas",
-          "Visit Sea Street (Goldsmith's quarters)",
-          "Hindu Temple with stone carvings",
+          "Kitulgala के रास्ते Colombo के लिए प्रस्थान",
+          "Fort और Pettah क्षेत्रों सहित शहर भ्रमण",
+          "Sea Street (सुनार मोहल्ला) का दौरा",
+          "पत्थर की नक्काशी वाला हिंदू मंदिर",
           "Dutch Church of Wolfendhaal (1749)",
-          "BMICH and Independence Square"
+          "BMICH और Independence Square"
         ],
         "accommodation": "Fairway Colombo"
       },
       {
         "day": 8,
-        "title": "Departure",
+        "title": "प्रस्थान",
         "activities": [
-          "Enjoy breakfast and check out",
-          "Private transfer to Bandaranaike International Airport"
+          "नाश्ते का आनंद और चेक-आउट",
+          "Bandaranaike अंतर्राष्ट्रीय हवाई अड्डे पर निजी स्थानांतरण"
         ]
       }
     ],
     "pricing": [
       {
-        "category": "Per Person Sharing (Double Room)",
+        "category": "प्रति व्यक्ति साझा (डबल कमरा)",
         "pax3": 781,
         "pax8": 524,
         "pax16": 567,
         "pax32": 531
       },
       {
-        "category": "Per Person Sharing (Triple Room)",
+        "category": "प्रति व्यक्ति साझा (ट्रिपल कमरा)",
         "pax3": 754,
         "pax8": 497,
         "pax16": 539,
         "pax32": 504
       },
       {
-        "category": "Single Room Supplement",
+        "category": "एकल कमरा अतिरिक्त शुल्क",
         "pax3": 202.5,
         "pax8": 202.5,
         "pax16": 202.5,
@@ -1361,754 +511,606 @@
       }
     ],
     "hotels": [
-      {
-        "destination": "Negombo",
-        "hotel": "Amagi Arya",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Dambulla",
-        "hotel": "Lario Resort",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Kandy",
-        "hotel": "Senani Hotel",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Nuwara Eliya",
-        "hotel": "Blue Meadows",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Colombo",
-        "hotel": "Fairway Colombo",
-        "supplement": "Superior Balcony: $15 per night"
-      }
+      { "destination": "Negombo", "hotel": "Amagi Arya", "supplement": "कोई अतिरिक्त शुल्क नहीं" },
+      { "destination": "Dambulla", "hotel": "Lario Resort", "supplement": "कोई अतिरिक्त शुल्क नहीं" },
+      { "destination": "Kandy", "hotel": "Senani Hotel", "supplement": "कोई अतिरिक्त शुल्क नहीं" },
+      { "destination": "Nuwara Eliya", "hotel": "Blue Meadows", "supplement": "कोई अतिरिक्त शुल्क नहीं" },
+      { "destination": "Colombo", "hotel": "Fairway Colombo", "supplement": "Superior Balcony: $15 प्रति रात" }
     ],
     "entranceFees": [
-      {
-        "attraction": "Negombo Lagoon Safari",
-        "fee": 30
-      },
-      {
-        "attraction": "Millennium Elephant Foundation",
-        "fee": 15
-      },
-      {
-        "attraction": "Pidurangala Rock",
-        "fee": 15
-      },
-      {
-        "attraction": "Kalawewa National Park",
-        "fee": 35
-      },
-      {
-        "attraction": "Hiriwadunna Village Trek",
-        "fee": 25
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 15
-      },
-      {
-        "attraction": "Cultural Dance Show (Optional)",
-        "fee": 10
-      },
-      {
-        "attraction": "Royal Botanical Gardens",
-        "fee": 10
-      },
-      {
-        "attraction": "Tea Factory Visit",
-        "fee": 5
-      },
-      {
-        "attraction": "Colombo Museum (Optional)",
-        "fee": 15
-      }
+      { "attraction": "Negombo Lagoon Safari", "fee": 30 },
+      { "attraction": "Millennium Elephant Foundation", "fee": 15 },
+      { "attraction": "Pidurangala Rock", "fee": 15 },
+      { "attraction": "Kalawewa राष्ट्रीय उद्यान", "fee": 35 },
+      { "attraction": "Hiriwadunna ग्राम ट्रेक", "fee": 25 },
+      { "attraction": "दाँत अवशेष मंदिर", "fee": 15 },
+      { "attraction": "सांस्कृतिक नृत्य शो (वैकल्पिक)", "fee": 10 },
+      { "attraction": "शाही वनस्पति उद्यान", "fee": 10 },
+      { "attraction": "चाय कारखाना भ्रमण", "fee": 5 },
+      { "attraction": "Colombo संग्रहालय (वैकल्पिक)", "fee": 15 }
     ],
     "inclusions": [
-      "Meet & greet services at airport",
-      "Air-conditioned vehicle transportation throughout",
-      "Hotel accommodation on Half Board basis (Dinner & Breakfast)",
-      "English-speaking chauffeur guide (up to 6 pax) or National guide (7+ pax)",
-      "2 x 500ml mineral water bottles per guest daily",
-      "Kalawewa National Park jeep hire",
-      "All government taxes"
+      "हवाई अड्डे पर स्वागत सेवाएं",
+      "पूरे दौरे में वातानुकूलित वाहन में परिवहन",
+      "हाफ बोर्ड आधार पर होटल आवास (रात का खाना और नाश्ता)",
+      "अंग्रेजी भाषी चालक-गाइड (6 तक यात्री) या राष्ट्रीय गाइड (7+ यात्री)",
+      "प्रतिदिन प्रति अतिथि 500 मिली की 2 बोतल मिनरल वाटर",
+      "Kalawewa राष्ट्रीय उद्यान जीप किराया",
+      "सभी सरकारी कर"
     ],
     "exclusions": [
-      "Lunch throughout the tour",
-      "Camera and video permits",
-      "Entrance fees (USD 150-175 per person)",
-      "Beverages (alcoholic and non-alcoholic)",
-      "International airfare and visa fees",
-      "Additional visits not mentioned",
-      "Early check-in/late check-out charges",
-      "Tips and gratuities",
-      "Travel insurance",
-      "Personal expenses"
+      "यात्रा के दौरान दोपहर का भोजन",
+      "कैमरा और वीडियो परमिट",
+      "प्रवेश शुल्क (USD 150-175 प्रति व्यक्ति)",
+      "पेय पदार्थ (मादक और गैर-मादक)",
+      "अंतर्राष्ट्रीय हवाई किराया और वीज़ा शुल्क",
+      "उल्लिखित नहीं अतिरिक्त भ्रमण",
+      "जल्दी चेक-इन और देर से चेक-आउट शुल्क",
+      "टिप्स और ग्रेच्युटी",
+      "यात्रा बीमा",
+      "व्यक्तिगत खर्च"
     ]
   },
-  "ramayana-luxury": {
-    "title": "Ramayana Highlights Luxury Tour",
-    "duration": "8 Days / 7 Nights",
-    "description": "Embark on a spiritual and cultural journey through the legendary Ramayana trail in Sri Lanka. Follow the footsteps of Lord Rama, Sita, and Hanuman as you visit sacred temples and mythological sites deeply connected to the great Indian epic with luxury 4-5 star accommodations.",
+  "wonderful-journey": {
+    "title": "द्वीप में एक अद्भुत यात्रा",
+    "duration": "11 दिन / 10 रातें",
+    "description": "श्रीलंका की विविध सुंदरता का अनुभव करें — Negombo के मछुआरे गाँव के आकर्षण और Wilpattu National Park की वन्यजीव विविधता से लेकर Anuradhapura और Polonnaruwa के प्राचीन साम्राज्यों, Kandy के सांस्कृतिक हृदय, Nuwara Eliya के मनोरम पहाड़ी क्षेत्र और Colombo की जीवंत राजधानी तक।",
     "highlights": [
-      "Sacred Temples: Munneswaram, Koneshwaram, Seetha Amman, Bhakta Hanuman",
-      "Ramayana Sites: Seetha Kotuwa, Gayathri Peedam with divine connections",
-      "UNESCO Heritage: Sigiriya Rock Fortress, Dambulla Cave Temple, Temple of the Tooth",
-      "Luxury Hotels: Premium 4-5 star accommodations throughout",
-      "Natural Beauty: Madu River mangrove safari",
-      "Expert Guidance: Knowledgeable guides sharing Ramayana stories"
-    ],
-    "image": "/src/assets/destination-sigiriya.jpg",
-    "price": {
-      "from": 918,
-      "category": "per person"
-    },
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Arrival to Chilaw to Dambulla",
-        "activities": [
-          "Airport meet & greet by Lavish Travels representative",
-          "Transfer to Chilaw visiting Munneswaram Temple",
-          "Ancient Shiva temple where Rama sought remedy for Brahmaasthi Dosham",
-          "Continue to Dambulla through scenic countryside"
-        ],
-        "accommodation": "Amaya Lake Resort, Dambulla"
-      },
-      {
-        "day": 2,
-        "title": "Dambulla to Trincomalee Day Trip",
-        "activities": [
-          "Morning transfer to Trincomalee",
-          "Koneshwaram Temple - sacred Hindu temple with Ramayana connections",
-          "Explore ancient architectural marvel with thousand-pillar hall heritage",
-          "Return to Dambulla in evening"
-        ],
-        "accommodation": "Amaya Lake Resort, Dambulla"
-      },
-      {
-        "day": 3,
-        "title": "Sigiriya & Dambulla to Kandy",
-        "activities": [
-          "Early morning climb of Sigiriya Rock Fortress (UNESCO)",
-          "Explore Lion Rock with ancient frescoes and water gardens",
-          "Visit Dambulla Cave Temple - 1st century BC rock temple complex",
-          "Transfer to Kandy via scenic mountain roads",
-          "Evening visit to Temple of the Tooth Relic"
-        ],
-        "accommodation": "Amaya Hills Resort, Kandy"
-      },
-      {
-        "day": 4,
-        "title": "Kandy to Hasalaka Day Trip",
-        "activities": [
-          "Morning excursion to Hasalaka",
-          "Seetha Kotuwa - fort where Sita was kept by Queen Mandothari",
-          "Explore archaeological remains and mythological significance",
-          "Return to Kandy for brief city tour"
-        ],
-        "accommodation": "Amaya Hills Resort, Kandy"
-      },
-      {
-        "day": 5,
-        "title": "Kandy to Nuwara Eliya",
-        "activities": [
-          "Transfer through tea plantation landscapes",
-          "Bhakta Hanuman Temple - 16ft black granite statue",
-          "Visit Gayathri Peedam where Meghanath performed penance",
-          "Check-in to colonial-era accommodation"
-        ],
-        "accommodation": "The Grand Hotel, Nuwara Eliya"
-      },
-      {
-        "day": 6,
-        "title": "Nuwara Eliya to Beruwela",
-        "activities": [
-          "Morning visit to Seetha Amman Temple",
-          "Explore sacred stream where Sita bathed",
-          "See Hanuman's footprints by riverside",
-          "Scenic drive to south coast through mountain passes",
-          "Afternoon arrival at beach resort"
-        ],
-        "accommodation": "Cinnamon Bey Beruwela"
-      },
-      {
-        "day": 7,
-        "title": "Madu River Safari",
-        "activities": [
-          "Morning boat excursion on Madu River wetlands",
-          "Explore mangrove ecosystems and biodiversity",
-          "Visit Kothduwa Temple on isolated island",
-          "Return to resort for beach relaxation"
-        ],
-        "accommodation": "Cinnamon Bey Beruwela"
-      },
-      {
-        "day": 8,
-        "title": "Departure",
-        "activities": [
-          "Leisure breakfast at resort",
-          "Transfer to Bandaranaike International Airport",
-          "Departure assistance"
-        ]
-      }
-    ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 1182,
-        "pax8": 1539,
-        "pax16": 1490,
-        "pax32": 1493
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 1087,
-        "pax8": 964,
-        "pax16": 915,
-        "pax32": 918
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 480,
-        "pax8": 480,
-        "pax16": 418,
-        "pax32": 480
-      }
-    ],
-    "hotels": [
-      {
-        "destination": "Dambulla",
-        "hotel": "Amaya Lake",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Kandy",
-        "hotel": "Amaya Hills",
-        "supplement": "Premium Deluxe: $40 per night"
-      },
-      {
-        "destination": "Nuwara Eliya",
-        "hotel": "The Grand Hotel",
-        "supplement": "Queen Elizabeth Room: $175 per night"
-      },
-      {
-        "destination": "Beruwela",
-        "hotel": "Cinnamon Bay",
-        "supplement": "No Supplement"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Munneswaram Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Koneshwaram Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 32
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 15
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 15
-      },
-      {
-        "attraction": "Seetha Kotuwa",
-        "fee": 8
-      },
-      {
-        "attraction": "Bhakta Hanuman Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Seetha Amman Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Madu River Safari",
-        "fee": 15
-      }
-    ],
-    "inclusions": [
-      "Meet & Greet services at airport",
-      "Air-conditioned transportation throughout",
-      "Premium 4-5 star hotel accommodation on Half Board basis",
-      "Professional English-speaking chauffeur guide",
-      "Mineral Water - 2 bottles (500ml) per guest daily",
-      "All Government Taxes",
-      "Lunch throughout the tour",
-      "Entrance fees to attractions"
-    ],
-    "exclusions": [
-      "Camera/video permits",
-      "Beverages and personal expenses",
-      "International airfare and visa fees",
-      "Travel insurance",
-      "Early check-in/late check-out charges"
-    ]
-  },
-  "ramayana-normal": {
-    "title": "Ramayana Highlights Normal Tour",
-    "duration": "8 Days / 7 Nights",
-    "description": "Embark on a spiritual and cultural journey through the legendary Ramayana trail in Sri Lanka. Follow the footsteps of Lord Rama, Sita, and Hanuman as you visit sacred temples and mythological sites with comfortable 3-4 star accommodations.",
-    "highlights": [
-      "Sacred Temples: Munneswaram, Koneshwaram, Seetha Amman, Bhakta Hanuman",
-      "Ramayana Trail: Seetha Kotuwa, Gayathri Peedam with mythological significance",
-      "UNESCO Sites: Sigiriya Rock Fortress, Dambulla Cave Temple, Temple of the Tooth",
-      "Comfortable Hotels: Quality 3-4 star accommodations throughout",
-      "Natural Beauty: Madu River mangrove safari and biodiversity",
-      "Expert Guidance: Knowledgeable guides sharing Ramayana epic stories"
+      "वन्यजीव: Wilpattu National Park सफारी जिसमें तेंदुए और हाथी हैं",
+      "प्राचीन शहर: Anuradhapura और Polonnaruwa UNESCO स्थल",
+      "सांस्कृतिक अजूबे: Sigiriya रॉक किला, Dambulla गुफा मंदिर, दाँत के अवशेष का मंदिर",
+      "पहाड़ी देश: चाय बागान, Ramboda जलप्रपात, Horton Plains वर्ल्ड्स एंड",
+      "गाँव का अनुभव: Hiriwadunna गाँव की सैर और बैलगाड़ी की सवारी",
+      "प्रकृति: Negombo लैगून सफारी और Pidurangala रॉक चढ़ाई"
     ],
     "image": "/src/assets/hero-lavish.jpg",
     "price": {
-      "from": 750,
-      "category": "per person"
+      "from": 636,
+      "category": "प्रति व्यक्ति"
     },
     "itinerary": [
       {
         "day": 1,
-        "title": "Arrival to Chilaw to Dambulla",
+        "title": "आगमन और Negombo",
         "activities": [
-          "Airport meet & greet by Lavish Travels representative",
-          "Transfer to Chilaw visiting Munneswaram Temple en-route",
-          "Ancient Shiva temple where Lord Rama sought remedy for Brahmaasthi Dosham",
-          "Continue to Dambulla through scenic countryside"
+          "हवाई अड्डे से Negombo तक निजी स्थानांतरण",
+          "Lavinia Beach Hotel में चेक-इन",
+          "देर शाम लैगून सफारी या संक्षिप्त शहर भ्रमण",
+          "रंगीन मछली पकड़ने वाली नावों के साथ डच निर्मित नहर की यात्रा",
+          "प्रसिद्ध मछली बाज़ार 'Lellama' का भ्रमण",
+          "Kingfisher सहित पक्षी अवलोकन के अवसर"
         ],
-        "accommodation": "Lario Resort, Dambulla"
+        "accommodation": "Amagi Arya, Negombo"
       },
       {
         "day": 2,
-        "title": "Dambulla to Trincomalee Day Trip",
+        "title": "Negombo से Wilpattu होते हुए Anuradhapura",
         "activities": [
-          "Morning transfer to Trincomalee",
-          "Koneshwaram Temple - one of Sri Lanka's most sacred Hindu temples",
-          "Explore ancient architectural marvel with thousand-pillar hall heritage",
-          "Learn about Ramayana connections and lingam installed by Rama",
-          "Late evening return to Dambulla"
+          "पैक नाश्ते के साथ Wilpattu National Park के लिए प्रस्थान",
+          "Wilpattu में 4x4 जीप सफारी (लगभग 4 घंटे)",
+          "अनोखी 'Willus' (प्राकृतिक झीलें) का अवलोकन",
+          "वन्यजीव दर्शन: तेंदुए, हाथी, स्लॉथ भालू, जल भैंस",
+          "Anuradhapura की ओर आगे बढ़ें",
+          "संक्षिप्त शहर परिचय"
+        ],
+        "accommodation": "Levendish Hotel, Anuradhapura"
+      },
+      {
+        "day": 3,
+        "title": "Anuradhapura और Mihintale से Dambulla",
+        "activities": [
+          "Anuradhapura UNESCO विश्व विरासत स्थलों का शहर भ्रमण",
+          "Ruvanveliseya, Jetavanarama और Thuparama Dagobas का दौरा",
+          "पवित्र बोधि वृक्ष (2,250 वर्ष पुराना) के दर्शन",
+          "Mihintale की 1,840 पत्थर की सीढ़ियाँ चढ़ें — 'बौद्ध धर्म का पालना'",
+          "Dambulla की ओर स्थानांतरण"
         ],
         "accommodation": "Lario Resort, Dambulla"
       },
       {
-        "day": 3,
-        "title": "Sigiriya & Dambulla to Kandy",
-        "activities": [
-          "Early morning climb of Sigiriya Rock Fortress (UNESCO)",
-          "Explore Lion Rock with ancient frescoes and water gardens",
-          "Visit Dambulla Cave Temple - 1st century BC rock temple",
-          "Transfer to Kandy via scenic mountain roads",
-          "Evening visit to Temple of the Tooth Relic"
-        ],
-        "accommodation": "Senani Hotel, Kandy"
-      },
-      {
         "day": 4,
-        "title": "Kandy to Hasalaka Day Trip",
+        "title": "Sigiriya और गाँव की सैर",
         "activities": [
-          "Morning excursion to Hasalaka",
-          "Seetha Kotuwa - fort where Sita was kept by Queen Mandothari",
-          "Explore archaeological remains and mythological significance",
-          "Return to Kandy for brief city tour"
+          "सुबह जल्दी Sigiriya रॉक किले पर चढ़ाई",
+          "21 जीवन-आकार की महिलाओं की प्राचीन भित्तिचित्रों का दर्शन",
+          "शाही महल की नींव और जल उद्यानों का भ्रमण",
+          "दोपहर Hiriwadunna गाँव की सैर",
+          "जंगलों और धान के खेतों से होकर बैलगाड़ी की सवारी",
+          "मनोरम झील पर कैटामारेन सफारी",
+          "Chena खेती का दौरा और पक्षी अवलोकन"
         ],
-        "accommodation": "Senani Hotel, Kandy"
+        "accommodation": "Lario Resort, Dambulla"
       },
       {
         "day": 5,
-        "title": "Kandy to Nuwara Eliya",
+        "title": "Polonnaruwa और Pidurangala",
         "activities": [
-          "Morning transfer through tea plantation landscapes",
-          "Bhakta Hanuman Temple - 16ft black granite statue",
-          "Visit Gayathri Peedam where Meghanath performed penance to Lord Shiva",
-          "Check-in to accommodation"
+          "Polonnaruwa UNESCO विश्व विरासत स्थल का भ्रमण",
+          "प्रसिद्ध Parakrama Samudraya जलाशय का दर्शन",
+          "11वीं-13वीं शताब्दी की बौद्ध और हिंदू संरचनाओं का अवलोकन",
+          "Pidurangala रॉक पर चुनौतीपूर्ण चढ़ाई",
+          "शिखर से Sigiriya रॉक के अद्भुत पैनोरमिक दृश्य"
+        ],
+        "accommodation": "Lario Resort, Dambulla"
+      },
+      {
+        "day": 6,
+        "title": "Dambulla से Kandy",
+        "activities": [
+          "Matale में मसाला बागान का दौरा",
+          "दालचीनी, इलायची, काली मिर्च और मसालों के बारे में जानें",
+          "Kandy की ओर आगे बढ़ें",
+          "Kandy झील और शाही महल सहित शहर भ्रमण"
+        ],
+        "accommodation": "Senani Hotel, Kandy"
+      },
+      {
+        "day": 7,
+        "title": "Kandy पूरा दिन",
+        "activities": [
+          "सुबह की पूजा समारोह के लिए दाँत के अवशेष के मंदिर का दौरा",
+          "श्रीलंकाई रत्नों के बारे में जानने के लिए रत्न संग्रहालय का भ्रमण",
+          "शाही वनस्पति उद्यान (147 एकड़) का दौरा",
+          "4,000 से अधिक पौधों की प्रजातियाँ, मसाला बागान, आर्किड हाउस देखें",
+          "पाँच पाम एवेन्यू से टहलें",
+          "खरीदारी के लिए खाली समय"
+        ],
+        "accommodation": "Senani Hotel, Kandy"
+      },
+      {
+        "day": 8,
+        "title": "Kandy से Nuwara Eliya",
+        "activities": [
+          "Pussallawa में चाय बागान और चाय फैक्ट्री का दौरा",
+          "स्थानीय श्रमिकों के साथ चाय तोड़ने का अनुभव",
+          "प्रसिद्ध Ramboda जलप्रपात पर रुकें",
+          "श्रीलंका के 'लिटिल इंग्लैंड' का अन्वेषण",
+          "Victoria Park में सैर",
+          "औपनिवेशिक युग की वास्तुकला की खोज"
         ],
         "accommodation": "Blue Meadows, Nuwara Eliya"
       },
       {
-        "day": 6,
-        "title": "Nuwara Eliya to Beruwela",
+        "day": 9,
+        "title": "Horton Plains",
         "activities": [
-          "Morning visit to Seetha Amman Temple",
-          "Explore sacred stream where Sita bathed",
-          "See Hanuman's footprints by riverside",
-          "Scenic drive to south coast through mountain passes",
-          "Afternoon arrival at beach resort"
+          "World's End और Little World's End तक सुबह जल्दी ट्रेकिंग",
+          "Baker's Falls का दौरा",
+          "अनोखे क्लाउड फॉरेस्ट रिज़र्व का अन्वेषण",
+          "विविध नम सदाबहार जंगल से गुजरें",
+          "विश्राम के लिए होटल वापसी"
         ],
-        "accommodation": "Joies Hotel, Beruwela"
+        "accommodation": "Blue Meadows, Nuwara Eliya"
       },
       {
-        "day": 7,
-        "title": "Madu River Safari",
+        "day": 10,
+        "title": "Nuwara Eliya से Colombo",
         "activities": [
-          "Morning boat excursion on Madu River wetlands",
-          "Explore mangrove ecosystems and biodiversity (3-hour excursion)",
-          "Visit Kothduwa Temple on isolated island",
-          "Return to resort for beach relaxation"
+          "Kitulgala होते हुए Colombo के लिए प्रस्थान",
+          "Fort और Pettah क्षेत्रों सहित शहर भ्रमण",
+          "Sea Street, हिंदू मंदिर, Kayman's Gate का दौरा",
+          "Dutch Church of Wolfendhaal (1749)",
+          "BMICH और स्वतंत्रता चौक",
+          "अंतिम समय की खरीदारी के अवसर"
         ],
-        "accommodation": "Senani Hotel, Beruwela"
+        "accommodation": "Fair Way Hotel, Colombo"
       },
       {
-        "day": 8,
-        "title": "Departure",
+        "day": 11,
+        "title": "प्रस्थान",
         "activities": [
-          "Leisure breakfast at resort",
-          "Transfer to Bandaranaike International Airport",
-          "Departure assistance"
+          "नाश्ते का आनंद लें और चेक आउट करें",
+          "Bandaranaike अंतर्राष्ट्रीय हवाई अड्डे तक निजी स्थानांतरण"
         ]
       }
     ],
     "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 921,
-        "pax8": 798,
-        "pax16": 750,
-        "pax32": 752
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 867,
-        "pax8": 744,
-        "pax16": 695,
-        "pax32": 698
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 237.5,
-        "pax8": 237.5,
-        "pax16": 237.5,
-        "pax32": 237.5
-      }
+      { "category": "प्रति व्यक्ति साझा (डबल रूम)", "pax3": 1042, "pax8": 725, "pax16": 731, "pax32": 636 },
+      { "category": "प्रति व्यक्ति साझा (ट्रिपल रूम)", "pax3": 1005, "pax8": 688, "pax16": 694, "pax32": 598 },
+      { "category": "एकल रूम अधिभार", "pax3": 287, "pax8": 287, "pax16": 287, "pax32": 287 }
     ],
     "hotels": [
-      {
-        "destination": "Dambulla",
-        "hotel": "Lario Resort",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Kandy",
-        "hotel": "Senani Hotel",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Nuwara Eliya",
-        "hotel": "Blue Meadows",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Beruwela",
-        "hotel": "Joies Hotel",
-        "supplement": "No Supplement"
-      }
+      { "destination": "Negombo", "hotel": "Amagi Arya", "supplement": "कोई अधिभार नहीं" },
+      { "destination": "Anuradhapura", "hotel": "Levendish Hotel", "supplement": "कोई अधिभार नहीं" },
+      { "destination": "Dambulla", "hotel": "Lario Resort", "supplement": "कोई अधिभार नहीं" },
+      { "destination": "Kandy", "hotel": "Senani Hotel", "supplement": "कोई अधिभार नहीं" },
+      { "destination": "Nuwara Eliya", "hotel": "Blue Meadows", "supplement": "कोई अधिभार नहीं" },
+      { "destination": "Colombo", "hotel": "Fair Way Hotel", "supplement": "सुपीरियर बालकनी: $15 प्रति रात" }
     ],
     "entranceFees": [
-      {
-        "attraction": "Munneswaram Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Koneshwaram Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 32
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 15
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 15
-      },
-      {
-        "attraction": "Seetha Kotuwa",
-        "fee": 8
-      },
-      {
-        "attraction": "Bhakta Hanuman Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Seetha Amman Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Madu River Safari",
-        "fee": 15
-      }
+      { "attraction": "Negombo लैगून सफारी", "fee": 30 },
+      { "attraction": "Wilpattu National Park", "fee": 35 },
+      { "attraction": "Anuradhapura", "fee": 26 },
+      { "attraction": "Hiriwadunna गाँव की सैर", "fee": 25 },
+      { "attraction": "Sigiriya रॉक किला", "fee": 32 },
+      { "attraction": "Polonnaruwa", "fee": 26 },
+      { "attraction": "Pidurangala रॉक", "fee": 15 },
+      { "attraction": "दाँत के अवशेष का मंदिर", "fee": 15 },
+      { "attraction": "सांस्कृतिक नृत्य प्रदर्शन (वैकल्पिक)", "fee": 10 },
+      { "attraction": "शाही वनस्पति उद्यान", "fee": 10 },
+      { "attraction": "चाय फैक्ट्री का दौरा", "fee": 5 },
+      { "attraction": "Horton Plains National Park", "fee": 35 }
     ],
     "inclusions": [
-      "Meet & Greet services at airport",
-      "Air-conditioned transportation throughout",
-      "Hotel accommodation on Half Board basis (Breakfast & Dinner)",
-      "Professional English-speaking chauffeur guide",
-      "Mineral Water - 2 bottles (500ml) per guest daily",
-      "All Government Taxes",
-      "Lunch throughout the tour",
-      "Entrance fees to temples and attractions"
+      "हवाई अड्डे पर मिलने और स्वागत की सेवाएँ",
+      "पूरे दौरे में वातानुकूलित वाहन परिवहन",
+      "हाफ बोर्ड आधार (रात्रि भोज और नाश्ता) पर होटल आवास",
+      "अंग्रेज़ी बोलने वाले शोफ़र गाइड (6 पैक्स तक) या राष्ट्रीय गाइड (7+ पैक्स)",
+      "प्रतिदिन प्रति अतिथि 2 x 500 मिली मिनरल वॉटर बोतलें",
+      "Wilpattu National Park जीप किराया",
+      "Horton Plains जीप किराया",
+      "सभी सरकारी कर"
     ],
     "exclusions": [
-      "International airfare and visa fees",
-      "Travel and medical insurance",
-      "Personal expenses (laundry, telephone, minibar)",
-      "Camera and video permits",
-      "Tips to guides and drivers",
-      "Alcoholic beverages and room service",
-      "Early check-in/late check-out charges"
+      "पूरे दौरे में दोपहर का भोजन",
+      "कैमरा और वीडियो परमिट",
+      "प्रवेश शुल्क (अलग से सूचीबद्ध)",
+      "पेय पदार्थ (मादक और गैर-मादक)",
+      "अंतर्राष्ट्रीय हवाई किराया और वीज़ा शुल्क",
+      "उल्लिखित नहीं किए गए अतिरिक्त दौरे",
+      "जल्दी चेक-इन/देर से चेक-आउट शुल्क",
+      "टिप्स और आभार",
+      "यात्रा बीमा",
+      "व्यक्तिगत खर्च"
+    ]
+  },
+  "ramayana-trails": {
+    "title": "रामायण ट्रेल्स डीलक्स",
+    "duration": "8 दिन / 7 रातें",
+    "description": "श्रीलंका में पौराणिक रामायण मार्ग का अनुसरण करते हुए एक असाधारण आध्यात्मिक और सांस्कृतिक यात्रा पर निकलें। उन रहस्यमय स्थानों का अनुभव करें जहाँ भगवान राम, सीता और हनुमान की महाकाव्य कथा घटित हुई थी, विलासिता के आवास और विशेषज्ञ मार्गदर्शकों के साथ।",
+    "highlights": [
+      "पवित्र स्थल: Rumassala, Seetha Amman मंदिर, Hanuman मंदिर के दर्शन",
+      "आध्यात्मिक यात्रा: प्राचीन रामायण स्थान और महाकाव्य की किंवदंतियाँ",
+      "वन्यजीव: Yala National Park तेंदुआ सफारी अनुभव",
+      "सांस्कृतिक विरासत: Sigiriya, Dambulla, Kandy मंदिरों का अन्वेषण",
+      "विलासिता आवास: पूरे दौरे में प्रीमियम 4-सितारा होटल",
+      "विशेषज्ञ मार्गदर्शन: रामायण की कहानियाँ साझा करने वाले जानकार गाइड"
+    ],
+    "image": "/src/assets/hero-lavish.jpg",
+    "price": {
+      "from": 891,
+      "category": "प्रति व्यक्ति"
+    },
+    "itinerary": [
+      { "day": 1, "title": "आगमन और Hikkaduwa", "activities": ["अंग्रेज़ी बोलने वाले ड्राइवर/गाइड द्वारा हवाई अड्डे पर स्वागत", "शानदार बीचफ्रंट होटल में चेक-इन", "Rumassala अभयारण्य का दौरा — हनुमान की औषधीय जड़ी-बूटियों का स्थान", "समुद्र तट पर आराम की शाम"], "accommodation": "Hikka Tranz by Cinnamon, Hikkaduwa" },
+      { "day": 2, "title": "Hikkaduwa से Ussangoda होते हुए Yala", "activities": ["Ussangoda का अन्वेषण — हनुमान की अग्निमय पूंछ से जला हुआ स्थान", "Yala National Park की ओर आगे बढ़ें", "दोपहर 4x4 जीप सफारी — दुनिया का सबसे अच्छा तेंदुआ गंतव्य"], "accommodation": "Cinnamon Wild, Yala" },
+      { "day": 3, "title": "Yala से Nuwara Eliya — पवित्र मंदिर", "activities": ["Divurumwela Raja Maha Viharaya का दौरा — सीता की अग्नि परीक्षा का स्थान", "पवित्र धारा के साथ Seetha Amman मंदिर का भ्रमण", "नदी के किनारे हनुमान के पदचिह्न खोजें", "Gayathri Peedam का दौरा — रावण के पुत्र का शक्ति स्थल"], "accommodation": "Grand Hotel, Nuwara Eliya" },
+      { "day": 4, "title": "Nuwara Eliya से Hanuman मंदिर होते हुए Kandy", "activities": ["भव्य Bhakta Hanuman मंदिर (16 फुट की मूर्ति) के दर्शन", "Kothmale जलाशय के पैनोरमिक दृश्य", "Seetha Kotuwa का दोपहर भ्रमण — सीता का बंदीगृह", "Kandy में सांध्यकालीन सांस्कृतिक भ्रमण"], "accommodation": "Amaya Hills, Kandy" },
+      { "day": 5, "title": "Kandy से Sigiriya होते हुए Dambulla", "activities": ["Kandy का संक्षिप्त शहर भ्रमण", "UNESCO Dambulla रॉक गुफा मंदिर का अन्वेषण", "दोपहर शानदार Sigiriya रॉक किले की चढ़ाई", "लायन रॉक के जल उद्यान और भित्तिचित्रों का आनंद लें"], "accommodation": "Amaya Lake, Dambulla" },
+      { "day": 6, "title": "Dambulla से Trincomalee दिवस यात्रा", "activities": ["पूर्वी तट के लिए जल्दी प्रस्थान", "समुद्र को देखते हुए प्राचीन Koneshwaram मंदिर का दौरा", "1950 के दशक के जलमग्न मंदिर के अवशेषों का अन्वेषण", "रामायण से जुड़ाव के बारे में जानें"], "accommodation": "Amaya Lake, Dambulla" },
+      { "day": 7, "title": "Dambulla से Munneswaram होते हुए Negombo", "activities": ["Munneswaram मंदिर का दौरा — राम के ब्रह्मास्थि दोषम के उपाय का स्थान", "राम द्वारा स्थापित चार पवित्र लिंगमों के बारे में जानें", "बीचफ्रंट रिज़ॉर्ट में चेक-इन", "समुद्र तट पर आराम की दोपहर"], "accommodation": "Suriya Resort, Waikkal" },
+      { "day": 8, "title": "प्रस्थान", "activities": ["इत्मीनान से नाश्ता और चेक-आउट", "रिज़ॉर्ट पर अंतिम विश्राम समय", "प्रस्थान सहायता के साथ हवाई अड्डे तक निजी स्थानांतरण"] }
+    ],
+    "pricing": [
+      { "category": "प्रति व्यक्ति साझा (डबल रूम)", "pax3": 1237, "pax8": 1060, "pax16": 940, "pax32": 891 },
+      { "category": "प्रति व्यक्ति साझा (ट्रिपल रूम)", "pax3": 1168, "pax8": 990, "pax16": 971, "pax32": 822 },
+      { "category": "एकल रूम अधिभार", "pax3": 423, "pax8": 423, "pax16": 423, "pax32": 423 }
+    ],
+    "hotels": [
+      { "destination": "Hikkaduwa", "hotel": "Hikkaduwa Cinnamon Hotel", "supplement": "सुपीरियर ओशन व्यू: $10 प्रति कमरा प्रति दिन" },
+      { "destination": "Yala", "hotel": "Cinnamon Wild Yala", "supplement": "बीच चेलेट: $40 प्रति कमरा प्रति रात" },
+      { "destination": "Nuwara Eliya", "hotel": "Grand Hotel", "supplement": "Queen Elizabeth: $175 प्रति कमरा प्रति रात" },
+      { "destination": "Kandy", "hotel": "Amaya Hills", "supplement": "प्रीमियम डीलक्स: $40 प्रति व्यक्ति प्रति दिन" },
+      { "destination": "Dambulla", "hotel": "Amaya Lake", "supplement": "कोई अधिभार नहीं" },
+      { "destination": "Negombo", "hotel": "Amagi Aria", "supplement": "कोई अधिभार नहीं" }
+    ],
+    "entranceFees": [
+      { "attraction": "Rumassala अभयारण्य", "fee": 5 },
+      { "attraction": "Yala National Park सफारी", "fee": 40 },
+      { "attraction": "Yala पार्क प्रवेश", "fee": 15 },
+      { "attraction": "Divurumwela Raja Maha Viharaya", "fee": 3 },
+      { "attraction": "Seetha Amman मंदिर", "fee": 5 },
+      { "attraction": "Gayathri Peedam", "fee": 3 },
+      { "attraction": "Bhakta Hanuman मंदिर", "fee": 3 },
+      { "attraction": "Seetha Kotuwa", "fee": 8 },
+      { "attraction": "Dambulla गुफा मंदिर", "fee": 10 },
+      { "attraction": "Sigiriya रॉक किला", "fee": 30 },
+      { "attraction": "Koneshwaram मंदिर", "fee": 5 },
+      { "attraction": "Munneswaram मंदिर", "fee": 3 }
+    ],
+    "inclusions": [
+      "हवाई अड्डे पर मिलने और स्वागत की सेवाएँ",
+      "पूरे दौरे में वातानुकूलित वाहन में परिवहन",
+      "हाफ बोर्ड आधार पर प्रीमियम 4-सितारा होटलों में आवास",
+      "पेशेवर अंग्रेज़ी बोलने वाले शोफ़र गाइड (6 पैक्स तक)",
+      "Yala National Park में जीप सफारी",
+      "प्रतिदिन प्रति अतिथि मिनरल वॉटर — 2 बोतलें (500 मिली)",
+      "सभी सरकारी कर",
+      "पूरे दौरे में दोपहर का भोजन",
+      "आकर्षणों के प्रवेश शुल्क"
+    ],
+    "exclusions": [
+      "कैमरा/वीडियो परमिट",
+      "पेय पदार्थ और व्यक्तिगत खर्च",
+      "अंतर्राष्ट्रीय हवाई किराया और वीज़ा शुल्क",
+      "यात्रा बीमा",
+      "जल्दी चेक-इन/देर से चेक-आउट शुल्क"
+    ]
+  },
+  "ramayana-luxury": {
+    "title": "रामायण हाइलाइट्स लक्ज़री टूर",
+    "duration": "8 दिन / 7 रातें",
+    "description": "श्रीलंका में पौराणिक रामायण मार्ग पर एक आध्यात्मिक और सांस्कृतिक यात्रा पर निकलें। भगवान राम, सीता और हनुमान के पदचिह्नों का अनुसरण करते हुए पवित्र मंदिरों और पौराणिक स्थलों का दौरा करें जो महान भारतीय महाकाव्य से गहराई से जुड़े हैं, लक्ज़री 4-5 सितारा आवास के साथ।",
+    "highlights": [
+      "पवित्र मंदिर: Munneswaram, Koneshwaram, Seetha Amman, Bhakta Hanuman",
+      "रामायण स्थल: Seetha Kotuwa, दैवीय संबंधों के साथ Gayathri Peedam",
+      "UNESCO विरासत: Sigiriya रॉक किला, Dambulla गुफा मंदिर, दाँत के अवशेष का मंदिर",
+      "लक्ज़री होटल: पूरे दौरे में प्रीमियम 4-5 सितारा आवास",
+      "प्राकृतिक सौंदर्य: Madu नदी मैंग्रोव सफारी",
+      "विशेषज्ञ मार्गदर्शन: रामायण की कहानियाँ साझा करने वाले जानकार गाइड"
+    ],
+    "image": "/src/assets/destination-sigiriya.jpg",
+    "price": {
+      "from": 918,
+      "category": "प्रति व्यक्ति"
+    },
+    "itinerary": [
+      { "day": 1, "title": "Chilaw होते हुए Dambulla में आगमन", "activities": ["Lavish Travels प्रतिनिधि द्वारा हवाई अड्डे पर मिलने और स्वागत", "Munneswaram मंदिर का दौरा करते हुए Chilaw की ओर स्थानांतरण", "प्राचीन शिव मंदिर जहाँ राम ने ब्रह्मास्थि दोषम के उपाय की माँग की", "सुंदर ग्रामीण क्षेत्र से होते हुए Dambulla की ओर आगे बढ़ें"], "accommodation": "Amaya Lake Resort, Dambulla" },
+      { "day": 2, "title": "Dambulla से Trincomalee दिवस यात्रा", "activities": ["सुबह Trincomalee के लिए स्थानांतरण", "Koneshwaram मंदिर — रामायण संबंधों के साथ पवित्र हिंदू मंदिर", "हज़ार स्तंभों वाले हॉल की विरासत के साथ प्राचीन वास्तुशिल्प चमत्कार का अन्वेषण", "शाम को Dambulla वापसी"], "accommodation": "Amaya Lake Resort, Dambulla" },
+      { "day": 3, "title": "Sigiriya और Dambulla से Kandy", "activities": ["Sigiriya रॉक किले की सुबह जल्दी चढ़ाई (UNESCO)", "प्राचीन भित्तिचित्रों और जल उद्यानों के साथ लायन रॉक का अन्वेषण", "Dambulla गुफा मंदिर का दौरा — पहली शताब्दी ईसा पूर्व का रॉक मंदिर परिसर", "सुंदर पहाड़ी सड़कों से होते हुए Kandy की ओर स्थानांतरण", "दाँत के अवशेष के मंदिर का सांध्यकालीन दौरा"], "accommodation": "Amaya Hills Resort, Kandy" },
+      { "day": 4, "title": "Kandy से Hasalaka दिवस यात्रा", "activities": ["Hasalaka के लिए सुबह का भ्रमण", "Seetha Kotuwa — वह किला जहाँ सीता को रानी Mandothari ने रखा था", "पुरातात्विक अवशेषों और पौराणिक महत्व का अन्वेषण", "संक्षिप्त शहर भ्रमण के लिए Kandy वापसी"], "accommodation": "Amaya Hills Resort, Kandy" },
+      { "day": 5, "title": "Kandy से Nuwara Eliya", "activities": ["चाय बागान के परिदृश्य से होते हुए स्थानांतरण", "Bhakta Hanuman मंदिर — 16 फुट की काले ग्रेनाइट की मूर्ति", "Gayathri Peedam का दौरा जहाँ Meghanath ने तपस्या की", "औपनिवेशिक युग के आवास में चेक-इन"], "accommodation": "The Grand Hotel, Nuwara Eliya" },
+      { "day": 6, "title": "Nuwara Eliya से Beruwela", "activities": ["Seetha Amman मंदिर की सुबह की यात्रा", "पवित्र धारा का अन्वेषण जहाँ सीता ने स्नान किया था", "नदी के किनारे हनुमान के पदचिह्न देखें", "पहाड़ी दर्रों से होते हुए दक्षिणी तट की ओर सुंदर ड्राइव", "दोपहर बीच रिज़ॉर्ट पहुँचें"], "accommodation": "Cinnamon Bey Beruwela" },
+      { "day": 7, "title": "Madu नदी सफारी", "activities": ["Madu नदी आर्द्रभूमि पर सुबह की नौका भ्रमण", "मैंग्रोव पारिस्थितिकी तंत्र और जैव विविधता का अन्वेषण", "एकांत द्वीप पर Kothduwa मंदिर का दौरा", "समुद्र तट पर आराम के लिए रिज़ॉर्ट वापसी"], "accommodation": "Cinnamon Bey Beruwela" },
+      { "day": 8, "title": "प्रस्थान", "activities": ["रिज़ॉर्ट में आरामदायक नाश्ता", "Bandaranaike अंतर्राष्ट्रीय हवाई अड्डे तक स्थानांतरण", "प्रस्थान सहायता"] }
+    ],
+    "pricing": [
+      { "category": "प्रति व्यक्ति साझा (डबल रूम)", "pax3": 1182, "pax8": 1539, "pax16": 1490, "pax32": 1493 },
+      { "category": "प्रति व्यक्ति साझा (ट्रिपल रूम)", "pax3": 1087, "pax8": 964, "pax16": 915, "pax32": 918 },
+      { "category": "एकल रूम अधिभार", "pax3": 480, "pax8": 480, "pax16": 418, "pax32": 480 }
+    ],
+    "hotels": [
+      { "destination": "Dambulla", "hotel": "Amaya Lake", "supplement": "कोई अधिभार नहीं" },
+      { "destination": "Kandy", "hotel": "Amaya Hills", "supplement": "प्रीमियम डीलक्स: $40 प्रति रात" },
+      { "destination": "Nuwara Eliya", "hotel": "The Grand Hotel", "supplement": "Queen Elizabeth रूम: $175 प्रति रात" },
+      { "destination": "Beruwela", "hotel": "Cinnamon Bay", "supplement": "कोई अधिभार नहीं" }
+    ],
+    "entranceFees": [
+      { "attraction": "Munneswaram मंदिर", "fee": 3 },
+      { "attraction": "Koneshwaram मंदिर", "fee": 5 },
+      { "attraction": "Sigiriya रॉक किला", "fee": 32 },
+      { "attraction": "Dambulla गुफा मंदिर", "fee": 15 },
+      { "attraction": "दाँत के अवशेष का मंदिर", "fee": 15 },
+      { "attraction": "Seetha Kotuwa", "fee": 8 },
+      { "attraction": "Bhakta Hanuman मंदिर", "fee": 3 },
+      { "attraction": "Gayathri Peedam", "fee": 3 },
+      { "attraction": "Seetha Amman मंदिर", "fee": 5 },
+      { "attraction": "Madu नदी सफारी", "fee": 15 }
+    ],
+    "inclusions": [
+      "हवाई अड्डे पर मिलने और स्वागत की सेवाएँ",
+      "पूरे दौरे में वातानुकूलित परिवहन",
+      "हाफ बोर्ड आधार पर प्रीमियम 4-5 सितारा होटल आवास",
+      "पेशेवर अंग्रेज़ी बोलने वाले शोफ़र गाइड",
+      "मिनरल वॉटर — प्रतिदिन प्रति अतिथि 2 बोतलें (500 मिली)",
+      "सभी सरकारी कर",
+      "पूरे दौरे में दोपहर का भोजन",
+      "आकर्षणों के प्रवेश शुल्क"
+    ],
+    "exclusions": [
+      "कैमरा/वीडियो परमिट",
+      "पेय पदार्थ और व्यक्तिगत खर्च",
+      "अंतर्राष्ट्रीय हवाई किराया और वीज़ा शुल्क",
+      "यात्रा बीमा",
+      "जल्दी चेक-इन/देर से चेक-आउट शुल्क"
+    ]
+  },
+  "ramayana-normal": {
+    "title": "रामायण हाइलाइट्स नॉर्मल टूर",
+    "duration": "8 दिन / 7 रातें",
+    "description": "श्रीलंका में पौराणिक रामायण मार्ग के माध्यम से एक आध्यात्मिक और सांस्कृतिक यात्रा पर निकलें। भगवान राम, सीता और हनुमान के पदचिह्नों पर चलते हुए पवित्र मंदिरों और पौराणिक स्थलों की यात्रा करें, आरामदायक 3-4 स्टार आवास के साथ।",
+    "highlights": [
+      "पवित्र मंदिर: Munneswaram, Koneshwaram, Seetha Amman, Bhakta Hanuman",
+      "रामायण मार्ग: Seetha Kotuwa, Gayathri Peedam पौराणिक महत्व के साथ",
+      "यूनेस्को स्थल: Sigiriya रॉक किला, Dambulla गुफा मंदिर, दाँत का मंदिर",
+      "आरामदायक होटल: पूरे दौरे में गुणवत्तापूर्ण 3-4 स्टार आवास",
+      "प्राकृतिक सौंदर्य: Madu नदी मैंग्रोव सफारी और जैव विविधता",
+      "विशेषज्ञ मार्गदर्शन: रामायण महाकाव्य की कहानियाँ साझा करने वाले जानकार गाइड"
+    ],
+    "image": "/src/assets/hero-lavish.jpg",
+    "price": {
+      "from": 750,
+      "category": "प्रति व्यक्ति"
+    },
+    "itinerary": [
+      { "day": 1, "title": "आगमन से Chilaw से Dambulla", "activities": ["Lavish Travels के प्रतिनिधि द्वारा हवाई अड्डे पर स्वागत", "Munneswaram मंदिर होते हुए Chilaw स्थानांतरण", "प्राचीन शिव मंदिर जहाँ भगवान राम ने ब्रह्माष्ठि दोष का निवारण किया", "सुंदर ग्रामीण क्षेत्र से होते हुए Dambulla की ओर आगे बढ़ें"], "accommodation": "Lario Resort, Dambulla" },
+      { "day": 2, "title": "Dambulla से Trincomalee दिवस भ्रमण", "activities": ["सुबह Trincomalee के लिए प्रस्थान", "Koneshwaram मंदिर - श्रीलंका के सबसे पवित्र हिंदू मंदिरों में से एक", "हजार-स्तंभ हॉल विरासत के साथ प्राचीन वास्तुकला का अन्वेषण", "रामायण संबंध और राम द्वारा स्थापित लिंगम के बारे में जानें", "देर शाम Dambulla वापसी"], "accommodation": "Lario Resort, Dambulla" },
+      { "day": 3, "title": "Sigiriya और Dambulla से Kandy", "activities": ["Sigiriya रॉक किले पर तड़के सुबह चढ़ाई (यूनेस्को)", "प्राचीन भित्तिचित्रों और जल उद्यानों के साथ लॉयन रॉक का भ्रमण", "Dambulla गुफा मंदिर की यात्रा - पहली शताब्दी ईसा पूर्व का रॉक मंदिर", "सुंदर पहाड़ी सड़कों से होते हुए Kandy स्थानांतरण", "दाँत के अवशेष के मंदिर की शाम को यात्रा"], "accommodation": "Senani Hotel, Kandy" },
+      { "day": 4, "title": "Kandy से Hasalaka दिवस भ्रमण", "activities": ["Hasalaka के लिए सुबह भ्रमण", "Seetha Kotuwa - वह किला जहाँ रानी Mandothari ने सीता को रखा था", "पुरातात्विक अवशेषों और पौराणिक महत्व का अन्वेषण", "संक्षिप्त शहर भ्रमण के लिए Kandy वापसी"], "accommodation": "Senani Hotel, Kandy" },
+      { "day": 5, "title": "Kandy से Nuwara Eliya", "activities": ["चाय बागान परिदृश्य से होते हुए सुबह स्थानांतरण", "Bhakta Hanuman मंदिर - 16 फुट काली ग्रेनाइट प्रतिमा", "Gayathri Peedam की यात्रा जहाँ Meghanath ने भगवान शिव की तपस्या की", "आवास में चेक-इन"], "accommodation": "Blue Meadows, Nuwara Eliya" },
+      { "day": 6, "title": "Nuwara Eliya से Beruwela", "activities": ["Seetha Amman मंदिर की सुबह यात्रा", "पवित्र धारा का अन्वेषण जहाँ सीता ने स्नान किया", "नदी के किनारे हनुमान के पदचिह्न देखें", "पहाड़ी दर्रों से होते हुए दक्षिण तट तक सुंदर ड्राइव", "बीच रिसॉर्ट पर दोपहर आगमन"], "accommodation": "Joies Hotel, Beruwela" },
+      { "day": 7, "title": "Madu नदी सफारी", "activities": ["Madu नदी आर्द्रभूमि पर सुबह नाव भ्रमण", "मैंग्रोव पारिस्थितिकी तंत्र और जैव विविधता का अन्वेषण (3 घंटे का भ्रमण)", "एकान्त द्वीप पर Kothduwa मंदिर की यात्रा", "समुद्र तट विश्राम के लिए रिसॉर्ट वापसी"], "accommodation": "Senani Hotel, Beruwela" },
+      { "day": 8, "title": "प्रस्थान", "activities": ["रिसॉर्ट में आराम से नाश्ता", "Bandaranaike अंतर्राष्ट्रीय हवाई अड्डे के लिए स्थानांतरण", "प्रस्थान सहायता"] }
+    ],
+    "pricing": [
+      { "category": "प्रति व्यक्ति साझा (डबल रूम)", "pax3": 921, "pax8": 798, "pax16": 750, "pax32": 752 },
+      { "category": "प्रति व्यक्ति साझा (ट्रिपल रूम)", "pax3": 867, "pax8": 744, "pax16": 695, "pax32": 698 },
+      { "category": "सिंगल रूम सप्लीमेंट", "pax3": 237.5, "pax8": 237.5, "pax16": 237.5, "pax32": 237.5 }
+    ],
+    "hotels": [
+      { "destination": "Dambulla", "hotel": "Lario Resort", "supplement": "कोई सप्लीमेंट नहीं" },
+      { "destination": "Kandy", "hotel": "Senani Hotel", "supplement": "कोई सप्लीमेंट नहीं" },
+      { "destination": "Nuwara Eliya", "hotel": "Blue Meadows", "supplement": "कोई सप्लीमेंट नहीं" },
+      { "destination": "Beruwela", "hotel": "Joies Hotel", "supplement": "कोई सप्लीमेंट नहीं" }
+    ],
+    "entranceFees": [
+      { "attraction": "Munneswaram मंदिर", "fee": 3 },
+      { "attraction": "Koneshwaram मंदिर", "fee": 3 },
+      { "attraction": "Sigiriya रॉक किला", "fee": 32 },
+      { "attraction": "Dambulla गुफा मंदिर", "fee": 15 },
+      { "attraction": "दाँत का मंदिर", "fee": 15 },
+      { "attraction": "Seetha Kotuwa", "fee": 8 },
+      { "attraction": "Bhakta Hanuman मंदिर", "fee": 3 },
+      { "attraction": "Gayathri Peedam", "fee": 3 },
+      { "attraction": "Seetha Amman मंदिर", "fee": 5 },
+      { "attraction": "Madu नदी सफारी", "fee": 15 }
+    ],
+    "inclusions": [
+      "हवाई अड्डे पर स्वागत सेवाएँ",
+      "पूरे दौरे में वातानुकूलित परिवहन",
+      "हाफ बोर्ड आधार पर होटल आवास (नाश्ता और रात का खाना)",
+      "पेशेवर अंग्रेजी बोलने वाले चालक-गाइड",
+      "प्रत्येक अतिथि को दैनिक मिनरल वाटर - 2 बोतलें (500 मिली)",
+      "सभी सरकारी कर",
+      "पूरे दौरे में दोपहर का भोजन",
+      "मंदिरों और आकर्षणों के लिए प्रवेश शुल्क"
+    ],
+    "exclusions": [
+      "अंतर्राष्ट्रीय हवाई किराया और वीज़ा शुल्क",
+      "यात्रा और चिकित्सा बीमा",
+      "व्यक्तिगत खर्च (लॉन्ड्री, टेलीफोन, मिनीबार)",
+      "कैमरा और वीडियो परमिट",
+      "गाइड और ड्राइवरों को टिप्स",
+      "मादक पेय और रूम सर्विस",
+      "जल्दी चेक-इन / देर से चेक-आउट शुल्क"
     ]
   },
   "ramayana-premium": {
-    "title": "Ramayana Highlights Premium Tour",
-    "duration": "8 Days / 7 Nights",
-    "description": "Embark on a profound spiritual journey through Sri Lanka, tracing the legendary footsteps of Lord Rama from the ancient Hindu epic, the Ramayana. Visit historic temples including Munneswaram, Koneshwaram, Seetha Amman Temple, and Gayathri Peedam with premium 4-5 star accommodations throughout.",
+    "title": "रामायण हाइलाइट्स प्रीमियम टूर",
+    "duration": "8 दिन / 7 रातें",
+    "description": "श्रीलंका में एक गहन आध्यात्मिक यात्रा पर निकलें, प्राचीन हिंदू महाकाव्य रामायण से भगवान राम के पौराणिक पदचिह्नों का अनुसरण करें। Munneswaram, Koneshwaram, Seetha Amman मंदिर और Gayathri Peedam सहित ऐतिहासिक मंदिरों की यात्रा करें, पूरे दौरे में प्रीमियम 4-5 स्टार आवास के साथ।",
     "highlights": [
-      "Sacred Sites: Munneswaram, Koneshwaram, Seetha Amman, Bhakta Hanuman Temples",
-      "Spiritual Journey: Complete Ramayana trail with expert guides",
-      "UNESCO Heritage: Sigiriya Rock Fortress, Dambulla Cave Temple, Temple of the Tooth",
-      "Premium Hotels: Luxury Amaya Resorts and Cinnamon properties",
-      "Natural Wonders: Madu River safari through mangrove ecosystems",
-      "Cultural Immersion: Ancient cave paintings and colonial heritage"
+      "पवित्र स्थल: Munneswaram, Koneshwaram, Seetha Amman, Bhakta Hanuman मंदिर",
+      "आध्यात्मिक यात्रा: विशेषज्ञ गाइड के साथ संपूर्ण रामायण मार्ग",
+      "यूनेस्को विरासत: Sigiriya रॉक किला, Dambulla गुफा मंदिर, दाँत का मंदिर",
+      "प्रीमियम होटल: लक्जरी Amaya Resorts और Cinnamon संपत्तियाँ",
+      "प्राकृतिक आश्चर्य: मैंग्रोव पारिस्थितिकी तंत्र से होकर Madu नदी सफारी",
+      "सांस्कृतिक विसर्जन: प्राचीन गुफा चित्र और औपनिवेशिक विरासत"
     ],
     "image": "/src/assets/destination-sigiriya.jpg",
     "price": {
       "from": 1032,
-      "category": "per person"
+      "category": "प्रति व्यक्ति"
     },
     "itinerary": [
-      {
-        "day": 1,
-        "title": "Arrival to Chilaw to Dambulla",
-        "activities": [
-          "Meet your representative from Lavish Travels at Colombo International Airport",
-          "Transfer to Chilaw (approx. 55 km - 1 hour)",
-          "Visit Munneswaram Temple - first temple for Shiva",
-          "Lord Rama stopped here to remove Bramhaasthi dosham",
-          "Continue to Dambulla (approx. 135 km - 3.5 hours)",
-          "Afternoon free at leisure"
-        ],
-        "accommodation": "Amaya Lake Hotel, Dambulla"
-      },
-      {
-        "day": 2,
-        "title": "Dambulla to Trincomalee Day Trip",
-        "activities": [
-          "Depart for Trincomalee (approx. 80 km - 2 hours)",
-          "Visit Koneshwaram Temple",
-          "One of four lingams Lord Rama was advised to install",
-          "Developed between 300-1600 CE by Tamil Pandyan and Chola empires",
-          "Explore historic temple complex",
-          "Late evening return to Dambulla"
-        ],
-        "accommodation": "Amaya Lake Hotel, Dambulla"
-      },
-      {
-        "day": 3,
-        "title": "Sigiriya & Dambulla to Kandy",
-        "activities": [
-          "Proceed to Sigiriya (approx. 12 km - 10 minutes)",
-          "Climb Sigiriya Rock Fortress (UNESCO World Heritage Site)",
-          "View famous frescoes of beautiful maidens (19 remaining of original 500)",
-          "See Lion platform with massive paws and Mirror Wall",
-          "Visit Dambulla Cave Temple - First Century BC",
-          "47-foot recumbent Buddha image in Cave 1",
-          "Continue to Kandy and visit Temple of the Tooth Relic"
-        ],
-        "accommodation": "Amaya Hills Hotel, Kandy"
-      },
-      {
-        "day": 4,
-        "title": "Kandy to Hasalaka Day Trip",
-        "activities": [
-          "Travel to Hasalaka (approx. 65 km - 1 hour 45 minutes)",
-          "Visit Seetha Kotuwa - Sita's Fort",
-          "Where Sita Devi was kept in Queen Mandothari's palace",
-          "Explore archaeological remains of later civilizations",
-          "Return to Kandy",
-          "Brief city tour including Kandy Lake, Royal Palace remains"
-        ],
-        "accommodation": "Amaya Hills Hotel, Kandy"
-      },
-      {
-        "day": 5,
-        "title": "Kandy to Nuwara Eliya",
-        "activities": [
-          "Depart for Nuwara Eliya (approx. 90 km - 3 hours)",
-          "Visit Bhakta Hanuman Temple (24 km from Nuwara Eliya)",
-          "16-foot tall statue of Lord Hanuman made from black granite",
-          "Where Hanuman set foot in Kothmale while searching for Sita",
-          "Continue to Nuwara Eliya",
-          "Visit Gayathri Peedam where Meghanath propitiated Lord Shiva"
-        ],
-        "accommodation": "Grand Hotel, Nuwara Eliya"
-      },
-      {
-        "day": 6,
-        "title": "Nuwara Eliya to Beruwela",
-        "activities": [
-          "Visit Seetha Amman Temple (approx. 4 km - 15 minutes)",
-          "Seetha Eliya stream where Sita Devi bathed",
-          "View idols of Lord Rama, Sita Devi, Lakshmana, and Hanuman",
-          "See Hanuman's footprints of varying sizes by the river",
-          "Depart for Beruwela on South Coast (approx. 5 hours)",
-          "Afternoon free at leisure by the beach"
-        ],
-        "accommodation": "Cinnamon Bey Hotel, Beruwela"
-      },
-      {
-        "day": 7,
-        "title": "Madu River Safari",
-        "activities": [
-          "Proceed to Madu River for boat excursion",
-          "Explore shallow water body and complex coastal wetland ecosystem",
-          "Visit Buddhist Kothduwa Temple on isolated island",
-          "Navigate through pristine mangrove forests",
-          "Observe 303 species of plants belonging to 95 families",
-          "Excursion duration: approx. 3 hours",
-          "Evening free at leisure by the beach"
-        ],
-        "accommodation": "Cinnamon Bey Hotel, Beruwela"
-      },
-      {
-        "day": 8,
-        "title": "Departure",
-        "activities": [
-          "Enjoy breakfast and check out",
-          "Private transfer to Colombo International Airport (approx. 1.5 hours)",
-          "End of spiritual journey"
-        ]
-      }
+      { "day": 1, "title": "आगमन से Chilaw से Dambulla", "activities": ["Colombo अंतर्राष्ट्रीय हवाई अड्डे पर Lavish Travels के अपने प्रतिनिधि से मिलें", "Chilaw के लिए स्थानांतरण (लगभग 55 किमी - 1 घंटा)", "Munneswaram मंदिर की यात्रा - शिव के लिए पहला मंदिर", "भगवान राम यहाँ ब्रह्माष्ठि दोष हटाने के लिए रुके थे", "Dambulla के लिए आगे बढ़ें (लगभग 135 किमी - 3.5 घंटे)", "दोपहर आराम से व्यतीत करें"], "accommodation": "Amaya Lake Hotel, Dambulla" },
+      { "day": 2, "title": "Dambulla से Trincomalee दिवस भ्रमण", "activities": ["Trincomalee के लिए प्रस्थान (लगभग 80 किमी - 2 घंटे)", "Koneshwaram मंदिर की यात्रा", "चार लिंगमों में से एक जिसे स्थापित करने की सलाह भगवान राम को दी गई थी", "Tamil Pandyan और Chola साम्राज्यों द्वारा 300-1600 ईसवी के बीच विकसित", "ऐतिहासिक मंदिर परिसर का अन्वेषण", "देर शाम Dambulla वापसी"], "accommodation": "Amaya Lake Hotel, Dambulla" },
+      { "day": 3, "title": "Sigiriya और Dambulla से Kandy", "activities": ["Sigiriya की ओर आगे बढ़ें (लगभग 12 किमी - 10 मिनट)", "Sigiriya रॉक किले पर चढ़ाई (यूनेस्को विश्व धरोहर स्थल)", "सुंदर युवतियों के प्रसिद्ध भित्तिचित्र देखें (मूल 500 में से 19 शेष)", "विशाल पंजों और मिरर वॉल के साथ लॉयन प्लेटफॉर्म देखें", "Dambulla गुफा मंदिर की यात्रा - प्रथम शताब्दी ईसा पूर्व", "गुफा 1 में 47 फुट की शयन बुद्ध प्रतिमा", "Kandy जाएँ और दाँत के अवशेष के मंदिर की यात्रा करें"], "accommodation": "Amaya Hills Hotel, Kandy" },
+      { "day": 4, "title": "Kandy से Hasalaka दिवस भ्रमण", "activities": ["Hasalaka की यात्रा (लगभग 65 किमी - 1 घंटा 45 मिनट)", "Seetha Kotuwa की यात्रा - सीता का किला", "जहाँ सीता देवी को रानी Mandothari के महल में रखा गया था", "बाद की सभ्यताओं के पुरातात्विक अवशेषों का अन्वेषण", "Kandy वापसी", "Kandy झील, राजमहल के अवशेषों सहित संक्षिप्त शहर भ्रमण"], "accommodation": "Amaya Hills Hotel, Kandy" },
+      { "day": 5, "title": "Kandy से Nuwara Eliya", "activities": ["Nuwara Eliya के लिए प्रस्थान (लगभग 90 किमी - 3 घंटे)", "Bhakta Hanuman मंदिर की यात्रा (Nuwara Eliya से 24 किमी)", "काले ग्रेनाइट से बनी भगवान हनुमान की 16 फुट ऊँची प्रतिमा", "जहाँ हनुमान सीता की तलाश करते हुए Kothmale में कदम रखा", "Nuwara Eliya की ओर जारी रखें", "Gayathri Peedam की यात्रा जहाँ Meghanath ने भगवान शिव को प्रसन्न किया"], "accommodation": "Grand Hotel, Nuwara Eliya" },
+      { "day": 6, "title": "Nuwara Eliya से Beruwela", "activities": ["Seetha Amman मंदिर की यात्रा (लगभग 4 किमी - 15 मिनट)", "Seetha Eliya धारा जहाँ सीता देवी ने स्नान किया", "भगवान राम, सीता देवी, लक्ष्मण और हनुमान की मूर्तियाँ देखें", "नदी के किनारे विभिन्न आकारों के हनुमान के पदचिह्न देखें", "दक्षिण तट पर Beruwela के लिए प्रस्थान (लगभग 5 घंटे)", "समुद्र तट पर दोपहर आराम से व्यतीत करें"], "accommodation": "Cinnamon Bey Hotel, Beruwela" },
+      { "day": 7, "title": "Madu नदी सफारी", "activities": ["नाव भ्रमण के लिए Madu नदी की ओर जाएँ", "उथले जलाशय और जटिल तटीय आर्द्रभूमि पारिस्थितिकी तंत्र का अन्वेषण", "एकान्त द्वीप पर बौद्ध Kothduwa मंदिर की यात्रा", "अछूते मैंग्रोव वनों से होते हुए यात्रा", "95 परिवारों से संबंधित 303 पौधों की प्रजातियों का अवलोकन", "भ्रमण की अवधि: लगभग 3 घंटे", "समुद्र तट पर शाम आराम से व्यतीत करें"], "accommodation": "Cinnamon Bey Hotel, Beruwela" },
+      { "day": 8, "title": "प्रस्थान", "activities": ["नाश्ता करें और चेक आउट करें", "Colombo अंतर्राष्ट्रीय हवाई अड्डे के लिए निजी स्थानांतरण (लगभग 1.5 घंटे)", "आध्यात्मिक यात्रा का समापन"] }
     ],
     "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 1054,
-        "pax8": 1110,
-        "pax16": 1088,
-        "pax32": 1032
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 987,
-        "pax8": 1033,
-        "pax16": 1021,
-        "pax32": 965
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 395,
-        "pax8": 395,
-        "pax16": 395,
-        "pax32": 395
-      }
+      { "category": "प्रति व्यक्ति साझा (डबल रूम)", "pax3": 1054, "pax8": 1110, "pax16": 1088, "pax32": 1032 },
+      { "category": "प्रति व्यक्ति साझा (ट्रिपल रूम)", "pax3": 987, "pax8": 1033, "pax16": 1021, "pax32": 965 },
+      { "category": "सिंगल रूम सप्लीमेंट", "pax3": 395, "pax8": 395, "pax16": 395, "pax32": 395 }
     ],
     "hotels": [
-      {
-        "destination": "Dambulla",
-        "hotel": "Amaya Lake",
-        "supplement": "No Supplement"
-      },
-      {
-        "destination": "Kandy",
-        "hotel": "Amaya Hills",
-        "supplement": "Premium Deluxe: $40 per room per night"
-      },
-      {
-        "destination": "Nuwara Eliya",
-        "hotel": "Grand Hotel",
-        "supplement": "Queen Elizabeth Room: $175 per room"
-      },
-      {
-        "destination": "Beruwela",
-        "hotel": "Cinnamon Bey",
-        "supplement": "No Supplement"
-      }
+      { "destination": "Dambulla", "hotel": "Amaya Lake", "supplement": "कोई सप्लीमेंट नहीं" },
+      { "destination": "Kandy", "hotel": "Amaya Hills", "supplement": "प्रीमियम डीलक्स: $40 प्रति कमरा प्रति रात" },
+      { "destination": "Nuwara Eliya", "hotel": "Grand Hotel", "supplement": "Queen Elizabeth Room: $175 प्रति कमरा" },
+      { "destination": "Beruwela", "hotel": "Cinnamon Bey", "supplement": "कोई सप्लीमेंट नहीं" }
     ],
     "entranceFees": [
-      {
-        "attraction": "Munneswaram Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Koneshwaram Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 35
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 10
-      },
-      {
-        "attraction": "Royal Botanical Garden",
-        "fee": 12
-      },
-      {
-        "attraction": "Pinnawala Elephant Orphanage",
-        "fee": 15
-      },
-      {
-        "attraction": "Bhakta Hanuman Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Seetha Amman Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Dewram Wehera Rajamaha Viharaya",
-        "fee": 3
-      }
+      { "attraction": "Munneswaram मंदिर", "fee": 3 },
+      { "attraction": "Koneshwaram मंदिर", "fee": 3 },
+      { "attraction": "Sigiriya रॉक किला", "fee": 35 },
+      { "attraction": "Dambulla गुफा मंदिर", "fee": 3 },
+      { "attraction": "दाँत का मंदिर", "fee": 10 },
+      { "attraction": "राजकीय वनस्पति उद्यान", "fee": 12 },
+      { "attraction": "Pinnawala हाथी अनाथालय", "fee": 15 },
+      { "attraction": "Bhakta Hanuman मंदिर", "fee": 3 },
+      { "attraction": "Gayathri Peedam", "fee": 3 },
+      { "attraction": "Seetha Amman मंदिर", "fee": 3 },
+      { "attraction": "Dewram Wehera Rajamaha Viharaya", "fee": 3 }
     ],
     "inclusions": [
-      "Meet & greet services at Bandaranaike International Airport",
-      "Transportation in air-conditioned vehicle as per itinerary",
-      "Hotel accommodation on Half Board basis (Dinner & Breakfast)",
-      "English-speaking chauffeur guide (up to 6 pax) or National guide (7+ pax)",
-      "2 x 500ml mineral water bottles per guest daily",
-      "All applicable taxes",
-      "Lunch throughout the tour (estimated USD 105 per person)",
-      "Entrance fees to sites (estimated USD 93 per person)"
+      "Bandaranaike अंतर्राष्ट्रीय हवाई अड्डे पर स्वागत सेवाएँ",
+      "यात्रा कार्यक्रम के अनुसार वातानुकूलित वाहन में परिवहन",
+      "हाफ बोर्ड आधार पर होटल आवास (रात का खाना और नाश्ता)",
+      "अंग्रेजी बोलने वाले चालक-गाइड (6 यात्रियों तक) या राष्ट्रीय गाइड (7+ यात्री)",
+      "प्रत्येक अतिथि को दैनिक 2 x 500 मिली मिनरल वाटर बोतलें",
+      "सभी लागू कर",
+      "पूरे दौरे में दोपहर का भोजन (अनुमानित USD 105 प्रति व्यक्ति)",
+      "स्थलों के लिए प्रवेश शुल्क (अनुमानित USD 93 प्रति व्यक्ति)"
     ],
     "exclusions": [
-      "Camera and video permits",
-      "Beverages (alcoholic and non-alcoholic)",
-      "Air fare and visa fees",
-      "Any additional visits or activities not mentioned",
-      "Early check-in / late check-out charges",
-      "Tips and gratuities",
-      "Travel insurance",
-      "Personal expenses and temple donations"
+      "कैमरा और वीडियो परमिट",
+      "पेय पदार्थ (मादक और गैर-मादक)",
+      "हवाई किराया और वीज़ा शुल्क",
+      "उल्लिखित न की गई कोई भी अतिरिक्त यात्राएँ या गतिविधियाँ",
+      "जल्दी चेक-इन / देर से चेक-आउट शुल्क",
+      "टिप्स और आभार",
+      "यात्रा बीमा",
+      "व्यक्तिगत खर्च और मंदिर दान"
+    ]
+  },
+  "southern-highlight": {
+    "title": "दक्षिणी हाइलाइट टूर",
+    "duration": "11 दिन / 10 रातें",
+    "description": "जीवंत राजधानी Colombo से लेकर Unawatuna और Mirissa के प्राचीन समुद्र तटों, Sinharaja वर्षावन की जैव विविधता और Udawalawe के राजसी हाथियों तक श्रीलंका के मनमोहक दक्षिणी खजानों की खोज करें।",
+    "highlights": [
+      "वन्यजीव: Udawalawe के हाथी, Yala सफारी, Mirissa में व्हेल देखना",
+      "प्रकृति: Sinharaja यूनेस्को वर्षावन, कछुआ हैचरी संरक्षण",
+      "समुद्र तट: Unawatuna और Mirissa तटीय विश्राम",
+      "संस्कृति: Galle Fort यूनेस्को स्थल, Kandy मंदिर अनुभव",
+      "साहसिक: सुंदर ट्रेन यात्रा, Little Adam's Peak ट्रेक",
+      "संरक्षण: हाथी पारगमन गृह पुनर्वास केंद्र"
+    ],
+    "image": "/src/assets/destination-galle.jpg",
+    "price": {
+      "from": 760,
+      "category": "प्रति व्यक्ति"
+    },
+    "itinerary": [
+      { "day": 1, "title": "आगमन और Colombo शहर भ्रमण", "activities": ["हवाई अड्डे से Colombo तक निजी स्थानांतरण", "Fort क्षेत्र, Gangaramaya मंदिर सहित Colombo शहर भ्रमण", "शाम की खरीदारी और अवकाश समय"], "accommodation": "Fairway Colombo" },
+      { "day": 2, "title": "Colombo से कछुआ हैचरी और Unawatuna", "activities": ["Kosgoda कछुआ हैचरी की यात्रा - 5 लुप्तप्राय प्रजातियों को देखें", "मैंग्रोव वनों से होकर Madu नदी नाव सफारी", "रास्ते में ऐतिहासिक Galle Fort की यात्रा"], "accommodation": "Unawatuna" },
+      { "day": 3, "title": "Unawatuna से Rumassala होते हुए Mirissa", "activities": ["रामायण महाकाव्य से Rumassala अभयारण्य का अन्वेषण", "Ahangama/Mirissa स्थानांतरण", "समुद्र तट पर दोपहर अवकाश समय"], "accommodation": "Mirissa" },
+      { "day": 4, "title": "व्हेल और डॉल्फिन देखना", "activities": ["Mirissa से तड़के सुबह नाव भ्रमण", "ब्लू व्हेल, स्पर्म व्हेल और डॉल्फिन देखें", "बोर्ड पर पैक नाश्ता", "दोपहर समुद्र तट विश्राम"], "accommodation": "Mirissa" },
+      { "day": 5, "title": "Mirissa से Sinharaja वर्षावन", "activities": ["Sinharaja वन रिजर्व की यात्रा", "यूनेस्को विश्व धरोहर स्थल में गाइड के साथ वर्षावन भ्रमण", "स्थानीय वनस्पति और जीव-जंतुओं की खोज"], "accommodation": "Sinharaja" },
+      { "day": 6, "title": "Sinharaja से Udawalawe", "activities": ["Udawalawe राष्ट्रीय उद्यान की यात्रा", "दोपहर 4x4 जीप सफारी", "श्रीलंका की सबसे बड़ी हाथी आबादी को देखें"], "accommodation": "Udawalawe" },
+      { "day": 7, "title": "Udawalawe से हाथी पारगमन गृह होते हुए Ella", "activities": ["हाथी पारगमन गृह पुनर्वास केंद्र की यात्रा", "पहाड़ी क्षेत्र से होते हुए Ella तक सुंदर ड्राइव", "वैकल्पिक Mega Zip-line अनुभव"], "accommodation": "Ella" },
+      { "day": 8, "title": "Ella भ्रमण", "activities": ["Little Adam's Peak की ट्रेकिंग", "प्रसिद्ध Nine Arch Bridge की यात्रा", "सुंदर पहाड़ी क्षेत्र में फोटोग्राफी"], "accommodation": "Ella" },
+      { "day": 9, "title": "Ella से Kandy", "activities": ["Ella से Kandy तक सुंदर ट्रेन यात्रा", "राजमहल परिसर सहित Kandy शहर भ्रमण", "सांस्कृतिक स्थलों और स्थानीय बाजारों की यात्रा"], "accommodation": "Kandy" },
+      { "day": 10, "title": "Kandy से Negombo", "activities": ["दाँत के अवशेष के मंदिर में सुबह की पूजा", "रत्न संग्रहालय की यात्रा", "Negombo स्थानांतरण", "शाम लगून सफारी"], "accommodation": "Negombo" },
+      { "day": 11, "title": "प्रस्थान", "activities": ["आराम से नाश्ता और चेक-आउट", "हवाई अड्डे के लिए निजी स्थानांतरण", "दौरे का समापन"] }
+    ],
+    "pricing": [
+      { "category": "प्रति व्यक्ति साझा (डबल रूम)", "pax3": 998, "pax8": 825, "pax16": 858, "pax32": 760 },
+      { "category": "प्रति व्यक्ति साझा (ट्रिपल रूम)", "pax3": 924, "pax8": 752, "pax16": 784, "pax32": 687 },
+      { "category": "सिंगल रूम सप्लीमेंट", "pax3": 388, "pax8": 388, "pax16": 388, "pax32": 388 }
+    ],
+    "hotels": [
+      { "destination": "Colombo", "hotel": "Fairway Colombo", "supplement": "सुपीरियर बालकनी: $15 प्रति कमरा प्रति दिन" },
+      { "destination": "Unawatuna", "hotel": "Joes Unawatuna", "supplement": "क्रिसमस और नव वर्ष: $20 प्रति व्यक्ति प्रति दिन" },
+      { "destination": "Ahangama", "hotel": "Gartonscape Hotel", "supplement": "कोई सप्लीमेंट नहीं" },
+      { "destination": "Sinharaja", "hotel": "The Blue Magpie", "supplement": "क्रिसमस और नव वर्ष: $20 प्रति व्यक्ति प्रति दिन" },
+      { "destination": "Ambilipitiya", "hotel": "Centauria Lake Hotel", "supplement": "कोई सप्लीमेंट नहीं" },
+      { "destination": "Ella", "hotel": "Oak Ray Ella Gap", "supplement": "पीक सीजन: $20 प्रति कमरा प्रति रात" },
+      { "destination": "Kandy", "hotel": "Oak Ray Senani Hotel", "supplement": "पीक सीजन: $20 प्रति कमरा प्रति रात" },
+      { "destination": "Negombo", "hotel": "Amagi Beach", "supplement": "कोई सप्लीमेंट नहीं" }
+    ],
+    "entranceFees": [
+      { "attraction": "Gangaramaya मंदिर", "fee": 5 },
+      { "attraction": "कछुआ हैचरी", "fee": 5 },
+      { "attraction": "Madu नदी नाव सफारी", "fee": 15 },
+      { "attraction": "व्हेल और डॉल्फिन देखना", "fee": 80 },
+      { "attraction": "Sinharaja वर्षावन प्रवेश", "fee": 35 },
+      { "attraction": "Udawalawe राष्ट्रीय उद्यान", "fee": 35 },
+      { "attraction": "हाथी पारगमन गृह", "fee": 5 },
+      { "attraction": "Flying Ravana Mega Zip-line", "fee": 35 },
+      { "attraction": "दाँत का मंदिर", "fee": 12 },
+      { "attraction": "Negombo लगून सफारी", "fee": 30 }
+    ],
+    "inclusions": [
+      "हवाई अड्डे पर स्वागत सेवाएँ",
+      "पूरे दौरे में वातानुकूलित परिवहन",
+      "हाफ बोर्ड आवास (नाश्ता और रात का खाना)",
+      "अंग्रेजी बोलने वाले चालक-गाइड (6 यात्रियों तक) या राष्ट्रीय गाइड (7+ यात्री)",
+      "प्रत्येक अतिथि को दैनिक 2 x 500 मिली मिनरल वाटर बोतलें",
+      "Udawalawe राष्ट्रीय उद्यान जीप किराया",
+      "सभी सरकारी कर"
+    ],
+    "exclusions": [
+      "पूरे दौरे में दोपहर के भोजन का खर्च",
+      "प्रवेश शुल्क (जैसा ऊपर सूचीबद्ध है)",
+      "कैमरा और वीडियो परमिट",
+      "पेय पदार्थ और व्यक्तिगत खर्च",
+      "अंतर्राष्ट्रीय हवाई किराया",
+      "वीज़ा शुल्क",
+      "जल्दी चेक-इन / देर से चेक-आउट शुल्क"
     ]
   }
 }
