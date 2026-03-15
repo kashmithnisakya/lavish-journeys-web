@@ -1,0 +1,15 @@
+{
+  "name": "lavish-inquiry-lambda",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AWS Lambda function for Lavish Travels inquiry form",
+  "main": "index.mjs",
+  "scripts": {
+    "deploy": "sam build && sam deploy --guided",
+    "build": "sam build",
+    "local": "sam local start-api"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.0"
+  }
+}

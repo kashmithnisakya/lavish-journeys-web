@@ -23,6 +23,7 @@ export function TourPackage({ title, duration, description, highlights, price, i
         <img
           src={image}
           alt={`${title} tour package`}
+          loading="lazy"
           className="w-full h-full object-cover"
         />
         <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">

@@ -1,0 +1,73 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: Lavish Travels & Tours - Inquiry API (Lambda + API Gateway)
+
+Globals:
+  Function:
+    Timeout: 15
+    Runtime: nodejs20.x
+    MemorySize: 256
+    Environment:
+      Variables:
+        SENDGRID_API_KEY: !Ref SendGridApiKey
+        SENDGRID_FROM_EMAIL: !Ref SendGridFromEmail
+        SUPPORT_EMAIL: !Ref SupportEmail
+        ALLOWED_ORIGINS: !Ref AllowedOrigins
+
+Parameters:
+  SendGridApiKey:
+    Type: String
+    NoEcho: true
+    Description: SendGrid API key for sending emails
+  SendGridFromEmail:
+    Type: String
+    Description: Verified sender email address for SendGrid
+  SupportEmail:
+    Type: String
+    Description: Email address to receive inquiry notifications
+  AllowedOrigins:
+    Type: String
+    Default: "*"
+    Description: CORS allowed origins
+
+Resources:
+  InquiryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      CodeUri: .
+      Description: Handles inquiry form submissions and sends emails via SendGrid
+      Events:
+        InquiryApi:
+          Type: HttpApi
+          Properties:
+            Path: /api/inquiry
+            Method: POST
+            ApiId: !Ref InquiryHttpApi
+        InquiryOptions:
+          Type: HttpApi
+          Properties:
+            Path: /api/inquiry
+            Method: OPTIONS
+            ApiId: !Ref InquiryHttpApi
+
+  InquiryHttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: prod
+      CorsConfiguration:
+        AllowOrigins:
+          - "*"
+        AllowHeaders:
+          - Content-Type
+        AllowMethods:
+          - POST
+          - OPTIONS
+
+Outputs:
+  ApiEndpoint:
+    Description: API Gateway endpoint URL
+    Value: !Sub "https://${InquiryHttpApi}.execute-api.${AWS::Region}.amazonaws.com/prod"
+  FunctionArn:
+    Description: Lambda function ARN
+    Value: !GetAtt InquiryFunction.Arn

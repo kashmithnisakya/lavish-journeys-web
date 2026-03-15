@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - cd lambda
+      - npm ci
+  build:
+    commands:
+      - cd lambda
+      - sam build
+  post_build:
+    commands:
+      - cd lambda
+      - sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name lavish-inquiry-api --capabilities CAPABILITY_IAM --parameter-overrides SendGridApiKey=$SENDGRID_API_KEY SendGridFromEmail=$SENDGRID_FROM_EMAIL SupportEmail=$SUPPORT_EMAIL AllowedOrigins=$ALLOWED_ORIGINS

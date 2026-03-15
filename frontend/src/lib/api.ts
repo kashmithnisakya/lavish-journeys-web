@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://api.lavishtravelsandtours.online';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://api.lavishtravelsandtours.online';
 
 export interface InquiryPayload {
   email: string;
