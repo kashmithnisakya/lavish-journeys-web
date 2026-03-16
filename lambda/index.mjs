@@ -140,19 +140,23 @@ export async function handler(event) {
       "{{INQUIRY_ID}}": inquiryId,
     });
 
-    // Send both emails via SES
-    await Promise.all([
-      sendEmail({
-        to: SUPPORT_EMAIL,
-        subject: `New Inquiry: ${inquiryType} - ${body.name}`,
-        html: supportHtml,
-      }),
-      sendEmail({
+    // Send support notification email (always works — verified address)
+    await sendEmail({
+      to: SUPPORT_EMAIL,
+      subject: `New Inquiry: ${inquiryType} - ${body.name}`,
+      html: supportHtml,
+    });
+
+    // Send user confirmation email (may fail in SES sandbox for unverified recipients)
+    try {
+      await sendEmail({
         to: body.email,
         subject: "Thank you for your inquiry - Lavish Travels & Tours",
         html: userHtml,
-      }),
-    ]);
+      });
+    } catch (emailErr) {
+      console.warn("Could not send user confirmation (SES sandbox?):", emailErr.message);
+    }
 
     return {
       statusCode: 200,
