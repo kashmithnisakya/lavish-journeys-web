@@ -13,7 +13,6 @@ const firebaseConfig = {
 
 let analytics: Analytics | null = null;
 
-// Only initialize if config is present
 if (firebaseConfig.apiKey && typeof window !== "undefined") {
   const app = initializeApp(firebaseConfig);
   analytics = getAnalytics(app);
