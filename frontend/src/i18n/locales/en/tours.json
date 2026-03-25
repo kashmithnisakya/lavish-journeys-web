@@ -3,6 +3,7 @@
   "perPerson": "per person",
   "viewDetails": "View Details",
   "inquireNow": "Inquire Now",
+  "contactForPricing": "Contact us for pricing",
   "overview": "Tour Overview",
   "highlights": "Tour Highlights",
   "itinerary": "Daily Itinerary",
@@ -18,5 +19,15 @@
   "supplement": "Supplement",
   "entranceFees": "Entrance Fees",
   "requestQuote": "Request a Quote",
-  "activity": "Activity"
+  "activity": "Activity",
+  "pricingCTA": {
+    "title": "Get a Personalized Quote",
+    "description": "Pricing varies based on group size, season, and preferences. Contact us for a custom quote tailored to your needs."
+  },
+  "compare": {
+    "button": "Compare Packages",
+    "title": "Compare Tour Packages",
+    "selectPackage": "Select a package...",
+    "selectBoth": "Select two packages above to compare them side by side."
+  }
 }

@@ -40,7 +40,8 @@
   "aria": {
     "previousSlide": "Previous slide",
     "nextSlide": "Next slide",
-    "goToSlide": "Go to {{title}}"
+    "goToSlide": "Go to {{title}}",
+    "skipToContent": "Skip to main content"
   },
   "badges": {
     "popular": "Popular",

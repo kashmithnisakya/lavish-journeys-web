@@ -11,14 +11,25 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { FooterSection } from "@/components/sections/FooterSection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { TrustSignals } from "@/components/sections/TrustSignals";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { StickyMobileCTA } from "@/components/StickyMobileCTA";
+import { OfflineBanner } from "@/components/OfflineBanner";
 import { useTourPackages } from "@/hooks/useTourPackages";
+import { trackEvent } from "@/lib/firebase";
 
 const TourPackageModal = lazy(() =>
   import("@/components/TourPackageModal").then(m => ({ default: m.TourPackageModal }))
 );
 const InquiryModal = lazy(() =>
   import("@/components/InquiryModal").then(m => ({ default: m.InquiryModal }))
+);
+const ExitIntentPopup = lazy(() =>
+  import("@/components/ExitIntentPopup").then(m => ({ default: m.ExitIntentPopup }))
+);
+const ComparePackages = lazy(() =>
+  import("@/components/sections/ComparePackages").then(m => ({ default: m.ComparePackages }))
 );
 
 const Index = () => {
@@ -30,9 +41,13 @@ const Index = () => {
   const [isInquiryModalOpen, setIsInquiryModalOpen] = useState(false);
   const [inquiryTourInfo, setInquiryTourInfo] = useState<{ title: string; duration: string } | null>(null);
 
-  const handleCTA = () => setIsInquiryModalOpen(true);
+  const handleCTA = () => {
+    trackEvent("plan_trip_click");
+    setIsInquiryModalOpen(true);
+  };
 
   const handleViewDetails = (tourKey: string) => {
+    trackEvent("view_tour_details", { tour: tourKey });
     setSelectedTour(tourKey);
     setIsModalOpen(true);
   };
@@ -55,27 +70,34 @@ const Index = () => {
         description={t('home:seo.description')}
       />
 
+      <OfflineBanner />
       <Header onPlanTrip={handleCTA} />
 
-      <main>
+      <main id="main-content">
         <HeroSection onPlanTrip={handleCTA} />
+        <TrustSignals />
         <StatsSection />
         <DestinationsCarousel />
         <PackagesSection
           tourPackages={tourPackages}
+          tourPackagesData={tourPackagesData}
           onInquire={handleCTA}
           onViewDetails={handleViewDetails}
         />
         <ServicesSection />
         <TestimonialsSection />
+        <FAQSection />
         <AboutSection onPlanTrip={handleCTA} />
         <ContactSection onPlanTrip={handleCTA} />
       </main>
 
       <FooterSection />
       <WhatsAppButton />
+      <StickyMobileCTA onPlanTrip={handleCTA} />
 
       <Suspense fallback={null}>
+        <ExitIntentPopup onPlanTrip={handleCTA} />
+
         {selectedTour && (
           <TourPackageModal
             open={isModalOpen}

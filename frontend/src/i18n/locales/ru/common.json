@@ -40,7 +40,8 @@
   "aria": {
     "previousSlide": "Предыдущий слайд",
     "nextSlide": "Следующий слайд",
-    "goToSlide": "Перейти к {{title}}"
+    "goToSlide": "Перейти к {{title}}",
+    "skipToContent": "Перейти к основному содержимому"
   },
   "badges": {
     "popular": "Популярный",

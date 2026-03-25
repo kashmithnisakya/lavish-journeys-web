@@ -21,13 +21,23 @@ export function Header({ onPlanTrip }: HeaderProps) {
     { href: "#contact", label: t('common:nav.contact') },
   ];
 
+  const menuId = "mobile-nav-menu";
+
   const handleNavClick = () => {
     setMobileMenuOpen(false);
   };
 
   return (
     <header className="sticky top-0 z-30 bg-background/85 backdrop-blur-md supports-[backdrop-filter]:bg-background/70 border-b">
-      <nav className="container flex h-16 items-center justify-between">
+      {/* Skip navigation link for accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md"
+      >
+        {t('common:aria.skipToContent')}
+      </a>
+
+      <nav className="container flex h-16 items-center justify-between" aria-label="Main navigation">
         <a href="#" className="flex items-baseline gap-2">
           <span className="text-xl font-semibold tracking-tight font-display text-primary">{t('common:company.name')}</span>
           <span className="text-sm text-muted-foreground hidden sm:inline">{t('common:company.subtitle')}</span>
@@ -47,6 +57,8 @@ export function Header({ onPlanTrip }: HeaderProps) {
             className="md:hidden p-2 rounded-md hover:bg-secondary transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
+            aria-controls={menuId}
           >
             {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -55,6 +67,9 @@ export function Header({ onPlanTrip }: HeaderProps) {
 
       {/* Mobile menu */}
       <div
+        id={menuId}
+        role="navigation"
+        aria-label="Mobile navigation"
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           mobileMenuOpen ? "max-h-80 border-t" : "max-h-0"
         }`}

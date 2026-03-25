@@ -40,7 +40,8 @@
   "aria": {
     "previousSlide": "पिछली स्लाइड",
     "nextSlide": "अगली स्लाइड",
-    "goToSlide": "{{title}} पर जाएं"
+    "goToSlide": "{{title}} पर जाएं",
+    "skipToContent": "मुख्य सामग्री पर जाएं"
   },
   "badges": {
     "popular": "लोकप्रिय",

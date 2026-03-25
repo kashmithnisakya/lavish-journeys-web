@@ -52,7 +52,7 @@ function validatePayload(body) {
 
   if (!body.email || typeof body.email !== "string") {
     errors.push("email is required");
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.email)) {
+  } else if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(body.email)) {
     errors.push("invalid email format");
   }
 

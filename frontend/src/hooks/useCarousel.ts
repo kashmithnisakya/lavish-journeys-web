@@ -1,7 +1,9 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 export function useCarousel(totalSlides: number, autoPlayInterval = 5000) {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev >= totalSlides - 1 ? 0 : prev + 1));
@@ -15,10 +17,19 @@ export function useCarousel(totalSlides: number, autoPlayInterval = 5000) {
     setCurrentSlide(index);
   }, []);
 
-  useEffect(() => {
-    const timer = setInterval(nextSlide, autoPlayInterval);
-    return () => clearInterval(timer);
-  }, [nextSlide, autoPlayInterval]);
+  const pause = useCallback(() => setIsPaused(true), []);
+  const resume = useCallback(() => setIsPaused(false), []);
 
-  return { currentSlide, nextSlide, prevSlide, goToSlide };
+  useEffect(() => {
+    if (isPaused) {
+      if (timerRef.current) clearInterval(timerRef.current);
+      return;
+    }
+    timerRef.current = setInterval(nextSlide, autoPlayInterval);
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [nextSlide, autoPlayInterval, isPaused]);
+
+  return { currentSlide, nextSlide, prevSlide, goToSlide, pause, resume };
 }

@@ -31,10 +31,10 @@ export function DestinationsCarousel() {
     { img: trincomalee, title: t('home:destinations.trincomalee.title'), desc: t('home:destinations.trincomalee.description') },
   ];
 
-  const { currentSlide, nextSlide, prevSlide, goToSlide } = useCarousel(destinations.length);
+  const { currentSlide, nextSlide, prevSlide, goToSlide, pause, resume } = useCarousel(destinations.length);
 
   return (
-    <section id="destinations" className="container py-12 md:py-16">
+    <section id="destinations" className="container py-12 md:py-16" onMouseEnter={pause} onMouseLeave={resume}>
       <header className="mb-6 md:mb-8 text-center">
         <h2 className="font-display text-3xl md:text-4xl">{t('home:destinations.title')}</h2>
         <p className="text-muted-foreground mt-2 max-w-3xl mx-auto">

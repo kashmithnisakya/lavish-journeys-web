@@ -1,22 +1,19 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
+import { MessageCircle } from "lucide-react";
 
 interface TourPackageProps {
   title: string;
   duration: string;
   description: string;
   highlights: string[];
-  price: {
-    from: number;
-    category: string;
-  };
   image: string;
   badge?: string;
   onInquire: () => void;
   onViewDetails: () => void;
 }
 
-export function TourPackage({ title, duration, description, highlights, price, image, badge, onInquire, onViewDetails }: TourPackageProps) {
+export function TourPackage({ title, duration, description, highlights, image, badge, onInquire, onViewDetails }: TourPackageProps) {
   const { t } = useTranslation();
   return (
     <article className="bg-card rounded-xl border shadow-elegant overflow-hidden hover-scale h-full flex flex-col group">
@@ -55,16 +52,9 @@ export function TourPackage({ title, duration, description, highlights, price, i
         </div>
 
         <div className="space-y-3 mt-auto pt-4 border-t">
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">{t('tours:from')}</div>
-              <div className="font-bold text-xl text-primary">
-                ${price.from}
-                <span className="text-xs font-normal text-muted-foreground ml-1">
-                  {price.category}
-                </span>
-              </div>
-            </div>
+          <div className="flex items-center gap-2 text-sm text-primary font-medium">
+            <MessageCircle className="w-4 h-4" />
+            <span>{t('tours:contactForPricing')}</span>
           </div>
           <div className="flex gap-2">
             <Button onClick={onViewDetails} variant="outline" size="sm" className="flex-1">

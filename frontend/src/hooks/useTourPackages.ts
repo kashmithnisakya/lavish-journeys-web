@@ -53,6 +53,22 @@ function getTourImage(key: string): string {
   return heroImage;
 }
 
+const MAX_RETRIES = 2;
+
+async function fetchWithRetry(url: string, retries = MAX_RETRIES): Promise<Response> {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const response = await fetch(url);
+      if (response.ok) return response;
+      if (attempt === retries) return response;
+    } catch (error) {
+      if (attempt === retries) throw error;
+    }
+    await new Promise(r => setTimeout(r, 1000 * (attempt + 1)));
+  }
+  throw new Error('Fetch failed after retries');
+}
+
 export function useTourPackages() {
   const { t, i18n } = useTranslation();
   const [tourPackagesData, setTourPackagesData] = useState<TourPackagesDataType>({});
@@ -64,11 +80,35 @@ export function useTourPackages() {
         const tourFile = i18n.language === 'en'
           ? '/tour-packages.json'
           : `/tour-packages-${i18n.language}.json`;
-        const response = await fetch(tourFile);
+
+        const response = await fetchWithRetry(tourFile);
+
+        if (!response.ok) {
+          // Fallback to English if language-specific file fails
+          if (i18n.language !== 'en') {
+            const fallbackResponse = await fetchWithRetry('/tour-packages.json');
+            const data = await fallbackResponse.json();
+            setTourPackagesData(data);
+            return;
+          }
+          throw new Error(`HTTP ${response.status}`);
+        }
+
         const data = await response.json();
         setTourPackagesData(data);
       } catch (error) {
         console.error('Failed to load tour packages:', error);
+        // Last resort: try English fallback
+        if (i18n.language !== 'en') {
+          try {
+            const fallback = await fetch('/tour-packages.json');
+            const data = await fallback.json();
+            setTourPackagesData(data);
+            return;
+          } catch {
+            // ignore fallback failure
+          }
+        }
         toast.error(t('common:errors.loadFailed'));
       } finally {
         setLoading(false);

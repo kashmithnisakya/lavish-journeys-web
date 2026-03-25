@@ -1,7 +1,11 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import { TourPackage } from "@/components/TourPackage";
-import type { ProcessedTourPackage, TourCategory } from "@/types/tour";
+import type { ProcessedTourPackage, TourCategory, TourPackagesDataType } from "@/types/tour";
+
+const ComparePackages = lazy(() =>
+  import("@/components/sections/ComparePackages").then(m => ({ default: m.ComparePackages }))
+);
 
 const badgeTranslationKeys: { [key: string]: string } = {
   popular: 'common:badges.popular',
@@ -11,11 +15,12 @@ const badgeTranslationKeys: { [key: string]: string } = {
 
 interface PackagesSectionProps {
   tourPackages: ProcessedTourPackage[];
+  tourPackagesData: TourPackagesDataType;
   onInquire: () => void;
   onViewDetails: (tourKey: string) => void;
 }
 
-export function PackagesSection({ tourPackages, onInquire, onViewDetails }: PackagesSectionProps) {
+export function PackagesSection({ tourPackages, tourPackagesData, onInquire, onViewDetails }: PackagesSectionProps) {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState("all");
 
@@ -47,7 +52,7 @@ export function PackagesSection({ tourPackages, onInquire, onViewDetails }: Pack
         </p>
       </header>
 
-      <div className="flex flex-wrap justify-center gap-3 mb-10">
+      <div className="flex flex-wrap justify-center items-center gap-3 mb-10">
         {categories.map((category) => (
           <button
             key={category.id}
@@ -68,6 +73,9 @@ export function PackagesSection({ tourPackages, onInquire, onViewDetails }: Pack
             </span>
           </button>
         ))}
+        <Suspense fallback={null}>
+          <ComparePackages tourPackages={tourPackages} tourPackagesData={tourPackagesData} />
+        </Suspense>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
@@ -78,7 +86,6 @@ export function PackagesSection({ tourPackages, onInquire, onViewDetails }: Pack
             duration={pkg.duration}
             description={pkg.description}
             highlights={pkg.highlights}
-            price={pkg.price}
             image={pkg.image}
             badge={pkg.badge ? t(badgeTranslationKeys[pkg.badge] || '') : undefined}
             onInquire={onInquire}

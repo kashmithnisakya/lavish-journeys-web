@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Clock, MapPin, Users, Star } from "lucide-react";
+import { Clock, MapPin, Users, Star, MessageCircle } from "lucide-react";
 
 interface TourPackageData {
   title: string;
@@ -68,6 +68,19 @@ export function TourPackageModal({ open, onOpenChange, tourData, onInquire }: To
           <div className="bg-primary/5 border border-primary/10 rounded-xl p-6">
             <h3 className="font-bold mb-4 text-lg text-primary">{t('tours:overview')}</h3>
             <p className="text-foreground leading-relaxed text-base">{tourData.description}</p>
+          </div>
+
+          {/* Contact for Pricing Banner */}
+          <div className="bg-accent/10 border border-accent/20 rounded-xl p-6 text-center">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <MessageCircle className="w-5 h-5 text-accent" />
+              <h3 className="font-bold text-lg text-accent">{t('tours:pricingCTA.title')}</h3>
+            </div>
+            <p className="text-sm text-muted-foreground mb-4">{t('tours:pricingCTA.description')}</p>
+            <Button onClick={onInquire} variant="premium" size="sm">
+              <Users className="w-4 h-4 mr-2" />
+              {t('tours:requestQuote')}
+            </Button>
           </div>
 
           {/* Highlights */}

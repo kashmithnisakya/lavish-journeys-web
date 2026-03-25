@@ -14,9 +14,32 @@ export interface InquiryResponse {
   error?: string;
 }
 
+const MAX_RETRIES = 2;
+
+async function fetchWithRetry(
+  url: string,
+  options: RequestInit,
+  retries = MAX_RETRIES
+): Promise<Response> {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const response = await fetch(url, options);
+      // Don't retry client errors (4xx), only server errors (5xx) and network issues
+      if (response.ok || (response.status >= 400 && response.status < 500)) {
+        return response;
+      }
+      if (attempt === retries) return response;
+    } catch (error) {
+      if (attempt === retries) throw error;
+    }
+    await new Promise(r => setTimeout(r, 1000 * (attempt + 1)));
+  }
+  throw new Error('Request failed after retries');
+}
+
 export async function submitInquiry(payload: InquiryPayload): Promise<InquiryResponse> {
   try {
-    const response = await fetch(`${API_BASE_URL}/api/inquiry`, {
+    const response = await fetchWithRetry(`${API_BASE_URL}/api/inquiry`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -26,7 +49,7 @@ export async function submitInquiry(payload: InquiryPayload): Promise<InquiryRes
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
-      throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+      throw new Error(errorData.message || `Request failed. Please try again.`);
     }
 
     const data = await response.json();
