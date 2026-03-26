@@ -79,9 +79,10 @@ export function PackagesSection({ tourPackages, tourPackagesData, onInquire, onV
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
-        {filteredPackages.map((pkg, index) => (
+        {filteredPackages.map((pkg) => (
           <TourPackage
-            key={index}
+            key={pkg.key}
+            tourKey={pkg.key}
             title={pkg.title}
             duration={pkg.duration}
             description={pkg.description}

@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Globe } from 'lucide-react';
+import { trackLanguageSwitch } from '@/lib/analytics';
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
@@ -20,9 +21,12 @@ export function LanguageSwitcher() {
   const currentLanguage = languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   const handleLanguageChange = (languageCode: string) => {
+    const previousLang = i18n.language;
     i18n.changeLanguage(languageCode);
-    // Update HTML lang attribute for accessibility
     document.documentElement.lang = languageCode;
+    if (previousLang !== languageCode) {
+      trackLanguageSwitch(previousLang, languageCode);
+    }
   };
 
   return (

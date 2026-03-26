@@ -3,12 +3,66 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lavishtravelsandtours.online/</loc>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lavishtravelsandtours.online/?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://lavishtravelsandtours.online/?lang=ru"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://lavishtravelsandtours.online/?lang=hi"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lavishtravelsandtours.online/"/>
+  </url>
+  <url>
+    <loc>https://lavishtravelsandtours.online/packages/classical-journey</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lavishtravelsandtours.online/packages/classical-explorer</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lavishtravelsandtours.online/packages/classical-gateway</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lavishtravelsandtours.online/packages/wonderful-journey</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lavishtravelsandtours.online/packages/ramayana-luxury</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lavishtravelsandtours.online/packages/ramayana-trails</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lavishtravelsandtours.online/packages/ramayana-normal</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lavishtravelsandtours.online/packages/ramayana-premium</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lavishtravelsandtours.online/packages/southern-highlight</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

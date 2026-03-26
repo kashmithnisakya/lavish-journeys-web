@@ -9,6 +9,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Sparkles } from "lucide-react";
+import { trackExitIntentShown, trackExitIntentDismissed, trackExitIntentCTA } from "@/lib/analytics";
 
 interface ExitIntentPopupProps {
   onPlanTrip: () => void;
@@ -20,7 +21,6 @@ export function ExitIntentPopup({ onPlanTrip }: ExitIntentPopupProps) {
   const [hasShown, setHasShown] = useState(false);
 
   useEffect(() => {
-    // Don't show if already dismissed in this session
     if (sessionStorage.getItem("exit-intent-shown")) {
       setHasShown(true);
       return;
@@ -31,6 +31,7 @@ export function ExitIntentPopup({ onPlanTrip }: ExitIntentPopupProps) {
         setOpen(true);
         setHasShown(true);
         sessionStorage.setItem("exit-intent-shown", "true");
+        trackExitIntentShown();
       }
     };
 
@@ -39,7 +40,10 @@ export function ExitIntentPopup({ onPlanTrip }: ExitIntentPopupProps) {
   }, [hasShown]);
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={open} onOpenChange={(isOpen) => {
+      if (!isOpen && open) trackExitIntentDismissed();
+      setOpen(isOpen);
+    }}>
       <DialogContent className="max-w-md">
         <DialogHeader>
           <div className="flex justify-center mb-4">
@@ -60,6 +64,7 @@ export function ExitIntentPopup({ onPlanTrip }: ExitIntentPopupProps) {
             size="lg"
             className="w-full"
             onClick={() => {
+              trackExitIntentCTA();
               setOpen(false);
               onPlanTrip();
             }}
@@ -70,7 +75,10 @@ export function ExitIntentPopup({ onPlanTrip }: ExitIntentPopupProps) {
             variant="ghost"
             size="sm"
             className="w-full text-muted-foreground"
-            onClick={() => setOpen(false)}
+            onClick={() => {
+              trackExitIntentDismissed();
+              setOpen(false);
+            }}
           >
             {t('home:exitIntent.dismiss')}
           </Button>

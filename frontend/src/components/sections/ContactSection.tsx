@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { trackFacebookClick, trackWhatsAppClick } from "@/lib/analytics";
 
 interface ContactSectionProps {
   onPlanTrip: () => void;
@@ -58,6 +59,7 @@ export function ContactSection({ onPlanTrip }: ContactSectionProps) {
                 href="https://www.facebook.com/profile.php?id=61579323908693&locale=eu_ES"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackFacebookClick("contact_section")}
                 className="flex items-center gap-4 p-4 border rounded-xl hover:bg-secondary/60 transition-all hover:shadow-sm"
               >
                 <div className="w-10 h-10 bg-[#1877F2] rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0">
@@ -70,6 +72,7 @@ export function ContactSection({ onPlanTrip }: ContactSectionProps) {
                 href="https://wa.me/94701728922"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick("contact_section")}
                 className="flex items-center gap-4 p-4 border rounded-xl hover:bg-secondary/60 transition-all hover:shadow-sm"
               >
                 <div className="w-10 h-10 bg-[#25D366] rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0">

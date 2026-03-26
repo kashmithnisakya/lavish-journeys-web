@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { submitInquiry, type InquiryPayload } from "@/lib/api";
 import { toast } from "sonner";
 import { Mail, User, Phone, MessageSquare, Loader2 } from "lucide-react";
+import { trackFormSubmitSuccess, trackFormSubmitError } from "@/lib/analytics";
 
 interface InquiryFormProps {
   defaultInquiryType?: string;
@@ -67,9 +68,9 @@ export function InquiryForm({
 
     try {
       await submitInquiry(formData);
+      trackFormSubmitSuccess(formData.inquiry_type);
       toast.success(t('forms:messages.success'));
 
-      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -84,6 +85,7 @@ export function InquiryForm({
       }
     } catch (error) {
       console.error("Inquiry submission error:", error);
+      trackFormSubmitError(error instanceof Error ? error.message : "unknown");
       toast.error(t('forms:messages.error'));
     } finally {
       setLoading(false);

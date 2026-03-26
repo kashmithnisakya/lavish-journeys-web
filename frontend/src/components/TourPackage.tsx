@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
 
 interface TourPackageProps {
+  tourKey: string;
   title: string;
   duration: string;
   description: string;
@@ -13,11 +14,11 @@ interface TourPackageProps {
   onViewDetails: () => void;
 }
 
-export function TourPackage({ title, duration, description, highlights, image, badge, onInquire, onViewDetails }: TourPackageProps) {
+export function TourPackage({ tourKey, title, duration, description, highlights, image, badge, onInquire, onViewDetails }: TourPackageProps) {
   const { t } = useTranslation();
   return (
     <article className="bg-card rounded-xl border shadow-elegant overflow-hidden hover-scale h-full flex flex-col group">
-      <div className="relative h-52 overflow-hidden">
+      <Link to={`/packages/${tourKey}`} className="relative h-52 overflow-hidden block">
         <img
           src={image}
           alt={`${title} tour package`}
@@ -33,10 +34,12 @@ export function TourPackage({ title, duration, description, highlights, image, b
             {badge}
           </div>
         )}
-      </div>
+      </Link>
 
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="font-display text-xl mb-2">{title}</h3>
+        <Link to={`/packages/${tourKey}`}>
+          <h3 className="font-display text-xl mb-2 hover:text-primary transition-colors">{title}</h3>
+        </Link>
         <p className="text-muted-foreground text-sm mb-4 line-clamp-3 leading-relaxed">{description}</p>
 
         <div className="mb-4 flex-1">
@@ -52,10 +55,6 @@ export function TourPackage({ title, duration, description, highlights, image, b
         </div>
 
         <div className="space-y-3 mt-auto pt-4 border-t">
-          <div className="flex items-center gap-2 text-sm text-primary font-medium">
-            <MessageCircle className="w-4 h-4" />
-            <span>{t('tours:contactForPricing')}</span>
-          </div>
           <div className="flex gap-2">
             <Button onClick={onViewDetails} variant="outline" size="sm" className="flex-1">
               {t('tours:viewDetails')}

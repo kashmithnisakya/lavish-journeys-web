@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCarousel } from "@/hooks/useCarousel";
 import { useIsMobile } from "@/hooks/use-mobile";
 import type { Destination } from "@/types/tour";
+import { trackCarouselInteraction } from "@/lib/analytics";
 
 import ella from "@/assets/ella.jpg";
 import sigiriya from "@/assets/sigiriya.jpg";
@@ -120,14 +121,22 @@ export function DestinationsCarousel() {
         </div>
 
         <button
-          onClick={prevSlide}
+          onClick={() => {
+            prevSlide();
+            const prevIndex = (currentSlide - 1 + destinations.length) % destinations.length;
+            trackCarouselInteraction("prev", destinations[prevIndex].title);
+          }}
           className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 sm:-translate-x-4 md:-translate-x-6 bg-background/90 hover:bg-background border rounded-full p-2 sm:p-3 md:p-4 shadow-lg transition-all hover:scale-110 z-30"
           aria-label="Previous destination"
         >
           <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" />
         </button>
         <button
-          onClick={nextSlide}
+          onClick={() => {
+            nextSlide();
+            const nextIndex = (currentSlide + 1) % destinations.length;
+            trackCarouselInteraction("next", destinations[nextIndex].title);
+          }}
           className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 sm:translate-x-4 md:translate-x-6 bg-background/90 hover:bg-background border rounded-full p-2 sm:p-3 md:p-4 shadow-lg transition-all hover:scale-110 z-30"
           aria-label="Next destination"
         >
@@ -139,7 +148,10 @@ export function DestinationsCarousel() {
             {destinations.map((d, index) => (
               <button
                 key={index}
-                onClick={() => goToSlide(index)}
+                onClick={() => {
+                  goToSlide(index);
+                  trackCarouselInteraction("dot", d.title);
+                }}
                 className={`rounded-full transition-all duration-300 ${
                   index === currentSlide
                     ? 'bg-primary w-8 sm:w-10 h-2.5 sm:h-3 shadow-lg shadow-primary/30'

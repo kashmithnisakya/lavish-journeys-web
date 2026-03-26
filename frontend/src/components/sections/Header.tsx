@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
@@ -11,14 +12,18 @@ interface HeaderProps {
 
 export function Header({ onPlanTrip }: HeaderProps) {
   const { t } = useTranslation();
+  const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const isHome = location.pathname === "/";
+  const prefix = isHome ? "" : "/";
+
   const navLinks = [
-    { href: "#destinations", label: t('common:nav.destinations') },
-    { href: "#packages", label: t('common:nav.packages') },
-    { href: "#services", label: t('common:nav.services') },
-    { href: "#about", label: t('common:nav.about') },
-    { href: "#contact", label: t('common:nav.contact') },
+    { href: `${prefix}#destinations`, label: t('common:nav.destinations') },
+    { href: `${prefix}#packages`, label: t('common:nav.packages') },
+    { href: `${prefix}#services`, label: t('common:nav.services') },
+    { href: `${prefix}#about`, label: t('common:nav.about') },
+    { href: `${prefix}#contact`, label: t('common:nav.contact') },
   ];
 
   const menuId = "mobile-nav-menu";
@@ -38,7 +43,7 @@ export function Header({ onPlanTrip }: HeaderProps) {
       </a>
 
       <nav className="container flex h-16 items-center justify-between" aria-label="Main navigation">
-        <a href="#" className="flex items-baseline gap-2">
+        <a href="/" className="flex items-baseline gap-2">
           <span className="text-xl font-semibold tracking-tight font-display text-primary">{t('common:company.name')}</span>
           <span className="text-sm text-muted-foreground hidden sm:inline">{t('common:company.subtitle')}</span>
         </a>

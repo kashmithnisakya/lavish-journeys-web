@@ -1,5 +1,6 @@
-import { useState, lazy, Suspense } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
 import { Header } from "@/components/sections/Header";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -16,51 +17,40 @@ import { TrustSignals } from "@/components/sections/TrustSignals";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { StickyMobileCTA } from "@/components/StickyMobileCTA";
 import { OfflineBanner } from "@/components/OfflineBanner";
+import { IndexSkeleton } from "@/components/skeletons/IndexSkeleton";
 import { useTourPackages } from "@/hooks/useTourPackages";
-import { trackEvent } from "@/lib/firebase";
+import { trackPlanTripClick, trackViewTourDetails, initScrollDepthTracking } from "@/lib/analytics";
 
-const TourPackageModal = lazy(() =>
-  import("@/components/TourPackageModal").then(m => ({ default: m.TourPackageModal }))
-);
 const InquiryModal = lazy(() =>
   import("@/components/InquiryModal").then(m => ({ default: m.InquiryModal }))
 );
 const ExitIntentPopup = lazy(() =>
   import("@/components/ExitIntentPopup").then(m => ({ default: m.ExitIntentPopup }))
 );
-const ComparePackages = lazy(() =>
-  import("@/components/sections/ComparePackages").then(m => ({ default: m.ComparePackages }))
-);
 
 const Index = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const { tourPackagesData, tourPackages, loading } = useTourPackages();
 
-  const [selectedTour, setSelectedTour] = useState<string | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isInquiryModalOpen, setIsInquiryModalOpen] = useState(false);
-  const [inquiryTourInfo, setInquiryTourInfo] = useState<{ title: string; duration: string } | null>(null);
+
+  useEffect(() => {
+    return initScrollDepthTracking();
+  }, []);
 
   const handleCTA = () => {
-    trackEvent("plan_trip_click");
+    trackPlanTripClick("homepage");
     setIsInquiryModalOpen(true);
   };
 
   const handleViewDetails = (tourKey: string) => {
-    trackEvent("view_tour_details", { tour: tourKey });
-    setSelectedTour(tourKey);
-    setIsModalOpen(true);
+    trackViewTourDetails(tourKey);
+    navigate(`/packages/${tourKey}`);
   };
 
   if (loading) {
-    return (
-      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
-          <p className="mt-4 text-muted-foreground">{t('common:labels.loading')}</p>
-        </div>
-      </div>
-    );
+    return <IndexSkeleton />;
   }
 
   return (
@@ -98,31 +88,11 @@ const Index = () => {
       <Suspense fallback={null}>
         <ExitIntentPopup onPlanTrip={handleCTA} />
 
-        {selectedTour && (
-          <TourPackageModal
-            open={isModalOpen}
-            onOpenChange={setIsModalOpen}
-            tourData={tourPackagesData[selectedTour as keyof typeof tourPackagesData]}
-            onInquire={() => {
-              const tourData = tourPackagesData[selectedTour as keyof typeof tourPackagesData];
-              setInquiryTourInfo({
-                title: tourData.title,
-                duration: tourData.duration,
-              });
-              setIsModalOpen(false);
-              handleCTA();
-            }}
-          />
-        )}
-
         <InquiryModal
           open={isInquiryModalOpen}
-          onOpenChange={(open) => {
-            setIsInquiryModalOpen(open);
-            if (!open) setInquiryTourInfo(null);
-          }}
-          defaultInquiryType={inquiryTourInfo ? t('forms:inquiryTypes.tourPackage') : t('forms:inquiryTypes.general')}
-          defaultQuestion={inquiryTourInfo ? t('forms:tourInquiry', { title: inquiryTourInfo.title, duration: inquiryTourInfo.duration }) : ""}
+          onOpenChange={setIsInquiryModalOpen}
+          defaultInquiryType={t('forms:inquiryTypes.general')}
+          defaultQuestion=""
         />
       </Suspense>
     </div>

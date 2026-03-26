@@ -6,7 +6,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import { PackagePageSkeleton } from "@/components/skeletons/PackagePageSkeleton";
 
+const PackagePage = lazy(() => import("./pages/PackagePage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const App = () => (
@@ -18,6 +20,14 @@ const App = () => (
         <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route
+              path="/packages/:slug"
+              element={
+                <Suspense fallback={<PackagePageSkeleton />}>
+                  <PackagePage />
+                </Suspense>
+              }
+            />
             <Route
               path="*"
               element={
