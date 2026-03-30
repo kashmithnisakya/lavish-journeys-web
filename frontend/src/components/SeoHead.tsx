@@ -90,6 +90,8 @@ const SeoHead: React.FC<SeoHeadProps> = ({ title, description }) => {
         addressLocality: "Weerawila",
         addressCountry: "LK",
       },
+      logo: `${SITE_URL}/icons/logo.png`,
+      image: `${SITE_URL}/icons/logo.png`,
       sameAs: [
         "https://www.facebook.com/profile.php?id=61579323908693",
         "https://wa.me/94701728922",
