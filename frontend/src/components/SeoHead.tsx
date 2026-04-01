@@ -32,6 +32,10 @@ const SeoHead: React.FC<SeoHeadProps> = ({ title, description }) => {
     ensureMeta("property", "og:title", title);
     ensureMeta("property", "og:description", description);
     ensureMeta("property", "og:url", window.location.href);
+    ensureMeta("property", "og:image", `${SITE_URL}/icons/logo.png`);
+    ensureMeta("property", "og:image:width", "1024");
+    ensureMeta("property", "og:image:height", "1024");
+    ensureMeta("name", "twitter:image", `${SITE_URL}/icons/logo.png`);
 
     // Canonical tag
     const url = window.location.origin + window.location.pathname;
