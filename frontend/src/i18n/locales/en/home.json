@@ -1,12 +1,12 @@
 {
   "seo": {
-    "title": "Lavish Travels & Tours — Luxury Travel Sri Lanka",
+    "title": "Lavish Travels & Tours | Luxury Travel Sri Lanka",
     "description": "Bespoke journeys across tea country, heritage forts, and golden coasts in Sri Lanka."
   },
   "hero": {
     "title": "Elegance Across Sri Lanka",
-    "subtitle": "Bespoke journeys across tea country, heritage forts, and golden coasts — crafted by experts.",
-    "imageAlt": "Lavish Sri Lanka luxury travel hero — tea country at sunrise"
+    "subtitle": "Bespoke journeys across tea country, heritage forts, and golden coasts, crafted by experts.",
+    "imageAlt": "Lavish Sri Lanka luxury travel hero, tea country at sunrise"
   },
   "destinations": {
     "title": "Discover Sri Lanka",
@@ -90,7 +90,7 @@
   },
   "contact": {
     "title": "Ready for your Sri Lanka escape?",
-    "description": "Tell us your Sri Lanka dream — we'll handle the rest.",
+    "description": "Tell us your Sri Lanka dream, and we'll handle the rest.",
     "information": "Contact Information",
     "address": {
       "label": "Address",
@@ -124,20 +124,20 @@
       {
         "name": "Sarah & James Mitchell",
         "country": "United Kingdom",
-        "text": "Lavish Travels made our honeymoon absolutely unforgettable. Every detail was perfectly arranged — from the private villa in Ella to the sunrise at Sigiriya. We felt like royalty the entire trip.",
-        "trip": "Classical Journey — 10 Days"
+        "text": "Lavish Travels made our honeymoon absolutely unforgettable. Every detail was perfectly arranged, from the private villa in Ella to the sunrise at Sigiriya. We felt like royalty the entire trip.",
+        "trip": "Classical Journey · 10 Days"
       },
       {
         "name": "Rajesh Sharma",
         "country": "India",
         "text": "The Ramayana Trail tour was a deeply spiritual experience. Our guide was incredibly knowledgeable about each temple's history and significance. This trip touched our hearts.",
-        "trip": "Ramayana Premium — 9 Days"
+        "trip": "Ramayana Premium · 9 Days"
       },
       {
         "name": "Anna Petrova",
         "country": "Russia",
-        "text": "From the moment we landed, everything was seamless. The wildlife safari in Yala, the train ride through tea country, the beaches in the south — Sri Lanka exceeded all our expectations.",
-        "trip": "Southern Highlights — 7 Days"
+        "text": "From the moment we landed, everything was seamless. The wildlife safari in Yala, the train ride through tea country, the beaches in the south. Sri Lanka exceeded all our expectations.",
+        "trip": "Southern Highlights · 7 Days"
       }
     ]
   },
@@ -181,7 +181,7 @@
       },
       {
         "question": "What is included in your tour packages?",
-        "answer": "Our packages typically include accommodation, private transport with an English-speaking driver-guide, breakfast daily, selected entrance fees, and airport transfers. Specific inclusions vary by package — click 'View Details' on any tour to see the full list."
+        "answer": "Our packages typically include accommodation, private transport with an English-speaking driver-guide, breakfast daily, selected entrance fees, and airport transfers. Specific inclusions vary by package. Click 'View Details' on any tour to see the full list."
       },
       {
         "question": "Can I customize any tour package?",

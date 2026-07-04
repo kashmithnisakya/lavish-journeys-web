@@ -10,7 +10,8 @@
     "packages": "पैकेज",
     "services": "सेवाएं",
     "about": "हमारे बारे में",
-    "contact": "संपर्क"
+    "contact": "संपर्क",
+    "home": "होम"
   },
   "buttons": {
     "planTrip": "अपनी यात्रा की योजना बनाएं",
@@ -19,7 +20,9 @@
     "viewDetails": "विवरण देखें",
     "inquireNow": "अभी पूछताछ करें",
     "speakSpecialist": "विशेषज्ञ से बात करें",
-    "close": "बंद करें"
+    "close": "बंद करें",
+    "share": "शेयर करें",
+    "viewAllPackages": "सभी पैकेज देखें"
   },
   "labels": {
     "from": "से",

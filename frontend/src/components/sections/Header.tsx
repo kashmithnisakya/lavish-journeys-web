@@ -33,7 +33,7 @@ export function Header({ onPlanTrip }: HeaderProps) {
   };
 
   return (
-    <header className="sticky top-0 z-30 bg-background/85 backdrop-blur-md supports-[backdrop-filter]:bg-background/70 border-b">
+    <header className="sticky top-0 z-40 bg-background/85 backdrop-blur-md supports-[backdrop-filter]:bg-background/70 border-b">
       {/* Skip navigation link for accessibility */}
       <a
         href="#main-content"

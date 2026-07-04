@@ -1,6 +1,4 @@
 {
-  "from": "से",
-  "perPerson": "प्रति व्यक्ति",
   "viewDetails": "विवरण देखें",
   "inquireNow": "अभी पूछताछ करें",
   "contactForPricing": "कीमत जानने के लिए संपर्क करें",
@@ -9,25 +7,22 @@
   "itinerary": "दैनिक यात्रा कार्यक्रम",
   "day": "दिन",
   "accommodation": "आवास",
-  "pricing": "मूल्य निर्धारण (प्रति व्यक्ति)",
-  "pax": "व्यक्ति",
   "category": "श्रेणी",
   "inclusions": "क्या शामिल है",
   "exclusions": "शामिल नहीं है",
   "hotels": "होटल और आवास",
   "destination": "गंतव्य",
   "supplement": "अतिरिक्त शुल्क",
-  "entranceFees": "प्रवेश शुल्क",
   "requestQuote": "कोटेशन का अनुरोध करें",
   "activity": "गतिविधि",
-  "pricingCTA": {
-    "title": "व्यक्तिगत कोटेशन प्राप्त करें",
-    "description": "कीमतें समूह के आकार, मौसम और प्राथमिकताओं पर निर्भर करती हैं। अपनी ज़रूरतों के अनुसार कोटेशन के लिए संपर्क करें।"
-  },
   "compare": {
     "button": "पैकेज तुलना करें",
     "title": "टूर पैकेज तुलना",
     "selectPackage": "पैकेज चुनें...",
     "selectBoth": "तुलना के लिए दो पैकेज चुनें।"
-  }
+  },
+  "destinations": "गंतव्य",
+  "duration": "अवधि",
+  "places": "स्थान",
+  "experiences": "अनुभव"
 }

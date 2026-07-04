@@ -9,7 +9,7 @@ export function FooterSection() {
       <div className="container py-10">
         <div className="grid gap-8 md:grid-cols-3 text-sm">
           <div>
-            <h4 className="font-display text-lg mb-3">{t('common:company.fullName')}</h4>
+            <h4 className="text-lg font-semibold tracking-tight mb-3">{t('common:company.fullName')}</h4>
             <p className="text-muted-foreground leading-relaxed">{t('common:company.tagline')}</p>
           </div>
 

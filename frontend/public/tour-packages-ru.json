@@ -14,10 +14,6 @@
       "Открытие города: колониальная архитектура Коломбо и шоппинг"
     ],
     "image": "/src/assets/destination-sigiriya.jpg",
-    "price": {
-      "from": 991,
-      "category": "за человека"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -105,29 +101,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "На человека в двухместном номере",
-        "pax3": 1184,
-        "pax8": 1028,
-        "pax16": 1047,
-        "pax32": 991
-      },
-      {
-        "category": "На человека в трёхместном номере",
-        "pax3": 1123,
-        "pax8": 967,
-        "pax16": 986,
-        "pax32": 930
-      },
-      {
-        "category": "Доплата за одноместное размещение",
-        "pax3": 569,
-        "pax8": 569,
-        "pax16": 569,
-        "pax32": 569
-      }
-    ],
     "hotels": [
       {
         "destination": "Кандалама",
@@ -142,51 +115,17 @@
       {
         "destination": "Нувара Элия",
         "hotel": "The Grand Hotel",
-        "supplement": "Номер Queen Elizabeth: $175 за номер"
+        "supplement": "Номер Queen Elizabeth: Доплата по запросу"
       },
       {
         "destination": "Бентота",
         "hotel": "Cinnamon Hotel",
-        "supplement": "Номер Superior с видом на океан: $15 за номер за ночь"
+        "supplement": "Номер Superior с видом на океан: Доплата по запросу"
       },
       {
         "destination": "Коломбо",
         "hotel": "Cinnamon Grand Hotel",
         "supplement": "Без доплаты"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Скальная крепость Сигирия",
-        "fee": 60
-      },
-      {
-        "attraction": "Древний город Полоннарува",
-        "fee": 25
-      },
-      {
-        "attraction": "Сафари в национальном парке Миннерия",
-        "fee": 55
-      },
-      {
-        "attraction": "Пещерный храм Дамбулла",
-        "fee": 10
-      },
-      {
-        "attraction": "Храм Зуба Будды",
-        "fee": 15
-      },
-      {
-        "attraction": "Ботанические сады Хакгала",
-        "fee": 8
-      },
-      {
-        "attraction": "Сита Амман Ковил",
-        "fee": 2
-      },
-      {
-        "attraction": "Сафари по реке Маду",
-        "fee": 25
       }
     ],
     "inclusions": [
@@ -223,10 +162,6 @@
       "Пляжный отдых: отдых на побережье Бентоты"
     ],
     "image": "/src/assets/destination-ella.jpg",
-    "price": {
-      "from": 642,
-      "category": "за человека"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -325,29 +260,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "На человека в двухместном номере",
-        "pax3": 832,
-        "pax8": 703,
-        "pax16": 668,
-        "pax32": 642
-      },
-      {
-        "category": "На человека в трёхместном номере",
-        "pax3": 773,
-        "pax8": 445,
-        "pax16": 609,
-        "pax32": 584
-      },
-      {
-        "category": "Доплата за одноместное размещение",
-        "pax3": 310,
-        "pax8": 310,
-        "pax16": 310,
-        "pax32": 310
-      }
-    ],
     "hotels": [
       {
         "destination": "Негомбо",
@@ -357,12 +269,12 @@
       {
         "destination": "Дамбулла",
         "hotel": "Lario Hotel",
-        "supplement": "Высокий сезон: $20 за номер за ночь"
+        "supplement": "Высокий сезон: Доплата по запросу"
       },
       {
         "destination": "Канди",
         "hotel": "Senani Hotel",
-        "supplement": "Высокий сезон: $20 за номер за ночь"
+        "supplement": "Высокий сезон: Доплата по запросу"
       },
       {
         "destination": "Нувара Элия",
@@ -372,63 +284,17 @@
       {
         "destination": "Элла",
         "hotel": "Oak Ray Ella Gap",
-        "supplement": "Высокий сезон: $20 за номер за ночь"
+        "supplement": "Высокий сезон: Доплата по запросу"
       },
       {
         "destination": "Яла",
         "hotel": "Wild Yala",
-        "supplement": "Высокий сезон: $20 за номер за ночь"
+        "supplement": "Высокий сезон: Доплата по запросу"
       },
       {
         "destination": "Бентота",
         "hotel": "Joes Hotel",
-        "supplement": "Новогодний ужин: $30 на взрослого"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Сафари по лагуне Негомбо",
-        "fee": 30
-      },
-      {
-        "attraction": "Скала Пидурангала",
-        "fee": 15
-      },
-      {
-        "attraction": "Скальная крепость Сигирия",
-        "fee": 32
-      },
-      {
-        "attraction": "Древний город Полоннарува",
-        "fee": 26
-      },
-      {
-        "attraction": "Пещерный храм Дамбулла",
-        "fee": 15
-      },
-      {
-        "attraction": "Храм Зуба Будды",
-        "fee": 12
-      },
-      {
-        "attraction": "Королевские ботанические сады",
-        "fee": 10
-      },
-      {
-        "attraction": "Фонд слонов Миллениум",
-        "fee": 15
-      },
-      {
-        "attraction": "Посещение чайной фабрики",
-        "fee": 5
-      },
-      {
-        "attraction": "Национальный парк равнина Хортон",
-        "fee": 35
-      },
-      {
-        "attraction": "Входной билет в национальный парк Яла",
-        "fee": 35
+        "supplement": "Новогодний ужин: Доплата по запросу"
       }
     ],
     "inclusions": [
@@ -467,10 +333,6 @@
       "Сохранение природы: реабилитационный центр Elephant Transit Home"
     ],
     "image": "/src/assets/destination-galle.jpg",
-    "price": {
-      "from": 760,
-      "category": "за человека"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -584,39 +446,16 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "На человека в двухместном номере",
-        "pax3": 998,
-        "pax8": 825,
-        "pax16": 858,
-        "pax32": 760
-      },
-      {
-        "category": "На человека в трёхместном номере",
-        "pax3": 924,
-        "pax8": 752,
-        "pax16": 784,
-        "pax32": 687
-      },
-      {
-        "category": "Доплата за одноместное размещение",
-        "pax3": 388,
-        "pax8": 388,
-        "pax16": 388,
-        "pax32": 388
-      }
-    ],
     "hotels": [
       {
         "destination": "Коломбо",
         "hotel": "Fairway Colombo",
-        "supplement": "Номер Superior с балконом: $15 за номер в день"
+        "supplement": "Номер Superior с балконом: Доплата по запросу"
       },
       {
         "destination": "Унаватуна",
         "hotel": "Joes Unawatuna",
-        "supplement": "Рождество и Новый год: $20 на человека в день"
+        "supplement": "Рождество и Новый год: Доплата по запросу"
       },
       {
         "destination": "Ахангама",
@@ -626,7 +465,7 @@
       {
         "destination": "Синхараджа",
         "hotel": "The Blue Magpie",
-        "supplement": "Рождество и Новый год: $20 на человека в день"
+        "supplement": "Рождество и Новый год: Доплата по запросу"
       },
       {
         "destination": "Амбилипития",
@@ -636,59 +475,17 @@
       {
         "destination": "Элла",
         "hotel": "Oak Ray Ella Gap",
-        "supplement": "Высокий сезон: $20 за номер за ночь"
+        "supplement": "Высокий сезон: Доплата по запросу"
       },
       {
         "destination": "Канди",
         "hotel": "Oak Ray Senani Hotel",
-        "supplement": "Высокий сезон: $20 за номер за ночь"
+        "supplement": "Высокий сезон: Доплата по запросу"
       },
       {
         "destination": "Негомбо",
         "hotel": "Amagi Beach",
         "supplement": "Без доплаты"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Храм Гангарамая",
-        "fee": 5
-      },
-      {
-        "attraction": "Питомник черепах",
-        "fee": 5
-      },
-      {
-        "attraction": "Речное сафари по реке Маду",
-        "fee": 15
-      },
-      {
-        "attraction": "Наблюдение за китами и дельфинами",
-        "fee": 80
-      },
-      {
-        "attraction": "Вход в тропический лес Синхараджа",
-        "fee": 35
-      },
-      {
-        "attraction": "Национальный парк Удавалаве",
-        "fee": 35
-      },
-      {
-        "attraction": "Elephant Transit Home",
-        "fee": 5
-      },
-      {
-        "attraction": "Mega Zip-line Flying Ravana",
-        "fee": 35
-      },
-      {
-        "attraction": "Храм Зуба Будды",
-        "fee": 12
-      },
-      {
-        "attraction": "Сафари по лагуне Негомбо",
-        "fee": 30
       }
     ],
     "inclusions": [
@@ -723,10 +520,6 @@
       "Экспертное руководство: знающие гиды, рассказывающие истории Рамаяны"
     ],
     "image": "/src/assets/hero-lavish.jpg",
-    "price": {
-      "from": 891,
-      "category": "за человека"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -814,49 +607,26 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "На человека в двухместном номере",
-        "pax3": 1237,
-        "pax8": 1060,
-        "pax16": 940,
-        "pax32": 891
-      },
-      {
-        "category": "На человека в трёхместном номере",
-        "pax3": 1168,
-        "pax8": 990,
-        "pax16": 971,
-        "pax32": 822
-      },
-      {
-        "category": "Доплата за одноместное размещение",
-        "pax3": 423,
-        "pax8": 423,
-        "pax16": 423,
-        "pax32": 423
-      }
-    ],
     "hotels": [
       {
         "destination": "Хиккадува",
         "hotel": "Hikkaduwa Cinnamon Hotel",
-        "supplement": "Номер Superior с видом на океан: $10 за номер в день"
+        "supplement": "Номер Superior с видом на океан: Доплата по запросу"
       },
       {
         "destination": "Яла",
         "hotel": "Cinnamon Wild Yala",
-        "supplement": "Пляжное шале: $40 за номер за ночь"
+        "supplement": "Пляжное шале: Доплата по запросу"
       },
       {
         "destination": "Нувара Элия",
         "hotel": "Grand Hotel",
-        "supplement": "Номер Queen Elizabeth: $175 за номер за ночь"
+        "supplement": "Номер Queen Elizabeth: Доплата по запросу"
       },
       {
         "destination": "Канди",
         "hotel": "Amaya Hills",
-        "supplement": "Номер Premium Deluxe: $40 на человека в день"
+        "supplement": "Номер Premium Deluxe: Доплата по запросу"
       },
       {
         "destination": "Дамбулла",
@@ -867,56 +637,6 @@
         "destination": "Негомбо",
         "hotel": "Amagi Aria",
         "supplement": "Без доплаты"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Заповедник Румассала",
-        "fee": 5
-      },
-      {
-        "attraction": "Сафари в национальном парке Яла",
-        "fee": 40
-      },
-      {
-        "attraction": "Вход в парк Яла",
-        "fee": 15
-      },
-      {
-        "attraction": "Divurumwela Raja Maha Viharaya",
-        "fee": 3
-      },
-      {
-        "attraction": "Храм Сита Амман",
-        "fee": 5
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Храм Бхакта Ханумана",
-        "fee": 3
-      },
-      {
-        "attraction": "Сита Котува",
-        "fee": 8
-      },
-      {
-        "attraction": "Пещерный храм Дамбулла",
-        "fee": 10
-      },
-      {
-        "attraction": "Скальная крепость Сигирия",
-        "fee": 30
-      },
-      {
-        "attraction": "Храм Конешварам",
-        "fee": 5
-      },
-      {
-        "attraction": "Храм Муннесварам",
-        "fee": 3
       }
     ],
     "inclusions": [
@@ -951,10 +671,6 @@
       "Природа: сафари по лагуне Негомбо и восхождение на скалу Пидурангала"
     ],
     "image": "/src/assets/hero-lavish.jpg",
-    "price": {
-      "from": 636,
-      "category": "за человека"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -1091,29 +807,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "На человека в двухместном номере",
-        "pax3": 1042,
-        "pax8": 725,
-        "pax16": 731,
-        "pax32": 636
-      },
-      {
-        "category": "На человека в трёхместном номере",
-        "pax3": 1005,
-        "pax8": 688,
-        "pax16": 694,
-        "pax32": 598
-      },
-      {
-        "category": "Доплата за одноместное размещение",
-        "pax3": 287,
-        "pax8": 287,
-        "pax16": 287,
-        "pax32": 287
-      }
-    ],
     "hotels": [
       {
         "destination": "Негомбо",
@@ -1143,57 +836,7 @@
       {
         "destination": "Коломбо",
         "hotel": "Fair Way Hotel",
-        "supplement": "Номер Superior с балконом: $15 за ночь"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Сафари по лагуне Негомбо",
-        "fee": 30
-      },
-      {
-        "attraction": "Национальный парк Вилпатту",
-        "fee": 35
-      },
-      {
-        "attraction": "Анурадхапура",
-        "fee": 26
-      },
-      {
-        "attraction": "Маршрут по деревне Хиривадунна",
-        "fee": 25
-      },
-      {
-        "attraction": "Скальная крепость Сигирия",
-        "fee": 32
-      },
-      {
-        "attraction": "Полоннарува",
-        "fee": 26
-      },
-      {
-        "attraction": "Скала Пидурангала",
-        "fee": 15
-      },
-      {
-        "attraction": "Храм Зуба Будды",
-        "fee": 15
-      },
-      {
-        "attraction": "Культурное танцевальное шоу (дополнительно)",
-        "fee": 10
-      },
-      {
-        "attraction": "Королевские ботанические сады",
-        "fee": 10
-      },
-      {
-        "attraction": "Посещение чайной фабрики",
-        "fee": 5
-      },
-      {
-        "attraction": "Национальный парк равнина Хортон",
-        "fee": 35
+        "supplement": "Номер Superior с балконом: Доплата по запросу"
       }
     ],
     "inclusions": [
@@ -1232,10 +875,6 @@
       "Экскурсия по городу: исторические районы Форт и Петта в Коломбо"
     ],
     "image": "/src/assets/destination-ella.jpg",
-    "price": {
-      "from": 504,
-      "category": "за человека"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -1337,29 +976,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "На человека в двухместном номере",
-        "pax3": 781,
-        "pax8": 524,
-        "pax16": 567,
-        "pax32": 531
-      },
-      {
-        "category": "На человека в трёхместном номере",
-        "pax3": 754,
-        "pax8": 497,
-        "pax16": 539,
-        "pax32": 504
-      },
-      {
-        "category": "Доплата за одноместное размещение",
-        "pax3": 202.5,
-        "pax8": 202.5,
-        "pax16": 202.5,
-        "pax32": 202.5
-      }
-    ],
     "hotels": [
       {
         "destination": "Негомбо",
@@ -1384,49 +1000,7 @@
       {
         "destination": "Коломбо",
         "hotel": "Fairway Colombo",
-        "supplement": "Номер Superior с балконом: $15 за ночь"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Сафари по лагуне Негомбо",
-        "fee": 30
-      },
-      {
-        "attraction": "Фонд слонов Миллениум",
-        "fee": 15
-      },
-      {
-        "attraction": "Скала Пидурангала",
-        "fee": 15
-      },
-      {
-        "attraction": "Национальный парк Калавева",
-        "fee": 35
-      },
-      {
-        "attraction": "Маршрут по деревне Хиривадунна",
-        "fee": 25
-      },
-      {
-        "attraction": "Храм Зуба Будды",
-        "fee": 15
-      },
-      {
-        "attraction": "Культурное танцевальное шоу (дополнительно)",
-        "fee": 10
-      },
-      {
-        "attraction": "Королевские ботанические сады",
-        "fee": 10
-      },
-      {
-        "attraction": "Посещение чайной фабрики",
-        "fee": 5
-      },
-      {
-        "attraction": "Музей Коломбо (дополнительно)",
-        "fee": 15
+        "supplement": "Номер Superior с балконом: Доплата по запросу"
       }
     ],
     "inclusions": [
@@ -1464,10 +1038,6 @@
       "Экспертное руководство: знающие гиды, рассказывающие истории Рамаяны"
     ],
     "image": "/src/assets/destination-sigiriya.jpg",
-    "price": {
-      "from": 918,
-      "category": "за человека"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -1558,29 +1128,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "На человека в двухместном номере",
-        "pax3": 1182,
-        "pax8": 1539,
-        "pax16": 1490,
-        "pax32": 1493
-      },
-      {
-        "category": "На человека в трёхместном номере",
-        "pax3": 1087,
-        "pax8": 964,
-        "pax16": 915,
-        "pax32": 918
-      },
-      {
-        "category": "Доплата за одноместное размещение",
-        "pax3": 480,
-        "pax8": 480,
-        "pax16": 418,
-        "pax32": 480
-      }
-    ],
     "hotels": [
       {
         "destination": "Дамбулла",
@@ -1590,59 +1137,17 @@
       {
         "destination": "Канди",
         "hotel": "Amaya Hills",
-        "supplement": "Номер Premium Deluxe: $40 за ночь"
+        "supplement": "Номер Premium Deluxe: Доплата по запросу"
       },
       {
         "destination": "Нувара Элия",
         "hotel": "The Grand Hotel",
-        "supplement": "Номер Queen Elizabeth: $175 за ночь"
+        "supplement": "Номер Queen Elizabeth: Доплата по запросу"
       },
       {
         "destination": "Берувела",
         "hotel": "Cinnamon Bay",
         "supplement": "Без доплаты"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Храм Муннесварам",
-        "fee": 3
-      },
-      {
-        "attraction": "Храм Конешварам",
-        "fee": 5
-      },
-      {
-        "attraction": "Скальная крепость Сигирия",
-        "fee": 32
-      },
-      {
-        "attraction": "Пещерный храм Дамбулла",
-        "fee": 15
-      },
-      {
-        "attraction": "Храм Зуба Будды",
-        "fee": 15
-      },
-      {
-        "attraction": "Сита Котува",
-        "fee": 8
-      },
-      {
-        "attraction": "Храм Бхакта Ханумана",
-        "fee": 3
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Храм Сита Амман",
-        "fee": 5
-      },
-      {
-        "attraction": "Сафари по реке Маду",
-        "fee": 15
       }
     ],
     "inclusions": [
@@ -1676,10 +1181,6 @@
       "Экспертное руководство: знающие гиды, рассказывающие эпические истории Рамаяны"
     ],
     "image": "/src/assets/hero-lavish.jpg",
-    "price": {
-      "from": 750,
-      "category": "за человека"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -1771,29 +1272,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "На человека в двухместном номере",
-        "pax3": 921,
-        "pax8": 798,
-        "pax16": 750,
-        "pax32": 752
-      },
-      {
-        "category": "На человека в трёхместном номере",
-        "pax3": 867,
-        "pax8": 744,
-        "pax16": 695,
-        "pax32": 698
-      },
-      {
-        "category": "Доплата за одноместное размещение",
-        "pax3": 237.5,
-        "pax8": 237.5,
-        "pax16": 237.5,
-        "pax32": 237.5
-      }
-    ],
     "hotels": [
       {
         "destination": "Дамбулла",
@@ -1814,48 +1292,6 @@
         "destination": "Берувела",
         "hotel": "Joies Hotel",
         "supplement": "Без доплаты"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Храм Муннесварам",
-        "fee": 3
-      },
-      {
-        "attraction": "Храм Конешварам",
-        "fee": 3
-      },
-      {
-        "attraction": "Скальная крепость Сигирия",
-        "fee": 32
-      },
-      {
-        "attraction": "Пещерный храм Дамбулла",
-        "fee": 15
-      },
-      {
-        "attraction": "Храм Зуба Будды",
-        "fee": 15
-      },
-      {
-        "attraction": "Сита Котува",
-        "fee": 8
-      },
-      {
-        "attraction": "Храм Бхакта Ханумана",
-        "fee": 3
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Храм Сита Амман",
-        "fee": 5
-      },
-      {
-        "attraction": "Сафари по реке Маду",
-        "fee": 15
       }
     ],
     "inclusions": [
@@ -1891,10 +1327,6 @@
       "Культурное погружение: древние наскальные росписи и колониальное наследие"
     ],
     "image": "/src/assets/destination-sigiriya.jpg",
-    "price": {
-      "from": 1032,
-      "category": "за человека"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -1999,29 +1431,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "На человека в двухместном номере",
-        "pax3": 1054,
-        "pax8": 1110,
-        "pax16": 1088,
-        "pax32": 1032
-      },
-      {
-        "category": "На человека в трёхместном номере",
-        "pax3": 987,
-        "pax8": 1033,
-        "pax16": 1021,
-        "pax32": 965
-      },
-      {
-        "category": "Доплата за одноместное размещение",
-        "pax3": 395,
-        "pax8": 395,
-        "pax16": 395,
-        "pax32": 395
-      }
-    ],
     "hotels": [
       {
         "destination": "Дамбулла",
@@ -2031,63 +1440,17 @@
       {
         "destination": "Канди",
         "hotel": "Amaya Hills",
-        "supplement": "Номер Premium Deluxe: $40 за номер за ночь"
+        "supplement": "Номер Premium Deluxe: Доплата по запросу"
       },
       {
         "destination": "Нувара Элия",
         "hotel": "Grand Hotel",
-        "supplement": "Номер Queen Elizabeth: $175 за номер"
+        "supplement": "Номер Queen Elizabeth: Доплата по запросу"
       },
       {
         "destination": "Берувела",
         "hotel": "Cinnamon Bey",
         "supplement": "Без доплаты"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Храм Муннесварам",
-        "fee": 3
-      },
-      {
-        "attraction": "Храм Конешварам",
-        "fee": 3
-      },
-      {
-        "attraction": "Скальная крепость Сигирия",
-        "fee": 35
-      },
-      {
-        "attraction": "Пещерный храм Дамбулла",
-        "fee": 3
-      },
-      {
-        "attraction": "Храм Зуба Будды",
-        "fee": 10
-      },
-      {
-        "attraction": "Королевский ботанический сад",
-        "fee": 12
-      },
-      {
-        "attraction": "Слоновий приют Пиннавала",
-        "fee": 15
-      },
-      {
-        "attraction": "Храм Бхакта Ханумана",
-        "fee": 3
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Храм Сита Амман",
-        "fee": 3
-      },
-      {
-        "attraction": "Dewram Wehera Rajamaha Viharaya",
-        "fee": 3
       }
     ],
     "inclusions": [

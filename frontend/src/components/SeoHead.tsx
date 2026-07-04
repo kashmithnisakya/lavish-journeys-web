@@ -70,7 +70,7 @@ const SeoHead: React.FC<SeoHeadProps> = ({ title, description }) => {
     }
     xDefault.href = SITE_URL;
 
-    // JSON-LD Structured Data — TravelAgency + LocalBusiness
+    // JSON-LD Structured Data: TravelAgency + LocalBusiness
     const scriptId = "ld-json-travelagency";
     let ld = document.getElementById(scriptId) as HTMLScriptElement | null;
     if (!ld) {
@@ -101,7 +101,6 @@ const SeoHead: React.FC<SeoHeadProps> = ({ title, description }) => {
         "https://wa.me/94701728922",
       ],
       foundingDate: "2018",
-      priceRange: "$$",
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "4.9",

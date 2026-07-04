@@ -14,10 +14,6 @@
       "City Discovery: Colonial Colombo architecture and shopping"
     ],
     "image": "/src/assets/destination-sigiriya.jpg",
-    "price": {
-      "from": 991,
-      "category": "per person"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -105,29 +101,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 1184,
-        "pax8": 1028,
-        "pax16": 1047,
-        "pax32": 991
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 1123,
-        "pax8": 967,
-        "pax16": 986,
-        "pax32": 930
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 569,
-        "pax8": 569,
-        "pax16": 569,
-        "pax32": 569
-      }
-    ],
     "hotels": [
       {
         "destination": "Kandalama",
@@ -142,51 +115,17 @@
       {
         "destination": "Nuwara Eliya",
         "hotel": "The Grand Hotel",
-        "supplement": "Queen Elizabeth Room: $175 per room"
+        "supplement": "Queen Elizabeth Room: Supplement applies, contact us for rates"
       },
       {
         "destination": "Bentota",
         "hotel": "Cinnamon Hotel",
-        "supplement": "Superior Ocean View: $15 per room per night"
+        "supplement": "Superior Ocean View: Supplement applies, contact us for rates"
       },
       {
         "destination": "Colombo",
         "hotel": "Cinnamon Grand Hotel",
         "supplement": "No Supplement"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 60
-      },
-      {
-        "attraction": "Polonnaruwa Ancient City",
-        "fee": 25
-      },
-      {
-        "attraction": "Minneriya National Park Safari",
-        "fee": 55
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 10
-      },
-      {
-        "attraction": "Temple of the Tooth Relic",
-        "fee": 15
-      },
-      {
-        "attraction": "Hakgala Botanical Gardens",
-        "fee": 8
-      },
-      {
-        "attraction": "Sita Amman Kovil",
-        "fee": 2
-      },
-      {
-        "attraction": "Madu River Safari",
-        "fee": 25
       }
     ],
     "inclusions": [
@@ -223,10 +162,6 @@
       "Beach Relaxation: Bentota coastal experience"
     ],
     "image": "/src/assets/destination-ella.jpg",
-    "price": {
-      "from": 642,
-      "category": "per person"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -325,29 +260,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 832,
-        "pax8": 703,
-        "pax16": 668,
-        "pax32": 642
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 773,
-        "pax8": 445,
-        "pax16": 609,
-        "pax32": 584
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 310,
-        "pax8": 310,
-        "pax16": 310,
-        "pax32": 310
-      }
-    ],
     "hotels": [
       {
         "destination": "Negombo",
@@ -357,12 +269,12 @@
       {
         "destination": "Dambulla",
         "hotel": "Lario Hotel",
-        "supplement": "Peak Season: $20 per room per night"
+        "supplement": "Peak Season: Supplement applies, contact us for rates"
       },
       {
         "destination": "Kandy",
         "hotel": "Senani Hotel",
-        "supplement": "Peak Season: $20 per room per night"
+        "supplement": "Peak Season: Supplement applies, contact us for rates"
       },
       {
         "destination": "Nuwara Eliya",
@@ -372,63 +284,17 @@
       {
         "destination": "Ella",
         "hotel": "Oak Ray Ella Gap",
-        "supplement": "Peak Season: $20 per room per night"
+        "supplement": "Peak Season: Supplement applies, contact us for rates"
       },
       {
         "destination": "Yala",
         "hotel": "Wild Yala",
-        "supplement": "Peak Season: $20 per room per night"
+        "supplement": "Peak Season: Supplement applies, contact us for rates"
       },
       {
         "destination": "Bentota",
         "hotel": "Joes Hotel",
-        "supplement": "New Year Eve Dinner: $30 per adult"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Negombo Lagoon Safari",
-        "fee": 30
-      },
-      {
-        "attraction": "Pidurangala Rock",
-        "fee": 15
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 32
-      },
-      {
-        "attraction": "Polonnaruwa Ancient City",
-        "fee": 26
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 15
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 12
-      },
-      {
-        "attraction": "Royal Botanical Gardens",
-        "fee": 10
-      },
-      {
-        "attraction": "Millennium Elephant Foundation",
-        "fee": 15
-      },
-      {
-        "attraction": "Tea Factory Visit",
-        "fee": 5
-      },
-      {
-        "attraction": "Horton Plains National Park",
-        "fee": 35
-      },
-      {
-        "attraction": "Yala National Park Entrance",
-        "fee": 35
+        "supplement": "New Year Eve Dinner: Supplement applies, contact us for rates"
       }
     ],
     "inclusions": [
@@ -467,10 +333,6 @@
       "Conservation: Elephant Transit Home rehabilitation center"
     ],
     "image": "/src/assets/destination-galle.jpg",
-    "price": {
-      "from": 760,
-      "category": "per person"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -584,39 +446,16 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 998,
-        "pax8": 825,
-        "pax16": 858,
-        "pax32": 760
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 924,
-        "pax8": 752,
-        "pax16": 784,
-        "pax32": 687
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 388,
-        "pax8": 388,
-        "pax16": 388,
-        "pax32": 388
-      }
-    ],
     "hotels": [
       {
         "destination": "Colombo",
         "hotel": "Fairway Colombo",
-        "supplement": "Superior Balcony: $15 per room per day"
+        "supplement": "Superior Balcony: Supplement applies, contact us for rates"
       },
       {
         "destination": "Unawatuna",
         "hotel": "Joes Unawatuna",
-        "supplement": "Christmas & New Year: $20 per person per day"
+        "supplement": "Christmas & New Year: Supplement applies, contact us for rates"
       },
       {
         "destination": "Ahangama",
@@ -626,7 +465,7 @@
       {
         "destination": "Sinharaja",
         "hotel": "The Blue Magpie",
-        "supplement": "Christmas & New Year: $20 per person per day"
+        "supplement": "Christmas & New Year: Supplement applies, contact us for rates"
       },
       {
         "destination": "Ambilipitiya",
@@ -636,59 +475,17 @@
       {
         "destination": "Ella",
         "hotel": "Oak Ray Ella Gap",
-        "supplement": "Peak Season: $20 per room per night"
+        "supplement": "Peak Season: Supplement applies, contact us for rates"
       },
       {
         "destination": "Kandy",
         "hotel": "Oak Ray Senani Hotel",
-        "supplement": "Peak Season: $20 per room per night"
+        "supplement": "Peak Season: Supplement applies, contact us for rates"
       },
       {
         "destination": "Negombo",
         "hotel": "Amagi Beach",
         "supplement": "No Supplement"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Gangaramaya Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Turtle Hatchery",
-        "fee": 5
-      },
-      {
-        "attraction": "Madu River Boat Safari",
-        "fee": 15
-      },
-      {
-        "attraction": "Whale & Dolphin Watching",
-        "fee": 80
-      },
-      {
-        "attraction": "Sinharaja Rainforest Entrance",
-        "fee": 35
-      },
-      {
-        "attraction": "Udawalawe National Park",
-        "fee": 35
-      },
-      {
-        "attraction": "Elephant Transit Home",
-        "fee": 5
-      },
-      {
-        "attraction": "Flying Ravana Mega Zip-line",
-        "fee": 35
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 12
-      },
-      {
-        "attraction": "Negombo Lagoon Safari",
-        "fee": 30
       }
     ],
     "inclusions": [
@@ -723,10 +520,6 @@
       "Expert Guidance: Knowledgeable guides sharing Ramayana stories"
     ],
     "image": "/src/assets/hero-lavish.jpg",
-    "price": {
-      "from": 891,
-      "category": "per person"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -814,49 +607,26 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 1237,
-        "pax8": 1060,
-        "pax16": 940,
-        "pax32": 891
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 1168,
-        "pax8": 990,
-        "pax16": 971,
-        "pax32": 822
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 423,
-        "pax8": 423,
-        "pax16": 423,
-        "pax32": 423
-      }
-    ],
     "hotels": [
       {
         "destination": "Hikkaduwa",
         "hotel": "Hikkaduwa Cinnamon Hotel",
-        "supplement": "Superior Ocean View: $10 per room per day"
+        "supplement": "Superior Ocean View: Supplement applies, contact us for rates"
       },
       {
         "destination": "Yala",
         "hotel": "Cinnamon Wild Yala",
-        "supplement": "Beach Chalet: $40 per room per night"
+        "supplement": "Beach Chalet: Supplement applies, contact us for rates"
       },
       {
         "destination": "Nuwara Eliya",
         "hotel": "Grand Hotel",
-        "supplement": "Queen Elizabeth: $175 per room per night"
+        "supplement": "Queen Elizabeth: Supplement applies, contact us for rates"
       },
       {
         "destination": "Kandy",
         "hotel": "Amaya Hills",
-        "supplement": "Premium Deluxe: $40 per person per day"
+        "supplement": "Premium Deluxe: Supplement applies, contact us for rates"
       },
       {
         "destination": "Dambulla",
@@ -867,56 +637,6 @@
         "destination": "Negombo",
         "hotel": "Amagi Aria",
         "supplement": "No Supplement"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Rumassala Sanctuary",
-        "fee": 5
-      },
-      {
-        "attraction": "Yala National Park Safari",
-        "fee": 40
-      },
-      {
-        "attraction": "Yala Park Entrance",
-        "fee": 15
-      },
-      {
-        "attraction": "Divurumwela Raja Maha Viharaya",
-        "fee": 3
-      },
-      {
-        "attraction": "Seetha Amman Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Bhakta Hanuman Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Seetha Kotuwa",
-        "fee": 8
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 10
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 30
-      },
-      {
-        "attraction": "Koneshwaram Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Munneswaram Temple",
-        "fee": 3
       }
     ],
     "inclusions": [
@@ -941,7 +661,7 @@
   "wonderful-journey": {
     "title": "A Wonderful Journey in the Island",
     "duration": "11 Days / 10 Nights",
-    "description": "Experience the diverse beauty of Sri Lanka—from the fishing village charm of Negombo and the wildlife wonders of Wilpattu National Park to the ancient kingdoms of Anuradhapura and Polonnaruwa, the cultural heart of Kandy, the scenic highlands of Nuwara Eliya, and the vibrant capital of Colombo.",
+    "description": "Experience the diverse beauty of Sri Lanka, from the fishing village charm of Negombo and the wildlife wonders of Wilpattu National Park to the ancient kingdoms of Anuradhapura and Polonnaruwa, the cultural heart of Kandy, the scenic highlands of Nuwara Eliya, and the vibrant capital of Colombo.",
     "highlights": [
       "Wildlife: Wilpattu National Park safari with leopards and elephants",
       "Ancient Cities: Anuradhapura and Polonnaruwa UNESCO sites",
@@ -951,10 +671,6 @@
       "Nature: Negombo Lagoon safari and Pidurangala Rock climb"
     ],
     "image": "/src/assets/hero-lavish.jpg",
-    "price": {
-      "from": 636,
-      "category": "per person"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -1091,29 +807,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 1042,
-        "pax8": 725,
-        "pax16": 731,
-        "pax32": 636
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 1005,
-        "pax8": 688,
-        "pax16": 694,
-        "pax32": 598
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 287,
-        "pax8": 287,
-        "pax16": 287,
-        "pax32": 287
-      }
-    ],
     "hotels": [
       {
         "destination": "Negombo",
@@ -1143,57 +836,7 @@
       {
         "destination": "Colombo",
         "hotel": "Fair Way Hotel",
-        "supplement": "Superior Balcony: $15 per night"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Negombo Lagoon Safari",
-        "fee": 30
-      },
-      {
-        "attraction": "Wilpattu National Park",
-        "fee": 35
-      },
-      {
-        "attraction": "Anuradhapura",
-        "fee": 26
-      },
-      {
-        "attraction": "Hiriwadunna Village Trek",
-        "fee": 25
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 32
-      },
-      {
-        "attraction": "Polonnaruwa",
-        "fee": 26
-      },
-      {
-        "attraction": "Pidurangala Rock",
-        "fee": 15
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 15
-      },
-      {
-        "attraction": "Cultural Dance Show (Optional)",
-        "fee": 10
-      },
-      {
-        "attraction": "Royal Botanical Gardens",
-        "fee": 10
-      },
-      {
-        "attraction": "Tea Factory Visit",
-        "fee": 5
-      },
-      {
-        "attraction": "Horton Plains National Park",
-        "fee": 35
+        "supplement": "Superior Balcony: Supplement applies, contact us for rates"
       }
     ],
     "inclusions": [
@@ -1232,10 +875,6 @@
       "City Tour: Colombo's historic Fort and Pettah areas"
     ],
     "image": "/src/assets/destination-ella.jpg",
-    "price": {
-      "from": 504,
-      "category": "per person"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -1337,29 +976,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 781,
-        "pax8": 524,
-        "pax16": 567,
-        "pax32": 531
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 754,
-        "pax8": 497,
-        "pax16": 539,
-        "pax32": 504
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 202.5,
-        "pax8": 202.5,
-        "pax16": 202.5,
-        "pax32": 202.5
-      }
-    ],
     "hotels": [
       {
         "destination": "Negombo",
@@ -1384,49 +1000,7 @@
       {
         "destination": "Colombo",
         "hotel": "Fairway Colombo",
-        "supplement": "Superior Balcony: $15 per night"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Negombo Lagoon Safari",
-        "fee": 30
-      },
-      {
-        "attraction": "Millennium Elephant Foundation",
-        "fee": 15
-      },
-      {
-        "attraction": "Pidurangala Rock",
-        "fee": 15
-      },
-      {
-        "attraction": "Kalawewa National Park",
-        "fee": 35
-      },
-      {
-        "attraction": "Hiriwadunna Village Trek",
-        "fee": 25
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 15
-      },
-      {
-        "attraction": "Cultural Dance Show (Optional)",
-        "fee": 10
-      },
-      {
-        "attraction": "Royal Botanical Gardens",
-        "fee": 10
-      },
-      {
-        "attraction": "Tea Factory Visit",
-        "fee": 5
-      },
-      {
-        "attraction": "Colombo Museum (Optional)",
-        "fee": 15
+        "supplement": "Superior Balcony: Supplement applies, contact us for rates"
       }
     ],
     "inclusions": [
@@ -1464,10 +1038,6 @@
       "Expert Guidance: Knowledgeable guides sharing Ramayana stories"
     ],
     "image": "/src/assets/destination-sigiriya.jpg",
-    "price": {
-      "from": 918,
-      "category": "per person"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -1558,29 +1128,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 1182,
-        "pax8": 1539,
-        "pax16": 1490,
-        "pax32": 1493
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 1087,
-        "pax8": 964,
-        "pax16": 915,
-        "pax32": 918
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 480,
-        "pax8": 480,
-        "pax16": 418,
-        "pax32": 480
-      }
-    ],
     "hotels": [
       {
         "destination": "Dambulla",
@@ -1590,59 +1137,17 @@
       {
         "destination": "Kandy",
         "hotel": "Amaya Hills",
-        "supplement": "Premium Deluxe: $40 per night"
+        "supplement": "Premium Deluxe: Supplement applies, contact us for rates"
       },
       {
         "destination": "Nuwara Eliya",
         "hotel": "The Grand Hotel",
-        "supplement": "Queen Elizabeth Room: $175 per night"
+        "supplement": "Queen Elizabeth Room: Supplement applies, contact us for rates"
       },
       {
         "destination": "Beruwela",
         "hotel": "Cinnamon Bay",
         "supplement": "No Supplement"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Munneswaram Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Koneshwaram Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 32
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 15
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 15
-      },
-      {
-        "attraction": "Seetha Kotuwa",
-        "fee": 8
-      },
-      {
-        "attraction": "Bhakta Hanuman Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Seetha Amman Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Madu River Safari",
-        "fee": 15
       }
     ],
     "inclusions": [
@@ -1676,10 +1181,6 @@
       "Expert Guidance: Knowledgeable guides sharing Ramayana epic stories"
     ],
     "image": "/src/assets/hero-lavish.jpg",
-    "price": {
-      "from": 750,
-      "category": "per person"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -1771,29 +1272,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 921,
-        "pax8": 798,
-        "pax16": 750,
-        "pax32": 752
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 867,
-        "pax8": 744,
-        "pax16": 695,
-        "pax32": 698
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 237.5,
-        "pax8": 237.5,
-        "pax16": 237.5,
-        "pax32": 237.5
-      }
-    ],
     "hotels": [
       {
         "destination": "Dambulla",
@@ -1814,48 +1292,6 @@
         "destination": "Beruwela",
         "hotel": "Joies Hotel",
         "supplement": "No Supplement"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Munneswaram Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Koneshwaram Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 32
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 15
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 15
-      },
-      {
-        "attraction": "Seetha Kotuwa",
-        "fee": 8
-      },
-      {
-        "attraction": "Bhakta Hanuman Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Seetha Amman Temple",
-        "fee": 5
-      },
-      {
-        "attraction": "Madu River Safari",
-        "fee": 15
       }
     ],
     "inclusions": [
@@ -1891,10 +1327,6 @@
       "Cultural Immersion: Ancient cave paintings and colonial heritage"
     ],
     "image": "/src/assets/destination-sigiriya.jpg",
-    "price": {
-      "from": 1032,
-      "category": "per person"
-    },
     "itinerary": [
       {
         "day": 1,
@@ -1999,29 +1431,6 @@
         ]
       }
     ],
-    "pricing": [
-      {
-        "category": "Per Person Sharing (Double Room)",
-        "pax3": 1054,
-        "pax8": 1110,
-        "pax16": 1088,
-        "pax32": 1032
-      },
-      {
-        "category": "Per Person Sharing (Triple Room)",
-        "pax3": 987,
-        "pax8": 1033,
-        "pax16": 1021,
-        "pax32": 965
-      },
-      {
-        "category": "Single Room Supplement",
-        "pax3": 395,
-        "pax8": 395,
-        "pax16": 395,
-        "pax32": 395
-      }
-    ],
     "hotels": [
       {
         "destination": "Dambulla",
@@ -2031,63 +1440,17 @@
       {
         "destination": "Kandy",
         "hotel": "Amaya Hills",
-        "supplement": "Premium Deluxe: $40 per room per night"
+        "supplement": "Premium Deluxe: Supplement applies, contact us for rates"
       },
       {
         "destination": "Nuwara Eliya",
         "hotel": "Grand Hotel",
-        "supplement": "Queen Elizabeth Room: $175 per room"
+        "supplement": "Queen Elizabeth Room: Supplement applies, contact us for rates"
       },
       {
         "destination": "Beruwela",
         "hotel": "Cinnamon Bey",
         "supplement": "No Supplement"
-      }
-    ],
-    "entranceFees": [
-      {
-        "attraction": "Munneswaram Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Koneshwaram Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Sigiriya Rock Fortress",
-        "fee": 35
-      },
-      {
-        "attraction": "Dambulla Cave Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Temple of the Tooth",
-        "fee": 10
-      },
-      {
-        "attraction": "Royal Botanical Garden",
-        "fee": 12
-      },
-      {
-        "attraction": "Pinnawala Elephant Orphanage",
-        "fee": 15
-      },
-      {
-        "attraction": "Bhakta Hanuman Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Gayathri Peedam",
-        "fee": 3
-      },
-      {
-        "attraction": "Seetha Amman Temple",
-        "fee": 3
-      },
-      {
-        "attraction": "Dewram Wehera Rajamaha Viharaya",
-        "fee": 3
       }
     ],
     "inclusions": [

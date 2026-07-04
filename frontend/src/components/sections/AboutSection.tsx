@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { Reveal } from "@/components/Reveal";
 
 interface AboutSectionProps {
   onPlanTrip: () => void;
@@ -19,7 +20,7 @@ export function AboutSection({ onPlanTrip }: AboutSectionProps) {
   return (
     <section id="about" className="container py-14 md:py-20">
       <div className="grid gap-12 md:grid-cols-2 items-center">
-        <div>
+        <Reveal>
           <h2 className="font-display text-3xl md:text-4xl">{t('home:about.title')}</h2>
           <p className="text-muted-foreground mt-5 leading-relaxed">
             {t('home:about.description1')}
@@ -30,8 +31,8 @@ export function AboutSection({ onPlanTrip }: AboutSectionProps) {
           <div className="mt-8">
             <Button variant="premium" size="lg" onClick={onPlanTrip}>{t('common:buttons.speakSpecialist')}</Button>
           </div>
-        </div>
-        <div className="rounded-2xl bg-card border shadow-elegant p-8">
+        </Reveal>
+        <Reveal delay={150} className="rounded-2xl bg-card border shadow-elegant p-8">
           <ul className="grid gap-4">
             {benefits.map((benefit) => (
               <li key={benefit} className="flex items-center gap-4 text-sm">
@@ -42,7 +43,7 @@ export function AboutSection({ onPlanTrip }: AboutSectionProps) {
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

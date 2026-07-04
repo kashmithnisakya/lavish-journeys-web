@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 /*
-  Lavish Travels & Tours — Design System
-  Palette: Deep Teal (nature/travel) + Warm Gold (luxury/premium)
+  Lavish Travels & Tours Design System
+  Palette: Deep Teal (nature, travel) + Warm Gold (luxury, premium)
   Light: Warm linen backgrounds, rich charcoal text
   Dark: Deep navy, warm gold accents — maintains brand identity
 */
@@ -29,8 +29,8 @@
     --muted: 35 15% 93%;
     --muted-foreground: 220 10% 46%;
 
-    --accent: 38 75% 50%;             /* warm gold — luxury accent */
-    --accent-foreground: 220 20% 12%;
+    --accent: 40 94% 52%;             /* bright amber gold — luxury accent */
+    --accent-foreground: 220 25% 10%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
@@ -52,7 +52,7 @@
 
     /* Lavish design tokens */
     --gradient-hero: linear-gradient(135deg, hsl(172 45% 26%), hsl(172 40% 36%));
-    --gradient-gold: linear-gradient(135deg, hsl(38 75% 50%), hsl(32 80% 45%));
+    --gradient-gold: linear-gradient(135deg, hsl(42 96% 54%), hsl(36 92% 48%));
     --shadow-elegant: 0 4px 20px -4px hsl(220 20% 14% / 0.08);
     --shadow-glow: 0 0 30px hsl(38 75% 50% / 0.2);
     --shadow-lifted: 0 12px 40px -12px hsl(220 20% 14% / 0.15);
@@ -77,7 +77,7 @@
     --muted: 220 18% 14%;
     --muted-foreground: 220 12% 55%;
 
-    --accent: 38 70% 55%;             /* warm gold — stays warm */
+    --accent: 40 92% 56%;             /* warm gold — stays warm */
     --accent-foreground: 220 25% 8%;
 
     --destructive: 0 62% 40%;
@@ -97,7 +97,7 @@
     --sidebar-ring: 172 40% 42%;
 
     --gradient-hero: linear-gradient(135deg, hsl(172 40% 30%), hsl(172 35% 40%));
-    --gradient-gold: linear-gradient(135deg, hsl(38 70% 55%), hsl(32 75% 48%));
+    --gradient-gold: linear-gradient(135deg, hsl(42 92% 56%), hsl(36 88% 50%));
     --shadow-elegant: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
     --shadow-glow: 0 0 30px hsl(38 70% 55% / 0.15);
     --shadow-lifted: 0 12px 40px -12px hsl(0 0% 0% / 0.4);
@@ -107,6 +107,12 @@
 @layer base {
   * {
     @apply border-border;
+  }
+
+  html {
+    /* clip (not hidden) keeps position:sticky working while stopping
+       the 3D carousel's side cards from causing horizontal scroll */
+    overflow-x: clip;
   }
 
   body {
@@ -145,5 +151,21 @@
   .text-gradient {
     @apply bg-clip-text text-transparent;
     background-image: var(--gradient-gold);
+  }
+}
+
+/* Scroll-reveal: elements fade-up once when they enter the viewport */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
   }
 }

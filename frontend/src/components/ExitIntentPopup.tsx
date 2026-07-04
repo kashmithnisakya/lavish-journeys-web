@@ -27,7 +27,13 @@ export function ExitIntentPopup({ onPlanTrip }: ExitIntentPopupProps) {
     }
 
     const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 && !hasShown) {
+      // Don't fire while another overlay (language dropdown, dialog) is open:
+      // stacking a modal dialog on top of an open Radix layer leaves the page
+      // with pointer-events:none stuck on <body> when they close out of order.
+      const overlayOpen = document.querySelector(
+        '[data-radix-popper-content-wrapper], [role="dialog"][data-state="open"]'
+      );
+      if (e.clientY <= 0 && !hasShown && !overlayOpen) {
         setOpen(true);
         setHasShown(true);
         sessionStorage.setItem("exit-intent-shown", "true");
@@ -38,6 +44,19 @@ export function ExitIntentPopup({ onPlanTrip }: ExitIntentPopupProps) {
     document.addEventListener("mouseleave", handleMouseLeave);
     return () => document.removeEventListener("mouseleave", handleMouseLeave);
   }, [hasShown]);
+
+  useEffect(() => {
+    if (open) return;
+    // Safety net: if a teardown race still leaves pointer-events:none on <body>
+    // after this dialog closes, clear it so the page never ends up frozen.
+    const id = window.setTimeout(() => {
+      const dialogStillOpen = document.querySelector('[role="dialog"][data-state="open"]');
+      if (!dialogStillOpen && document.body.style.pointerEvents === "none") {
+        document.body.style.pointerEvents = "";
+      }
+    }, 350);
+    return () => window.clearTimeout(id);
+  }, [open]);
 
   return (
     <Dialog open={open} onOpenChange={(isOpen) => {
