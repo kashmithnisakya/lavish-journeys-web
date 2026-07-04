@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Clock, MapPin, MessageCircle } from "lucide-react";
 
 interface TourPackageProps {
   tourKey: string;
@@ -16,45 +17,46 @@ interface TourPackageProps {
 
 export function TourPackage({ tourKey, title, duration, description, highlights, image, badge, onInquire, onViewDetails }: TourPackageProps) {
   const { t } = useTranslation();
+  const firstHighlight = highlights[0]?.split(":")[0];
+
   return (
-    <article className="bg-card rounded-xl border shadow-elegant overflow-hidden hover-scale h-full flex flex-col group">
-      <Link to={`/packages/${tourKey}`} className="relative h-52 overflow-hidden block">
+    <article className="bg-card rounded-2xl border shadow-elegant overflow-hidden h-full flex flex-col group transition-all duration-300 hover:shadow-lifted hover:-translate-y-1">
+      <Link to={`/packages/${tourKey}`} className="relative h-56 overflow-hidden block">
         <img
           src={image}
           alt={`${title} tour package`}
           loading="lazy"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-        <div className="absolute top-4 right-4 bg-white/90 dark:bg-card/90 backdrop-blur-sm text-foreground px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
+        <div className="absolute top-4 right-4 bg-white/90 dark:bg-card/90 backdrop-blur-sm text-foreground px-3 py-1 rounded-full text-xs font-semibold tracking-wide flex items-center gap-1.5">
+          <Clock className="h-3 w-3" />
           {duration}
         </div>
         {badge && (
-          <div className="absolute top-4 left-4 bg-gradient-gold text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
+          <div className="absolute top-4 left-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
             {badge}
+          </div>
+        )}
+        {firstHighlight && (
+          <div className="absolute bottom-3 left-4 right-4 flex items-center gap-1.5 text-white/90 text-xs font-medium">
+            <MapPin className="h-3.5 w-3.5 shrink-0" />
+            <span className="truncate">{firstHighlight}</span>
           </div>
         )}
       </Link>
 
-      <div className="p-6 flex flex-col flex-1">
+      <div className="p-5 sm:p-6 flex flex-col flex-1">
         <Link to={`/packages/${tourKey}`}>
-          <h3 className="font-display text-xl mb-2 hover:text-primary transition-colors">{title}</h3>
+          <h3 className="text-lg font-semibold tracking-tight leading-snug hover:text-primary transition-colors">{title}</h3>
         </Link>
-        <p className="text-muted-foreground text-sm mb-4 line-clamp-3 leading-relaxed">{description}</p>
+        <p className="text-muted-foreground text-sm mt-2 line-clamp-2 leading-relaxed">{description}</p>
 
-        <div className="mb-4 flex-1">
-          <h4 className="font-medium text-xs uppercase tracking-wider text-muted-foreground mb-2">{t('tours:highlights')}</h4>
-          <ul className="text-xs text-muted-foreground space-y-1.5">
-            {highlights.slice(0, 4).map((highlight, index) => (
-              <li key={index} className="flex items-start gap-2">
-                <span className="text-accent mt-0.5 font-bold">•</span>
-                <span>{highlight}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="space-y-3 mt-auto pt-4 border-t">
+        <div className="mt-auto pt-5">
+          <div className="mb-4 flex items-center gap-1.5 text-sm text-primary font-medium">
+            <MessageCircle className="h-4 w-4" />
+            {t('tours:contactForPricing')}
+          </div>
           <div className="flex gap-2">
             <Button onClick={onViewDetails} variant="outline" size="sm" className="flex-1">
               {t('tours:viewDetails')}

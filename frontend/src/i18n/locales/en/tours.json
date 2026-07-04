@@ -1,6 +1,4 @@
 {
-  "from": "From",
-  "perPerson": "per person",
   "viewDetails": "View Details",
   "inquireNow": "Inquire Now",
   "contactForPricing": "Contact us for pricing",
@@ -9,25 +7,22 @@
   "itinerary": "Daily Itinerary",
   "day": "Day",
   "accommodation": "Accommodation",
-  "pricing": "Pricing (Per Person)",
-  "pax": "PAX",
   "category": "Category",
   "inclusions": "What's Included",
   "exclusions": "Not Included",
   "hotels": "Hotels & Accommodation",
   "destination": "Destination",
   "supplement": "Supplement",
-  "entranceFees": "Entrance Fees",
   "requestQuote": "Request a Quote",
   "activity": "Activity",
-  "pricingCTA": {
-    "title": "Get a Personalized Quote",
-    "description": "Pricing varies based on group size, season, and preferences. Contact us for a custom quote tailored to your needs."
-  },
   "compare": {
     "button": "Compare Packages",
     "title": "Compare Tour Packages",
     "selectPackage": "Select a package...",
     "selectBoth": "Select two packages above to compare them side by side."
-  }
+  },
+  "destinations": "Destinations",
+  "duration": "Duration",
+  "places": "Places",
+  "experiences": "Experiences"
 }

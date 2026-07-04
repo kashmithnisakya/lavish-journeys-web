@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { Reveal } from "@/components/Reveal";
 import { trackFacebookClick, trackWhatsAppClick } from "@/lib/analytics";
 
 interface ContactSectionProps {
@@ -13,14 +14,16 @@ export function ContactSection({ onPlanTrip }: ContactSectionProps) {
   return (
     <section id="contact" className="py-14 md:py-20 bg-secondary/50">
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="font-display text-3xl md:text-4xl">{t('home:contact.title')}</h2>
-          <p className="text-muted-foreground mt-3">{t('home:contact.description')}</p>
-        </div>
+        <Reveal>
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl md:text-4xl">{t('home:contact.title')}</h2>
+            <p className="text-muted-foreground mt-3">{t('home:contact.description')}</p>
+          </div>
+        </Reveal>
 
         <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
           <div className="bg-card rounded-2xl p-8 shadow-elegant border">
-            <h3 className="font-display text-xl mb-6">{t('home:contact.information')}</h3>
+            <h3 className="text-lg font-semibold tracking-tight mb-6">{t('home:contact.information')}</h3>
             <div className="space-y-5">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -53,7 +56,7 @@ export function ContactSection({ onPlanTrip }: ContactSectionProps) {
           </div>
 
           <div className="bg-card rounded-2xl p-8 shadow-elegant border">
-            <h3 className="font-display text-xl mb-6">{t('home:contact.connect')}</h3>
+            <h3 className="text-lg font-semibold tracking-tight mb-6">{t('home:contact.connect')}</h3>
             <div className="space-y-4">
               <a
                 href="https://www.facebook.com/profile.php?id=61579323908693&locale=eu_ES"

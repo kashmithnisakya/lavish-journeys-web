@@ -4,6 +4,9 @@ import App from './App.tsx'
 import './index.css'
 import './i18n/config'
 import './lib/firebase' // Initialize Firebase Analytics
+import { installOverlayGuard } from './lib/overlayGuard'
+
+installOverlayGuard();
 
 createRoot(document.getElementById("root")!).render(
   <Suspense fallback={
@@ -19,7 +22,7 @@ createRoot(document.getElementById("root")!).render(
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("/sw.js").catch(() => {
-      // SW registration failed — non-critical
+      // SW registration failed, non-critical
     });
   });
 }

@@ -76,7 +76,7 @@ export function ComparePackages({ tourPackages, tourPackagesData }: ComparePacka
               <div className="grid grid-cols-2 gap-4">
                 {[pkg1, pkg2].map((pkg, i) => (
                   <div key={i} className="bg-card border rounded-lg p-4">
-                    <h3 className="font-display text-lg mb-3">{pkg.title}</h3>
+                    <h3 className="text-lg font-semibold tracking-tight mb-3">{pkg.title}</h3>
                     <div className="space-y-2 text-sm">
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <Clock className="w-4 h-4" />

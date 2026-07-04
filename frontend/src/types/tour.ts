@@ -3,10 +3,6 @@ export interface TourPackageData {
   duration: string;
   description: string;
   highlights: string[];
-  price: {
-    from: number;
-    category: string;
-  };
   image?: string;
   itinerary: Array<{
     day: number;
@@ -14,23 +10,12 @@ export interface TourPackageData {
     activities: string[];
     accommodation?: string;
   }>;
-  pricing: Array<{
-    category: string;
-    pax3: number;
-    pax8: number;
-    pax16: number;
-    pax32: number;
-  }>;
   inclusions: string[];
   exclusions: string[];
   hotels: Array<{
     destination: string;
     hotel: string;
     supplement?: string;
-  }>;
-  entranceFees: Array<{
-    attraction: string;
-    fee: number;
   }>;
 }
 
@@ -55,10 +40,6 @@ export interface ProcessedTourPackage {
   duration: string;
   description: string;
   highlights: string[];
-  price: {
-    from: number;
-    category: string;
-  };
   category: string;
   image: string;
   badge?: string;

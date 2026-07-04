@@ -3,17 +3,18 @@ import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCarousel } from "@/hooks/useCarousel";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Reveal } from "@/components/Reveal";
 import type { Destination } from "@/types/tour";
 import { trackCarouselInteraction } from "@/lib/analytics";
 
-import ella from "@/assets/ella.jpg";
-import sigiriya from "@/assets/sigiriya.jpg";
-import nuwaraEliya from "@/assets/nuwara_eliya.jpg";
-import yala from "@/assets/yala.jpg";
-import southernBeach from "@/assets/southern_beach.jpg";
-import trincomalee from "@/assets/trincomalee.jpg";
-import anuradhapura from "@/assets/anuradhapura.jpg";
-import ramayana1 from "@/assets/ramayana_1.jpg";
+import ella from "@/assets/ella.webp";
+import sigiriya from "@/assets/sigiriya.webp";
+import nuwaraEliya from "@/assets/nuwara_eliya.webp";
+import yala from "@/assets/yala.webp";
+import southernBeach from "@/assets/southern_beach.webp";
+import trincomalee from "@/assets/trincomalee.webp";
+import anuradhapura from "@/assets/anuradhapura.webp";
+import ramayana1 from "@/assets/ramayana_1.webp";
 
 export function DestinationsCarousel() {
   const { t } = useTranslation();
@@ -36,16 +37,18 @@ export function DestinationsCarousel() {
 
   return (
     <section id="destinations" className="container py-12 md:py-16" onMouseEnter={pause} onMouseLeave={resume}>
-      <header className="mb-6 md:mb-8 text-center">
-        <h2 className="font-display text-3xl md:text-4xl">{t('home:destinations.title')}</h2>
-        <p className="text-muted-foreground mt-2 max-w-3xl mx-auto">
-          {t('home:destinations.description')}
-        </p>
-      </header>
+      <Reveal>
+        <header className="mb-6 md:mb-8 text-center">
+          <h2 className="font-display text-3xl md:text-4xl">{t('home:destinations.title')}</h2>
+          <p className="text-muted-foreground mt-2 max-w-3xl mx-auto">
+            {t('home:destinations.description')}
+          </p>
+        </header>
+      </Reveal>
 
       <div className="relative py-4 sm:py-8">
         <div className="overflow-visible" ref={sliderRef} style={{ perspective: isMobile ? '1000px' : '2000px', perspectiveOrigin: 'center center' }}>
-          <div className="relative h-[450px] sm:h-[580px] md:h-[720px] lg:h-[840px] flex items-center justify-center" style={{ transformStyle: 'preserve-3d' }}>
+          <div className="relative h-[430px] sm:h-[600px] md:h-[680px] flex items-center justify-center" style={{ transformStyle: 'preserve-3d' }}>
             {(isMobile ? [-1, 0, 1] : [-2, -1, 0, 1, 2]).map((offset) => {
               const index = (currentSlide + offset + destinations.length) % destinations.length;
               const d = destinations[index];
@@ -104,7 +107,7 @@ export function DestinationsCarousel() {
                       style={{ height: isMobile ? '280px' : '480px' }}
                     />
                     <div className={`p-3 sm:p-4 flex-1 flex flex-col transition-all duration-700 ${isCenter ? 'md:p-6' : 'md:p-4'}`}>
-                      <h3 className={`font-display transition-all duration-700 ${
+                      <h3 className={`font-semibold tracking-tight transition-all duration-700 ${
                         isCenter ? 'text-base sm:text-xl md:text-2xl' : isNearCenter ? 'text-sm sm:text-base md:text-lg' : 'text-xs md:text-sm'
                       }`}>{d.title}</h3>
                       <div className={`overflow-hidden transition-all duration-700 ${

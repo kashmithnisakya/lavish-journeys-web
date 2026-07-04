@@ -30,7 +30,10 @@ export function LanguageSwitcher() {
   };
 
   return (
-    <DropdownMenu>
+    // modal={false}: a modal dropdown sets pointer-events:none on <body>; if the
+    // exit-intent dialog opens while this menu is open, the two Radix layers tear
+    // down in the wrong order and the page is left permanently unclickable.
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm" className="gap-2">
           <Globe className="h-4 w-4" />

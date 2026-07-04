@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
+import { Reveal } from "@/components/Reveal";
 
 interface FAQItem {
   question: string;
@@ -16,10 +17,12 @@ export function FAQSection() {
   return (
     <section id="faq" className="py-14 md:py-20 bg-secondary/30">
       <div className="container max-w-3xl">
-        <header className="text-center mb-10">
-          <h2 className="font-display text-3xl md:text-4xl">{t('home:faq.title')}</h2>
-          <p className="text-muted-foreground mt-3">{t('home:faq.description')}</p>
-        </header>
+        <Reveal>
+          <header className="text-center mb-10">
+            <h2 className="font-display text-3xl md:text-4xl">{t('home:faq.title')}</h2>
+            <p className="text-muted-foreground mt-3">{t('home:faq.description')}</p>
+          </header>
+        </Reveal>
 
         <div className="space-y-3" role="list">
           {faqs.map((faq, index) => (
