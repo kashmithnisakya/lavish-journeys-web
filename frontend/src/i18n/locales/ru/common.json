@@ -10,7 +10,8 @@
     "packages": "Пакеты",
     "services": "Услуги",
     "about": "О нас",
-    "contact": "Контакты"
+    "contact": "Контакты",
+    "home": "Главная"
   },
   "buttons": {
     "planTrip": "Планировать поездку",
@@ -19,7 +20,9 @@
     "viewDetails": "Подробнее",
     "inquireNow": "Запросить сейчас",
     "speakSpecialist": "Связаться со специалистом",
-    "close": "Закрыть"
+    "close": "Закрыть",
+    "share": "Поделиться",
+    "viewAllPackages": "Все туры"
   },
   "labels": {
     "from": "От",

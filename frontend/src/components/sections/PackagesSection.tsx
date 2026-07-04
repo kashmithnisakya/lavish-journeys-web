@@ -1,5 +1,6 @@
 import { useState, useMemo, lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
+import { Reveal } from "@/components/Reveal";
 import { TourPackage } from "@/components/TourPackage";
 import type { ProcessedTourPackage, TourCategory, TourPackagesDataType } from "@/types/tour";
 
@@ -45,12 +46,14 @@ export function PackagesSection({ tourPackages, tourPackagesData, onInquire, onV
 
   return (
     <section id="packages" className="container py-12 md:py-16">
-      <header className="mb-6 md:mb-8 text-center">
-        <h2 className="font-display text-3xl md:text-4xl">{t('home:packages.title')}</h2>
-        <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-          {t('home:packages.description')}
-        </p>
-      </header>
+      <Reveal>
+        <header className="mb-6 md:mb-8 text-center">
+          <h2 className="font-display text-3xl md:text-4xl">{t('home:packages.title')}</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+            {t('home:packages.description')}
+          </p>
+        </header>
+      </Reveal>
 
       <div className="flex flex-wrap justify-center items-center gap-3 mb-10">
         {categories.map((category) => (
@@ -78,7 +81,7 @@ export function PackagesSection({ tourPackages, tourPackagesData, onInquire, onV
         </Suspense>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {filteredPackages.map((pkg) => (
           <TourPackage
             key={pkg.key}

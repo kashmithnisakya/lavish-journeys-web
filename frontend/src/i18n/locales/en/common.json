@@ -10,7 +10,8 @@
     "packages": "Packages",
     "services": "Services",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "home": "Home"
   },
   "buttons": {
     "planTrip": "Plan Your Trip",
@@ -19,7 +20,9 @@
     "viewDetails": "View Details",
     "inquireNow": "Inquire Now",
     "speakSpecialist": "Speak to a Specialist",
-    "close": "Close"
+    "close": "Close",
+    "share": "Share",
+    "viewAllPackages": "View All Packages"
   },
   "labels": {
     "from": "From",

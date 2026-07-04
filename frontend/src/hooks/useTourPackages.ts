@@ -9,18 +9,18 @@ const tourBadges: { [key: string]: string } = {
   'southern-highlight': 'new',
 };
 
-import heroImage from "@/assets/cover.jpg";
-import ella from "@/assets/ella.jpg";
-import sigiriya from "@/assets/sigiriya.jpg";
-import nuwaraEliya from "@/assets/nuwara_eliya.jpg";
-import yala from "@/assets/yala.jpg";
-import southernBeach from "@/assets/southern_beach.jpg";
-import trincomalee from "@/assets/trincomalee.jpg";
-import anuradhapura from "@/assets/anuradhapura.jpg";
-import ramayana1 from "@/assets/ramayana_1.jpg";
-import ramayana2 from "@/assets/ramayan_2.jpg";
-import ramayana3 from "@/assets/ramayana_3.jpg";
-import ramayana4 from "@/assets/ramayana_4.jpg";
+import heroImage from "@/assets/cover.webp";
+import ella from "@/assets/ella.webp";
+import sigiriya from "@/assets/sigiriya.webp";
+import nuwaraEliya from "@/assets/nuwara_eliya.webp";
+import yala from "@/assets/yala.webp";
+import southernBeach from "@/assets/southern_beach.webp";
+import trincomalee from "@/assets/trincomalee.webp";
+import anuradhapura from "@/assets/anuradhapura.webp";
+import ramayana1 from "@/assets/ramayana_1.webp";
+import ramayana2 from "@/assets/ramayan_2.webp";
+import ramayana3 from "@/assets/ramayana_3.webp";
+import ramayana4 from "@/assets/ramayana_4.webp";
 
 const tourCategories: { [key: string]: string } = {
   'classical-journey': 'cultural',
@@ -125,7 +125,6 @@ export function useTourPackages() {
         duration: data.duration,
         description: data.description,
         highlights: data.highlights,
-        price: data.price,
         category: tourCategories[key] || 'cultural',
         image: getTourImage(key),
         badge: tourBadges[key],

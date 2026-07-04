@@ -17,8 +17,8 @@ import {
   ArrowLeft,
   Share2,
   ChevronRight,
-  CheckCircle2,
-  XCircle,
+  Check,
+  X,
   Building2,
   CalendarDays,
   Compass,
@@ -136,7 +136,7 @@ export default function PackagePage() {
                   {tourData.itinerary.length} {t("tours:destinations", "Destinations")}
                 </span>
                 {processedTour.badge && (
-                  <span className="bg-gradient-gold text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
+                  <span className="bg-accent text-accent-foreground px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
                     {t(`common:badges.${processedTour.badge}`)}
                   </span>
                 )}
@@ -330,42 +330,40 @@ export default function PackagePage() {
 
           {/* ─── Inclusions & Exclusions ─── */}
           <section className="mb-12">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/50 rounded-2xl p-6 md:p-7">
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="w-9 h-9 bg-emerald-500 rounded-full flex items-center justify-center shadow-sm">
-                    <CheckCircle2 className="w-5 h-5 text-white" />
-                  </div>
-                  <h2 className="font-bold text-lg text-emerald-700 dark:text-emerald-400">
+            <div className="bg-card border rounded-2xl shadow-elegant overflow-hidden">
+              <div className="grid md:grid-cols-2 md:divide-x divide-border">
+                <div className="p-6 md:p-8">
+                  <h2 className="flex items-center gap-3 text-lg font-semibold tracking-tight mb-6">
+                    <span className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                      <Check className="w-5 h-5" />
+                    </span>
                     {t("tours:inclusions")}
                   </h2>
+                  <ul className="space-y-3.5">
+                    {tourData.inclusions.map((item, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <Check className="w-4 h-4 text-primary mt-1 flex-shrink-0" strokeWidth={2.5} />
+                        <span className="text-sm text-foreground/90 leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="space-y-3">
-                  {tourData.inclusions.map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-foreground leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-800/50 rounded-2xl p-6 md:p-7">
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="w-9 h-9 bg-rose-500 rounded-full flex items-center justify-center shadow-sm">
-                    <XCircle className="w-5 h-5 text-white" />
-                  </div>
-                  <h2 className="font-bold text-lg text-rose-700 dark:text-rose-400">
+                <div className="p-6 md:p-8 border-t md:border-t-0 bg-muted/40">
+                  <h2 className="flex items-center gap-3 text-lg font-semibold tracking-tight mb-6 text-muted-foreground">
+                    <span className="w-9 h-9 rounded-xl bg-muted-foreground/10 text-muted-foreground flex items-center justify-center">
+                      <X className="w-5 h-5" />
+                    </span>
                     {t("tours:exclusions")}
                   </h2>
+                  <ul className="space-y-3.5">
+                    {tourData.exclusions.map((item, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <X className="w-4 h-4 text-muted-foreground/70 mt-1 flex-shrink-0" strokeWidth={2.5} />
+                        <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="space-y-3">
-                  {tourData.exclusions.map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <XCircle className="w-4 h-4 text-rose-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-foreground leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           </section>
